@@ -1,0 +1,33 @@
+.slider__item {
+  display: none;
+}
+
+.slider__scale {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  border: 1px solid @section-line-color;
+  border-radius: 7px;
+  background-color: @contrast-color;
+}
+
+.slider__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  .set-font-style(@fz-slider-button; @lh-slider-button);
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.slider__cursor {
+  width: 35px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  border-radius: 3px;
+  background-color: @accent-color;
+}

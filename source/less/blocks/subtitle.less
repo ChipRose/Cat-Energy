@@ -1,0 +1,15 @@
+.subtitle {
+  margin: 0 0 0 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  .set-font-style(@fz-subtitle; @lh-subtitle);
+
+  &--footer {
+    .set-font-style(@fz-footer-subtitle; @lh-footer-subtitle);
+  }
+
+  &--catalog {
+    .set-font-style(@fz-catalog-subtitle; @fz-catalog-subtitle);
+    color: @catalog-color;
+  }
+}

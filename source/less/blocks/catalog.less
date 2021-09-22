@@ -1,0 +1,21 @@
+.catalog__item {
+  border: 1px solid @box-color;
+}
+
+.catalog__button {
+  padding: 10px;
+
+  &--all {
+    background-color: @catalog-button-all-color;
+    color: @catalog-color;
+
+    &:hover {
+      background-color: @catalog-button-all-color-hover;
+    }
+
+    &:active {
+      background-color: @catalog-button-all-color-hover;
+      color: @catalog-color03;
+    }
+  }
+}

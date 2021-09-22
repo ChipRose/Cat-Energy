@@ -1,0 +1,45 @@
+.example {
+  background-color: @section-bg-color;
+}
+
+.example__wrapper {
+  margin: 0 auto 0 auto;
+}
+
+.example__list {
+  margin: 0 0 34px 0;
+}
+
+.example__item {
+  margin: 0 0 24px 0;
+  padding: 14px 14px 17px 14px;
+  position: relative;
+  border: 1px solid @section-line-color;
+  text-align: center;
+}
+
+.example__progress {
+  font-family: "Oswald", "Arial", sans-serif;
+  .set-font-style(@fz-example-progress, @lh-example-progress);
+  text-transform: uppercase;
+}
+
+.example__description {
+  margin: 0 0 0 0;
+  padding: 0 20px 3px 20px;
+  width: 84px;
+  position: absolute;
+  bottom: @fz-example-description;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, 100%);
+  .set-font-style(@fz-example-description; @lh-example-description);
+  background-color: @section-bg-color;
+}
+
+.example__legend {
+  font-family: "Oswald", "Arial", sans-serif;
+  .set-font-style(@fz-example-legend; @lh-example-legend);
+  text-transform: uppercase;
+  text-align: center;
+}
