@@ -7,7 +7,7 @@
   width: 30px;
   height: 30px;
   box-sizing: border-box;
-  border: 1px solid @box-color;
+  border: 1px solid @special-grey;
 }
 
 .add-info__check {
@@ -17,13 +17,13 @@
 .add-info__checkbox {
   &:hover {
     + .add-info__box {
-      border-color: @box-color-hover;
+      border-color: @special-grey-2;
     }
   }
 
   &:disabled {
     + .add-info__box {
-      border-color: @box-color-disabled;
+      border-color: @special-grey-2-03;
     }
 
     ~ .add-info__property {
@@ -33,23 +33,23 @@
 
   &:checked {
     + * .add-info__check {
-      fill: @accent-color;
+      fill: @basic-green;
     }
   }
 
   &:checked:hover {
     + .add-info__box {
-      border-color: @box-color-hover;
+      border-color: @special-grey-2;
     }
   }
 
   &:checked:disabled {
     + * .add-info__check {
-      fill: @accent-color03;
+      fill: @basic-green03;
     }
 
     + .add-info__box {
-      border-color: @box-color-disabled;
+      border-color: @special-grey-2-03;
     }
 
     ~ .add-info__property {

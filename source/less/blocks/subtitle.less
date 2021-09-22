@@ -1,15 +1,19 @@
 .subtitle {
   margin: 0 0 0 0;
-  font-family: "Oswald", "Arial", sans-serif;
+  .set-font-style (@fz-subtitle; @lh-subtitle; "Oswald");
   text-transform: uppercase;
-  .set-font-style(@fz-subtitle; @lh-subtitle);
 
   &--footer {
-    .set-font-style(@fz-footer-subtitle; @lh-footer-subtitle);
+    .set-font-style (@fz-footer-subtitle; @lh-footer-subtitle; "Oswald");
   }
 
   &--catalog {
-    .set-font-style(@fz-catalog-subtitle; @fz-catalog-subtitle);
-    color: @catalog-color;
+    .set-font-style (@fz-catalog-subtitle; @fz-catalog-subtitle; "Oswald");
+    color: @special-dark-grey-2;
+  }
+
+  &--catalog-extra {
+    .set-font-style ( @fz-catalog-subtitle-extra; @fz-catalog-subtitle-extra; "Oswald";);
+    color: @special-dark-grey-2;
   }
 }

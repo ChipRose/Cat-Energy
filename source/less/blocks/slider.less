@@ -6,14 +6,13 @@
   position: relative;
   width: 84px;
   height: 14px;
-  border: 1px solid @section-line-color;
+  border: 1px solid @special-grey;
   border-radius: 7px;
   background-color: @contrast-color;
 }
 
 .slider__button {
-  font-family: "Oswald", "Arial", sans-serif;
-  .set-font-style(@fz-slider-button; @lh-slider-button);
+  .set-font-style (@fz-slider-button; @lh-slider-button; "Oswald");
   text-transform: uppercase;
   text-align: center;
   border: none;
@@ -29,5 +28,5 @@
   left: 6px;
   transform: translateY(-50%);
   border-radius: 3px;
-  background-color: @accent-color;
+  background-color: @basic-green;
 }

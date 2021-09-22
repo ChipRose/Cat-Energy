@@ -1,5 +1,8 @@
 .title {
   margin: 0 0 0 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  .set-font-style(@fz-title; @lh-title);
+  .set-font-style (@fz-title; @lh-title; "Oswald");
+
+  &--extra-products {
+    .set-font-style (@fz-catalog-title; @lh-catalog-title; "Oswald");
+  }
 }
