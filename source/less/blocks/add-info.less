@@ -1,0 +1,59 @@
+.add-info__item {
+  display: block;
+}
+
+.add-info__box {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid @box-color;
+}
+
+.add-info__check {
+  fill: none;
+}
+
+.add-info__checkbox {
+  &:hover {
+    + .add-info__box {
+      border-color: @box-color-hover;
+    }
+  }
+
+  &:disabled {
+    + .add-info__box {
+      border-color: @box-color-disabled;
+    }
+
+    ~ .add-info__property {
+      color: @main-color03;
+    }
+  }
+
+  &:checked {
+    + * .add-info__check {
+      fill: @accent-color;
+    }
+  }
+
+  &:checked:hover {
+    + .add-info__box {
+      border-color: @box-color-hover;
+    }
+  }
+
+  &:checked:disabled {
+    + * .add-info__check {
+      fill: @accent-color03;
+    }
+
+    + .add-info__box {
+      border-color: @box-color-disabled;
+    }
+
+    ~ .add-info__property {
+      color: @main-color03;
+    }
+  }
+}
