@@ -1,5 +1,9 @@
 .property-table {
   border-collapse: collapse;
-  .set-font-style(@fz-catalog-table; @lh-catalog-table);
-  color: @catalog-color;
+  .set-font-style (@fz-catalog-table; @lh-catalog-table);
+  color: @special-dark-grey-2;
+
+  &--extra {
+    .set-font-style (@fz-catalog-table-extra; @lh-catalog-table-extra);
+  }
 }

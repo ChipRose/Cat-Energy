@@ -224,7 +224,7 @@
               <h3 class="subtitle subtitle--catalog catalog__subtitle">Показать еще 100500 товаров</h3>
               <img class="catalog__img" src="img/icon-plus.svg" width="30" height="30"
                 alt="Консерва для котов с рисом. Фиолетовая маленькая банка." />
-              <p class="catalog__more-products-text">На самом деле вкусов гораздо больше!</p>
+              <p class="text text--more catalog__more-products-text">На самом деле вкусов гораздо больше!</p>
             </a>
             <a class="button catalog__button catalog__button--all" href="blank.html">показать все</a>
           </li>
@@ -233,11 +233,11 @@
     </section>
     <section class="extra-products">
       <div class="extra-products__wrapper">
-        <h2 class="extra-products__title">Дополнительные товары</h2>
-        <ul class="extra-products__list">
+        <h2 class="title title--extra-products extra-products__title">Дополнительные товары</h2>
+        <ul class="list extra-products__list">
           <li class="extra-products__item">
-            <h3 class="extra-products__subtitle">Сахарозаменитель</h3>
-            <table class="extra-products__features">
+            <h3 class="subtitle subtitle--catalog-extra extra-products__subtitle">Сахарозаменитель</h3>
+            <table class="property-table property-table-extra extra-products__features">
               <tr class="extra-products__row">
                 <td class="extra-products__property">1 упаковка (100 г)</td>
                 <td class="extra-products__value">200 Р.</td>
@@ -246,8 +246,8 @@
             <a class="button extra-products__button" href="form.html">заказать</a>
           </li>
           <li class="extra-products__item">
-            <h3 class="extra-products__subtitle">питьевая вода</h3>
-            <table class="extra-products__features">
+            <h3 class="subtitle subtitle--catalog-extra extra-products__subtitle">питьевая вода</h3>
+            <table class="property-table property-table-extra extra-products__features">
               <tr class="extra-products__row">
                 <td class="extra-products__property">5 литров</td>
                 <td class="extra-products__value">50 Р.</td>
@@ -256,8 +256,8 @@
             <a class="button extra-products__button" href="form.html">заказать</a>
           </li>
           <li class="extra-products__item">
-            <h3 class="extra-products__subtitle">молоко</h3>
-            <table class="extra-products__features">
+            <h3 class="subtitle subtitle--catalog-extra extra-products__subtitle">молоко</h3>
+            <table class="property-table property-table-extra extra-products__features">
               <tr class="extra-products__row">
                 <td class="extra-products__property">1 литр</td>
                 <td class="extra-products__value">100 Р.</td>
@@ -266,8 +266,8 @@
             <a class="button extra-products__button" href="form.html">заказать</a>
           </li>
           <li class="extra-products__item">
-            <h3 class="extra-products__subtitle">витамины</h3>
-            <table class="extra-products__features">
+            <h3 class="subtitle subtitle--catalog-extra extra-products__subtitle">витамины</h3>
+            <table class="property-table property-table-extra extra-products__features">
               <tr class="extra-products__row">
                 <td class="extra-products__property">1 упаковка (30 г)</td>
                 <td class="extra-products__value">300 Р.</td>
@@ -280,8 +280,9 @@
     </section>
     <section class="promo">
       <h2 class="visually-hidden">Промоакции</h2>
-      <div class="promo__wrapper">
-        <p class="promo__text">Закажите все и получите чехол для кота в подарок!</p>
+      <div class= "promo__wrapper">
+        <img class="promo-img" src="img/promo/icon-gift.svg" width = "80" height="83" alt="Иконка подарок">
+        <p class="text text--promo promo__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
   </main>
@@ -303,8 +304,13 @@
       </div>
     </section>
     <div class="footer__wrapper">
-      <div class="footer__logo">
-        <img class="footer__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy" />
+      <div class="logo-text footer__logo">
+        <svg class="logo-text__icon" width="102" height="19" aria-label="Иконка Cat Energy" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.4 17.3A6.9 6.9 0 0 1 .2 13V6.7a7 7 0 0 1 1.1-4.4c1-1 2.3-1.5 4.2-1.5 2 0 3.3.5 4 1.3 1 1 1.3 2.4 1.3 3.8v1.5h-4V5.7C7 5 6.9 4.6 6.7 4c0-.2-.2-.4-.4-.5l-.7-.1c-.5 0-1 .2-1 .5-.3.6-.3 1.2-.3 1.7V14c0 .5 0 1 .3 1.6.2.4.6.5 1.1.5.6 0 .9-.1 1-.5.2-.5.3-1 .3-1.6V12h3.9v1.6c0 1.3-.4 2.7-1.2 3.8-.8 1-2.2 1.4-4 1.4-2 0-3.4-.6-4.2-1.6ZM15.4 1H20l3.3 17.6h-3.6l-.6-3.7h-2.6l-.7 3.7H12L15.4 1Zm3.3 11.6-1-6.9-1 6.9h2ZM26 4h-2.7V1h9.4V4H30v14.7h-4V4ZM40 1h6.9V3h-4.5v5.8H46v1.7h-3.6V17h4.5v1.8h-7V1ZM49 1h1.7l5.1 11.7V1h2v17.6h-1.5L51 6.6v12h-2.2V1ZM60.2 1h7V3h-4.5v5.8h3.6v1.7h-3.6V17h4.5v1.8h-7V1ZM69.2 1H73c1.4 0 2.8.3 4 1.1.9.7 1.3 2 1.3 3.6 0 2.2-.7 3.6-2.2 4l2.5 8.8H76l-2.3-8.2h-2v8.2h-2.5V1Zm3.5 7.6c.8 0 1.6-.2 2.3-.6.5-.4.7-1.2.7-2.3 0-.6 0-1.2-.2-1.7a2 2 0 0 0-.9-1c-.5-.2-1.1-.3-1.7-.3h-1.1v5.8h1ZM81.3 17.3a7.6 7.6 0 0 1-1-4.5V7c-.1-1.2 0-2.3.3-3.3a4 4 0 0 1 1.5-2c.9-.6 2-.8 3-.7 1.6 0 2.8.3 3.5 1.2A5.8 5.8 0 0 1 89.7 6v.7h-2.4V6l-.1-2c0-.3-.3-.7-.7-1-.4-.2-1-.3-1.5-.3s-1 .1-1.5.5a1.7 1.7 0 0 0-.7 1.2 14 14 0 0 0-.1 2v6.6c0 1 0 2 .4 3 .4.6 1 .8 2 .8a2 2 0 0 0 1.8-1c.5-1 .6-2 .6-3v-1.2h-2.3V9.9h4.6v8.7h-1.6l-.2-2c-.2.6-.7 1.2-1.3 1.6-.5.4-1.3.6-2 .6a4 4 0 0 1-3.4-1.5ZM94.8 12.4 91 1.1h2.3l2.8 8.5L98.8 1h2.4l-4 11.3v6.2H95v-6.2Z" />
+
+        </svg>
       </div>
       <ul class="social list footer__list">
         <li class="social__item">
@@ -335,9 +341,13 @@
           </a>
         </li>
       </ul>
-      <a class="link footer__promo" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="footer__promo-text">HTML Academy</p>
-        <img class="footer__promo-logo" src="img/logo-htmlacd.svg" width="27" height="34" alt="Логотип HTMLAcademy" />
+      <a class="link academy-logo footer__promo" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="academy-logo__text footer__promo-text">HTML Academy</p>
+        <svg class="academy-logo__icon footer__promo-logo" width="27" height="34" viewBox="0 0 27 34"
+          aria-label="Логотип HTMLAcademy" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
+        </svg>
       </a>
     </div>
   </footer>

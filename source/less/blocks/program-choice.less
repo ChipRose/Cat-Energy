@@ -1,5 +1,5 @@
 .program-choice {
-  border: 1px solid @box-color;
+  border: 1px solid @special-grey;
 }
 
 .program-choice__item {
@@ -14,7 +14,7 @@
   height: 30px;
   box-sizing: border-box;
   border-radius: 50%;
-  border: 1px solid @box-color;
+  border: 1px solid @special-grey;
 }
 
 .program-choice__box-inner {
@@ -27,13 +27,13 @@
 .program-choice__radio-button {
   &:hover {
     + .program-choice__box {
-      border-color: @box-color-hover;
+      border-color: @special-grey-2;
     }
   }
 
   &:disabled {
     + .program-choice__box {
-      border-color: @box-color-disabled;
+      border-color: @special-grey-2-03;
     }
 
     ~ .program-choice__property {
@@ -43,23 +43,23 @@
 
   &:checked {
     + * .program-choice__box-inner {
-      background-color: @accent-color;
+      background-color: @basic-green;
     }
   }
 
   &:checked:hover {
     + .program-choice__box {
-      border-color: @box-color-hover;
+      border-color: @special-grey-2;
     }
   }
 
   &:checked:disabled {
     + .program-choice__box {
-      border-color: @box-color-disabled;
+      border-color: @special-grey-2-03;
     }
 
     + * .program-choice__box-inner {
-      background-color: @accent-color03;
+      background-color: @basic-green03;
     }
 
     ~ .program-choice__property {
