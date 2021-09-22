@@ -1,0 +1,33 @@
+.logo {
+  display: grid;
+  grid-template-columns: min-content auto 24px;
+}
+
+@media (max-width: @mobile-width) {
+  .logo {
+    justify-items: center;
+  }
+}
+
+.logo__img,
+.logo__img-simple {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: none;
+}
+
+@media (max-width: @mobile-width) {
+  .logo__img-simple {
+    display: block;
+  }
+}
+
+@media (min-width: @mobile-width + 1px) {
+  .logo__img {
+    display: block;
+  }
+}
+
+.logo__text {
+  align-self: center;
+}

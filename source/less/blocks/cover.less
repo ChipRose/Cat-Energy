@@ -1,0 +1,40 @@
+.cover {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  color: @contrast-color;
+}
+
+.cover__wrapper {
+  margin: 0 auto;
+}
+
+.cover__header {
+  min-height: @mobile-cover-hight;
+  position: relative;
+  background-image: url("../../img/cover/cover-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: @accent-color085;
+  }
+}
+
+.cover__title,
+.cover__slogan {
+  position: relative;
+  z-index: 1;
+}
+
+.cover__button-choice {
+  display: block;
+  padding: 7px;
+}
