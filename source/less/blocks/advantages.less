@@ -7,12 +7,27 @@
 /* Item */
 
 @media (min-width: @tablet-width) {
-  .advantages__item--useful {
+  .advantages__item {
     position: relative;
     min-height: 280px;
 
-    &::before {
+    &--useful::before {
       content: "1";
+    }
+
+    &--fast::before {
+      content: "2";
+    }
+
+    &--feed::before {
+      content: "3";
+    }
+
+    &--change::before {
+      content: "4";
+    }
+
+    &::before {
       width: auto;
       height: 280px;
       position: absolute;
