@@ -1,32 +1,35 @@
+/* Cover */
+
 .cover {
-  font-family: "Oswald", "Arial", sans-serif;
+  .set-font-style (@fz-cover; @lh-cover; "Oswald");
   text-align: center;
-  color: @contrast-color;
 }
 
-.cover__wrapper {
-  margin: 0 auto;
-}
+/* Header */
+/* - mobile - */
+@media (max-width: -1 + @tablet-width) {
+  .cover__header {
+    min-height: @mobile-cover-hight;
+    position: relative;
+    background-image: url("../../img/cover/cover-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 
-.cover__header {
-  min-height: @mobile-cover-hight;
-  position: relative;
-  background-image: url("../../img/cover/cover-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 0;
-    background-color: @basic-green085;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 0;
+      background-color: @basic-green085;
+    }
   }
 }
+
+/* Text */
 
 .cover__title,
 .cover__slogan {
@@ -34,7 +37,33 @@
   z-index: 1;
 }
 
-.cover__button-choice {
-  display: block;
+/* - mobile - */
+@media (max-width: -1 + @tablet-width) {
+  .cover__title {
+    color: @contrast-color;
+  }
+}
+
+.cover__slogan {
+  text-transform: uppercase;
+}
+
+/* - mobile - */
+@media (max-width: -1 + @tablet-width) {
+  .cover__slogan {
+    color: @contrast-color;
+  }
+}
+
+/* Button */
+
+.cover__button {
   padding: 7px;
+}
+
+/* - tablet + desktop - */
+@media (min-width: @tablet-width) {
+  .cover__button {
+    max-width: 244px;
+  }
 }

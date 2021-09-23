@@ -1,27 +1,34 @@
+/* Example */
+
 .example {
   background-color: @basic-grey;
 }
 
-.example__wrapper {
-  margin: 0 auto 0 auto;
-}
+/* List */
 
 .example__list {
   margin: 0 0 34px 0;
 }
 
+/* Item */
+
 .example__item {
   margin: 0 0 24px 0;
   padding: 14px 14px 17px 14px;
   position: relative;
-  border: 1px solid @basic-grey-2;
+  border: 1px solid @special-grey;
+  border-radius: 3px;
   text-align: center;
 }
+
+/* Progress */
 
 .example__progress {
   .set-font-style (@fz-example-progress; @lh-example-progress; "Oswald");
   text-transform: uppercase;
 }
+
+/* Description */
 
 .example__description {
   margin: 0 0 0 0;
@@ -35,6 +42,8 @@
   .set-font-style (@fz-example-description; @lh-example-description);
   background-color: @basic-grey;
 }
+
+/* Legend */
 
 .example__legend {
   .set-font-style (@fz-example-legend; @lh-example-legend; "Oswald");

@@ -1,18 +1,26 @@
+/* Advantages */
+
 .advantages {
-  .set-font-style (@fz-advantages-text; @lh-advantages-text);
+  color: @special-dark-grey;
 }
 
-.advantages__wrapper {
-  margin: 0 auto 0 auto;
-}
+/* Item */
 
-.advantages__item {
-  margin: 2px 20px 20px 4px;
-  min-height: 60px;
-  background-repeat: no-repeat;
-  background-position: left top;
+@media (min-width: @tablet-width) {
+  .advantages__item--useful {
+    position: relative;
+    min-height: 280px;
 
-  &:last-child {
-    margin: 0 0 0 0;
+    &::before {
+      content: "1";
+      width: auto;
+      height: 280px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      .set-font-style (280px; 280px; "Oswald");
+      color: @basic-grey;
+    }
   }
 }

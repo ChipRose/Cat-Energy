@@ -1,6 +1,24 @@
+/* Logo */
+
 .logo {
   display: grid;
   grid-template-columns: min-content auto 24px;
+
+  &:hover {
+    > .logo__img,
+    > .logo__img-simple,
+    > .logo__text {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    > .logo__img,
+    > .logo__img-simple,
+    > .logo__text {
+      opacity: 0.6;
+    }
+  }
 }
 
 @media (max-width: @mobile-width) {
@@ -8,6 +26,8 @@
     justify-items: center;
   }
 }
+
+/* Logo image*/
 
 .logo__img,
 .logo__img-simple {
@@ -27,6 +47,8 @@
     display: block;
   }
 }
+
+/* Logo text*/
 
 .logo__text {
   align-self: center;
