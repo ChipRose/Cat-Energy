@@ -4,7 +4,8 @@
   .set-font-style (@fz-menu; @lh-menu; "Oswald"; 500);
 }
 
-@media (max-width: @mobile-width) {
+/* - Mobile - */
+@media (min-width: @mobile-width) {
   .navigation {
     display: grid;
     background-color: @contrast-color;
@@ -17,7 +18,8 @@
   display: none;
 }
 
-@media (max-width: @mobile-width) {
+/* - Mobile - */
+@media (min-width: @mobile-width) {
   .navigation__toggle {
     display: block;
     margin: 0;
@@ -82,7 +84,8 @@
   background: @main-color;
 }
 
-@media (max-width: @mobile-width) {
+/* - Mobile - */
+@media (min-width: @mobile-width) {
   .navigation__burger-line {
     display: block;
   }
@@ -90,7 +93,8 @@
 
 /* List */
 
-@media (max-width: @mobile-width) {
+/* - Mobile - */
+@media (min-width: @mobile-width) {
   .navigation__list {
     display: none;
   }
@@ -102,7 +106,8 @@
   border-bottom: 1px solid @basic-grey-2;
 }
 
-@media (max-width: @mobile-width) {
+/* - Mobile - */
+@media (min-width: @mobile-width) {
   .navigation__item {
     text-align: center;
   }

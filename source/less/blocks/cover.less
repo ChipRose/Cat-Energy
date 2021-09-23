@@ -6,8 +6,9 @@
 }
 
 /* Header */
-/* - mobile - */
-@media (max-width: -1 + @tablet-width) {
+
+/* - Mobile - */
+@media (min-width: @mobile-width) and (max-width: -1 + @tablet-width) {
   .cover__header {
     min-height: @mobile-cover-hight;
     position: relative;
@@ -37,8 +38,8 @@
   z-index: 1;
 }
 
-/* - mobile - */
-@media (max-width: -1 + @tablet-width) {
+/* - Mobile - */
+@media (min-width: @mobile-width) {
   .cover__title {
     color: @contrast-color;
   }
@@ -48,8 +49,8 @@
   text-transform: uppercase;
 }
 
-/* - mobile - */
-@media (max-width: -1 + @tablet-width) {
+/* - Mobile - */
+@media (min-width: @mobile-width) {
   .cover__slogan {
     color: @contrast-color;
   }
@@ -61,7 +62,7 @@
   padding: 7px;
 }
 
-/* - tablet + desktop - */
+/* - Tablet + Desktop - */
 @media (min-width: @tablet-width) {
   .cover__button {
     max-width: 244px;
