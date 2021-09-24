@@ -1,0 +1,106 @@
+/* Navigation */
+
+.navigation {
+  @include set-font-style ($fz-menu, $lh-menu, "Oswald", 500);
+}
+
+.navigation {
+  display: grid;
+  background-color: $contrast-color;
+}
+
+/* Burger*/
+
+.navigation__toggle {
+  display: none;
+}
+
+.navigation__toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 16px;
+  position: relative;
+  justify-self: end;
+  border-width: 0;
+  background: transparent;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 24px;
+    height: 1.5px;
+    position: absolute;
+    left: 0;
+    background: $main-color;
+    transition: all 0.3s ease-out;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    top: 100%;
+    transform: translateY(-50%);
+  }
+
+  &--open {
+    &::before {
+      top: 50%;
+      transform: rotate(45deg) translateY(-50%);
+    }
+
+    &::after {
+      top: 50%;
+      transform: rotate(-45deg) translateY(-50%);
+    }
+
+    .navigation__burger-line {
+      display: none;
+    }
+
+    +* .navigation__list {
+      display: block;
+    }
+  }
+}
+
+.navigation__burger-line {
+  display: none;
+  width: 24px;
+  height: 1.5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: $main-color;
+}
+
+.navigation__burger-line {
+  display: block;
+}
+
+/* List */
+
+.navigation__list {
+  display: none;
+}
+
+/* Item */
+
+.navigation__item {
+  border-bottom: 1px solid $basic-grey-2;
+}
+
+.navigation__item {
+  text-align: center;
+}
+
+/* Link */
+
+.navigation__link {
+  text-transform: uppercase;
+  color: inherit;
+}

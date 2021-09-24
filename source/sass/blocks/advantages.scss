@@ -1,0 +1,42 @@
+/* Advantages */
+
+.advantages {
+  color: $special-dark-grey;
+}
+
+/* Item */
+
+/* - tablet - */
+@media (min-width: $tablet-width) {
+  .advantages__item {
+    position: relative;
+    min-height: 280px;
+
+    &--useful::before {
+      content: "1";
+    }
+
+    &--fast::before {
+      content: "2";
+    }
+
+    &--feed::before {
+      content: "3";
+    }
+
+    &--change::before {
+      content: "4";
+    }
+
+    &::before {
+      width: auto;
+      height: 280px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      @include set-font-style(280px, 280px, "Oswald");
+      color: $basic-grey;
+    }
+  }
+}

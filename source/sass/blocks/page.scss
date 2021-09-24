@@ -1,0 +1,16 @@
+/* Page */
+
+.page {
+  min-width: $mobile-width;
+  height: 100%;
+}
+
+/* Body */
+
+.page__body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  @include set-font-style ($fz-main, $lh-main);
+  color: $main-color;
+  background-color: $contrast-color;
+}

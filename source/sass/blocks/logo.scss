@@ -1,0 +1,53 @@
+/* Logo */
+
+.logo {
+  display: grid;
+  grid-template-columns: min-content auto 24px;
+
+  &:hover {
+    > .logo__img,
+    > .logo__img-simple,
+    > .logo__text {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    > .logo__img,
+    > .logo__img-simple,
+    > .logo__text {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .logo {
+    justify-items: center;
+  }
+}
+
+/* Logo image*/
+
+.logo__img,
+.logo__img-simple {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: none;
+}
+
+.logo__img-simple {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__img {
+    display: block;
+  }
+}
+
+/* Logo text*/
+
+.logo__text {
+  align-self: center;
+}

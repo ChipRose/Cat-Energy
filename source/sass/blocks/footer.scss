@@ -1,0 +1,24 @@
+/* Footer */
+
+.footer {
+  background-color: $basic-grey;
+}
+
+/* Subtitle */
+
+.footer__subtitle {
+  @include set-font-style ($fz-footer-subtitle, $lh-footer-subtitle, "Oswald");
+  color: $special-dark-grey-2;
+}
+
+/* Logo */
+
+.footer__logo {
+  text-align: center;
+}
+
+/* Promo text */
+
+.footer__promo-text {
+  @include set-font-style ($fz-footer-promo-text, $lh-footer-promo-text);
+}

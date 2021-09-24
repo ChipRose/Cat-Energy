@@ -1,0 +1,3 @@
+.legend {
+  @include set-font-style ($fz-legend, $lh-legend, "Oswald");
+}

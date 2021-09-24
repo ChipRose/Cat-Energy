@@ -1,0 +1,11 @@
+/* Legend */
+
+.question-form__legend {
+  @include set-font-style ($fz-form-legend, $lh-form-legend);
+}
+
+/* Button */
+
+.question-form__button {
+  padding: 14px 14px 14px 14px;
+}

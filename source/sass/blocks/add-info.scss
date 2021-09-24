@@ -1,0 +1,59 @@
+.add-info__item {
+  display: block;
+}
+
+.add-info__box {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid $special-grey;
+}
+
+.add-info__check {
+  fill: none;
+}
+
+.add-info__checkbox {
+  &:hover {
+    + .add-info__box {
+      border-color: $special-grey-2;
+    }
+  }
+
+  &:disabled {
+    + .add-info__box {
+      border-color: $special-grey-2-03;
+    }
+
+    ~ .add-info__property {
+      color: $main-color03;
+    }
+  }
+
+  &:checked {
+    + * .add-info__check {
+      fill: $basic-green;
+    }
+  }
+
+  &:checked:hover {
+    + .add-info__box {
+      border-color: $special-grey-2;
+    }
+  }
+
+  &:checked:disabled {
+    + * .add-info__check {
+      fill: $basic-green03;
+    }
+
+    + .add-info__box {
+      border-color: $special-grey-2-03;
+    }
+
+    ~ .add-info__property {
+      color: $main-color03;
+    }
+  }
+}

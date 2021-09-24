@@ -1,0 +1,32 @@
+/* Container */
+
+.owner-contacts__container {
+  display: inline-block;
+  position: relative;
+}
+
+/* Icon */
+
+.owner-contacts__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  z-index: 0;
+  transform: translateY(-50%);
+  fill: $special-dark-grey-2;
+}
+
+/* Input */
+
+.owner-contacts__value {
+  min-width: 219px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 13px 51px 15px 15px;
+
+  &:focus {
+    + .owner-contacts__icon {
+      fill: $basic-green;
+    }
+  }
+}

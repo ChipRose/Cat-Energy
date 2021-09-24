@@ -1,0 +1,13 @@
+.social-button__icon {
+  fill: $special-grey-3;
+}
+
+.social-button {
+  &:hover .social-button__icon {
+    fill: $basic-green;
+  }
+
+  &:active .social-button__icon {
+    fill: $basic-green03;
+  }
+}

@@ -1,0 +1,13 @@
+.logo-text {
+  &:hover {
+    > .logo-text__img {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    > .logo-text__img {
+      opacity: 0.6;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.text {
+  margin: 0 0 0 0;
+
+  &--more {
+    @include set-font-style ($fz-catalog-table, $lh-catalog-table);
+  }
+
+  &--promo {
+    @include set-font-style ($fz-catalog-promo, $lh-catalog-promo);
+    color: $contrast-color;
+    text-align: center;
+  }
+}

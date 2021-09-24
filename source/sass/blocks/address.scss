@@ -1,0 +1,35 @@
+/* Address */
+
+.address {
+  background-color: $contrast-color;
+}
+
+/* Text */
+
+.address__text {
+  @include set-font-style ($fz-address-text, $lh-address-text);
+  font-style: normal;
+}
+
+/* Map */
+
+.address__map-block {
+  position: relative;
+  height: $mobile-map-hight;
+}
+
+.address__map {
+  min-width: 100%;
+  min-height: 100%;
+  border: none;
+}
+
+/* Pin */
+
+.address__pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}

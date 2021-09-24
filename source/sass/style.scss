@@ -1,0 +1,49 @@
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/font-size.scss";
+@import "global/color.scss";
+@import "global/mixin.scss";
+//Small blocks
+@import "blocks/title.scss";
+@import "blocks/subtitle.scss";
+@import "blocks/text.scss";
+@import "blocks/list.scss";
+@import "blocks/link.scss";
+@import "blocks/fieldset.scss";
+//Buttons
+@import "blocks/button.scss";
+@import "blocks/program-button.scss";
+@import "blocks/social-button.scss";
+//Blocks
+//index.html
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/navigation.scss";
+@import "blocks/cover.scss";
+@import "blocks/programs.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/slider.scss";
+@import "blocks/footer.scss";
+@import "blocks/address.scss";
+@import "blocks/logo-text.scss";
+@import "blocks/academy-logo.scss";
+//form.html
+@import "blocks/input.scss";
+@import "blocks/form-item.scss";
+@import "blocks/legend.scss";
+@import "blocks/question-form.scss";
+@import "blocks/person-data.scss";
+@import "blocks/program-choice.scss";
+@import "blocks/owner-contacts.scss";
+@import "blocks/comment.scss";
+@import "blocks/add-info.scss";
+//catalog.html
+@import "blocks/catalog.scss";
+@import "blocks/property-table.scss";
+@import "blocks/extra-products.scss";
+@import "blocks/promo.scss";
+//Add block
+@import "global/active.scss";
+@import "global/visually-hidden.scss";

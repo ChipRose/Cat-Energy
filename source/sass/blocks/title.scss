@@ -1,0 +1,9 @@
+.title {
+  margin: 0;
+  @include set-font-style ($fz-title, $lh-title, "Oswald");
+  color: $main-color;
+
+  &--extra-products {
+    @include set-font-style ($fz-catalog-title, $lh-catalog-title, "Oswald");
+  }
+}

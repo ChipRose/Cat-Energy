@@ -1,0 +1,6 @@
+.form-item,
+.form-item::placeholder {
+  @include set-font-style ($fz-form-item-text, $lh-form-item-text, "Oswald");
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}

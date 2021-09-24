@@ -1,0 +1,25 @@
+/* Icon */
+
+.academy-logo__icon {
+  fill: $special-grey-3;
+}
+
+/* Logo */
+
+.academy-logo {
+  &:hover {
+    > .academy-logo__icon {
+      fill: $basic-green;
+    }
+  }
+
+  &:active {
+    > .academy-logo__text {
+      color: $special-dark-grey03;
+    }
+
+    > .academy-logo__icon {
+      fill: $basic-green03;
+    }
+  }
+}

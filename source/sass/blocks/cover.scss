@@ -1,0 +1,70 @@
+/* Cover */
+
+.cover {
+  @include set-font-style ($fz-cover, $lh-cover, "Oswald");
+  text-align: center;
+}
+
+/* Header */
+
+/* - Mobile - */
+@media (min-width: $mobile-width) and (max-width: -1 + $tablet-width) {
+  .cover__header {
+    min-height: $mobile-cover-hight;
+    position: relative;
+    background-image: url("../../img/cover/cover-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 0;
+      background-color: $basic-green085;
+    }
+  }
+}
+
+/* Text */
+
+.cover__title,
+.cover__slogan {
+  position: relative;
+  z-index: 1;
+}
+
+/* - Mobile - */
+@media (min-width: $mobile-width) {
+  .cover__title {
+    color: $contrast-color;
+  }
+}
+
+.cover__slogan {
+  text-transform: uppercase;
+}
+
+/* - Mobile - */
+@media (min-width: $mobile-width) {
+  .cover__slogan {
+    color: $contrast-color;
+  }
+}
+
+/* Button */
+
+.cover__button {
+  padding: 7px;
+}
+
+/* - Tablet + Desktop - */
+@media (min-width: $tablet-width) {
+  .cover__button {
+    max-width: 244px;
+  }
+}
