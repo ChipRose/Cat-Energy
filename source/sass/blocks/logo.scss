@@ -5,6 +5,10 @@
   grid-template-columns: min-content auto 24px;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    column-gap: 12px;
+  }
+
   &:hover {
     > .logo__img,
     > .logo__img-simple,

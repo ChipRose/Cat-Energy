@@ -7,7 +7,7 @@
 /* Text */
 
 .address__text {
-  @include set-font-style ($fz-address-text, $lh-address-text);
+  @include set-font-style (var(--fz-address-text), var(--lh-address-text));
   font-style: normal;
 }
 

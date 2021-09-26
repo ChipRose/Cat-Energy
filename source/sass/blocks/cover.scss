@@ -1,59 +1,115 @@
 /* Cover */
 
 .cover {
-  @include set-font-style ($fz-cover, $lh-cover, "Oswald");
+  position: relative;
+
+  @include set-font-style(var(--fz-cover), var(--lh-cover), "Oswald");
   text-align: center;
 }
 
-/* Header */
+/* Header wrapper */
 
-/* - Mobile - */
-@media (min-width: $mobile-width) and (max-width: -1 + $tablet-width) {
-  .cover__header {
-    min-height: $mobile-cover-hight;
-    position: relative;
-    background-image: url("../../img/cover/cover-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+.cover__header-wrapper {
+  padding: 27px 20px 156px 20px;
+  margin: 0 auto 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    padding: 0 30px 0 30px;
+  }
+}
+
+/* Background */
+
+.cover__header {
+  position: relative;
+  z-index: 1;
+  background-image: url("../../img/cover/cover-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $basic-green085;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      z-index: 0;
-      background-color: $basic-green085;
+      background-color: transparent;
     }
   }
 }
 
 /* Text */
 
+.cover__slogan {
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    &:last-of-type {
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+.cover__title {
+  &:last-of-type {
+    margin: 0 0 25px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 41px 0;
+    width: 414px;
+  }
+}
+
 .cover__title,
 .cover__slogan {
   position: relative;
   z-index: 1;
-}
+  color: $contrast-color;
 
-/* - Mobile - */
-@media (min-width: $mobile-width) {
-  .cover__title {
-    color: $contrast-color;
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    color: $main-color;
   }
 }
 
-.cover__slogan {
-  text-transform: uppercase;
+/* Bottom wrapper */
+
+.cover__bottom-wrapper {
+  padding: 0 20px 0 20px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  top: -136px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 }
 
-/* - Mobile - */
-@media (min-width: $mobile-width) {
-  .cover__slogan {
-    color: $contrast-color;
-  }
+/* Image */
+
+.cover__image {
+  margin: 0 auto;
+  width: 280px;
+  height: auto;
+}
+
+.cover__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Button */
@@ -62,7 +118,6 @@
   padding: 7px;
 }
 
-/* - Tablet + Desktop - */
 @media (min-width: $tablet-width) {
   .cover__button {
     max-width: 244px;

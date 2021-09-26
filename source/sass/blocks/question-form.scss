@@ -1,7 +1,7 @@
 /* Legend */
 
 .question-form__legend {
-  @include set-font-style ($fz-form-legend, $lh-form-legend);
+  @include set-font-style (var(--fz-form-legend), var(--lh-form-legend));
 }
 
 /* Button */

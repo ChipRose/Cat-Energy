@@ -7,7 +7,7 @@
 /* Subtitle */
 
 .footer__subtitle {
-  @include set-font-style ($fz-footer-subtitle, $lh-footer-subtitle, "Oswald");
+  @include set-font-style (var(--fz-footer-subtitle), var(--lh-footer-subtitle), "Oswald");
   color: $special-dark-grey-2;
 }
 
@@ -20,5 +20,5 @@
 /* Promo text */
 
 .footer__promo-text {
-  @include set-font-style ($fz-footer-promo-text, $lh-footer-promo-text);
+  @include set-font-style (var(--fz-footer-promo-text), var(--lh-footer-promo-text));
 }

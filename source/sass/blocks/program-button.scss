@@ -1,6 +1,7 @@
 .program-button {
   position: relative;
-  @include set-font-style ($fz-program-button, $lh-program-button, "Oswald");
+
+  @include set-font-style (var(--fz-program-button), var(--lh-program-button), "Oswald");
   text-transform: uppercase;
   color: $main-color;
 

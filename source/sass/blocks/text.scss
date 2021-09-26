@@ -2,11 +2,11 @@
   margin: 0 0 0 0;
 
   &--more {
-    @include set-font-style ($fz-catalog-table, $lh-catalog-table);
+    @include set-font-style (var(--fz-catalog-table), var(--lh-catalog-table));
   }
 
   &--promo {
-    @include set-font-style ($fz-catalog-promo, $lh-catalog-promo);
+    @include set-font-style (var(--fz-catalog-promo), var(--lh-catalog-promo));
     color: $contrast-color;
     text-align: center;
   }

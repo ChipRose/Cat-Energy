@@ -24,7 +24,7 @@
 /* Progress */
 
 .example__progress {
-  @include set-font-style ($fz-example-progress, $lh-example-progress, "Oswald");
+  @include set-font-style (var(--fz-example-progress), var(--lh-example-progress), "Oswald");
   text-transform: uppercase;
 }
 
@@ -35,18 +35,19 @@
   padding: 0 20px 3px 20px;
   width: 84px;
   position: absolute;
-  bottom: $fz-example-description;
+  bottom: var(--fz-example-description);
   left: 50%;
   z-index: 1;
   transform: translate(-50%, 100%);
-  @include set-font-style ($fz-example-description, $lh-example-description);
+
+  @include set-font-style (var(--fz-example-description), var(--lh-example-description));
   background-color: $basic-grey;
 }
 
 /* Legend */
 
 .example__legend {
-  @include set-font-style ($fz-example-legend, $lh-example-legend, "Oswald");
+  @include set-font-style (var(--fz-example-legend), var(--lh-example-legend), "Oswald");
   text-transform: uppercase;
   text-align: center;
 }

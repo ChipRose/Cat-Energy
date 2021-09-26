@@ -5,7 +5,9 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content auto;
+
   @media (min-width: $tablet-width) {
+    padding: 45px 30px;
     grid-template-columns: 174px 1fr;
     grid-template-rows: min-content;
   }
@@ -14,9 +16,21 @@
 /* Header logo */
 
 .header__logo {
+  padding: 12px 20px 12px 20px;
   grid-row: 1/2;
   grid-column: 1/2;
+  align-self: start;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 0;
+  }
+}
+
+/* Burger */
+
+.header__burger {
+  padding: 30px 20px 30px 20px;
 }
 
 .header__menu {
@@ -24,7 +38,9 @@
   grid-column: 1/2;
 
   @media (min-width: $tablet-width) {
+    margin: 0 -17px 0 auto;
     grid-row: 1/2;
     grid-column: 2/3;
+    align-self: center;
   }
 }

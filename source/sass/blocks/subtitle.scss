@@ -1,16 +1,17 @@
 .subtitle {
   margin: 0 0 0 0;
-  @include set-font-style ($fz-subtitle, $lh-subtitle, "Oswald");
+
+  @include set-font-style (var(--fz-subtitle), var(--lh-subtitle), "Oswald");
   text-transform: uppercase;
   color: $main-color;
 
   &--catalog {
-    @include set-font-style ($fz-catalog-subtitle, $fz-catalog-subtitle, "Oswald");
+    @include set-font-style (var(--fz-catalog-subtitle), var(--fz-catalog-subtitle), "Oswald");
     color: $special-dark-grey-2;
   }
 
   &--catalog-extra {
-    @include set-font-style ($fz-catalog-subtitle-extra, $fz-catalog-subtitle-extra, "Oswald");
+    @include set-font-style (var(--fz-catalog-subtitle-extra), var(--fz-catalog-subtitle-extra), "Oswald");
     color: $special-dark-grey-2;
   }
 }

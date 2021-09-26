@@ -70,7 +70,7 @@
 /* Slider button */
 
 .slider__button {
-  @include set-font-style ($fz-slider-button, $lh-slider-button, "Oswald");
+  @include set-font-style (var(--fz-slider-button), var(--lh-slider-button), "Oswald");
   text-transform: uppercase;
   text-align: center;
   border: none;
