@@ -1,6 +1,27 @@
+/* Item */
+
 .catalog__item {
   border: 1px solid $basic-grey-2;
 }
+
+/* - tablet - */
+@media (min-width: $tablet-width){
+  .catalog__item {
+    background-color: $basic-grey;
+  }
+}
+
+/* Table */
+
+/* - tablet - */
+@media (min-width: $tablet-width){
+  .catalog__table-row {
+    border-bottom: 1px solid $special-grey;
+  }
+}
+
+
+/* Button */
 
 .catalog__button {
   padding: 10px;

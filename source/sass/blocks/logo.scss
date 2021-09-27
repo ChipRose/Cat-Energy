@@ -33,16 +33,24 @@
 .logo__img-simple {
   grid-column: 1/2;
   grid-row: 1/2;
-  display: none;
 }
 
 .logo__img-simple {
   display: block;
 }
 
+.logo__img {
+  display: none;
+}
+
+/* - tablet - */
 @media (min-width: $tablet-width) {
   .logo__img {
     display: block;
+  }
+
+  .logo__img-simple {
+    display: none;
   }
 }
 

@@ -29,4 +29,10 @@
       fill: $basic-green;
     }
   }
+
+  &:not(:placeholder-shown):not(:focus):invalid{
+    + .owner-contacts__icon {
+      fill: $status-error;
+    }
+  }
 }
