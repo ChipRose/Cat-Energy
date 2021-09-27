@@ -5,17 +5,20 @@
 
   @include set-font-style(var(--fz-cover), var(--lh-cover), "Oswald");
   text-align: center;
+
+  @media (min-width: $tablet-width){
+    text-align: left;
+  }
 }
 
 /* Header wrapper */
 
 .cover__header-wrapper {
   padding: 27px 20px 156px 20px;
-  margin: 0 auto 0 auto;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
-    padding: 0 30px 0 30px;
+    padding: 0 30px 0 107px;
   }
 }
 
@@ -41,7 +44,6 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
-
     &::before {
       background-color: transparent;
     }
@@ -93,16 +95,25 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
+    padding: 0 30px 0 107px;
     top: 0;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 /* Image */
 
 .cover__image {
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
   width: 280px;
   height: auto;
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 auto;
+    width: 620px;
+    height: auto;
+    order: 1;
+  }
 }
 
 .cover__img {
@@ -116,10 +127,9 @@
 
 .cover__button {
   padding: 7px;
-}
-
-@media (min-width: $tablet-width) {
-  .cover__button {
+  width: 100%;
+  @media (min-width: $tablet-width) {
     max-width: 244px;
+    padding: 14px;
   }
 }
