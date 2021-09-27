@@ -5,9 +5,12 @@
 
   @include set-font-style(var(--fz-menu), var(--lh-menu), "Oswald", 500);
   background-color: $contrast-color;
-}
 
-/* Wrapper */
+  @media (min-width: $desktop-width) {
+    @include set-font-style(var(--fz-menu), var(--lh-menu), "Oswald", 400);
+    background-color: transparent;
+  }
+}
 
 /* Burger*/
 
@@ -107,13 +110,23 @@
     @media (min-width: $tablet-width) {
       .navigation__link {
         position: relative;
+
         &::before {
-          content:"";
+          content: "";
           position: absolute;
           bottom: -10px;
           width: 100%;
           height: 2px;
           background-color: $basic-green;
+        }
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      .navigation__link {
+        &::before {
+          background-color: $contrast-color;
+          bottom: 2px;
         }
       }
     }
@@ -130,13 +143,25 @@
 
   &:hover {
     color: $main-color06;
+
+    @media (min-width: $desktop-width) {
+      color: $contrast-color06;
+    }
   }
 
   &:active {
     color: $main-color03;
+
+    @media (min-width: $desktop-width) {
+      color: $contrast-color03;
+    }
   }
 
   @media (min-width: $tablet-width) {
     padding: 10px 0 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $contrast-color;
   }
 }

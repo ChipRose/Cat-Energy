@@ -26,7 +26,6 @@
   }
 }
 
-
 /* Logo image*/
 
 .logo__img,
@@ -34,6 +33,11 @@
   grid-column: 1/2;
   grid-row: 1/2;
   display: none;
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: auto;
+  }
 }
 
 .logo__img-simple {
@@ -60,5 +64,7 @@
 
   @media (min-width: $tablet-width) {
     justify-self: start;
+    width: 118px;
+    height: auto;
   }
 }

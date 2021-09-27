@@ -63,3 +63,12 @@
     --lh-button: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  :root {
+    --fz-menu: 20px;
+    --lh-menu: 30px;
+    --fz-title: 60px;
+    --lh-title: 60px;
+  }
+}
