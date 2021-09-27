@@ -42,7 +42,7 @@
     background-color: $basic-green085;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: -1 + $desktop-width){
     background-image: none;
     &::before {
       background-color: transparent;
