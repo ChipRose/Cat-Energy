@@ -92,6 +92,10 @@
     flex-wrap: wrap;
     justify-content: flex-end;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 550px;
+  }
 }
 
 /* Item */
