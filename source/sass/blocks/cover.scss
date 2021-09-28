@@ -20,6 +20,28 @@
     grid-template-columns: 583px 552px;
     grid-template-rows: min-content 1fr;
     text-align: left;
+
+    &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        width: 50%;
+        min-height: 696px;
+      }
+
+      &::before {
+        background-image: url("../../img/cover/cover-background-big.jpg");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 100% auto;
+      }
+
+      &::after {
+        background-color: $basic-green085;
+      }
   }
 }
 
@@ -122,7 +144,7 @@
 
 /* Image */
 
-.cover__image {
+.cover__image-wrapper {
   grid-row: 2/4;
   grid-column: 1/2;
   z-index: 1;

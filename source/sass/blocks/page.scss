@@ -31,29 +31,5 @@
     grid-column: 1/2;
     z-index: 1;
     position: relative;
-
-    &--image {
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: -1;
-        width: 720px;
-        height: 696px;
-      }
-
-      &::before {
-        background-image: url("../../img/cover/cover-background-big.jpg");
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-size: 720px 694px;
-      }
-
-      &::after {
-        background-color: $basic-green085;
-      }
-    }
   }
 }

@@ -1,7 +1,7 @@
 /* Header */
 
 .header {
-  position: relative;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content auto;
@@ -14,6 +14,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 55px 110px 32px 110px;
+    grid-template-columns: 202px 1fr;
+    width: $desktop-width;
+    margin: 0 auto;
   }
 }
 
