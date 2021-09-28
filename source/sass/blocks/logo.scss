@@ -42,17 +42,23 @@
 
 .logo__img-simple {
   display: block;
-}
 
-@media (min-width: $tablet-width) {
-  .logo__img {
-    display: block;
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .logo__img-simple {
-    display: none;
+.logo__img {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 60px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 70px;
+    height: auto;
   }
 }
 
@@ -64,7 +70,12 @@
 
   @media (min-width: $tablet-width) {
     justify-self: start;
-    width: 118px;
+    width: 101px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 117px;
     height: auto;
   }
 }

@@ -7,13 +7,13 @@
   grid-template-rows: min-content auto;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 30px;
+    padding: 45px 30px 45px 30px;
     grid-template-columns: 174px 1fr;
     grid-template-rows: min-content;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 110px 55px 110px;
+    padding: 55px 110px 32px 110px;
   }
 }
 
