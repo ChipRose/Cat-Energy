@@ -1,23 +1,55 @@
 /* Slider */
+
+.slider {
+  width: 311px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: min-content;
+  justify-content: start;
+}
+
+/* List */
+
+.slider__list {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+
+  /* @media (min-width: $tablet-width) {
+    display: flex;
+    overflow: hidden;
+  } */
+}
+
+/* Item */
+
 .slider__item {
-  display: none;
+
+}
+
+
+/* Control */
+
+.slider__control {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  justify-self: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Scale */
 
 .slider__scale {
-  position: relative;
   width: 84px;
   height: 14px;
+  position: relative;
   border: 1px solid $special-grey;
   border-radius: 7px;
   background-color: $contrast-color;
-}
 
-
-/* - Tablet - */
-@media (min-width: $tablet-width) {
-  .slider__scale {
+  @media (min-width: $tablet-width) {
     position: relative;
     width: 428px;
     height: 6px;
@@ -37,12 +69,8 @@
   transform: translateY(-50%);
   border-radius: 3px;
   background-color: $basic-green;
-}
 
-
-/* - Tablet - */
-@media (min-width: $tablet-width) {
-  .slider__cursor {
+  @media (min-width: $tablet-width) {
     width: 34px;
     height: 34px;
     position: absolute;
@@ -70,10 +98,12 @@
 /* Slider button */
 
 .slider__button {
-  @include set-font-style (var(--fz-slider-button), var(--lh-slider-button), "Oswald");
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  @include set-font-style(var(--fz-slider-button), var(--lh-slider-button), "Oswald");
   text-transform: uppercase;
   text-align: center;
-  border: none;
   background: transparent;
-  cursor: pointer;
+
 }
