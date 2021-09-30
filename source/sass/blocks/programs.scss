@@ -8,6 +8,8 @@
 
 .programs__list {
   @media (min-width: $desktop-width) {
+    margin-right: -40px;
+    margin-left: -40px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -35,8 +37,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 42px 33px 55px 33px;
-    margin-right: 80px;
-    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
     min-height: 374px;
     flex: 0 1 570px;
 
@@ -78,8 +81,8 @@
 
 .programs__img {
   position: absolute;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 

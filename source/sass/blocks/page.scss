@@ -39,7 +39,7 @@
 
 /* Cover */
 
-.page__cover{
+.page__cover {
   @media (min-width: $desktop-width) {
     margin-bottom: 80px;
   }
@@ -49,12 +49,26 @@
 
 .page__programs {
   margin-bottom: 27px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
 }
 
 /* Advantages */
 
-.page__advantages{
+.page__advantages {
   margin-bottom: 42px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 43px;
+  }
+}
+
+/* Example */
+
+.page__example {
+  margin-bottom: 0;
 }
 
 /* Footer */
