@@ -7,7 +7,10 @@ $desktop-slide-width: 690px;
 $desktop-slide-height: 536px;
 
 .slider {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
   box-sizing: border-box;
   width: $init-slide-width;
   overflow: hidden;
@@ -28,6 +31,7 @@ $desktop-slide-height: 536px;
 /* List */
 
 .slider__list {
+  margin-bottom: 13px;
   box-sizing: border-box;
   width: $init-slide-width * 2;
   height: $init-slide-height;
@@ -70,7 +74,10 @@ $desktop-slide-height: 536px;
   object-fit: contain;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
     width: auto;
     height: inherit;
 
@@ -161,7 +168,10 @@ $desktop-slide-height: 536px;
 /* Slider button */
 
 .slider__button {
-  padding: 10px 17px;
+  padding-top: 10px;
+  padding-right: 17px;
+  padding-bottom: 10px;
+  padding-left: 17px;
   cursor: pointer;
   border: none;
 
