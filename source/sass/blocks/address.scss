@@ -2,6 +2,24 @@
 
 .address {
   background-color: $contrast-color;
+  color: $special-dark-grey;
+}
+
+/* Header */
+
+.address__header {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Subtitle */
+
+.address__subtitle {
+  margin-right: 10px;
+
+  @include set-font-style (var(--fz-footer-subtitle), var(--lh-footer-subtitle),"Oswald");
 }
 
 /* Text */

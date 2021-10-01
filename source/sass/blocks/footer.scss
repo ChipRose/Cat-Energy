@@ -4,21 +4,89 @@
   background-color: $basic-grey;
 }
 
-/* Subtitle */
+/* Wrapper */
 
-.footer__subtitle {
-  @include set-font-style (var(--fz-footer-subtitle), var(--lh-footer-subtitle), "Oswald");
-  color: $special-dark-grey-2;
+.footer__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+    padding-bottom: 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /* Logo */
 
 .footer__logo {
+  padding-top: 39px;
+  padding-bottom: 32px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* List */
+
+.footer__social-list {
+  margin-right: -18px;
+  margin-left: -18px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &::before {
+    content: "";
+    width: calc(100% - 40px);
+    height: 100%;
+    position: absolute;
+    border: 1px solid $special-middle-grey;
+    border-right: none;
+    border-left: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 0;
+
+    &::before {
+      border: none;
+    }
+  }
+}
+
+/* Link */
+
+.footer__social-link {
+  padding-top: 18px;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  padding-left: 18px;
 }
 
 /* Promo text */
 
+.footer__promo {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .footer__promo-text {
-  @include set-font-style (var(--fz-footer-promo-text), var(--lh-footer-promo-text));
+  @include set-font-style(var(--fz-footer-promo-text), var(--lh-footer-promo-text));
+}
+
+.footer__promo-logo {
+  flex: 0 0 27px;
 }

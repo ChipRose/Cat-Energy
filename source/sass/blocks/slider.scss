@@ -174,9 +174,22 @@ $desktop-slide-height: 536px;
   padding-left: 17px;
   cursor: pointer;
   border: none;
+  position: relative;
 
   @include set-font-style(var(--fz-slider-button), var(--lh-slider-button), "Oswald");
   text-transform: uppercase;
   text-align: center;
   background: transparent;
+
+  &::before {
+    content: "";
+    width: calc(100% - 34px);
+    height: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    transform: translateX(-50%);
+    border: none;
+    border-bottom: 1px dotted $main-color04;
+  }
 }
