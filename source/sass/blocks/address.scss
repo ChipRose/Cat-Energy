@@ -1,17 +1,48 @@
 /* Address */
 
 .address {
-  background-color: $contrast-color;
   color: $special-dark-grey;
+  background-color: $contrast-color;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    min-height: 400px;
+  }
+}
+
+/* Container */
+
+.address__container {
+  @media (min-width: $desktop-width) {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
 }
 
 /* Header */
 
 .address__header {
+  box-sizing: border-box;
   padding-top: 28px;
   padding-bottom: 28px;
   display: flex;
   justify-content: space-between;
+  background-color: $contrast-color;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 42px;
+    padding-left: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-right: 89px;
+    padding-bottom: 59px;
+    padding-left: 76px;
+    width: 570px;
+    position: relative;
+    z-index: 1;
+  }
 }
 
 /* Subtitle */
@@ -19,21 +50,51 @@
 .address__subtitle {
   margin-right: 10px;
 
-  @include set-font-style (var(--fz-footer-subtitle), var(--lh-footer-subtitle),"Oswald");
+  @include set-font-style(var(--fz-footer-subtitle), var(--lh-footer-subtitle), "Oswald");
+
+  @media (min-width: $tablet-width) {
+    flex: 0 0 171px;
+  }
 }
 
 /* Text */
 
 .address__text {
-  @include set-font-style (var(--fz-address-text), var(--lh-address-text));
+  @include set-font-style(var(--fz-address-text), var(--lh-address-text));
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    flex: 0 0 159px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.address__city {
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    display: inline-block;
+  }
 }
 
 /* Map */
 
 .address__map-block {
   position: relative;
-  height: $mobile-map-hight;
+  height: 362px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
 }
 
 .address__map {

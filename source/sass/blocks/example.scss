@@ -4,8 +4,8 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    background-color: transparent;
     position: relative;
+    background-color: transparent;
 
     &::before {
       content: "";
@@ -146,7 +146,7 @@
   }
 }
 
-/* Advantages */
+/* Achievements */
 
 .example__achievements {
   @media (min-width: $tablet-width) {
