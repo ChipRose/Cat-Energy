@@ -151,6 +151,7 @@
   height: auto;
   grid-row: 2/4;
   grid-column: 1/2;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: 620px;

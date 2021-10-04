@@ -1,0 +1,25 @@
+.table-property {
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  @include set-font-style (var(--fz-catalog-table), var(--lh-catalog-table));
+  color: $special-dark-grey-2;
+
+  &--extra {
+    @include set-font-style (var(--fz-catalog-table-extra), var(--lh-catalog-table-extra));
+  }
+}
+
+.table-property__property{
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.table-property__value{
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
