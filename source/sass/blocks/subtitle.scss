@@ -5,10 +5,6 @@
   text-transform: uppercase;
   color: $main-color;
 
-  &--catalog {
-    @include set-font-style (var(--fz-catalog-subtitle), var(--fz-catalog-subtitle), "Oswald");
-    color: $special-dark-grey-2;
-  }
 
   &--catalog-extra {
     @include set-font-style (var(--fz-catalog-subtitle-extra), var(--fz-catalog-subtitle-extra), "Oswald");

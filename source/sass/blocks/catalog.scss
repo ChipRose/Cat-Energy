@@ -1,25 +1,62 @@
+/* Title */
+
+.catalog__title {
+  padding-top: 27px;
+  padding-bottom: 41px;
+}
+
 /* Item */
 
 .catalog__item {
-  border: 1px solid $basic-grey-2;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  position: relative;
+  min-height: 209px;
+
+  &::before {
+    content: "";
+    width: calc(100% + 40px);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border: 1px solid $basic-grey-2;
+  }
 }
 
-/* - tablet - */
-@media (min-width: $tablet-width){
-  .catalog__item {
-    background-color: $basic-grey;
-  }
+/* Link */
+
+.catalog__link {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.catalog__img {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+
+.catalog__subtitle {
+  grid-row: 1/2;
+  grid-column: 2/3;
+
+  @include set-font-style(var(--fz-catalog-subtitle), var(--fz-catalog-subtitle), "Oswald");
+  color: $special-dark-grey-2;
+}
+
+.catalog__table {
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
 
 /* Table */
 
-/* - tablet - */
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .catalog__table-row {
     border-bottom: 1px solid $special-grey;
   }
 }
-
 
 /* Button */
 
