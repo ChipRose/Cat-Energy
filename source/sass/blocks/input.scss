@@ -10,4 +10,8 @@
     outline: none;
     border-color: $special-dark-grey;
   }
+
+  &:not(:placeholder-shown):not(:focus):invalid{
+    border-color: $status-error;
+  }
 }
