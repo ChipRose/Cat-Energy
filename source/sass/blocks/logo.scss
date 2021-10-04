@@ -5,6 +5,10 @@
   grid-template-columns: min-content auto 24px;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    column-gap: 12px;
+  }
+
   &:hover {
     > .logo__img,
     > .logo__img-simple,
@@ -22,37 +26,39 @@
   }
 }
 
-
 /* Logo image*/
 
 .logo__img,
 .logo__img-simple {
   grid-column: 1/2;
   grid-row: 1/2;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: auto;
+  }
 }
 
 .logo__img-simple {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .logo__img {
-  display: none;
-}
-
-/* - tablet - */
-@media (min-width: $tablet-width) {
-  .logo__img {
+  @media (min-width: $tablet-width) {
     display: block;
+    width: 60px;
+    height: auto;
   }
 
-  .logo__img-simple {
-    display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .logo__img-simple {
-    display: none;
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 70px;
+    height: auto;
   }
 }
 
@@ -64,5 +70,12 @@
 
   @media (min-width: $tablet-width) {
     justify-self: start;
+    width: 101px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 117px;
+    height: auto;
   }
 }

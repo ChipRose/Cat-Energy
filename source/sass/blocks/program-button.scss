@@ -1,6 +1,9 @@
+/* Button */
+
 .program-button {
   position: relative;
-  @include set-font-style ($fz-program-button, $lh-program-button, "Oswald");
+
+  @include set-font-style(var(--fz-program-button), var(--lh-program-button), "Oswald");
   text-transform: uppercase;
   color: $main-color;
 
@@ -13,9 +16,9 @@
   }
 
   &::before {
-    width: 24px;
+    width: 17px;
     height: 2px;
-    left: 103px;
+    left: calc(100% + 12px);
     transform: translateY(-50%);
     transition: width 0.3s ease-out;
   }
@@ -23,7 +26,7 @@
   &::after {
     width: 0;
     height: 0;
-    left: 120px;
+    left: calc(100% + 29px);
     transform: translateY(-50%) scale(1, 0.7);
     border: 7px solid $main-color;
     border-right: none;
@@ -33,12 +36,22 @@
     transition: left 0.3s ease-out;
   }
 
-  &:hover::before {
-    width: 32px;
-  }
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: calc(100% + 25px);
+    }
 
-  &:hover::after {
-    left: 135px;
+    &::after {
+      left: calc(100% + 42px);
+    }
+
+    &:hover::before {
+      width: 25px;
+    }
+
+    &:hover::after {
+      left: calc(100% + 50px);
+    }
   }
 
   &:active {

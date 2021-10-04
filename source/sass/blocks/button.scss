@@ -1,7 +1,8 @@
 .button {
   display: block;
   box-sizing: border-box;
-  @include set-font-style ($fz-button, $lh-button, "Oswald");
+
+  @include set-font-style (var(--fz-button), var(--lh-button), "Oswald");
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;

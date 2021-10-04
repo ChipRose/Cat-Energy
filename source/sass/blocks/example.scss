@@ -2,51 +2,241 @@
 
 .example {
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 43%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      background-color: $basic-grey;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      height: 71%;
+    }
+  }
+}
+
+/* Wrapper */
+
+.example__wrapper {
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 33px;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 43px;
+    grid-template-rows: min-content;
+    grid-template-columns: 1fr auto;
+  }
+}
+
+/* Header */
+
+.example__header {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+}
+
+/* Title */
+
+.example__title {
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+/* Text */
+
+.example__text-block {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.example__text {
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* List */
 
 .example__list {
-  margin: 0 0 34px 0;
+  margin-right: -15px;
+  margin-bottom: 17px;
+  margin-left: -15px;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 /* Item */
 
 .example__item {
-  margin: 0 0 24px 0;
-  padding: 14px 14px 17px 14px;
+  padding-top: 14px;
+  padding-right: 14px;
+  padding-bottom: 17px;
+  padding-left: 14px;
+  margin-right: 15px;
+  margin-bottom: 24px;
+  margin-left: 15px;
+  box-sizing: border-box;
+  flex: 0 0 124px;
   position: relative;
   border: 1px solid $special-grey;
   border-radius: 3px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    flex: 0 0 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
+  }
+}
+
+/* Achievements */
+
+.example__achievements {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 /* Progress */
 
 .example__progress {
-  @include set-font-style ($fz-example-progress, $lh-example-progress, "Oswald");
+  @include set-font-style(var(--fz-example-progress), var(--lh-example-progress), "Oswald");
   text-transform: uppercase;
 }
 
 /* Description */
 
 .example__description {
-  margin: 0 0 0 0;
-  padding: 0 20px 3px 20px;
-  width: 84px;
+  padding-top: 3px;
+  padding-right: 8px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  margin-left: 0;
+  box-sizing: border-box;
+  width: calc(100% - 36px);
   position: absolute;
-  bottom: $fz-example-description;
+  bottom: var(--fz-example-description);
   left: 50%;
   z-index: 1;
   transform: translate(-50%, 100%);
-  @include set-font-style ($fz-example-description, $lh-example-description);
+
+  @include set-font-style(var(--fz-example-description), var(--lh-example-description));
   background-color: $basic-grey;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    width: calc(100% - 20px);
+    background-color: $contrast-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
 }
 
 /* Legend */
 
 .example__legend {
-  @include set-font-style ($fz-example-legend, $lh-example-legend, "Oswald");
+  margin-bottom: 44px;
+
+  @include set-font-style(var(--fz-example-legend), var(--lh-example-legend), "Oswald");
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 15px;
+    width: 180px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.example__rezult {
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
+  }
+}
+
+/* Slider */
+
+.example__slider {
+  @media (min-width: $tablet-width) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
 }

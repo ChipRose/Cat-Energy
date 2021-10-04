@@ -1,3 +1,3 @@
 .legend {
-  @include set-font-style ($fz-legend, $lh-legend, "Oswald");
+  @include set-font-style(var(--fz-legend), var(--lh-legend), "Oswald");
 }

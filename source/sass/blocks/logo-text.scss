@@ -1,4 +1,6 @@
 .logo-text {
+  display: block;
+
   &:hover {
     > .logo-text__img {
       opacity: 0.8;

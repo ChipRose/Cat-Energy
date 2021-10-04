@@ -1,26 +1,131 @@
+/* Slider variable */
+
+$init-slide-width: 280px;
+$init-slide-height: 232px;
+$tablet-slide-width: 700px;
+$tablet-slide-height: 545px;
+$desktop-slide-width: 690px;
+$desktop-slide-height: 536px;
+
 /* Slider */
+
+.slider {
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  box-sizing: border-box;
+  width: $init-slide-width;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-slide-width;
+    height: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-slide-width;
+    height: 613px;
+  }
+}
+
+/* List */
+
+.slider__list {
+  margin-bottom: 13px;
+  box-sizing: border-box;
+  width: $init-slide-width * 2;
+  height: $init-slide-height;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-slide-width * 2;
+    height: $tablet-slide-height;
+    transform: translateX(-25%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-slide-width * 2;
+    height: $desktop-slide-height;
+    transform: translateX(-25%);
+  }
+}
+
+/* Item */
+
 .slider__item {
-  display: none;
+  width: $init-slide-width;
+  height: inherit;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-slide-width;
+    height: inherit;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-slide-width;
+  }
+}
+
+.slider__img {
+  display: block;
+  object-fit: contain;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    width: auto;
+    height: inherit;
+
+    &--before {
+      transform: translateX(49%);
+    }
+
+    &--after {
+      transform: translateX(-57%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--before {
+      transform: translateX(45%);
+    }
+
+    &--after {
+      transform: translateX(-61%);
+    }
+  }
+}
+
+/* Control */
+
+.slider__control {
+  align-self: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Scale */
 
 .slider__scale {
-  position: relative;
   width: 84px;
   height: 14px;
+  position: relative;
   border: 1px solid $special-grey;
   border-radius: 7px;
   background-color: $contrast-color;
-}
 
-
-/* - Tablet - */
-@media (min-width: $tablet-width) {
-  .slider__scale {
-    position: relative;
+  @media (min-width: $tablet-width) {
     width: 428px;
     height: 6px;
+    position: relative;
     background-color: $basic-grey-2;
     border-radius: 6px;
   }
@@ -37,12 +142,8 @@
   transform: translateY(-50%);
   border-radius: 3px;
   background-color: $basic-green;
-}
 
-
-/* - Tablet - */
-@media (min-width: $tablet-width) {
-  .slider__cursor {
+  @media (min-width: $tablet-width) {
     width: 34px;
     height: 34px;
     position: absolute;
@@ -70,10 +171,38 @@
 /* Slider button */
 
 .slider__button {
-  @include set-font-style ($fz-slider-button, $lh-slider-button, "Oswald");
+  padding-top: 10px;
+  padding-right: 17px;
+  padding-bottom: 10px;
+  padding-left: 17px;
+  cursor: pointer;
+  border: none;
+  position: relative;
+
+  @include set-font-style(var(--fz-slider-button), var(--lh-slider-button), "Oswald");
   text-transform: uppercase;
   text-align: center;
-  border: none;
   background: transparent;
-  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      width: calc(100% - 34px);
+      height: 0;
+      position: absolute;
+      left: 50%;
+      bottom: 7px;
+      transform: translateX(-50%);
+      border: none;
+      border-bottom: 1px dotted $main-color04;
+    }
+
+    &:hover::before {
+      border-bottom-style: solid;
+    }
+
+    &:active::before {
+      border-bottom: none;
+    }
+  }
 }
