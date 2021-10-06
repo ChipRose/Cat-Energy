@@ -6,6 +6,7 @@
 }
 
 /* List */
+
 .catalog__list {
 @media (min-width: $tablet-width) {
     margin-top: -30px;
@@ -92,7 +93,7 @@
   grid-row: 1/2;
   grid-column: 2/3;
 
-  @include set-font-style(var(--fz-catalog-subtitle), var(--fz-catalog-subtitle), "Oswald");
+  @include set-font-style(var(--fz-catalog-subtitle), var(--lh-catalog-subtitle), "Oswald");
   color: $special-dark-grey-2;
 
   &--all {
