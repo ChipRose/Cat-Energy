@@ -9,6 +9,10 @@
   &--extra {
     @include set-font-style (var(--fz-catalog-table-extra), var(--lh-catalog-table-extra));
   }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 /* Row */
@@ -26,11 +30,17 @@
   }
 }
 
+/* Table elements */
+
 .table-property__property{
   padding-top: 3px;
   padding-right: 0;
   padding-bottom: 3px;
   padding-left: 0;
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 7px;
+  }
 }
 
 .table-property__value{
