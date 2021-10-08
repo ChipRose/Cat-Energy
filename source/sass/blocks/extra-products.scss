@@ -23,6 +23,13 @@
     grid-template-columns: repeat (2, 1fr);
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    grid-template-rows: min-content;
+    grid-template-columns: repeat (3, 1fr);
+  }
+
   &::before {
     content: "";
     width: 100%;
