@@ -1,0 +1,15 @@
+.br {
+  &--tablet {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}

@@ -2,7 +2,6 @@
 
 .address {
   color: $special-dark-grey;
-  background-color: $contrast-color;
 
   @media (min-width: $desktop-width) {
     position: relative;
@@ -13,6 +12,10 @@
 /* Container */
 
 .address__container {
+  &--catalog {
+    background-color: $basic-grey;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 95px;
     padding-bottom: 95px;
@@ -27,7 +30,6 @@
   padding-bottom: 28px;
   display: flex;
   justify-content: space-between;
-  background-color: $contrast-color;
 
   @media (min-width: $tablet-width) {
     padding-right: 42px;
@@ -42,6 +44,7 @@
     width: 570px;
     position: relative;
     z-index: 1;
+    background-color: $contrast-color;
   }
 }
 

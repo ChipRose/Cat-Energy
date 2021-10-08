@@ -9,28 +9,6 @@
   @include set-font-style(var(--fz-cover), var(--lh-cover), "Oswald");
   text-align: center;
 
-  &::before,
-  &::after {
-    content: "";
-    width: 50%;
-    min-height: 696px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-  }
-
-  &::before {
-    background-image: url("../../img/cover/cover-background-big.jpg");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 100% auto;
-  }
-
-  &::after {
-    background-color: $basic-green085;
-  }
-
   @media (min-width: $tablet-width) {
     grid-template-rows: min-content min-content;
     text-align: left;
@@ -42,6 +20,29 @@
     grid-template-rows: min-content 1fr;
     grid-template-columns: 583px 552px;
     text-align: left;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 50%;
+      min-height: 696px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+
+
+    &::before {
+      background-image: url("../../img/cover/cover-background-big.jpg");
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 100% auto;
+    }
+
+    &::after {
+      background-color: $basic-green085;
+    }
   }
 }
 
@@ -150,6 +151,7 @@
   height: auto;
   grid-row: 2/4;
   grid-column: 1/2;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: 620px;
