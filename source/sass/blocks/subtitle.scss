@@ -4,10 +4,4 @@
   @include set-font-style (var(--fz-subtitle), var(--lh-subtitle), "Oswald");
   text-transform: uppercase;
   color: $main-color;
-
-
-  &--catalog-extra {
-    @include set-font-style (var(--fz-catalog-subtitle-extra), var(--fz-catalog-subtitle-extra), "Oswald");
-    color: $special-dark-grey-2;
-  }
 }

@@ -119,6 +119,7 @@
   &--index {
     @media (min-width: $desktop-width) {
       color: $contrast-color;
+
       &::before {
         background-color: $contrast-color;
       }

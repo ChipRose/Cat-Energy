@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header page__header">
+  <header class="header page__header page__header--catalog">
     <a class="link header__logo logo" href="index.html">
       <img class="logo__img-simple" src="img/header/logo-simple.svg" width="33" height="38" alt="Логотип Cat Energy" />
       <img class="logo__img" src="img/header/logo.svg" width="60" height="50" alt="Логотип Cat Energy" />
@@ -38,7 +38,7 @@
   </header>
   <main class="main">
     <h1 class="visually-hidden">Продукция</h1>
-    <section class="catalog">
+    <section class="catalog page__catalog">
       <div class="container">
         <h2 class="title catalog__title">Каталог продукции</h2>
         <ul class="list catalog__list">
@@ -50,9 +50,11 @@
               </h3>
               <div class="catalog__image-block">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog/bigger-catalog-pro-500-chicken.png 1x, img/catalog/bigger-catalog-pro-500-chicken@2x.png 2x">
-                  <img class="img" src="img/catalog/catalog-pro-500-chicken.png" srcset="img/catalog/catalog-pro-500-chicken@2x.png 2x"
-                  alt="Консерва для котов с курицей. Оранжевая маленькая банка." />
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/bigger-catalog-pro-500-chicken.png 1x, img/catalog/bigger-catalog-pro-500-chicken@2x.png 2x">
+                  <img class="img" src="img/catalog/catalog-pro-500-chicken.png"
+                    srcset="img/catalog/catalog-pro-500-chicken@2x.png 2x"
+                    alt="Консерва для котов с курицей. Оранжевая маленькая банка." />
                 </picture>
               </div>
               <table class="table-property catalog__table">
@@ -80,7 +82,7 @@
               </h3>
               <div class="catalog__image-block">
                 <img class="img" src="img/catalog/catalog-pro-1000-chicken.png" width="84" height="100"
-                alt="Консерва для котов с курицей. Оранжевая большая банка." />
+                  alt="Консерва для котов с курицей. Оранжевая большая банка." />
               </div>
               <table class="table-property catalog__table">
                 <tr class="table-property__row">
@@ -107,7 +109,7 @@
               </h3>
               <div class="catalog__image-block">
                 <img class="img" src="img/catalog/catalog-pro-500-fish.png" width="68" height="78"
-                alt="Консерва для котов с рыбой. Зелёная маленькая банка." />
+                  alt="Консерва для котов с рыбой. Зелёная маленькая банка." />
               </div>
               <table class="table-property catalog__table">
                 <tr class="table-property__row">
@@ -134,7 +136,7 @@
               </h3>
               <div class="catalog__image-block">
                 <img class="img" src="img/catalog/catalog-pro-1000-fish.png" width="84" height="100"
-                alt="Консерва для котов с рыбой. Зелёная большая банка." />
+                  alt="Консерва для котов с рыбой. Зелёная большая банка." />
               </div>
               <table class="table-property catalog__table">
                 <tr class="table-property__row">
@@ -161,7 +163,7 @@
               </h3>
               <div class="catalog__image-block">
                 <img class="img" src="img/catalog/catalog-slim-500-porrige.png" width="68" height="78"
-                alt="Консерва для котов с гречкой. Голубая маленькая банка." />
+                  alt="Консерва для котов с гречкой. Голубая маленькая банка." />
               </div>
               <table class="table-property catalog__table">
                 <tr class="table-property__row">
@@ -188,7 +190,7 @@
               </h3>
               <div class="catalog__image-block">
                 <img class="img" src="img/catalog/catalog-slim-1000-porrige.png" width="84" height="100"
-                alt="Консерва для котов с гречкой. Голубая большая банка." />
+                  alt="Консерва для котов с гречкой. Голубая большая банка." />
               </div>
               <table class="table-property catalog__table">
                 <tr class="table-property__row">
@@ -215,7 +217,7 @@
               </h3>
               <div class="catalog__image-block">
                 <img class="img catalog__img" src="img/catalog/catalog-slim-500-rice.png" width="72" height="84"
-                alt="Консерва для котов с рисом. Фиолетовая маленькая банка." />
+                  alt="Консерва для котов с рисом. Фиолетовая маленькая банка." />
               </div>
               <table class="table-property catalog__table">
                 <tr class="table-property__row">
@@ -236,13 +238,15 @@
           </li>
           <li class="catalog__item">
             <a class="link catalog__link--all" href="blank.html">
-              <h3 class="subtitle catalog__subtitle catalog__subtitle--all">Показать еще 100500 товаров</h3>
+              <h3 class="subtitle catalog__subtitle catalog__subtitle--all">
+                Показать еще <br class="br br--tablet">
+                100500 товаров
+              </h3>
               <div class="catalog__image-block--all">
-                <img class="img" src="img/catalog/icon-plus.svg" width="30" height="30"
-                alt="Иконка Больше товаров" />
+                <img class="img" src="img/catalog/icon-plus.svg" width="30" height="30" alt="Иконка Больше товаров" />
               </div>
               <div class="catalog__text-block catalog__text-block--all">
-                <p class="text catalog__text">На самом деле вкусов гораздо больше!</p>
+                <p class="text catalog__text">На самом деле вкусов <br class="br br--tablet" /> гораздо больше!</p>
               </div>
             </a>
             <a class="button catalog__button catalog__button--all" href="blank.html">показать все</a>
@@ -252,44 +256,44 @@
     </section>
     <section class="extra-products">
       <div class="container">
-        <h2 class="title title--extra-products extra-products__title">Дополнительные товары</h2>
+        <h2 class="title extra-products__title">Дополнительные товары</h2>
         <ul class="list extra-products__list">
           <li class="extra-products__item">
-            <h3 class="subtitle subtitle--catalog-extra extra-products__subtitle">Сахарозаменитель</h3>
-            <table class="table-property table-property-extra extra-products__features">
+            <h3 class="subtitle extra-products__subtitle">Сахарозаменитель</h3>
+            <table class="table-property table-property--extra extra-products__table">
               <tr class="extra-products__row">
-                <td class="extra-products__property">1 упаковка (100 г)</td>
-                <td class="extra-products__value">200 Р.</td>
+                <td class="table-property__property table-property__property--extra">1 упаковка (100 г)</td>
+                <td class="table-property__value table-property__value--extra">200 Р.</td>
               </tr>
             </table>
             <a class="button extra-products__button" href="form.html">заказать</a>
           </li>
           <li class="extra-products__item">
-            <h3 class="subtitle subtitle--catalog-extra extra-products__subtitle">питьевая вода</h3>
-            <table class="table-property table-property-extra extra-products__features">
+            <h3 class="subtitle extra-products__subtitle">питьевая вода</h3>
+            <table class="table-property table-property--extra extra-products__table">
               <tr class="extra-products__row">
-                <td class="extra-products__property">5 литров</td>
-                <td class="extra-products__value">50 Р.</td>
+                <td class="table-property__property table-property__property--extra">5 литров</td>
+                <td class="table-property__value table-property__value--extra">50 Р.</td>
               </tr>
             </table>
             <a class="button extra-products__button" href="form.html">заказать</a>
           </li>
           <li class="extra-products__item">
-            <h3 class="subtitle subtitle--catalog-extra extra-products__subtitle">молоко</h3>
-            <table class="table-property table-property-extra extra-products__features">
+            <h3 class="subtitle extra-products__subtitle">молоко</h3>
+            <table class="table-property table-property--extra extra-products__table">
               <tr class="extra-products__row">
-                <td class="extra-products__property">1 литр</td>
-                <td class="extra-products__value">100 Р.</td>
+                <td class="table-property__property table-property__property--extra">1 литр</td>
+                <td class="table-property__value table-property__value--extra">100 Р.</td>
               </tr>
             </table>
             <a class="button extra-products__button" href="form.html">заказать</a>
           </li>
           <li class="extra-products__item">
-            <h3 class="subtitle subtitle--catalog-extra extra-products__subtitle">витамины</h3>
-            <table class="table-property table-property-extra extra-products__features">
+            <h3 class="subtitle extra-products__subtitle">витамины</h3>
+            <table class="table-property table-property--extra extra-products__table">
               <tr class="extra-products__row">
-                <td class="extra-products__property">1 упаковка (30 г)</td>
-                <td class="extra-products__value">300 Р.</td>
+                <td class="table-property__property table-property__property--extra">1 упаковка (30 г)</td>
+                <td class="table-property__value table-property__value--extra">300 Р.</td>
               </tr>
             </table>
             <a class="button extra-products__button" href="form.html">заказать</a>

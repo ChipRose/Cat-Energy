@@ -3,15 +3,17 @@
   border-collapse: collapse;
   border-spacing: 0;
 
-  @include set-font-style (var(--fz-catalog-table), var(--lh-catalog-table));
+  @include set-font-style(var(--fz-catalog-table), var(--lh-catalog-table));
   color: $special-dark-grey-2;
-
-  &--extra {
-    @include set-font-style (var(--fz-catalog-table-extra), var(--lh-catalog-table-extra));
-  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  &--extra {
+    width: 100%;
+
+    @include set-font-style(var(--fz-catalog-table-extra), var(--lh-catalog-table-extra));
   }
 }
 
@@ -32,21 +34,32 @@
 
 /* Table elements */
 
-.table-property__property{
+.table-property__property {
   padding-top: 3px;
   padding-right: 0;
   padding-bottom: 3px;
   padding-left: 0;
+
   @media (min-width: $tablet-width) {
     padding-top: 5px;
     padding-bottom: 7px;
   }
+
+  &--extra {
+    @media (min-width: $tablet-width) {
+      text-align: right;
+    }
+  }
 }
 
-.table-property__value{
+.table-property__value {
   padding-top: 3px;
   padding-right: 0;
   padding-bottom: 3px;
   padding-left: 0;
   text-align: right;
+
+  &--extra {
+    width: 94px;
+  }
 }
