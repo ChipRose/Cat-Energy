@@ -1,3 +1,10 @@
+/* Form */
+.question-form {
+  @include set-font-style (var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
 /* Legend */
 
 .question-form__legend {

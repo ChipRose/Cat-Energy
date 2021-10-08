@@ -1,6 +1,47 @@
 /* Person data */
+.person-data {
+  margin-bottom: 24px;
+}
+
+/* Legend */
 
 .person-data__legend {
+  margin-bottom: 39px;
   @include set-font-style (var(--fz-form-main-legend), var(--lh-form-main-legend), "Oswald");
   text-transform: uppercase;
+}
+
+/* Item */
+
+.person-data__item {
+  margin-bottom: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.person-data__property {
+  margin-right: 13px;
+  flex: 0 0 auto;
+  order: 1;
+}
+
+.person-data__value{
+  padding-top: 13px;
+  padding-right: 14px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  flex: 1 1 auto;
+  order: 2;
+  @include set-font-style (var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
+
+  &::placeholder {
+    @include set-font-style (var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
+    text-transform: uppercase;
+    color: $special-dark-grey;
+  }
 }
