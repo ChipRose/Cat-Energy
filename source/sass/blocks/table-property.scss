@@ -49,6 +49,10 @@
     @media (min-width: $tablet-width) {
       text-align: right;
     }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+    }
   }
 }
 
