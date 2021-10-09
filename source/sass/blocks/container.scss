@@ -36,3 +36,13 @@
   margin-left: auto;
   max-width: $desktop-width;
 }
+
+/* Form container */
+.container--form {
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-right: 70px;
+    padding-bottom: 0;
+    padding-left: 70px;
+  }
+}

@@ -1,3 +1,18 @@
+/* Comment */
+/* Legend */
+
+.comment__legend {
+  margin-bottom: 38px;
+}
+
+/* Value */
 .comment__value {
+  padding-top: 9px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 150px;
   resize: none;
 }

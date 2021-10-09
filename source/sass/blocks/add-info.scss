@@ -1,17 +1,67 @@
-.add-info__item {
-  display: block;
+/* Legend */
+
+.add-info__legend {
+  margin-bottom: 34px;
 }
 
+/* ---Container--- */
+
+.add-info__container {
+  @media (min-width: $tablet-width) {
+    margin-top: -16px;
+    margin-right: -16px;
+    margin-bottom: -16px;
+    margin-left: -16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+/* ---Item--- */
+
+.add-info__item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    flex: 0 0 284px;
+  }
+}
+
+/* =Checkbox= */
+
+/* Box */
+
 .add-info__box {
-  display: inline-block;
+  margin-right: 18px;
   width: 30px;
   height: 30px;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid $special-grey;
 }
 
+/* Check sign */
+
 .add-info__check {
-  fill: none;
+  display: none;
+  stroke: $basic-green;
+  stroke-width: 2px;
 }
 
 .add-info__checkbox {
@@ -33,7 +83,7 @@
 
   &:checked {
     + * .add-info__check {
-      fill: $basic-green;
+      display: block;
     }
   }
 
@@ -45,7 +95,7 @@
 
   &:checked:disabled {
     + * .add-info__check {
-      fill: $basic-green03;
+      stroke: $basic-green03;
     }
 
     + .add-info__box {
