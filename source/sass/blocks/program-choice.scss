@@ -1,68 +1,111 @@
+/* Program choice */
+
 .program-choice {
-  border: 1px solid $special-grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: calc(100% + 40px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 1px solid $special-grey;
+    border-bottom: 1px solid $special-grey;
+  }
 }
+
+/* =Item= */
 
 .program-choice__item {
+  margin-bottom: 13px;
   display: block;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.program-choice__box {
-  display: inline-flex;
-  justify-content: center;
+/* Radio button */
+
+.program-choice__property {
+  padding-top: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  padding-left: 45px;
+  display: flex;
   align-items: center;
-  width: 30px;
-  height: 30px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  border: 1px solid $special-grey;
-}
+  position: relative;
+  cursor: pointer;
 
-.program-choice__box-inner {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: transparent;
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid $special-grey;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $basic-green;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .program-choice__radio-button {
   &:hover {
-    + .program-choice__box {
+    + .program-choice__property::before {
       border-color: $special-grey-2;
     }
   }
 
   &:disabled {
-    + .program-choice__box {
-      border-color: $special-grey-2-03;
+    + .program-choice__property {
+      color: $main-color03;
     }
 
-    ~ .program-choice__property {
-      color: $main-color03;
+    + .program-choice__property::before {
+      border-color: $special-grey-2-03;
     }
   }
 
   &:checked {
-    + * .program-choice__box-inner {
-      background-color: $basic-green;
+    + .program-choice__property::after {
+      display: block;
     }
   }
 
   &:checked:hover {
-    + .program-choice__box {
+    + .program-choice__property::before {
       border-color: $special-grey-2;
     }
   }
 
   &:checked:disabled {
-    + .program-choice__box {
+    + .program-choice__property::before {
       border-color: $special-grey-2-03;
     }
 
-    + * .program-choice__box-inner {
+    + .program-choice__property::after {
+      display: block;
       background-color: $basic-green03;
     }
 
-    ~ .program-choice__property {
+    + .program-choice__property {
       color: $main-color03;
     }
   }

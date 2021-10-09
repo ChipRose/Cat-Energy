@@ -3,4 +3,8 @@
 
   @include set-font-style(var(--fz-title), var(--lh-title), "Oswald");
   color: $main-color;
+
+  &--form-title {
+    margin-bottom: 37px;
+  }
 }

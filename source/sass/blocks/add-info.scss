@@ -1,17 +1,37 @@
-.add-info__item {
-  display: block;
+/* Legend */
+
+.add-info__legend {
+  margin-bottom: 34px;
 }
 
+/* ---Item--- */
+.add-info__item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* =Checkbox= */
+
+/* Box */
+
 .add-info__box {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  box-sizing: border-box;
+  margin-right: 18px;
+  width: 26px;
+  height: 26px;
   border: 1px solid $special-grey;
 }
 
+/* Check sign */
+
 .add-info__check {
-  fill: none;
+  display: none;
+  stroke: $basic-green;
+  stroke-width: 2px;
 }
 
 .add-info__checkbox {
@@ -33,7 +53,7 @@
 
   &:checked {
     + * .add-info__check {
-      fill: $basic-green;
+      display: block;
     }
   }
 
@@ -45,7 +65,7 @@
 
   &:checked:disabled {
     + * .add-info__check {
-      fill: $basic-green03;
+      stroke: $basic-green03;
     }
 
     + .add-info__box {

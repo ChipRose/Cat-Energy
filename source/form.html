@@ -38,10 +38,10 @@
   </header>
   <main class="main">
     <div class="container">
-      <h1 class="title main__main-title">Подбор программы</h1>
+      <h1 class="title title--form-title">Подбор программы</h1>
       <form class="question-form" action="#" method="post">
         <div class="question-form__wrapper">
-          <fieldset class="fieldset person-data">
+          <fieldset class="fieldset person-data question-form__person-data">
             <legend class="person-data__legend">
               Заполните анкету, и мы подберем программу питания для вашего кота
             </legend>
@@ -51,121 +51,105 @@
               <span class="person-data__property">имя:*</span>
             </label>
             <label class="person-data__item">
-              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" required placeholder="7"/>
+              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" required placeholder="7" />
               <span class="person-data__property">Вес (кг):*</span>
             </label>
             <label class="person-data__item">
-              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" required placeholder="7"/>
+              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" required placeholder="7" />
               <span class="person-data__property">Возраст (лет):</span>
             </label>
           </fieldset>
-          <fieldset class="fieldset program-choice">
+          <fieldset class="fieldset program-choice question-form__program-choice">
             <legend class="visually-hidden">Выберите программу</legend>
             <label class="program-choice__item">
               <input class="program-choice__radio-button visually-hidden" type="radio" name="program"
                 value="losing-weight" checked />
-              <div class="program-choice__box">
-                <div class="program-choice__box-inner"></div>
-              </div>
-              <span class="form-item program-choice__property">похудение</span>
+              <span class="program-choice__property">похудение</span>
             </label>
             <label class="program-choice__item">
               <input class="program-choice__radio-button visually-hidden" type="radio" name="program"
                 value="weight-gain" />
-              <div class="program-choice__box">
-                <div class="program-choice__box-inner"></div>
-              </div>
-              <span class="form-item program-choice__property">Набор массы</span>
+              <span class="program-choice__property">Набор массы</span>
             </label>
             <label class="program-choice__item">
               <input class="program-choice__radio-button visually-hidden" type="radio" name="program"
                 value="need-advice" />
-              <div class="program-choice__box">
-                <div class="program-choice__box-inner"></div>
-              </div>
-              <span class="form-item program-choice__property">Не знаю (Нужен ваш совет)</span>
+              <span class="program-choice__property">Не знаю (Нужен ваш совет)</span>
             </label>
           </fieldset>
-          <fieldset class="fieldset owner-contacts">
-            <legend class="legend owner-contacts__legend">Контактные данные (владельца кота)</legend>
+          <fieldset class="fieldset owner-contacts question-form__owner-contacts">
+            <legend class="legend owner-contacts__legend">Контактные данные <br class="br br--mobile"> (владельца кота)
+            </legend>
             <label class="owner-contacts__item">
-              <div class="owner-contacts__container">
-                <input class="form-item input owner-contacts__value" type="email" required
-                  placeholder="kuklachev@gmail.com">
-                <svg class="owner-contacts__icon" width="19" height="14" viewBox="0 0 19 14" aria-label="hidden" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M18 0V0.299988V1.3V2.79999L9.00004 9.79999L1.21593e-05 2.79999V1.3V0.299988V0H18ZM0 13.3V5.29999H1.3V12H17V5.29999H18.3V13.3L18 13.3H1.21593e-05V13.3H0ZM16.7 2.16418L9.00003 8.15307L1.30001 2.16418V1.59999H16.7V2.16418Z" />
+              <span class="owner-contacts__container">
+                <input class="input owner-contacts__value" type="email" required placeholder="kuklachev@gmail.com">
+                <svg class="owner-contacts__icon" width="20" height="14" aria-label="hidden">
+                  <use xlink:href="img/contacts-sprite.svg#email" />
                 </svg>
-              </div>
-              <span class="form-item owner-contact__property">E-mail:*</span>
+              </span>
+              <span class="owner-contacts__property">E-mail:*</span>
             </label>
             <label class="owner-contacts__item">
-              <div class="owner-contacts__container">
-                <input class="form-item input owner-contacts__value" type="tel" required
-                  placeholder="8 (960) 900-60-90" pattern="[0-9]{11}">
-                <svg class="owner-contacts__icon" width="20" height="20" viewBox="0 0 20 21" aria-label="hidden"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.9 9.8H9.4V11h8.5l-2.1 2 .9 1 3.1-3.1a.8.8 0 0 0 0-1l-3.1-3-.9.8 2.1 2ZM8.1 19.8v-6.2a.7.7 0 0 0-.6-.6H3.1a1.2 1.2 0 0 0 1.2 1.2h2.5v5H3.1a1.8 1.8 0 0 1-1.9-1.7v-14a1.8 1.8 0 0 1 1.7-1.9h3.9v5H4.4a1.2 1.2 0 0 0-1.2 1.2h4.4a.6.6 0 0 0 .6-.6V1a.9.9 0 0 0-.7-.6H3.1a3 3 0 0 0-3.1 3v13.9a3 3 0 0 0 2.9 3h4.6a.5.5 0 0 0 .6-.4Z" />
+              <span class="owner-contacts__container">
+                <input class="input owner-contacts__value" type="tel" required placeholder="8 (960) 900-60-90"
+                  pattern="[0-9]{11}">
+                <svg class="owner-contacts__icon" width="20" height="20" aria-label="hidden">
+                  <use xlink:href="img/contacts-sprite.svg#phone" />
                 </svg>
-              </div>
-              <span class="form-item owner-contact__property">Телефон:*</span>
+              </span>
+              <span class="owner-contacts__property">Телефон:*</span>
             </label>
           </fieldset>
-          <fieldset class="fieldset comment">
+          <fieldset class="fieldset comment question-form__comment">
             <legend class="legend comment__legend">Комментарий</legend>
             <label class="comment__item">
-              <textarea class="form-item input comment__value"
+              <textarea class="input comment__value"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </fieldset>
-          <fieldset class="fieldset add-info">
-            <legend class="legend add-info__item">
+          <fieldset class="fieldset add-info question-form__add-info">
+            <legend class="legend add-info__legend">
               Дополнительно
             </legend>
             <label class="add-info__item">
               <input class="add-info__checkbox visually-hidden" type="checkbox" value="sweetener" checked></input>
-              <div class="add-info__box">
-                <svg aria-hidden="true" focusable="false" width="30" height="30" viewBox="-5 -6 30 30">
-                  <path class="add-info__check"
-                    d="M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z" />
+              <span class="add-info__box">
+                <svg class="add-info__check" aria-hidden="true" width="26" height="26" viewBox="-4 -6 26 26" >
+                  <path d="M0 6 L 7 14 L 18 0" fill="none" />
                 </svg>
-              </div>
-              <span class="form-item add-info__property">сахарозаменитель</span>
+              </span>
+              <span class="add-info__property">сахарозаменитель</span>
             </label>
             <label class="add-info__item">
               <input class="add-info__checkbox visually-hidden" type="checkbox" value="water"></input>
-              <div class="add-info__box">
-                <svg aria-hidden="true" focusable="false" width="30" height="30" viewBox="-5 -6 30 30">
-                  <path class="add-info__check"
-                    d="M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z" />
+              <span class="add-info__box">
+                <svg class="add-info__check" aria-hidden="true" width="26" height="26" viewBox="-4 -6 26 26" >
+                  <path d="M0 6 L 7 14 L 18 0" fill="none" />
                 </svg>
-              </div>
-              <span class="form-item add-info__property">питьевая вода</span>
+              </span>
+              <span class="add-info__property">питьевая вода</span>
             </label>
             <label class="add-info__item">
               <input class="add-info__checkbox visually-hidden" type="checkbox" value="milk" disabled checked></input>
-              <div class="add-info__box">
-                <svg aria-hidden="true" focusable="false" width="30" height="30" viewBox="-5 -6 30 30">
-                  <path class="add-info__check"
-                    d="M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z" />
+              <span class="add-info__box">
+                <svg class="add-info__check" aria-hidden="true" width="26" height="26" viewBox="-4 -6 26 26" >
+                  <path d="M0 6 L 7 14 L 18 0" fill="none" />
                 </svg>
-              </div>
-              <span class="form-item add-info__property">молоко</span>
+              </span>
+              <span class="add-info__property">молоко</span>
             </label>
             <label class="add-info__item">
               <input class="add-info__checkbox visually-hidden" type="checkbox" value="vitamins" disabled></input>
-              <div class="add-info__box">
-                <svg aria-hidden="true" focusable="false" width="30" height="30" viewBox="-5 -6 30 30">
-                  <path class="add-info__check"
-                    d="M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z" />
+              <span class="add-info__box">
+                <svg class="add-info__check" aria-hidden="true" width="26" height="26" viewBox="-4 -6 26 26" >
+                  <path d="M0 6 L 7 14 L 18 0" fill="none" />
                 </svg>
-              </div>
-              <span class="form-item add-info__property">витамины</span>
+              </span>
+              <span class="add-info__property">витамины</span>
             </label>
           </fieldset>
           <button class="button question-form__button" type="submit">отправить заявку</button>
-          <small class="question-form__legend">* — Обязательные поля</small>
+          <legend class="legend question-form__legend">* — Обязательные поля</legend>
         </div>
       </form>
     </div>

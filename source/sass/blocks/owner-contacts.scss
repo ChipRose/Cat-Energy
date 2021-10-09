@@ -1,8 +1,28 @@
-/* Container */
+/* Legend */
+.owner-contacts__legend {
+  margin-bottom: 35px;
+}
+
+/* ---Item--- */
+
+.owner-contacts__item {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* =Container= */
 
 .owner-contacts__container {
   display: inline-block;
   position: relative;
+  flex: 1 1 auto;
+  order: 2;
 }
 
 /* Icon */
@@ -19,10 +39,12 @@
 /* Input */
 
 .owner-contacts__value {
-  min-width: 219px;
+  padding-top: 15px;
+  padding-right: 51px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  min-width: 100%;
   position: relative;
-  box-sizing: border-box;
-  padding: 13px 51px 15px 15px;
 
   &:focus {
     + .owner-contacts__icon {
@@ -35,4 +57,12 @@
       fill: $status-error;
     }
   }
+}
+
+/* Property */
+
+.owner-contacts__property {
+  margin-right: 11px;
+  order: 1;
+  flex: 0 0 auto;
 }

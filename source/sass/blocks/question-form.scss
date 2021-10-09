@@ -1,18 +1,59 @@
 /* Form */
 .question-form {
-  @include set-font-style (var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
+  @include set-font-style(var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
   text-transform: uppercase;
   color: $special-dark-grey;
 }
 
-/* Legend */
+/* =Wrapper= */
 
-.question-form__legend {
-  @include set-font-style (var(--fz-form-legend), var(--lh-form-legend));
+.question-form__wrapper {
+  margin-bottom: 32px;
+}
+/* Person data */
+
+.question-form__person-data {
+  margin-bottom: 26px;
+}
+
+/* Program choice */
+
+.question-form__program-choice {
+  margin-bottom: 19px;
+}
+
+/* Owner contacts */
+
+.question-form__owner-contacts {
+  margin-bottom: 24px;
+}
+
+/* Comment */
+
+.question-form__comment {
+  margin-bottom: 23px;
+}
+
+/* Add info */
+
+.question-form__add-info {
+  margin-bottom: 34px;
 }
 
 /* Button */
 
 .question-form__button {
-  padding: 14px 14px 14px 14px;
+  padding-top: 14px;
+  padding-right: 14px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  margin-bottom: 21px;
+  width: 100%;
+}
+
+/* Legend */
+
+.question-form__legend {
+  @include set-font-style(var(--fz-form-legend), var(--lh-form-legend));
+  text-align: center;
 }
