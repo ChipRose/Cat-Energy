@@ -1,17 +1,3 @@
-/* Person data */
-.person-data {
-  margin-bottom: 24px;
-}
-
-/* Legend */
-
-.person-data__legend {
-  margin-bottom: 39px;
-
-  @include set-font-style(var(--fz-form-main-legend), var(--lh-form-main-legend), "Oswald");
-  text-transform: uppercase;
-}
-
 /* =Item= */
 
 .person-data__item {

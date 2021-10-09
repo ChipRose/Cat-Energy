@@ -4,7 +4,22 @@
   margin-bottom: 34px;
 }
 
+/* ---Container--- */
+
+.add-info__container {
+  @media (min-width: $tablet-width) {
+    margin-top: -16px;
+    margin-right: -16px;
+    margin-bottom: -16px;
+    margin-left: -16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 /* ---Item--- */
+
 .add-info__item {
   margin-bottom: 15px;
   display: flex;
@@ -12,6 +27,18 @@
 
   &:last-child {
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    flex: 0 0 284px;
   }
 }
 
@@ -21,8 +48,11 @@
 
 .add-info__box {
   margin-right: 18px;
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid $special-grey;
 }
 

@@ -37,14 +37,14 @@
     </nav>
   </header>
   <main class="main">
-    <div class="container">
+    <div class="container container--form">
       <h1 class="title title--form-title">Подбор программы</h1>
       <form class="question-form" action="#" method="post">
-        <div class="question-form__wrapper">
+        <legend class="question-form__legend">
+          Заполните анкету, и мы подберем <br class="br"> программу питания для вашего кота
+        </legend>
+        <div class="question-form__top">
           <fieldset class="fieldset person-data question-form__person-data">
-            <legend class="person-data__legend">
-              Заполните анкету, и мы подберем программу питания для вашего кота
-            </legend>
             <label class="person-data__item">
               <input class="input person-data__value" pattern="[A-Za-zА-Яа-яЁё]{3,8}" type="text" required
                 placeholder="БАРСИК" />
@@ -77,44 +77,45 @@
               <span class="program-choice__property">Не знаю (Нужен ваш совет)</span>
             </label>
           </fieldset>
-          <fieldset class="fieldset owner-contacts question-form__owner-contacts">
-            <legend class="legend owner-contacts__legend">Контактные данные <br class="br br--mobile"> (владельца кота)
-            </legend>
-            <label class="owner-contacts__item">
-              <span class="owner-contacts__container">
-                <input class="input owner-contacts__value" type="email" required placeholder="kuklachev@gmail.com">
-                <svg class="owner-contacts__icon" width="20" height="14" aria-label="hidden">
-                  <use xlink:href="img/contacts-sprite.svg#email" />
-                </svg>
-              </span>
-              <span class="owner-contacts__property">E-mail:*</span>
-            </label>
-            <label class="owner-contacts__item">
-              <span class="owner-contacts__container">
-                <input class="input owner-contacts__value" type="tel" required placeholder="8 (960) 900-60-90"
-                  pattern="[0-9]{11}">
-                <svg class="owner-contacts__icon" width="20" height="20" aria-label="hidden">
-                  <use xlink:href="img/contacts-sprite.svg#phone" />
-                </svg>
-              </span>
-              <span class="owner-contacts__property">Телефон:*</span>
-            </label>
-          </fieldset>
-          <fieldset class="fieldset comment question-form__comment">
-            <legend class="legend comment__legend">Комментарий</legend>
-            <label class="comment__item">
-              <textarea class="input comment__value"
-                placeholder="Расскажите обо всех повадках кота"></textarea>
-            </label>
-          </fieldset>
-          <fieldset class="fieldset add-info question-form__add-info">
-            <legend class="legend add-info__legend">
-              Дополнительно
-            </legend>
+        </div>
+        <fieldset class="fieldset owner-contacts question-form__owner-contacts">
+          <legend class="legend owner-contacts__legend">Контактные данные <br class="br br--mobile"> (владельца кота)
+          </legend>
+          <label class="owner-contacts__item">
+            <span class="owner-contacts__container">
+              <input class="input owner-contacts__value" type="email" required placeholder="kuklachev@gmail.com">
+              <svg class="owner-contacts__icon" width="20" height="14" aria-label="hidden">
+                <use xlink:href="img/contacts-sprite.svg#email" />
+              </svg>
+            </span>
+            <span class="owner-contacts__property">E-mail:*</span>
+          </label>
+          <label class="owner-contacts__item">
+            <span class="owner-contacts__container">
+              <input class="input owner-contacts__value" type="tel" required placeholder="8 (960) 900-60-90"
+                pattern="[0-9]{11}">
+              <svg class="owner-contacts__icon" width="20" height="20" aria-label="hidden">
+                <use xlink:href="img/contacts-sprite.svg#phone" />
+              </svg>
+            </span>
+            <span class="owner-contacts__property">Телефон:*</span>
+          </label>
+        </fieldset>
+        <fieldset class="fieldset comment question-form__comment">
+          <legend class="legend comment__legend">Комментарий</legend>
+          <label class="comment__item">
+            <textarea class="input comment__value" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </label>
+        </fieldset>
+        <fieldset class="fieldset add-info question-form__add-info">
+          <legend class="legend add-info__legend">
+            Дополнительно
+          </legend>
+          <div class="add-info__container">
             <label class="add-info__item">
               <input class="add-info__checkbox visually-hidden" type="checkbox" value="sweetener" checked></input>
               <span class="add-info__box">
-                <svg class="add-info__check" aria-hidden="true" width="26" height="26" viewBox="-4 -6 26 26" >
+                <svg class="add-info__check" aria-hidden="true" width="18" height="15" viewBox="0 0 18 15">
                   <path d="M0 6 L 7 14 L 18 0" fill="none" />
                 </svg>
               </span>
@@ -123,7 +124,7 @@
             <label class="add-info__item">
               <input class="add-info__checkbox visually-hidden" type="checkbox" value="water"></input>
               <span class="add-info__box">
-                <svg class="add-info__check" aria-hidden="true" width="26" height="26" viewBox="-4 -6 26 26" >
+                <svg class="add-info__check" aria-hidden="true" width="18" height="15" viewBox="0 0 18 15">
                   <path d="M0 6 L 7 14 L 18 0" fill="none" />
                 </svg>
               </span>
@@ -132,7 +133,7 @@
             <label class="add-info__item">
               <input class="add-info__checkbox visually-hidden" type="checkbox" value="milk" disabled checked></input>
               <span class="add-info__box">
-                <svg class="add-info__check" aria-hidden="true" width="26" height="26" viewBox="-4 -6 26 26" >
+                <svg class="add-info__check" aria-hidden="true" width="18" height="15" viewBox="0 0 18 15">
                   <path d="M0 6 L 7 14 L 18 0" fill="none" />
                 </svg>
               </span>
@@ -141,16 +142,19 @@
             <label class="add-info__item">
               <input class="add-info__checkbox visually-hidden" type="checkbox" value="vitamins" disabled></input>
               <span class="add-info__box">
-                <svg class="add-info__check" aria-hidden="true" width="26" height="26" viewBox="-4 -6 26 26" >
+                <svg class="add-info__check" aria-hidden="true" width="18" height="15" viewBox="0 0 18 15">
                   <path d="M0 6 L 7 14 L 18 0" fill="none" />
                 </svg>
               </span>
               <span class="add-info__property">витамины</span>
             </label>
-          </fieldset>
+          </div>
+        </fieldset>
+        <div class="question-form__footer">
           <button class="button question-form__button" type="submit">отправить заявку</button>
-          <legend class="legend question-form__legend">* — Обязательные поля</legend>
+          <small class="question-form__note">* — Обязательные поля</small>
         </div>
+
       </form>
     </div>
   </main>
