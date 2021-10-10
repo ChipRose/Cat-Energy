@@ -43,8 +43,14 @@
         </div>
       </header>
       <div class="cover__image-wrapper">
-        <img class="cover__img" src="img/cover/cover-can.png" width="280" height="270"
-          alt="Банка кошачих консервов Cat Energy с курицей" />
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="img/cover/cover-can-transparent.png 1x, img/cover/cover-can-transparent@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/cover/cover-can-white.png 1x, img/cover/cover-can-white@2x.png 2x">
+          <img class="cover__img" src="img/cover/cover-can.png" srcset="img/cover/cover-can@2x.png 2x" width="280"
+            height="270" alt="Банка кошачих консервов Cat Energy с курицей" />
+        </picture>
       </div>
       <div class="cover__bottom-wrapper">
         <a class="button cover__button" href="form.html">Подобрать программу</a>
