@@ -6,21 +6,18 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: min-content auto;
     column-gap: 12px;
   }
 
   &:hover {
-    > .logo__img,
-    > .logo__img-simple,
-    > .logo__text {
+    > .logo__img {
       opacity: 0.8;
     }
   }
 
   &:active {
-    > .logo__img,
-    > .logo__img-simple,
-    > .logo__text {
+    > .logo__img {
       opacity: 0.6;
     }
   }
@@ -28,38 +25,9 @@
 
 /* Logo image*/
 
-.logo__img,
-.logo__img-simple {
+.logo__img {
   grid-column: 1/2;
   grid-row: 1/2;
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    width: 70px;
-    height: auto;
-  }
-}
-
-.logo__img-simple {
-  display: block;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.logo__img {
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 60px;
-    height: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    width: 70px;
-    height: auto;
-  }
 }
 
 /* Logo text*/
@@ -67,15 +35,4 @@
 .logo__text {
   justify-self: center;
   grid-column: 2/3;
-
-  @media (min-width: $tablet-width) {
-    justify-self: start;
-    width: 101px;
-    height: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 117px;
-    height: auto;
-  }
 }
