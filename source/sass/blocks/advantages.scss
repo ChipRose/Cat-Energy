@@ -1,18 +1,18 @@
-/* Advantages */
+/* ===Advantages=== */
 
 .advantages {
   color: $special-dark-grey;
 }
 
-/* List */
+/* ---List--- */
 
 .advantages__list {
   @media (min-width: $tablet-width) {
-    margin-left: -30px;
     margin-right: -30px;
+    margin-bottom: -26px;
+    margin-left: -30px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +21,7 @@
   }
 }
 
-/* Item */
+/* -Item- */
 
 .advantages__item {
   margin-bottom: 20px;
@@ -36,14 +36,16 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
-    padding-right: 109px;
     padding-bottom: 20px;
-    padding-left: 30px;
+    margin-top: 0;
+    margin-right: 109px;
+    margin-bottom: 26px;
+    margin-left: 30px;
     min-height: 280px;
-    position: relative;
-    flex: 0 1 50%;
+    flex: 0 1 31.8%;
     grid-template-rows: min-content 1fr;
     grid-template-columns: 1fr;
+    position: relative;
 
     &::before {
       width: auto;
@@ -77,10 +79,10 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 40px;
-    padding-right: 40px;
     padding-bottom: 40px;
-    padding-left: 40px;
-    flex: 0 1 25%;
+    margin-left: 40px;
+    margin-right: 39px;
+    flex: 0 1 18.9%;
     grid-template-rows: min-content 1fr;
     grid-template-columns: 1fr;
 

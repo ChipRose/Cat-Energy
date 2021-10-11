@@ -1,4 +1,4 @@
-/* Navigation */
+/* ===Navigation=== */
 
 .navigation {
   display: grid;
@@ -12,7 +12,7 @@
   }
 }
 
-/* Burger*/
+/* -Burger- */
 
 .navigation__toggle {
   display: block;
@@ -69,6 +69,8 @@
   }
 }
 
+/* Burger line */
+
 .navigation__burger-line {
   display: block;
   width: 24px;
@@ -80,7 +82,7 @@
   background-color: $main-color;
 }
 
-/* List */
+/* ---List--- */
 
 .navigation__list {
   display: none;
@@ -94,7 +96,7 @@
   }
 }
 
-/* Item */
+/* -Item- */
 
 .navigation__item {
   text-align: center;

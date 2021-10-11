@@ -3,12 +3,30 @@
     display: none;
   }
 
+  &--desktop {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     &--mobile {
       display: none;
     }
 
     &--tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
       display: block;
     }
   }

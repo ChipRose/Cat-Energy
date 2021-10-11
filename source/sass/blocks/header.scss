@@ -1,4 +1,4 @@
-/* Header */
+/* ===Header=== */
 
 .header {
   box-sizing: border-box;
@@ -26,7 +26,7 @@
   }
 }
 
-/* Header logo */
+/* -Header logo- */
 
 .header__logo {
   padding-top: 12px;
@@ -44,12 +44,7 @@
   }
 }
 
-/* Burger */
-
-.header__burger {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
+/* -Header menu- */
 
 .header__menu {
   grid-row: 1/3;
@@ -58,4 +53,11 @@
   @media (min-width: $tablet-width) {
     flex: 1 1 auto;
   }
+}
+
+/* -Burger- */
+
+.header__burger {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }

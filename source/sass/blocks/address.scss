@@ -12,6 +12,8 @@
 /* Container */
 
 .address__container {
+  background-color: $contrast-color;
+
   &--catalog {
     background-color: $basic-grey;
   }
