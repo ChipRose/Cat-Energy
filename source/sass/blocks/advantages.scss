@@ -99,7 +99,7 @@
   margin-bottom: 38px;
 }
 
-/* Image */
+/* -Image block- */
 
 .advantages__image-block {
   margin-right: 20px;
@@ -114,7 +114,7 @@
   }
 }
 
-/* Text */
+/* -Text block- */
 
 .advantages__text-block {
   grid-row: 1/2;
@@ -125,6 +125,8 @@
     grid-column: 1/2;
   }
 }
+
+/* Text */
 
 .advantages__text {
   margin-bottom: 10px;

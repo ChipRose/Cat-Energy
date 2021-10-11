@@ -1,35 +1,39 @@
-/* Address */
+/* ===Address=== */
 
 .address {
   color: $special-dark-grey;
 
   @media (min-width: $desktop-width) {
     position: relative;
-    min-height: 400px;
   }
 }
 
-/* Container */
+/* =Header= */
 
-.address__container {
+.address__header {
   background-color: $contrast-color;
 
   &--catalog {
     background-color: $basic-grey;
   }
+}
+
+/* =Wrapper= */
+
+.address__wrapper {
+  padding-top: 28px;
+  padding-bottom: 28px;
 
   @media (min-width: $desktop-width) {
     padding-top: 95px;
-    padding-bottom: 95px;
+    padding-bottom: 104px;
   }
 }
 
-/* Header */
+/* -Text block- */
 
-.address__header {
+.address__text-block {
   box-sizing: border-box;
-  padding-top: 28px;
-  padding-bottom: 28px;
   display: flex;
   justify-content: space-between;
 
@@ -78,6 +82,8 @@
   }
 }
 
+/* Address */
+
 .address__city {
   @media (min-width: $tablet-width) {
     margin-top: 20px;
@@ -85,12 +91,11 @@
   }
 }
 
-/* Map */
+/* -Map block- */
 
 .address__map-block {
+  min-height: 362px;
   position: relative;
-  height: 362px;
-
   @media (min-width: $desktop-width) {
     min-height: 100%;
     position: absolute;
@@ -103,17 +108,30 @@
 }
 
 .address__map {
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  min-height: inherit;
   border: none;
 }
 
 /* Pin */
 
-.address__pin {
-  position: absolute;
+.address__pin-block {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  position: absolute;
+
+  &::after {
+    content: "";
+    width: 71px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+    background-image: url("../../img/footer/pin-shadow.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
 }

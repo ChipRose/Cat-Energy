@@ -1,11 +1,12 @@
-/* Example */
+/* ===Example=== */
 
 .example {
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
+    background-color: $contrast-color;
     position: relative;
-    background-color: transparent;
+    z-index: 0;
 
     &::before {
       content: "";
@@ -20,6 +21,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-rows: min-content;
+    grid-template-columns: 1fr auto;
     &::before {
       height: 71%;
     }
@@ -29,19 +32,10 @@
 /* Wrapper */
 
 .example__wrapper {
-  padding-bottom: 25px;
-
   @media (min-width: $tablet-width) {
-    padding-bottom: 33px;
     display: grid;
     grid-template-rows: repeat(2, min-content);
     grid-template-columns: 1fr;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 43px;
-    grid-template-rows: min-content;
-    grid-template-columns: 1fr auto;
   }
 }
 

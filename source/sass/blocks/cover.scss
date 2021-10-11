@@ -1,6 +1,7 @@
 /* ===Cover=== */
 
-.cover {
+/* =Wrapper= */
+.cover__wrapper {
   display: grid;
   grid-template-rows: min-content 135px repeat(2, min-content);
   grid-template-columns: 1fr;
@@ -166,7 +167,7 @@
   }
 }
 
-/* Image block */
+/* -Image block- */
 
 .cover__image-block {
   margin-top: 0;
