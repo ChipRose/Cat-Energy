@@ -1,4 +1,5 @@
-/* Form */
+/* ===Form=== */
+
 .question-form {
   @include set-font-style(var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
   text-transform: uppercase;
@@ -13,7 +14,7 @@
   @include set-font-style(var(--fz-form-main-legend), var(--lh-form-main-legend), "Oswald");
 }
 
-/* ---Top--- */
+/* =Top= */
 
 .question-form__top {
   @media (min-width: $desktop-width) {
@@ -25,7 +26,7 @@
   }
 }
 
-/* Person data */
+/* --Person data--- */
 
 .question-form__person-data {
   margin-bottom: 26px;
@@ -38,7 +39,7 @@
   }
 }
 
-/* Program choice */
+/* ---Program choice--- */
 
 .question-form__program-choice {
   margin-bottom: 19px;
@@ -51,25 +52,25 @@
   }
 }
 
-/* Owner contacts */
+/* ---Owner contacts--- */
 
 .question-form__owner-contacts {
   margin-bottom: 24px;
 }
 
-/* Comment */
+/* ---Comment--- */
 
 .question-form__comment {
   margin-bottom: 23px;
 }
 
-/* Add info */
+/* ---Add info--- */
 
 .question-form__add-info {
   margin-bottom: 34px;
 }
 
-/* ---Footer--- */
+/* -Footer- */
 
 .question-form__footer {
   @media (min-width: $tablet-width) {

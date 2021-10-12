@@ -21,9 +21,6 @@
 /* =Wrapper= */
 
 .address__wrapper {
-  padding-top: 28px;
-  padding-bottom: 28px;
-
   @media (min-width: $desktop-width) {
     padding-top: 95px;
     padding-bottom: 104px;
@@ -33,6 +30,8 @@
 /* -Text block- */
 
 .address__text-block {
+  padding-top: 28px;
+  padding-bottom: 28px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -107,13 +106,15 @@
   }
 }
 
+/* Map */
+
 .address__map {
   width: 100%;
   min-height: inherit;
   border: none;
 }
 
-/* Pin */
+/* -Pin block- */
 
 .address__pin-block {
   top: 50%;
