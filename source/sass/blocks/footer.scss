@@ -7,8 +7,11 @@
 /* ---Wrapper--- */
 
 .footer__wrapper {
+  padding-top: 33px;
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
-    padding-top: 37px;
+    padding-top: 30px;
     padding-bottom: 43px;
     display: flex;
     justify-content: space-between;
@@ -19,8 +22,7 @@
 /* Logo */
 
 .footer__logo {
-  padding-top: 39px;
-  padding-bottom: 32px;
+  margin-bottom: 28px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -32,8 +34,8 @@
 /* ---List--- */
 
 .footer__social-list {
-  padding-top: 3px;
-  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-right: -18px;
   margin-left: -18px;
   display: flex;
@@ -48,10 +50,12 @@
     width: calc(100% - 40px);
     height: 100%;
     position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1;
-    border: 1px solid $special-middle-grey;
-    border-right: none;
-    border-left: none;
+    border-top: 1px solid $special-middle-grey;
+    border-bottom: 1px solid $special-middle-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -67,16 +71,14 @@
 /* Link */
 
 .footer__social-link {
-  padding-top: 18px;
   padding-right: 18px;
-  padding-bottom: 18px;
   padding-left: 18px;
 }
 
 /* ---Promo--- */
 
 .footer__promo {
-  padding-top: 22px;
+  padding-top: 15px;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {

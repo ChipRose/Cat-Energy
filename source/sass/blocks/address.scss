@@ -68,6 +68,7 @@
 /* Text */
 
 .address__text {
+  flex: 0 0 140px;
   @include set-font-style(var(--fz-address-text), var(--lh-address-text));
   font-style: normal;
 

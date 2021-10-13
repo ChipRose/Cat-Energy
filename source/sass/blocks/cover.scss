@@ -1,6 +1,7 @@
 /* ===Cover=== */
 
 /* =Wrapper= */
+
 .cover__wrapper {
   display: grid;
   grid-template-rows: min-content 135px repeat(2, min-content);
@@ -52,18 +53,18 @@
   padding-bottom: 155px;
   box-sizing: border-box;
   min-height: 302px;
-  position: relative;
   grid-row: 1/3;
   grid-column: 1/2;
+  position: relative;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
     top: 0;
-    left: -20px;
-    bottom: 0;
     right: -20px;
+    bottom: 0;
+    left: -20px;
   }
 
   &::before {
@@ -172,7 +173,7 @@
 .cover__image-block {
   margin-top: 0;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: 2px;
   margin-left: auto;
   width: 280px;
   height: auto;
@@ -199,9 +200,9 @@
 /* Button */
 
 .cover__button {
-  padding-top: 10px;
+  padding-top: 11px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   padding-left: 10px;
   margin-bottom: 22px;
   width: 100%;

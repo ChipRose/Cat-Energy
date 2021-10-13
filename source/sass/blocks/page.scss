@@ -41,14 +41,14 @@
   }
 }
 
-/* Main */
+/* ===Main=== */
 
 .page__main {
   grid-row: 2/3;
   grid-column: 1/2;
 }
 
-/* Cover */
+/* ===Cover=== */
 
 .page__cover {
   @media (min-width: $desktop-width) {
@@ -56,27 +56,27 @@
   }
 }
 
-/* Programs */
+/* ===Programs=== */
 
 .page__programs {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 45px;
   }
 }
 
-/* Advantages */
+/* ===Advantages=== */
 
 .page__advantages {
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 43px;
   }
 }
 
-/* Example */
+/* ===Example=== */
 
 .page__example {
   margin-bottom: 0;
