@@ -1,9 +1,10 @@
-/* Logo */
+/* ===Logo=== */
 
 .logo {
   display: grid;
-  grid-template-columns: min-content auto 24px;
+  grid-template-columns: 44px auto;
   align-items: center;
+  background-color: $contrast-color;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: min-content auto;
@@ -11,13 +12,15 @@
   }
 
   &:hover {
-    > .logo__img {
+    > .logo__img,
+    > .logo__text {
       opacity: 0.8;
     }
   }
 
   &:active {
-    > .logo__img {
+    > .logo__img,
+    > .logo__text {
       opacity: 0.6;
     }
   }
