@@ -111,7 +111,7 @@
 
 .example__list {
   margin-right: -15px;
-  margin-bottom: 17px;
+  margin-bottom: 0px;
   margin-left: -15px;
   flex: 1 1 auto;
   display: flex;
@@ -131,19 +131,12 @@
 /* -Item- */
 
 .example__item {
-  padding-top: 14px;
-  padding-right: 14px;
-  padding-bottom: 17px;
-  padding-left: 14px;
   margin-right: 15px;
   margin-bottom: 17px;
   margin-left: 15px;
   box-sizing: border-box;
   flex: 0 0 124px;
-  border: 1px solid $special-grey;
-  border-radius: 3px;
   text-align: center;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     flex: 0 0 162px;
@@ -157,8 +150,25 @@
 /* Progress */
 
 .example__progress {
+  padding-top: 14px;
+  padding-right: 14px;
+  padding-bottom: 17px;
+  padding-left: 14px;
   @include set-font-style(var(--fz-example-progress), var(--lh-example-progress), "Oswald");
   text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: "";
+    min-width: 124px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border: 1px solid $special-grey;
+    border-radius: 3px;
+  }
 }
 
 /* Description */
@@ -168,14 +178,13 @@
   padding-right: 8px;
   padding-bottom: 3px;
   padding-left: 8px;
-  margin-left: 0;
+  margin-top: calc(-1 * var(--fz-example-description));
+  margin-right: auto;
+  margin-left: auto;
   box-sizing: border-box;
   width: calc(100% - 36px);
-  position: absolute;
-  bottom: var(--fz-example-description);
-  left: 50%;
+  position: relative;
   z-index: 1;
-  transform: translate(-50%, 100%);
 
   @include set-font-style(var(--fz-example-description), var(--lh-example-description));
   background-color: $basic-grey;
