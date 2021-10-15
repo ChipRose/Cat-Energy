@@ -2,14 +2,9 @@
 
 .logo {
   display: grid;
-  grid-template-columns: 44px auto;
+  grid-template-columns: repeat(2, auto);
   align-items: center;
   background-color: $contrast-color;
-
-  @media (min-width: $tablet-width) {
-    grid-template-columns: min-content auto;
-    column-gap: 12px;
-  }
 
   &:hover {
     > .logo__img,
@@ -23,6 +18,14 @@
     > .logo__text {
       opacity: 0.6;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 14px;
   }
 }
 

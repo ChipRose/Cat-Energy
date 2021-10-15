@@ -19,6 +19,7 @@ $desktop-slide-height: 536px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: $tablet-slide-width;
@@ -43,6 +44,7 @@ $desktop-slide-height: 536px;
   align-items: flex-start;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     width: $tablet-slide-width * 2;
     height: $tablet-slide-height;
     transform: translateX(-25%);
@@ -85,7 +87,7 @@ $desktop-slide-height: 536px;
 
 .slider__img--before {
   @media (min-width: $tablet-width) {
-    transform: translateX(49%);
+    transform: translateX(53.5%);
   }
 
   @media (min-width: $desktop-width) {
@@ -95,7 +97,7 @@ $desktop-slide-height: 536px;
 
 .slider__img--after {
   @media (min-width: $tablet-width) {
-    transform: translateX(-57%);
+    transform: translateX(-45.5%);
   }
 
   @media (min-width: $desktop-width) {
@@ -106,9 +108,16 @@ $desktop-slide-height: 536px;
 /* =Control= */
 
 .slider__control {
-  align-self: center;
   display: flex;
   align-items: center;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    transform: translateX(-50%);
+  }
 }
 
 /* Scale */
@@ -144,8 +153,8 @@ $desktop-slide-height: 536px;
   background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -185,6 +194,9 @@ $desktop-slide-height: 536px;
   background: transparent;
 
   @media (min-width: $tablet-width) {
+    padding-right: 25px;
+    padding-left: 20px;
+
     &::before {
       content: "";
       width: calc(100% - 34px);

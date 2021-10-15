@@ -7,11 +7,11 @@
 /* ---Wrapper--- */
 
 .footer__wrapper {
-  padding-top: 33px;
+  padding-top: 35px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
+    padding-top: 38px;
     padding-bottom: 43px;
     display: flex;
     justify-content: space-between;
@@ -22,22 +22,21 @@
 /* Logo */
 
 .footer__logo {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
 /* ---List--- */
 
 .footer__social-list {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-right: -18px;
-  margin-left: -18px;
+  padding-top: 12px;
+  padding-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,11 +67,28 @@
   }
 }
 
+/* -Item- */
+
+.footer__social-item {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
 /* Link */
 
 .footer__social-link {
-  padding-right: 18px;
-  padding-left: 18px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  min-width: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 /* ---Promo--- */

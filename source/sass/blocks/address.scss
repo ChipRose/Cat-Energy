@@ -37,7 +37,9 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
+    padding-top: 63px;
     padding-right: 42px;
+    padding-bottom: 58px;
     padding-left: 42px;
   }
 
@@ -69,6 +71,7 @@
 
 .address__text {
   flex: 0 0 140px;
+
   @include set-font-style(var(--fz-address-text), var(--lh-address-text));
   font-style: normal;
 
@@ -96,6 +99,11 @@
 .address__map-block {
   min-height: 362px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
   @media (min-width: $desktop-width) {
     min-height: 100%;
     position: absolute;

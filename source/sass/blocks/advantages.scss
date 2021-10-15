@@ -8,6 +8,10 @@
 
 .advantages__title {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 /* ---List--- */
@@ -15,10 +19,10 @@
 .advantages__list {
   @media (min-width: $tablet-width) {
     margin-right: -30px;
-    margin-bottom: -26px;
     margin-left: -30px;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,8 +34,8 @@
 /* -Item- */
 
 .advantages__item {
-  margin-bottom: 16px;
   box-sizing: border-box;
+  margin-bottom: 20px;
   display: flex;
 
   &:last-child {
@@ -41,44 +45,28 @@
   @media (min-width: $tablet-width) {
     padding-top: 40px;
     padding-bottom: 20px;
-    margin-top: 0;
     margin-right: 109px;
-    margin-bottom: 26px;
+    margin-bottom: 37px;
     margin-left: 30px;
     min-height: 280px;
-    flex: 0 1 31.8%;
+    flex: 0 1 245px;
     display: grid;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: min-content auto;
     grid-template-columns: 1fr;
     position: relative;
 
     &::before {
+      content: attr(data-number);
       width: auto;
-      height: 280px;
+      height: var(--fz-advantages-number);
       position: absolute;
       top: 0;
-      left: 50%;
+      left: 73%;
       transform: translateX(-50%);
       z-index: -1;
 
       @include set-font-style(var(--fz-advantages-number), var(--lh-advantages-number), "Oswald");
       color: $basic-grey;
-    }
-
-    &--useful::before {
-      content: "1";
-    }
-
-    &--fast::before {
-      content: "2";
-    }
-
-    &--feed::before {
-      content: "3";
-    }
-
-    &--change::before {
-      content: "4";
     }
   }
 
@@ -102,13 +90,20 @@
 
 .advantages__image-block {
   margin-right: 20px;
+  box-sizing: border-box;
   width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 0 0 60px;
+  background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
     margin-bottom: 30px;
     width: 80px;
+    height: 80px;
   }
 }
 

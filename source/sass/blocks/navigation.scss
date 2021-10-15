@@ -7,7 +7,7 @@
   @include set-font-style(var(--fz-menu), var(--lh-menu), "Oswald", 500);
   background-color: $contrast-color;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     @include set-font-style(var(--fz-menu), var(--lh-menu), "Oswald", 400);
     background-color: transparent;
   }
@@ -99,7 +99,7 @@
 
 /* Burger no JS */
 
-.navigation--nojs .navigation__toggle{
+.navigation--nojs .navigation__toggle {
   display: none;
 }
 
@@ -120,7 +120,7 @@
   background-color: $contrast-color;
 
   @media (min-width: $tablet-width) {
-    margin-right: -10px;
+    margin-right: -18px;
     justify-content: flex-end;
     display: flex;
     flex-direction: row;
@@ -166,26 +166,6 @@
       border: none;
     }
   }
-
-  &--index {
-    @media (min-width: $desktop-width) {
-      color: $contrast-color;
-
-      &:hover {
-        color: $contrast-color06;
-      }
-
-      &:active {
-        color: $contrast-color03;
-      }
-
-      > .navigation__link--current {
-        &::before {
-          background-color: $contrast-color;
-        }
-      }
-    }
-  }
 }
 
 /* Link */
@@ -201,25 +181,49 @@
   z-index: 2;
 
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding-top: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    padding-left: 18px;
   }
+}
 
-  &--current {
-    @media (min-width: $tablet-width) {
-      position: relative;
+/* Current link */
 
+.navigation__link--current {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: calc(100% - 36px);
+      height: 2px;
+      position: absolute;
+      left: 50%;
+      bottom: 7px;
+      transform: translateX(-50%);
+      background-color: $basic-green;
+    }
+  }
+}
+
+/* Index link */
+
+.navigation__link--index {
+  @media (min-width: $desktop-width) {
+    color: $contrast-color;
+
+    &:hover {
+      color: $contrast-color06;
+    }
+
+    &:active {
+      color: $contrast-color03;
+    }
+
+    &.navigation__link--current {
       &::before {
-        content: "";
-        width: calc(100% - 20px);
-        height: 2px;
-        position: absolute;
-        left: 50%;
-        bottom: 2px;
-        transform: translateX(-50%);
-        background-color: $basic-green;
+        background-color: $contrast-color;
       }
     }
   }
