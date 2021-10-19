@@ -8,7 +8,6 @@
 
 .footer__wrapper {
   padding-top: 35px;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding-top: 38px;
@@ -17,12 +16,17 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
 }
 
 /* Logo */
 
 .footer__logo {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -35,8 +39,8 @@
 /* ---List--- */
 
 .footer__social-list {
-  padding-top: 12px;
-  padding-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +50,7 @@
 
   &::before {
     content: "";
-    width: calc(100% - 40px);
+    width: calc(100%);
     height: 100%;
     position: absolute;
     top: 0;

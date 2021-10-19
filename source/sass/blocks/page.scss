@@ -29,15 +29,15 @@
 /* ===Header=== */
 
 .page__header {
+  grid-row: 1/2;
+  grid-column: 1/2;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    z-index: 1;
-    position: relative;
+    margin-bottom: 8px;
   }
 }
 
@@ -56,7 +56,7 @@
 
 .page__cover {
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 82px;
   }
 }
 
@@ -68,19 +68,23 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 43px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 /* ===Advantages=== */
 
 .page__advantages {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 43px;
+    margin-bottom: 0;
   }
 }
 

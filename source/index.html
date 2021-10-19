@@ -13,13 +13,13 @@
     <div class="container header__wrapper">
       <a class="link header__logo logo">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/header/logo-extended.svg" width="70" height="59">
-          <source media="(min-width: 768px)" srcset="img/header/logo.svg" width="61" height="50">
-          <img class="img logo__img" src="img/header/logo-simple.svg" width="33" height="38" alt="Логотип Cat Energy" />
+          <source media="(min-width: 1440px)" srcset="img/header/logo-extended.svg">
+          <source media="(min-width: 768px)" srcset="img/header/logo.svg">
+          <img class="logo__img" src="img/header/logo-simple.svg" width="33" height="38" alt="Логотип Cat Energy" />
         </picture>
         <picture>
-          <source media="(min-width:1440px)" srcset="img/header/logo-text-extended.svg" width="118" height="22">
-          <source media="(min-width:768px)" srcset="img/header/logo-text-extended.svg" width="102" height="20">
+          <source media="(min-width:1440px)" srcset="img/header/logo-text-extended.svg">
+          <source media="(min-width:768px)" srcset="img/header/logo-text-extended.svg">
           <img class="logo__text" src="img/header/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy" />
         </picture>
       </a>
@@ -55,10 +55,9 @@
         <div class="cover__image-block">
           <picture>
             <source media="(min-width: 1440px)"
-              srcset="img/cover/cover-can-transparent.png 1x, img/cover/cover-can-transparent@2x.png 2x" width="552"
-              height="499">
+              srcset="img/cover/cover-can-transparent.png 1x, img/cover/cover-can-transparent@2x.png 2x">
             <source media="(min-width: 768px)"
-              srcset="img/cover/cover-can-white.png 1x, img/cover/cover-can-white@2x.png 2x" width="709" height="609">
+              srcset="img/cover/cover-can-white.png 1x, img/cover/cover-can-white@2x.png 2x">
             <img class="img" src="img/cover/cover-can.png" srcset="img/cover/cover-can@2x.png 2x" width="280"
               height="270" alt="Банка кошачих консервов Cat Energy с курицей" />
           </picture>
@@ -74,9 +73,10 @@
             <h3 class="subtitle programs__subtitle">Похудение</h3>
             <div class="programs__image-block">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/programs/bigger-cat_sit.svg" width="140" height="192">
-                <img class="programs__icon programs__icon--position" src="img/programs/cat_sit.svg" alt="Иконка черный кот сидит" width="36"
-                  height="50">
+                <source media="(min-width: 1440px)" srcset="img/programs/desktop-cat_sit.svg">
+                <source media="(min-width: 768px)" srcset="img/programs/tablet-cat_sit.svg">
+                <img class="programs__icon programs__icon--position" src="img/programs/cat_sit.svg"
+                  alt="Иконка черный кот сидит" width="36" height="50">
               </picture>
             </div>
             <div class="programs__content">
@@ -95,7 +95,8 @@
             <h3 class="subtitle programs__subtitle">Набор массы</h3>
             <div class="programs__image-block">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/programs/bigger-cat_walk.svg" width="268" height="200">
+                <source media="(min-width: 1440px)" srcset="img/programs/desktop-cat_walk.svg">
+                <source media="(min-width: 768px)" srcset="img/programs/tablet-cat_walk.svg">
                 <img class="programs__icon" src="img/programs/cat_walk.svg" alt="Иконка черный кот гуляет" width="67"
                   height="28">
               </picture>
@@ -161,7 +162,8 @@
             </div>
             <div class="advantages__text-block">
               <p class="text advantages__text">
-                Уже через месяц наслаждайтесь изменениями к лучшему <br class="br br--tablet"> вашего питомца!
+                Уже через месяц наслаждайтесь изменениями к лучшему <br class="br br--tablet br--desktop"> вашего
+                питомца!
               </p>
             </div>
           </li>
@@ -197,29 +199,31 @@
           </div>
         </header>
         <div class="slider example__slider">
-          <ul class="list slider__list">
+          <ul class="list slider__list  example__slider-list">
             <li class="slider__item">
               <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/example/desktop-example-before.png 1x, img/example/desktop-example-before@2.png 2x" />
                 <source media="(min-width: 768px)"
-                  srcset="img/example/bigger-example-before.png 1x, img/example/bigger-example-before@2.png 2x"
-                  width="700" height="545" />
+                  srcset="img/example/tablet-example-before.png 1x, img/example/tablet-example-before@2.png 2x" />
                 <img class="img slider__img slider__img--before" src="img/example/example-before.png"
-                  srcset="img/example/bigger-example-before@2.png 2x" width="280" height="232"
+                  srcset="img/example/example-before@2.png 2x" width="280" height="235"
                   alt="Изображение толстого кота, до использования кошачьих консервов" />
               </picture>
             </li>
             <li class="slider__item">
               <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/example/desktop-example-after.png 1x, img/example/desktop-example-after@2.png 2x" />
                 <source media="(min-width: 768px)"
-                  srcset="img/example/bigger-example-after.png 1x, img/example/bigger-example-after@2.png 2x"
-                  width="700" height="545" />
+                  srcset="img/example/tablet-example-after.png 1x, img/example/tablet-example-after@2.png 2x" />
                 <img class="img slider__img slider__img--after" src="img/example/example-after.png"
-                  srcset="img/example/bigger-example-after@2.png 2x" width="251" height="240"
+                  srcset="img/example/example-after@2.png 2x" width="280" height="235"
                   alt="Изображение худого кота, после использования кошачьих консервов" />
               </picture>
             </li>
           </ul>
-          <div class="slider__control">
+          <div class="slider__control example__control">
             <button class="slider__button slider__button--before" type="button">было</button>
             <div class="slider__scale">
               <div class="slider__cursor"></div>
@@ -236,7 +240,7 @@
       <div class="address__header ">
         <div class="container address__wrapper">
           <div class="address__text-block">
-            <h3 class="subtitle address__subtitle">приглашаем <br class="br br--mobile br--tablet">к сотрудничеству
+            <h3 class="subtitle address__subtitle">приглашаем <br class="br" /> к сотрудничеству
               дилеров!</h3>
             <address class="address__text">ул. Большая Конюшенная, д. 19/8
               <span class="address__city">Санкт-Петербург</span>
@@ -247,7 +251,7 @@
       <div class="address__map-block">
         <div class="address__pin-block">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/footer/bigger-map-pin.svg" width="94" height="106">
+            <source media="(min-width: 768px)" srcset="img/footer/bigger-map-pin.svg">
             <img class="img" src="img/footer/map-pin.svg" width="47" height="50"
               alt="Пин, показывающий адрес организации: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" />
           </picture>

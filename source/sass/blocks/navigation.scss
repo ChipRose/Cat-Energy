@@ -127,6 +127,10 @@
     flex-wrap: wrap;
     background-color: transparent;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-right: -17px;
+  }
 }
 
 /* -Item- */
@@ -186,6 +190,11 @@
     padding-bottom: 18px;
     padding-left: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 17px;
+    padding-left: 17px;
+  }
 }
 
 /* Current link */
@@ -203,6 +212,12 @@
       bottom: 7px;
       transform: translateX(-50%);
       background-color: $basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      bottom: 10px;
     }
   }
 }
