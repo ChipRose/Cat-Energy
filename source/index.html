@@ -12,16 +12,19 @@
   <header class="header page__header">
     <div class="container header__wrapper">
       <a class="link header__logo logo">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/header/logo-extended.svg">
-          <source media="(min-width: 768px)" srcset="img/header/logo.svg">
-          <img class="logo__img" src="img/header/logo-simple.svg" width="33" height="38" alt="Логотип Cat Energy" />
-        </picture>
-        <picture>
-          <source media="(min-width:1440px)" srcset="img/header/logo-text-extended.svg">
-          <source media="(min-width:768px)" srcset="img/header/logo-text-extended.svg">
-          <img class="logo__text" src="img/header/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy" />
-        </picture>
+        <div class="logo__image-block">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header/logo-extended.svg">
+            <source media="(min-width: 768px)" srcset="img/header/logo.svg">
+            <img class="logo__img" src="img/header/logo-simple.svg" width="33" height="38" alt="Логотип Cat Energy" />
+          </picture>
+        </div>
+        <div class="logo__text-block">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/header/logo-text-extended.svg">
+            <img class="logo__text" src="img/header/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy" />
+          </picture>
+        </div>
       </a>
       <nav class="navigation navigation--nojs navigation--closed header__menu page__navigation">
         <button class="navigation__toggle header__burger " type="button" aria-expanded="false"
@@ -44,6 +47,7 @@
   </header>
   <main class="main page__main">
     <h1 class="visually-hidden">Cat Energy. Функциональное питание для котов</h1>
+
     <section class="cover page__cover">
       <div class="container cover__wrapper">
         <header class="cover__header">
@@ -58,13 +62,14 @@
               srcset="img/cover/cover-can-transparent.png 1x, img/cover/cover-can-transparent@2x.png 2x">
             <source media="(min-width: 768px)"
               srcset="img/cover/cover-can-white.png 1x, img/cover/cover-can-white@2x.png 2x">
-            <img class="img" src="img/cover/cover-can.png" srcset="img/cover/cover-can@2x.png 2x" width="280"
+            <img class="cover__img" src="img/cover/cover-can.png" srcset="img/cover/cover-can@2x.png 2x" width="280"
               height="270" alt="Банка кошачих консервов Cat Energy с курицей" />
           </picture>
         </div>
         <a class="button cover__button " href="form.html">Подобрать программу</a>
       </div>
     </section>
+
     <section class="programs page__programs">
       <div class="container">
         <h2 class="visually-hidden">Программы питания для котов</h2>
@@ -72,12 +77,10 @@
           <li class="programs__item">
             <h3 class="subtitle programs__subtitle">Похудение</h3>
             <div class="programs__image-block">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/programs/desktop-cat_sit.svg">
-                <source media="(min-width: 768px)" srcset="img/programs/tablet-cat_sit.svg">
-                <img class="programs__icon programs__icon--position" src="img/programs/cat_sit.svg"
-                  alt="Иконка черный кот сидит" width="36" height="50">
-              </picture>
+              <svg class="programs__icon programs__icon--slim" width="36" height="50" role="img"
+                aria-label="Иконка черный кот сидит" focusable="false">
+                <use xlink:href="img/svg-sprite.svg#cat-sit"></use>
+              </svg>
             </div>
             <div class="programs__content">
               <div class="programs__text-block">
@@ -94,12 +97,10 @@
           <li class="programs__item">
             <h3 class="subtitle programs__subtitle">Набор массы</h3>
             <div class="programs__image-block">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/programs/desktop-cat_walk.svg">
-                <source media="(min-width: 768px)" srcset="img/programs/tablet-cat_walk.svg">
-                <img class="programs__icon" src="img/programs/cat_walk.svg" alt="Иконка черный кот гуляет" width="67"
-                  height="28">
-              </picture>
+              <svg class="programs__icon programs__icon--gain" width="67" height="28" role="img"
+                aria-label="Иконка черный идёт" focusable="false">
+                <use xlink:href="img/svg-sprite.svg#cat-walk"></use>
+              </svg>
             </div>
             <div class="programs__content">
               <div class="programs__text-block programs__text-block--padding">
@@ -118,14 +119,17 @@
         </ul>
       </div>
     </section>
+
     <section class="advantages page__advantages">
       <div class="container">
         <h2 class="title advantages__title">Как это работает</h2>
         <ul class="list advantages__list">
           <li class="advantages__item advantages__item" data-number="1">
             <div class="advantages__image-block">
-              <img class="img" src="img/advantages/adv_useful.svg" width="30" height="32"
-                alt="Иконка с изображением листика">
+              <svg class="advantages__icon" width="30" height="32" role="img" aria-label="Иконка с изображением листика"
+                focusable="false">
+                <use xlink:href="img/svg-sprite.svg#adv-leaf"></use>
+              </svg>
             </div>
             <div class="advantages__text-block">
               <p class="text advantages__text">
@@ -135,8 +139,10 @@
           </li>
           <li class="advantages__item advantages__item" data-number="2">
             <div class="advantages__image-block">
-              <img class="img" src="img/advantages/adv_form.svg" width="29" height="31"
-                alt="Иконка с изображением воды с пузырьками">
+              <svg class="advantages__icon" width="29" height="31" role="img"
+                aria-label="Иконка с изображением колбы с пузырьками" focusable="false">
+                <use xlink:href="img/svg-sprite.svg#adv-tube"></use>
+              </svg>
             </div>
             <div class="advantages__text-block">
               <p class="text advantages__text">
@@ -146,8 +152,10 @@
           </li>
           <li class="advantages__item advantages__item" data-number="3">
             <div class="advantages__image-block">
-              <img class="img" src="img/advantages/adv_feed.svg" width="25" height="30"
-                alt="Иконка с изображением вилки и ножа">
+              <svg class="advantages__icon" width="25" height="30" role="img"
+                aria-label="Иконка с изображением вилки и ножа" focusable="false">
+                <use xlink:href="img/svg-sprite.svg#adv-eat"></use>
+              </svg>
             </div>
             <div class="advantages__text-block">
               <p class="text advantages__text">
@@ -157,8 +165,10 @@
           </li>
           <li class="advantages__item advantages__item" data-number="4">
             <div class="advantages__image-block">
-              <img class="img" src="img/advantages/adv_change.svg" width="32" height="33"
-                alt="Иконка с изображением будильника">
+              <svg class="advantages__icon" width="25" height="30" role="img"
+                aria-label="Иконка с изображением будильника" focusable="false">
+                <use xlink:href="img/svg-sprite.svg#adv-alarm"></use>
+              </svg>
             </div>
             <div class="advantages__text-block">
               <p class="text advantages__text">
@@ -170,6 +180,7 @@
         </ul>
       </div>
     </section>
+
     <section class="example page__example">
       <div class="container example__wrapper">
         <header class="example__header">
@@ -206,7 +217,7 @@
                   srcset="img/example/desktop-example-before.png 1x, img/example/desktop-example-before@2.png 2x" />
                 <source media="(min-width: 768px)"
                   srcset="img/example/tablet-example-before.png 1x, img/example/tablet-example-before@2.png 2x" />
-                <img class="img slider__img slider__img--before" src="img/example/example-before.png"
+                <img class="slider__img slider__img--before" src="img/example/example-before.png"
                   srcset="img/example/example-before@2.png 2x" width="280" height="235"
                   alt="Изображение толстого кота, до использования кошачьих консервов" />
               </picture>
@@ -217,7 +228,7 @@
                   srcset="img/example/desktop-example-after.png 1x, img/example/desktop-example-after@2.png 2x" />
                 <source media="(min-width: 768px)"
                   srcset="img/example/tablet-example-after.png 1x, img/example/tablet-example-after@2.png 2x" />
-                <img class="img slider__img slider__img--after" src="img/example/example-after.png"
+                <img class="slider__img slider__img--after" src="img/example/example-after.png"
                   srcset="img/example/example-after@2.png 2x" width="280" height="235"
                   alt="Изображение худого кота, после использования кошачьих консервов" />
               </picture>
@@ -234,6 +245,7 @@
       </div>
     </section>
   </main>
+
   <footer class="footer page__footer">
     <section class="address">
       <h2 class="visually-hidden">Адрес Cat Energy</h2>
@@ -250,51 +262,55 @@
       </div>
       <div class="address__map-block">
         <div class="address__pin-block">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/footer/bigger-map-pin.svg">
-            <img class="img" src="img/footer/map-pin.svg" width="47" height="50"
-              alt="Пин, показывающий адрес организации: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" />
-          </picture>
+          <svg class="address__pin" width="57" height="53" role="img"
+            aria-label="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" focusable="false">
+            <use xlink:href="img/svg-sprite.svg#map-pin" />
+          </svg>
         </div>
         <iframe class="address__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858715528527!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1631463606519!5m2!1sru!2sru"
           allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
+
     <div class="container footer__wrapper ">
       <a class="link logo-text footer__logo">
-        <img class="img logo-text__img" src="img/footer/footer-logo-text.svg" width="128" height="24"
-          alt="Надпись Cat Energy">
+        <svg class="logo-text__icon" width="128" height="24" role="img" aria-label="Надпись Cat Energy"
+          focusable="false">
+          <use xlink:href="img/svg-sprite.svg#logo-text"></use>
+        </svg>
       </a>
       <ul class="list footer__social-list">
         <li class="footer__social-item">
           <a href="#" class="link social-button footer__social-link">
-            <svg class="social-button__icon" width="23" height="16" aria-label="Иконка ВКонтакте">
-              <use xlink:href="img/social-sprite.svg#vk" />
+            <svg class="social-button__icon social-button__icon--vk" width="24" height="13" role="img"
+              aria-label="Иконка ВКонтакте" focusable="false">
+              <use xlink:href="img/svg-sprite.svg#vk" />
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a href="#" class="link social-button footer__social-link">
-            <svg class="social-button__icon" width="16" height="16" aria-label="Иконка Инстаграм">
-              <use xlink:href="img/social-sprite.svg#instagram" />
+            <svg class="social-button__icon social-button__icon--inst" width="17" height="17" role="img"
+              aria-label="Иконка Инстаграм" focusable="false">
+              <use xlink:href="img/svg-sprite.svg#instagram" />
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a href="#" class="link social-button footer__social-link">
-            <svg class="social-button__icon" width="12" height="21" aria-label="Иконка Фейсбук">
-              <use xlink:href="img/social-sprite.svg#facebook" />
+            <svg class="social-button__icon social-button__icon--fb" width="13" height="20" role="img"
+              aria-label="Иконка Фейсбук" focusable="false">
+              <use xlink:href="img/svg-sprite.svg#facebook" />
             </svg>
           </a>
         </li>
       </ul>
       <a class="link academy-logo footer__promo" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="academy-logo__text footer__promo-text">HTML Academy</p>
-        <svg class="academy-logo__icon footer__promo-icon" width="27" height="34" viewBox="0 0 27 34"
-          aria-label="Логотип HTMLAcademy" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
+        <svg class="academy-logo__icon footer__promo-icon" width="27" height="34" role="img"
+          aria-label="Логотип HTMLAcademy" focusable="false">
+          <use xlink:href="img/svg-sprite.svg#academy-logo" />
         </svg>
       </a>
     </div>

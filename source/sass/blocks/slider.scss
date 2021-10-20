@@ -51,14 +51,18 @@
 }
 
 /* Image */
+.slider__img {
+  width: 100%;
+  height: auto;
+}
 
 .slider__img--before {
   @media (min-width: $tablet-width) {
-    transform: translateX(50%);
+    transform: translate(55%, -15px);
   }
 
   @media (min-width: $desktop-width) {
-    transform: translate(50%, -15px);
+    transform: translate(49%, -13px);
   }
 }
 

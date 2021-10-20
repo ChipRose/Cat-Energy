@@ -126,10 +126,7 @@
 /* -Pin block- */
 
 .address__pin-block {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  @include absolute-center;
 
   &::after {
     content: "";
@@ -143,5 +140,20 @@
     background-image: url("../../img/footer/pin-shadow.png");
     background-repeat: no-repeat;
     background-position: center bottom;
+  }
+}
+
+/* Pin */
+
+.address__pin {
+  width: 57px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 97px;
   }
 }

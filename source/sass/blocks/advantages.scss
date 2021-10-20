@@ -34,7 +34,6 @@
 /* -Item- */
 
 .advantages__item {
-  box-sizing: border-box;
   margin-bottom: 20px;
   display: flex;
 
@@ -86,14 +85,10 @@
 
 .advantages__image-block {
   margin-right: 20px;
-  box-sizing: border-box;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex: 0 0 60px;
+  height: 60px;
   background-color: $basic-green;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
@@ -101,6 +96,12 @@
     width: 80px;
     height: 80px;
   }
+}
+
+/* Icon */
+
+.advantages__icon {
+  @include absolute-center;
 }
 
 /* -Text block- */

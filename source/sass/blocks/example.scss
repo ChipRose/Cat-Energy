@@ -38,7 +38,7 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 45px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -271,7 +271,19 @@
 .example__slider-list {
   margin-bottom: 17px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.example__control {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: -10px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 9px;
+    bottom: 48px;
+    z-index: 10;
   }
 }

@@ -5,6 +5,12 @@
   height: 100%;
 }
 
+.page *,
+.page *::before,
+.page *::after {
+  box-sizing: border-box;
+}
+
 /* Body */
 
 .page__body {
@@ -33,7 +39,7 @@
   grid-column: 1/2;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
