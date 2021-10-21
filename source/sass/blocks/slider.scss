@@ -193,7 +193,7 @@
 
 .slider--before .slider__img--before {
   @media (min-width: $tablet-width) {
-    transform: translate(0,-15px);
+    transform: translate(0, -15px);
     transition: transform 0.3s ease-out;
   }
 
