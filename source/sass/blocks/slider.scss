@@ -1,5 +1,6 @@
-/* ---Slider variable--- */
-:root {
+/* ===Slider=== */
+
+.slider {
   --slide-width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -9,11 +10,7 @@
   @media (min-width: $desktop-width) {
     --slide-width: 650px;
   }
-}
 
-/* ===Slider=== */
-
-.slider {
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
@@ -47,12 +44,11 @@
 }
 
 /* Image */
+
 .slider__img {
   width: 100%;
   height: auto;
 }
-
-
 
 /* =Control= */
 
@@ -65,7 +61,6 @@
 /* Scale */
 
 .slider__scale {
-  box-sizing: border-box;
   width: 84px;
   height: 14px;
   position: relative;
@@ -93,27 +88,24 @@
   transform: translateY(-50%);
   border-radius: 3px;
   background-color: $basic-green;
+  border: none;
 
   @media (min-width: $tablet-width) {
     width: 32px;
     height: 32px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    @include absolute-center;
+    border: 1px solid $special-grey;
     border-radius: 50%;
     background-color: $contrast-color;
-    border: 1px solid $special-grey;
     box-shadow: 0 1px 3px $main-color016;
 
     &::before {
       content: "";
       width: 8px;
       height: 8px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+
+      @include absolute-center;
       border-radius: 50%;
       background-color: $basic-green;
     }
@@ -135,9 +127,9 @@
   padding-right: 18px;
   padding-bottom: 10px;
   padding-left: 18px;
+  position: relative;
   cursor: pointer;
   border: none;
-  position: relative;
 
   @include set-font-style(var(--fz-slider-button), var(--lh-slider-button), "Oswald");
   text-transform: uppercase;
@@ -201,7 +193,7 @@
 
 .slider--before .slider__img--before {
   @media (min-width: $tablet-width) {
-    transform: translateX(0);
+    transform: translate(0,-15px);
     transition: transform 0.3s ease-out;
   }
 

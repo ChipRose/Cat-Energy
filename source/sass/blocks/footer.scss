@@ -4,17 +4,16 @@
   background-color: $basic-grey;
 }
 
-/* =Wrapper= */
+/* ==Wrapper== */
 
 .footer__wrapper {
   padding-top: 35px;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     padding-top: 35px;
     padding-bottom: 43px;
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -29,7 +28,6 @@
 
 .footer__logo {
   margin-bottom: 25px;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -103,7 +101,7 @@
   }
 }
 
-/* ---Promo--- */
+/* =Promo= */
 
 .footer__promo {
   padding-top: 15px;
