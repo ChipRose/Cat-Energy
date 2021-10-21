@@ -1,4 +1,6 @@
-/* Button */
+/* ===Social button=== */
+
+/* Icon */
 
 .social-button__icon {
   fill: $special-grey-3;
@@ -11,5 +13,32 @@
 
   &:active .social-button__icon {
     fill: $basic-green03;
+  }
+}
+
+.social-button__icon--vk {
+  width: 24px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 31px;
+  }
+}
+
+.social-button__icon--inst {
+  width: 16px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 25px;
+  }
+}
+
+.social-button__icon--fb {
+  width: 13px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
   }
 }

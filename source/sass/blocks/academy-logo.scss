@@ -4,17 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-/* Icon */
-
-.academy-logo__icon {
-  fill: $special-grey-3;
-}
-
-/* Logo */
-
-.academy-logo {
   &:hover {
     > .academy-logo__icon {
       fill: $basic-green;
@@ -30,4 +20,10 @@
       fill: $basic-green03;
     }
   }
+}
+
+/* Icon */
+
+.academy-logo__icon {
+  fill: $special-grey-3;
 }

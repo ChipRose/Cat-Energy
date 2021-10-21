@@ -1,15 +1,14 @@
+/* Logo text */
+
 .logo-text {
-  display: block;
+  width: 128px;
+  height: auto;
+}
 
-  &:hover {
-    > .logo-text__img {
-      opacity: 0.8;
-    }
-  }
+.logo-text:hover {
+  opacity: 0.8;
+}
 
-  &:active {
-    > .logo-text__img {
-      opacity: 0.6;
-    }
-  }
+.logo-text:active {
+  opacity: 0.6;
 }

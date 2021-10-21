@@ -5,6 +5,12 @@
   height: 100%;
 }
 
+.page *,
+.page *::before,
+.page *::after {
+  box-sizing: border-box;
+}
+
 /* Body */
 
 .page__body {
@@ -26,57 +32,69 @@
   background-color: $contrast-color;
 }
 
-/* Header */
+/* ===Header=== */
 
 .page__header {
-  &--catalog {
-    margin-bottom: 27px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    z-index: 1;
-    position: relative;
+    margin-bottom: 8px;
   }
 }
 
-/* Main */
+.page__header--catalog {
+  margin-bottom: 27px;
+}
+
+/* ===Main=== */
 
 .page__main {
   grid-row: 2/3;
   grid-column: 1/2;
 }
 
-/* Cover */
+/* ===Cover=== */
 
 .page__cover {
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 82px;
   }
 }
 
-/* Programs */
+/* ===Programs=== */
 
 .page__programs {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 43px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 }
 
-/* Advantages */
+/* ===Advantages=== */
 
 .page__advantages {
   margin-bottom: 42px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 43px;
+    margin-bottom: 0;
   }
 }
 
-/* Example */
+/* ===Example=== */
 
 .page__example {
   margin-bottom: 0;

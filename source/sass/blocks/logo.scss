@@ -1,38 +1,67 @@
-/* Logo */
+/* ===Logo=== */
 
 .logo {
   display: grid;
-  grid-template-columns: min-content auto 24px;
+  grid-template-rows: min-content;
+  grid-template-columns: min-content 1fr;
   align-items: center;
+  background-color: $contrast-color;
+  column-gap: 11px;
 
-  @media (min-width: $tablet-width) {
-    grid-template-columns: min-content auto;
-    column-gap: 12px;
-  }
-
-  &:hover {
-    > .logo__img {
-      opacity: 0.8;
-    }
-  }
-
-  &:active {
-    > .logo__img {
-      opacity: 0.6;
-    }
+  @media (min-width: $desktop-width) {
+    column-gap: 14px;
   }
 }
 
-/* Logo image*/
+.logo:hover > .logo__image-block,
+.logo:hover > .logo__text-block {
+  opacity: 0.8;
+}
+
+.logo:active > .logo__image-block,
+.logo:active > .logo__text-block {
+  opacity: 0.6;
+}
+
+/* -Image block- */
+
+.logo__image-block {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+/* Image */
 
 .logo__img {
-  grid-column: 1/2;
-  grid-row: 1/2;
+  width: 33px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+  }
 }
 
-/* Logo text*/
+/* -Text block- */
+
+.logo__text-block {
+  padding-top: 13px;
+  padding-bottom: 6px;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  justify-self: center;
+}
+
+/* Text */
 
 .logo__text {
-  justify-self: center;
-  grid-column: 2/3;
+  width: 101px;
+  height: auto;
+
+  @media (min-width: $desktop-width) {
+    width: 117px;
+  }
 }

@@ -2,11 +2,12 @@
 
 .navigation {
   display: grid;
+  position: relative;
 
   @include set-font-style(var(--fz-menu), var(--lh-menu), "Oswald", 500);
   background-color: $contrast-color;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     @include set-font-style(var(--fz-menu), var(--lh-menu), "Oswald", 400);
     background-color: transparent;
   }
@@ -15,84 +16,120 @@
 /* -Burger- */
 
 .navigation__toggle {
-  display: block;
   width: 24px;
-  height: 16px;
+  height: 17px;
   justify-self: end;
   border-width: 0;
   background-color: transparent;
   cursor: pointer;
   position: relative;
-
-  &::before,
-  &::after {
-    content: "";
-    width: 24px;
-    height: 1.5px;
-    position: absolute;
-    left: 0;
-    background-color: $main-color;
-    transition: all 0.3s ease-out;
-  }
-
-  &::before {
-    top: 0;
-  }
-
-  &::after {
-    top: 100%;
-    transform: translateY(-50%);
-  }
-
-  &--open {
-    &::before {
-      top: 50%;
-      transform: rotate(45deg) translateY(-50%);
-    }
-
-    &::after {
-      top: 50%;
-      transform: rotate(-45deg) translateY(-50%);
-    }
-
-    .navigation__burger-line {
-      display: none;
-    }
-
-    + .navigation__list {
-      display: flex;
-    }
-  }
+  z-index: 50;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-/* Burger line */
+/* Burger closed */
 
-.navigation__burger-line {
-  display: block;
-  width: 24px;
-  height: 1.5px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  background-color: $main-color;
+.navigation--closed .navigation__toggle {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: $main-color;
+    box-shadow: 0 8px 0 $main-color, 0 16px 0 $main-color;
+    transition: all 0.3s ease-out;
+  }
+}
+
+.navigation--closed .navigation__list {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    z-index: 20;
+    transform: translateY(calc(-100% + 1px));
+    transition: transform 0.3s ease-out;
+  }
+}
+
+/* Burger opened */
+
+.navigation--opened .navigation__toggle {
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    background-color: $main-color;
+    transition: all 0.3s ease-out;
+  }
+
+  &::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
+
+.navigation--opened .navigation__list {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: -20px;
+    right: -20px;
+    z-index: 20;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+  }
+}
+
+/* Burger no JS */
+
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation--nojs .navigation__list {
+  @media (max-width: $mobile-width-only) {
+    margin-top: 60px;
+    display: block;
+    position: static;
+    transform: translateY(0);
+    min-height: 0;
+  }
 }
 
 /* ---List--- */
 
 .navigation__list {
-  display: none;
   flex-direction: column;
+  background-color: $contrast-color;
 
   @media (min-width: $tablet-width) {
-    margin-right: -10px;
+    margin-right: -18px;
     justify-content: flex-end;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: -17px;
   }
 }
 
@@ -102,22 +139,18 @@
   text-align: center;
   transition: color 0.3s ease-out;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 
   &::before {
     content: "";
-    width: calc(100% + 40px);
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 50%;
-    z-index: -1;
     transform: translateX(-50%);
+    z-index: -1;
     border-top: 1px solid $basic-grey-2;
-  }
-
-  &:last-child::before {
-    border-bottom: 1px solid $basic-grey-2;
   }
 
   &:hover {
@@ -137,26 +170,6 @@
       border: none;
     }
   }
-
-  &--index {
-    @media (min-width: $desktop-width) {
-      color: $contrast-color;
-
-      &:hover {
-        color: $contrast-color06;
-      }
-
-      &:active {
-        color: $contrast-color03;
-      }
-
-      > .navigation__link--current {
-        &::before {
-          background-color: $contrast-color;
-        }
-      }
-    }
-  }
 }
 
 /* Link */
@@ -169,28 +182,63 @@
   text-transform: uppercase;
   text-align: center;
   color: inherit;
-  z-index: 3;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding-top: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    padding-left: 18px;
   }
 
-  &--current {
-    @media (min-width: $tablet-width) {
-      position: relative;
+  @media (min-width: $desktop-width) {
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+}
 
+/* Current link */
+
+.navigation__link--current {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: calc(100% - 36px);
+      height: 2px;
+      position: absolute;
+      left: 50%;
+      bottom: 7px;
+      transform: translateX(-50%);
+      background-color: $basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      bottom: 10px;
+    }
+  }
+}
+
+/* Index link */
+
+.navigation__link--index {
+  @media (min-width: $desktop-width) {
+    color: $contrast-color;
+
+    &:hover {
+      color: $contrast-color06;
+    }
+
+    &:active {
+      color: $contrast-color03;
+    }
+
+    &.navigation__link--current {
       &::before {
-        content: "";
-        width: calc(100% - 20px);
-        height: 2px;
-        position: absolute;
-        left: 50%;
-        bottom: 2px;
-        transform: translateX(-50%);
-        background-color: $basic-green;
+        background-color: $contrast-color;
       }
     }
   }

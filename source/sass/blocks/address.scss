@@ -30,21 +30,23 @@
 /* -Text block- */
 
 .address__text-block {
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 30px;
+  padding-bottom: 26px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
+    padding-top: 63px;
     padding-right: 42px;
+    padding-bottom: 58px;
     padding-left: 42px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 66px;
     padding-right: 89px;
-    padding-bottom: 59px;
+    padding-bottom: 56px;
     padding-left: 76px;
     width: 570px;
     position: relative;
@@ -68,6 +70,8 @@
 /* Text */
 
 .address__text {
+  flex: 0 0 140px;
+
   @include set-font-style(var(--fz-address-text), var(--lh-address-text));
   font-style: normal;
 
@@ -95,6 +99,11 @@
 .address__map-block {
   min-height: 362px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
   @media (min-width: $desktop-width) {
     min-height: 100%;
     position: absolute;
@@ -117,10 +126,7 @@
 /* -Pin block- */
 
 .address__pin-block {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  @include absolute-center;
 
   &::after {
     content: "";
@@ -134,5 +140,20 @@
     background-image: url("../../img/footer/pin-shadow.png");
     background-repeat: no-repeat;
     background-position: center bottom;
+  }
+}
+
+/* Pin */
+
+.address__pin {
+  width: 57px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 97px;
   }
 }
