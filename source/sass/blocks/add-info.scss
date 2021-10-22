@@ -1,7 +1,7 @@
 /* Legend */
 
 .add-info__legend {
-  margin-bottom: 34px;
+  margin-bottom: 40px;
 }
 
 /* ---Container--- */
@@ -21,7 +21,7 @@
 /* ---Item--- */
 
 .add-info__item {
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
 
@@ -42,68 +42,46 @@
   }
 }
 
-/* =Checkbox= */
+/* Property */
 
-/* Box */
-
-.add-info__box {
-  margin-right: 18px;
-  width: 30px;
-  height: 30px;
+.add-info__property {
+  margin-left: 46px;
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border: 1px solid $special-grey;
+  cursor: pointer;
+
+  &::before {
+    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='15' viewBox='0 0 19 15' stroke-width='2' stroke='%2368B738'%3E%3Cpath d='M1 6 L 7 13 L 18 1' fill='none' /%3E%3C/svg%3E");
+    display: none;
+    width: 18px;
+    height: auto;
+    position: absolute;
+    right: calc(22px + 100%);
+  }
+
+  &::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: calc(16px + 100%);
+    border: 1px solid $special-grey;
+  }
 }
 
-/* Check sign */
-
-.add-info__check {
-  display: none;
-  stroke: $basic-green;
-  stroke-width: 2px;
+.add-info__checkbox:hover + .add-info__property::after {
+  border-color: $special-grey-2;
 }
 
-.add-info__checkbox {
-  &:hover {
-    + .add-info__box {
-      border-color: $special-grey-2;
-    }
-  }
+.add-info__checkbox:disabled + .add-info__property {
+  opacity: 0.3;
+}
 
-  &:disabled {
-    + .add-info__box {
-      border-color: $special-grey-2-03;
-    }
+.add-info__checkbox:checked + .add-info__property::before {
+  display: block;
+}
 
-    ~ .add-info__property {
-      color: $main-color03;
-    }
-  }
-
-  &:checked {
-    + * .add-info__check {
-      display: block;
-    }
-  }
-
-  &:checked:hover {
-    + .add-info__box {
-      border-color: $special-grey-2;
-    }
-  }
-
-  &:checked:disabled {
-    + * .add-info__check {
-      stroke: $basic-green03;
-    }
-
-    + .add-info__box {
-      border-color: $special-grey-2-03;
-    }
-
-    ~ .add-info__property {
-      color: $main-color03;
-    }
-  }
+.add-info__checkbox:checked:hover + .add-info__property::after {
+  border-color: $special-grey-2;
 }

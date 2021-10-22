@@ -1,4 +1,4 @@
-/* Owner contacts */
+/* ===Owner contacts=== */
 
 .owner-contacts {
   @media (min-width: $desktop-width) {
@@ -10,8 +10,9 @@
 }
 
 /* Legend */
+
 .owner-contacts__legend {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 
   @media (min-width: $desktop-width) {
     grid-row: 1/2;
@@ -19,7 +20,7 @@
   }
 }
 
-/* ---Item--- */
+/* -Item- */
 
 .owner-contacts__item {
   margin-bottom: 14px;
@@ -36,35 +37,22 @@
   }
 }
 
-/* =Container= */
+/* =Wrapper= */
 
-.owner-contacts__container {
-  display: inline-block;
+.owner-contacts__wrapper {
   position: relative;
   flex: 1 1 auto;
   order: 2;
 }
 
-/* Icon */
-
-.owner-contacts__icon {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  z-index: 0;
-  transform: translateY(-50%);
-  fill: $special-dark-grey-2;
-}
-
 /* Input */
 
 .owner-contacts__value {
-  padding-top: 15px;
-  padding-right: 51px;
-  padding-bottom: 13px;
+  padding-top: 13px;
+  padding-right: 45px;
+  padding-bottom: 12px;
   padding-left: 15px;
-  min-width: 100%;
-  position: relative;
+  width: 100%;
 
   &:focus {
     + .owner-contacts__icon {
@@ -79,10 +67,30 @@
   }
 }
 
+/* Icon */
+
+.owner-contacts__icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  z-index: 0;
+  transform: translateY(-50%);
+  fill: $special-dark-grey-2;
+}
+
+.owner-contacts__icon--email {
+  width: 18px;
+  height: auto;
+}
+
+.owner-contacts__icon--phone {
+  width: 20px;
+  height: auto;
+}
 /* Property */
 
 .owner-contacts__property {
-  margin-right: 11px;
+  margin-right: 12px;
   order: 1;
   flex: 0 0 auto;
 }

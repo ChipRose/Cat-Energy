@@ -47,7 +47,9 @@
   }
 }
 
-.page__header--catalog {
+/* -Form.html- */
+
+.page__header-form {
   margin-bottom: 27px;
 }
 
@@ -56,6 +58,20 @@
 .page__main {
   grid-row: 2/3;
   grid-column: 1/2;
+}
+
+/* -Form.html- */
+
+.page__main--form {
+  margin-bottom: 32px;
+}
+
+/* ===Title=== */
+
+/* -Form.html- */
+
+.page__form-title {
+  margin-bottom: 37px;
 }
 
 /* ===Cover=== */

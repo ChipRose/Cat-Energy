@@ -12,11 +12,12 @@
 
 .address__header {
   background-color: $contrast-color;
-
-  &--catalog {
-    background-color: $basic-grey;
-  }
 }
+
+.address__header--inner {
+  background-color: $basic-grey;
+}
+
 
 /* =Wrapper= */
 

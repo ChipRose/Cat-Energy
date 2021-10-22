@@ -99,7 +99,7 @@
 /* Icon */
 
 .programs__icon {
-  @include absolute-center
+  @include absolute-center;
 }
 
 .programs__icon--slim {

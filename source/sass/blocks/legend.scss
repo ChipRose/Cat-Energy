@@ -3,3 +3,10 @@
   text-transform: none;
   color: $main-color;
 }
+
+.legend__text {
+  padding-right: 19px;
+  display: inline-block;
+  height: 100%;
+  background-color: $contrast-color;
+}

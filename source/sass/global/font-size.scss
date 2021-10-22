@@ -9,6 +9,8 @@
   --lh-subtitle: 37px;
   --fz-button: 14px;
   --lh-button: 18px;
+  --fz-form-button: 16px;
+  --lh-form-button: 20px;
   --fz-cover: 14px;
   --lh-cover: 14px;
   --fz-program-button: 16px;
@@ -33,6 +35,8 @@
   --lh-form-main-legend: 18px;
   --fz-form-legend: 14px;
   --lh-form-legend: 16px;
+  --fz-form-title: 16px;
+  --lh-form-title: 20px;
   --fz-legend: 24px;
   --lh-legend: 26px;
   --fz-catalog-subtitle: 16px;
@@ -47,8 +51,6 @@
   --lh-catalog-title: 24px;
   --fz-catalog-promo: 16px;
   --lh-catalog-promo: 20px;
-  --fz-form-title: 16px;
-  --lh-form-title: 20px;
 }
 
 @media (min-width: $tablet-width) {

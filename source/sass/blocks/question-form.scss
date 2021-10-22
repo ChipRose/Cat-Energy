@@ -6,6 +6,23 @@
   color: $special-dark-grey;
 }
 
+.question-form__decor {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+
+  &::before {
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 16px;
+    right: -20px;
+    left: 10px;
+    background-color: $basic-green;
+    z-index: -1;
+  }
+}
+
 /* Legend */
 
 .question-form__legend {
@@ -26,9 +43,22 @@
   }
 }
 
-/* --Person data--- */
+/* ===Person data=== */
 
 .question-form__person-data {
+  margin-bottom: 23px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
+    margin-bottom: 0;
+    margin-left: 40px;
+    flex: 1 1 570px;
+  }
+}
+
+/* ===Program choice=== */
+
+.question-form__program-choice {
   margin-bottom: 26px;
 
   @media (min-width: $desktop-width) {
@@ -39,35 +69,22 @@
   }
 }
 
-/* ---Program choice--- */
-
-.question-form__program-choice {
-  margin-bottom: 19px;
-
-  @media (min-width: $desktop-width) {
-    margin-right: 40px;
-    margin-bottom: 0;
-    margin-left: 40px;
-    flex: 1 1 570px;
-  }
-}
-
-/* ---Owner contacts--- */
+/* ===Owner contacts=== */
 
 .question-form__owner-contacts {
   margin-bottom: 24px;
 }
 
-/* ---Comment--- */
+/* ===Comment=== */
 
 .question-form__comment {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
-/* ---Add info--- */
+/* ===Add info=== */
 
 .question-form__add-info {
-  margin-bottom: 34px;
+  margin-bottom: 42px;
 }
 
 /* -Footer- */
@@ -82,12 +99,14 @@
 /* Button */
 
 .question-form__button {
-  padding-top: 14px;
+  padding-top: 10px;
   padding-right: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 10px;
   padding-left: 14px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   width: 100%;
+
+  @include set-font-style(var(--fz-form-button), var(--lh-form-button), "Oswald", 400);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -98,6 +117,9 @@
 /* Note */
 
 .question-form__note {
+  display: block;
+  width: 100%;
+
   @include set-font-style(var(--fz-form-legend), var(--lh-form-legend));
   text-align: center;
   text-transform: none;
@@ -105,4 +127,9 @@
   @media (min-width: $tablet-width) {
     flex: 0 0 50%;
   }
+}
+
+.question-form__req {
+  vertical-align: baseline;
+  font-size: inherit;
 }

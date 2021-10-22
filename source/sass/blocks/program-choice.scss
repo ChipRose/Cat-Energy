@@ -1,20 +1,17 @@
 /* ===Program choice=== */
 
 .program-choice {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 23px;
+  padding-bottom: 19px;
   position: relative;
-  box-sizing: border-box;
 
   &::before {
     content: "";
-    box-sizing: border-box;
-    width: calc(100% + 40px);
     height: 100%;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    right: -20px;
+    left: -20px;
     border-top: 1px solid $special-grey;
     border-bottom: 1px solid $special-grey;
 
@@ -32,7 +29,7 @@
   }
 }
 
-/* =Item= */
+/* -Item- */
 
 .program-choice__item {
   margin-bottom: 13px;
@@ -49,10 +46,10 @@
   padding-top: 6px;
   padding-right: 6px;
   padding-bottom: 6px;
-  padding-left: 45px;
+  padding-left: 46px;
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
   cursor: pointer;
 
   &::before {
@@ -61,7 +58,6 @@
     height: 30px;
     position: absolute;
     left: 0;
-    box-sizing: border-box;
     border-radius: 50%;
     border: 1px solid $special-grey;
   }
@@ -71,12 +67,12 @@
     display: none;
     width: 14px;
     height: 14px;
-    border-radius: 50%;
-    background-color: $basic-green;
     position: absolute;
     top: 50%;
     left: 15px;
     transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: $basic-green;
   }
 }
 
