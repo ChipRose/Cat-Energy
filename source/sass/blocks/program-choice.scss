@@ -16,7 +16,8 @@
     border-bottom: 1px solid $special-grey;
 
     @media (min-width: $tablet-width) {
-      width: 100%;
+      right: 0;
+      left: 0;
       border: 1px solid $special-grey;
     }
   }
@@ -52,27 +53,39 @@
   align-items: center;
   cursor: pointer;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  &::before {
     width: 30px;
     height: 30px;
-    position: absolute;
     left: 0;
-    border-radius: 50%;
     border: 1px solid $special-grey;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &::after {
-    content: "";
     display: none;
     width: 14px;
     height: 14px;
-    position: absolute;
     top: 50%;
     left: 15px;
     transform: translate(-50%, -50%);
-    border-radius: 50%;
     background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+      left: 20px;
+    }
   }
 }
 

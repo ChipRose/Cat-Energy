@@ -29,6 +29,11 @@
   margin-bottom: 39px;
 
   @include set-font-style(var(--fz-form-main-legend), var(--lh-form-main-legend), "Oswald");
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
 }
 
 /* =Top= */
@@ -47,6 +52,10 @@
 
 .question-form__person-data {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-right: 40px;

@@ -9,6 +9,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 /* Value */
@@ -24,6 +28,13 @@
   @include set-font-style(var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-right: 17px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+  }
 }
 
 /* Property */
@@ -32,4 +43,8 @@
   margin-right: 15px;
   flex: 0 0 auto;
   order: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+  }
 }

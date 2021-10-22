@@ -51,6 +51,10 @@
 
 .page__header-form {
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
 }
 
 /* ===Main=== */
@@ -72,6 +76,10 @@
 
 .page__form-title {
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 /* ===Cover=== */

@@ -12,6 +12,12 @@
     left: 0;
     border-bottom: 1px solid $special-middle-grey;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 /* =Wrapper= */
