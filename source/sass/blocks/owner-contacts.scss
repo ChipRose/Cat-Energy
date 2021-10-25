@@ -12,7 +12,11 @@
 /* Legend */
 
 .owner-contacts__legend {
-  margin-bottom: 36px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-row: 1/2;
@@ -30,6 +34,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,19 +59,22 @@
   padding-top: 13px;
   padding-right: 45px;
   padding-bottom: 12px;
-  padding-left: 15px;
+  padding-left: 14px;
   width: 100%;
 
-  &:focus {
-    + .owner-contacts__icon {
-      fill: $basic-green;
-    }
+  &:focus + .owner-contacts__icon {
+    fill: $basic-green;
   }
 
-  &:not(:placeholder-shown):not(:focus):invalid {
-    + .owner-contacts__icon {
-      fill: $status-error;
-    }
+  &:not(:placeholder-shown):not(:focus):invalid + .owner-contacts__icon {
+    fill: $status-error;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-right: 45px;
+    padding-bottom: 10px;
+    padding-left: 20px;
   }
 }
 
@@ -76,6 +87,10 @@
   z-index: 0;
   transform: translateY(-50%);
   fill: $special-dark-grey-2;
+
+  @media (min-width: $desktop-width) {
+    right: 19px;
+  }
 }
 
 .owner-contacts__icon--email {
@@ -87,10 +102,15 @@
   width: 20px;
   height: auto;
 }
+
 /* Property */
 
 .owner-contacts__property {
   margin-right: 12px;
   order: 1;
   flex: 0 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }

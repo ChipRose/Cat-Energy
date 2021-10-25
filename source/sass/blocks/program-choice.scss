@@ -1,8 +1,6 @@
 /* ===Program choice=== */
 
 .program-choice {
-  padding-top: 23px;
-  padding-bottom: 19px;
   position: relative;
 
   &::before {
@@ -21,13 +19,6 @@
       border: 1px solid $special-grey;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 25px;
-    padding-right: 27px;
-    padding-bottom: 25px;
-    padding-left: 27px;
-  }
 }
 
 /* -Item- */
@@ -39,11 +30,17 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+  }
 }
 
 /* Radio button */
 
 .program-choice__property {
+  --box-size: 30px;
+  --inner-box-size: 14px;
   padding-top: 6px;
   padding-right: 6px;
   padding-bottom: 6px;
@@ -56,80 +53,57 @@
   &::before,
   &::after {
     content: "";
+    box-sizing: border-box;
     position: absolute;
     border-radius: 50%;
   }
 
   &::before {
-    width: 30px;
-    height: 30px;
+    width: var(--box-size);
+    height: var(--box-size);
     left: 0;
     border: 1px solid $special-grey;
-
-    @media (min-width: $tablet-width) {
-      width: 40px;
-      height: 40px;
-    }
   }
 
   &::after {
     display: none;
-    width: 14px;
-    height: 14px;
+    width: var(--inner-box-size);
+    height: var(--inner-box-size);
     top: 50%;
-    left: 15px;
+    left: calc(var(--box-size) / 2);
     transform: translate(-50%, -50%);
     background-color: $basic-green;
+  }
 
-    @media (min-width: $tablet-width) {
-      width: 18px;
-      height: 18px;
-      left: 20px;
-    }
+  @media (min-width: $tablet-width) {
+    --box-size: 40px;
+    --inner-box-size: 18px;
+    padding-left: 59px;
   }
 }
 
 .program-choice__radio-button {
-  &:hover {
-    + .program-choice__property::before {
-      border-color: $special-grey-2;
-    }
+  &:hover + .program-choice__property::before {
+    border-color: $special-grey-2;
   }
 
-  &:disabled {
-    + .program-choice__property {
-      color: $main-color03;
-    }
-
-    + .program-choice__property::before {
-      border-color: $special-grey-2-03;
-    }
+  &:disabled + .program-choice__property {
+    opacity: 0.3;
   }
 
-  &:checked {
-    + .program-choice__property::after {
-      display: block;
-    }
+  &:checked + .program-choice__property::after {
+    display: block;
   }
 
-  &:checked:hover {
-    + .program-choice__property::before {
-      border-color: $special-grey-2;
-    }
+  &:checked:hover + .program-choice__property::before {
+    border-color: $special-grey-2;
   }
 
-  &:checked:disabled {
-    + .program-choice__property::before {
-      border-color: $special-grey-2-03;
-    }
+  &:checked:disabled + .program-choice__property {
+    opacity: 0.3;
+  }
 
-    + .program-choice__property::after {
-      display: block;
-      background-color: $basic-green03;
-    }
-
-    + .program-choice__property {
-      color: $main-color03;
-    }
+  &:checked:disabled + .program-choice__property::after {
+    display: block;
   }
 }

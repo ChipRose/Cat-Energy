@@ -1,6 +1,7 @@
 /* ===Input=== */
 
 .input {
+  box-sizing: border-box;
   border: 1px solid $special-grey;
 
   @include set-font-style(var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");

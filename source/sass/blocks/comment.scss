@@ -1,9 +1,13 @@
-/* Comment */
+/* ===Comment=== */
 
 /* Legend */
 
 .comment__legend {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 /* Value */
@@ -17,4 +21,12 @@
   width: 100%;
   min-height: 150px;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-bottom: 10px;
+    min-height: 175px;
+  }
 }

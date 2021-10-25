@@ -38,7 +38,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding-top: 63px;
+    padding-top: 55px;
     padding-right: 42px;
     padding-bottom: 58px;
     padding-left: 42px;
@@ -142,6 +142,15 @@
     background-repeat: no-repeat;
     background-position: center bottom;
   }
+
+  @media (min-width: $tablet-width) {
+    top: calc(-7px + 50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc(240px + 50%);
+    top: calc(-13px + 50%);
+  }
 }
 
 /* Pin */
@@ -151,10 +160,6 @@
   height: auto;
 
   @media (min-width: $tablet-width) {
-    width: 94px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 97px;
+    width: 110px;
   }
 }

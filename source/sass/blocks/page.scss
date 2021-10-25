@@ -1,17 +1,11 @@
-/* Page */
+/* ===Page=== */
 
 .page {
   width: 100%;
   height: 100%;
 }
 
-.page *,
-.page *::before,
-.page *::after {
-  box-sizing: border-box;
-}
-
-/* Body */
+/* =Body= */
 
 .page__body {
   padding-top: 0;
@@ -29,17 +23,18 @@
 
   @include set-font-style(var(--fz-main), var(--lh-main));
   color: $main-color;
-  background-color: $contrast-color;
+  //background-color: $contrast-color;
+  opacity: 0.5;
 }
 
-/* ===Header=== */
+/* =Header= */
 
 .page__header {
   grid-row: 1/2;
   grid-column: 1/2;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 15px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,11 +48,15 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 14px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
   }
 }
 
-/* ===Main=== */
+/* =Main= */
 
 .page__main {
   grid-row: 2/3;
@@ -80,9 +79,15 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
 }
 
-/* ===Cover=== */
+/* ===Index.html=== */
+
+/* ---Cover--- */
 
 .page__cover {
   @media (min-width: $desktop-width) {
@@ -90,7 +95,7 @@
   }
 }
 
-/* ===Programs=== */
+/* ---Programs--- */
 
 .page__programs {
   margin-bottom: 28px;
@@ -104,7 +109,7 @@
   }
 }
 
-/* ===Advantages=== */
+/* ---Advantages--- */
 
 .page__advantages {
   margin-bottom: 42px;
@@ -118,27 +123,39 @@
   }
 }
 
-/* ===Example=== */
+/* ---Example--- */
 
 .page__example {
   margin-bottom: 0;
 }
 
-/* Footer */
+/* =Footer= */
 
 .page__footer {
   grid-row: 3/4;
   grid-column: 1/2;
 }
 
-/* Catalog */
+/* ===Catalog.html=== */
 
 .page__catalog {
   margin-bottom: 25px;
 }
 
-/* Extra products */
+/* ---Extra products--- */
 
 .page__extra-products {
   margin-bottom: 35px;
+}
+
+/* ===Form.html=== */
+
+/* ---Question form--- */
+
+.question-form {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }

@@ -9,4 +9,8 @@
   display: inline-block;
   height: 100%;
   background-color: $contrast-color;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 39px;
+  }
 }

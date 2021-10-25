@@ -6,6 +6,26 @@
   <title>HTML Academy: CAT ENERGY</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <!-- <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url("img/preview/MobileForm.jpg");
+    }
+
+    @media (min-width: 768px) {
+      HTML {
+        background-image: url("img/preview/TabletForm.jpg");
+      }
+    }
+
+    @media (min-width: 1440px) {
+      HTML {
+        background-image: url("img/preview/DesktopForm.jpg");
+      }
+    }
+  </style> -->
 </head>
 
 <body class="page__body">
@@ -49,11 +69,10 @@
   <main class="page__main page__main--form">
     <div class="container container--form">
       <h1 class="title page__form-title">Подбор программы</h1>
-      <form class="question-form" action="#" method="post">
+      <form class="question-form page__question-form" action="#" method="post">
         <p class="text question-form__legend">
           Заполните анкету, и мы подберем <br class="br"> программу питания для вашего кота
         </p>
-
         <div class="question-form__top">
           <fieldset class="fieldset person-data question-form__person-data">
             <label class="person-data__item">
@@ -70,7 +89,6 @@
               <span class="person-data__property">Возраст (лет):</span>
             </label>
           </fieldset>
-
           <fieldset class="fieldset program-choice question-form__program-choice">
             <legend class="visually-hidden">Выберите программу</legend>
             <label class="program-choice__item">
@@ -84,13 +102,12 @@
               <span class="program-choice__property">Набор массы</span>
             </label>
             <label class="program-choice__item">
-              <input class="program-choice__radio-button visually-hidden" type="radio" name="program"
+              <input class="program-choice__radio-button visually-hidden" type="radio" name="program" di
                 value="need-advice" />
               <span class="program-choice__property">Не знаю (Нужен ваш совет)</span>
             </label>
           </fieldset>
         </div>
-
         <fieldset class="fieldset owner-contacts question-form__owner-contacts">
           <legend class="legend owner-contacts__legend question-form__decor">
             <span class="text legend__text">
@@ -120,7 +137,6 @@
             <span class="owner-contacts__property">Телефон:<sup class="question-form__req">*</sup></span>
           </label>
         </fieldset>
-
         <fieldset class="fieldset comment question-form__comment">
           <legend class="legend comment__legend question-form__decor">
             <span class="legend__text">
@@ -131,7 +147,6 @@
             <textarea class="input comment__value" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
-
         <fieldset class="fieldset add-info question-form__add-info">
           <legend class="legend add-info__legend question-form__decor">
             <span class="legend__text">
@@ -157,10 +172,9 @@
             </label>
           </div>
         </fieldset>
-
         <div class="question-form__footer">
           <button class="button question-form__button" type="submit">отправить заявку</button>
-          <small class="question-form__note"><sup class="question-form__req"></sup> * — Обязательные поля</small>
+          <small class="question-form__note"><sup class="question-form__req">*</sup> — Обязательные поля</small>
         </div>
       </form>
     </div>

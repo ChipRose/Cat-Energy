@@ -9,6 +9,7 @@
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
+  box-sizing: border-box;
   min-width: $mobile-width;
   max-width: $desktop-width;
 
@@ -30,7 +31,7 @@
 .container--form {
   @media (min-width: $tablet-width) and (max-width: -1 + $desktop-width) {
     padding-top: 0;
-    padding-right: 70px;
+    padding-right: 67px;
     padding-bottom: 0;
     padding-left: 70px;
   }

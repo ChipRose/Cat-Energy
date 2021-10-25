@@ -5,6 +5,7 @@
 
   &::before {
     content: "";
+    box-sizing: border-box;
     height: 100%;
     position: absolute;
     top: 0;
@@ -23,20 +24,22 @@
 /* =Wrapper= */
 
 .header__wrapper {
+  padding-top: 2px;
+  padding-bottom: 2px;
   width: 100%;
   display: grid;
   grid-template-rows: min-content auto;
   grid-template-columns: 44px 1fr 44px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 26px;
+    padding-bottom: 25px;
     display: flex;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
+    padding-top: 52px;
     padding-bottom: 15px;
     margin-top: 0;
     margin-right: auto;
@@ -59,7 +62,6 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
     flex: 0 0 174px;
