@@ -7,6 +7,11 @@
 }
 
 .social-button {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &:hover .social-button__icon {
     fill: $basic-green;
   }

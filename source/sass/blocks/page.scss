@@ -152,8 +152,8 @@
 
 /* ---Question form--- */
 
-.question-form {
-  margin-bottom: 40px;
+.page__question-form {
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <!-- <style>
+  <style>
     HTML {
       background-repeat: no-repeat;
       background-position: 50% 0;
@@ -25,7 +25,7 @@
         background-image: url("img/preview/DesktopForm.jpg");
       }
     }
-  </style> -->
+  </style> 
 </head>
 
 <body class="page__body">
@@ -69,7 +69,9 @@
   <main class="page__main page__main--form">
     <div class="container container--form">
       <h1 class="title page__form-title">Подбор программы</h1>
-      <form class="question-form page__question-form" action="#" method="post">
+    </div>
+    <form class="question-form page__question-form" action="#" method="post">
+      <div class="container container--form">
         <p class="text question-form__legend">
           Заполните анкету, и мы подберем <br class="br"> программу питания для вашего кота
         </p>
@@ -108,15 +110,17 @@
             </label>
           </fieldset>
         </div>
-        <fieldset class="fieldset owner-contacts question-form__owner-contacts">
-          <legend class="legend owner-contacts__legend question-form__decor">
+      </div>
+      <fieldset class="fieldset owner-contacts question-form__owner-contacts question-form__decor">
+        <div class="container container--form owner-contacts__wrapper">
+          <legend class="legend owner-contacts__legend">
             <span class="text legend__text">
               Контактные данные <br class="br br--mobile">
               (владельца кота)
             </span>
           </legend>
           <label class="owner-contacts__item">
-            <span class="owner-contacts__wrapper">
+            <span class="owner-contacts__content">
               <input class="input owner-contacts__value" type="email" required placeholder="kuklachev@gmail.com">
               <svg class="owner-contacts__icon owner-contacts__icon--email" width="19" height="14" role="img"
                 aria-label="Почта" focusable="false">
@@ -126,7 +130,7 @@
             <span class="owner-contacts__property">E-mail:<sup class="question-form__req">*</sup></span>
           </label>
           <label class="owner-contacts__item">
-            <span class="owner-contacts__wrapper">
+            <span class="owner-contacts__content">
               <input class="input owner-contacts__value" type="tel" required placeholder="8 (960) 900-60-90"
                 pattern="[0-9]{11}">
               <svg class="owner-contacts__icon owner-contacts__icon--phone" width="20" height="21" role="img"
@@ -136,9 +140,11 @@
             </span>
             <span class="owner-contacts__property">Телефон:<sup class="question-form__req">*</sup></span>
           </label>
-        </fieldset>
-        <fieldset class="fieldset comment question-form__comment">
-          <legend class="legend comment__legend question-form__decor">
+        </div>
+      </fieldset>
+      <fieldset class="fieldset comment question-form__comment question-form__decor">
+        <div class="container container--form">
+          <legend class="legend comment__legend">
             <span class="legend__text">
               Комментарий
             </span>
@@ -146,9 +152,11 @@
           <label class="comment__item">
             <textarea class="input comment__value" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
-        </fieldset>
-        <fieldset class="fieldset add-info question-form__add-info">
-          <legend class="legend add-info__legend question-form__decor">
+        </div>
+      </fieldset>
+      <fieldset class="fieldset add-info question-form__add-info question-form__decor">
+        <div class="container container--form">
+          <legend class="legend add-info__legend">
             <span class="legend__text">
               Дополнительно
             </span>
@@ -171,13 +179,15 @@
               <span class="add-info__property">витамины</span>
             </label>
           </div>
-        </fieldset>
-        <div class="question-form__footer">
+        </div>
+      </fieldset>
+      <div class="question-form__footer">
+        <div class="container container--form question-form__wrapper">
           <button class="button question-form__button" type="submit">отправить заявку</button>
           <small class="question-form__note"><sup class="question-form__req">*</sup> — Обязательные поля</small>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
   </main>
 
   <footer class="footer page__footer">

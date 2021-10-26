@@ -1,6 +1,8 @@
 /* ===Owner contacts=== */
 
-.owner-contacts {
+/* =Wrapper= */
+
+.owner-contacts__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-rows: min-content min-content;
@@ -47,7 +49,7 @@
 
 /* =Wrapper= */
 
-.owner-contacts__wrapper {
+.owner-contacts__content {
   position: relative;
   flex: 1 1 auto;
   order: 2;
