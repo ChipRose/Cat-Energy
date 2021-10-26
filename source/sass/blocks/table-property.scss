@@ -1,5 +1,5 @@
 .table-property {
-  min-width: 141px;
+  min-width: 140px;
   border-collapse: collapse;
   border-spacing: 0;
 
@@ -20,11 +20,6 @@
 /* Row */
 
 .table-property__row {
-  padding-top: 3px;
-  padding-right: 0;
-  padding-bottom: 3px;
-  padding-left: 0;
-
   @media (min-width: $tablet-width) {
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -35,11 +30,8 @@
 /* Table elements */
 
 .table-property__property {
-  padding-top: 3px;
-  padding-right: 0;
-  padding-bottom: 3px;
-  padding-left: 0;
-
+  padding-top: 2px;
+  padding-bottom: 2px;
   @media (min-width: $tablet-width) {
     padding-top: 5px;
     padding-bottom: 7px;
@@ -57,10 +49,8 @@
 }
 
 .table-property__value {
-  padding-top: 3px;
-  padding-right: 0;
-  padding-bottom: 3px;
-  padding-left: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
   text-align: right;
 
   &--extra {

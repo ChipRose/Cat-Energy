@@ -6,10 +6,31 @@
   <title>HTML Academy: CAT ENERGY</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url("img/preview/MobileCatalog.jpg");
+    }
+
+    @media (min-width: 768px) {
+      HTML {
+        background-image: url("img/preview/TabletCatalog.jpg");
+      }
+    }
+
+    @media (min-width: 1440px) {
+      HTML {
+        background-image: url("img/preview/DesktopCatalog.jpg");
+      }
+    }
+
+  </style>
 </head>
 
 <body class="page__body">
-  <header class="header page__header">
+  <header class="header header--inner page__header-catalog">
     <div class="container header__wrapper">
       <a class="link header__logo logo" href="index.html">
         <div class="logo__image-block">
@@ -46,56 +67,55 @@
     </div>
   </header>
 
-
-  <!-- <main class="main">
-    <h1 class="visually-hidden">Продукция</h1>
-    <section class="catalog page__catalog">
-      <div class="container">
-        <h2 class="title catalog__title">Каталог продукции</h2>
+  <main class="page__main page__main--catalog">
+    <div class="container">
+      <h2 class="title page__catalog-title">Каталог продукции</h2>
+      <section class="catalog">
         <ul class="list catalog__list">
           <li class="catalog__item">
-            <a class="link catalog__link" href="blank.html" title="Перейти в карточку товара Cat Energy pro 500 г">
+            <div class="catalog__content-card">
               <h3 class="subtitle catalog__subtitle">
-                Cat Energy <br class="br br--mobile" />
-                PRO <br class="br br--tablet br--desktop" /> 500 г
+                <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy pro 500 г">
+                  Cat Energy <br class="br br--mobile" />
+                  PRO <br class="br br--tablet br--desktop" /> 500 г
+                </a>
               </h3>
-              <div class="catalog__image-block">
+              <table class="table-property catalog__table">
+                <tr class="table-property__row">
+                  <td class="table-property__property">Масса</td>
+                  <td class="table-property__value">500 г</td>
+                </tr>
+                <tr class="table-property__row">
+                  <td class="table-property__property">Вкус</td>
+                  <td class="table-property__value">Курица</td>
+                </tr>
+                <tr class="table-property__row">
+                  <td class="table-property__property">Цена</td>
+                  <td class="table-property__value">700 Р</td>
+                </tr>
+              </table>
+            </div>
+            <div class="catalog__image-block">
+              <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy pro 500 г">
                 <picture>
                   <source media="(min-width: 768px)"
-                    srcset="img/catalog/bigger-catalog-pro-500-chicken.png 1x, img/catalog/bigger-catalog-pro-500-chicken@2x.png 2x"
-                    width="161" height="172">
-                  <img class="img" src="img/catalog/catalog-pro-500-chicken.png"
+                    srcset="img/catalog/bigger-catalog-pro-500-chicken.png 1x, img/catalog/bigger-catalog-pro-500-chicken@2x.png 2x">
+                  <img class="catalog__img catalog__img--small" src="img/catalog/catalog-pro-500-chicken.png"
                     srcset="img/catalog/catalog-pro-500-chicken@2x.png 2x" width="68" height="86"
                     alt="Консерва для котов с курицей. Оранжевая маленькая банка." />
                 </picture>
-              </div>
-              <table class="table-property catalog__table">
-                <tr class="table-property__row">
-                  <td class="table-property__property">Масса</td>
-                  <td class="table-property__value">500 г</td>
-                </tr>
-                <tr class="table-property__row">
-                  <td class="table-property__property">Вкус</td>
-                  <td class="table-property__value">Курица</td>
-                </tr>
-                <tr class="table-property__row">
-                  <td class="table-property__property">Цена</td>
-                  <td class="table-property__value">700 Р</td>
-                </tr>
-              </table>
-            </a>
+              </a>
+            </div>
             <a class="button catalog__button" href="form.html">заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="link catalog__link" href="blank.html" title="Перейти в карточку товара Cat Energy pro 1000 г">
+            <div class="catalog__content-card">
               <h3 class="subtitle catalog__subtitle">
-                Cat Energy <br class="br br--mobile" />
-                PRO <br class="br br--tablet br--desktop" /> 1000 г
+                <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy pro 1000 г">
+                  Cat Energy <br class="br br--mobile" />
+                  PRO <br class="br br--tablet br--desktop" /> 1000 г
+                </a>
               </h3>
-              <div class="catalog__image-block">
-                <img class="img" src="img/catalog/catalog-pro-1000-chicken.png" width="84" height="100"
-                  alt="Консерва для котов с курицей. Оранжевая большая банка." />
-              </div>
               <table class="table-property catalog__table">
                 <tr class="table-property__row">
                   <td class="table-property__property">Масса</td>
@@ -110,19 +130,28 @@
                   <td class="table-property__value">1000 Р</td>
                 </tr>
               </table>
-            </a>
+            </div>
+            <div class="catalog__image-block">
+              <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy pro 500 г">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/bigger-catalog-pro-1000-chicken.png 1x, img/catalog/bigger-catalog-pro-500-chicken@2x.png 2x">
+                  <img class="catalog__img catalog__img--big" src="img/catalog/catalog-pro-1000-chicken.png"
+                    srcset="img/catalog/catalog-pro-1000-chicken@2x.png 2x" width="84" height="101"
+                    alt="Консерва для котов с курицей. Оранжевая большая банка." />
+                </picture>
+              </a>
+            </div>
             <a class="button catalog__button" href="form.html">заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="link catalog__link" href="blank.html" title="Перейти в карточку товара Cat Energy pro 500 г">
-              <h3 class="subtitle  catalog__subtitle">
-                Cat Energy <br class="br br--mobile" />
-                pro <br class="br br--tablet br--desktop" /> 500 г
+            <div class="catalog__content-card">
+              <h3 class="subtitle catalog__subtitle">
+                <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy pro 500 г">
+                  Cat Energy <br class="br br--mobile" />
+                  PRO <br class="br br--tablet br--desktop" /> 500 г
+                </a>
               </h3>
-              <div class="catalog__image-block">
-                <img class="img" src="img/catalog/catalog-pro-500-fish.png" width="68" height="78"
-                  alt="Консерва для котов с рыбой. Зелёная маленькая банка." />
-              </div>
               <table class="table-property catalog__table">
                 <tr class="table-property__row">
                   <td class="table-property__property">Масса</td>
@@ -137,19 +166,28 @@
                   <td class="table-property__value">700 Р</td>
                 </tr>
               </table>
-            </a>
+            </div>
+            <div class="catalog__image-block">
+              <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy pro 500 г">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/bigger-catalog-pro-500-fish.png 1x, img/catalog/bigger-catalog-pro-500-fish@2x.png 2x">
+                  <img class="catalog__img catalog__img--small" src="img/catalog/catalog-pro-500-fish.png"
+                    srcset="img/catalog/catalog-pro-500-fish@2x.png 2x" width="68" height="78"
+                    alt="Консерва для котов с рыбой. Зелёная маленькая банка." />
+                </picture>
+              </a>
+            </div>
             <a class="button catalog__button" href="form.html">заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="link catalog__link" href="blank.html" title="Перейти в карточку товара Cat Energy pro 1000 г">
-              <h3 class="subtitle  catalog__subtitle">
-                Cat Energy <br class="br br--mobile" />
-                PRO <br class="br br--tablet br--desktop" /> 1000 г
+            <div class="catalog__content-card">
+              <h3 class="subtitle catalog__subtitle">
+                <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy pro 1000 г">
+                  Cat Energy <br class="br br--mobile" />
+                  PRO <br class="br br--tablet br--desktop" /> 1000 г
+                </a>
               </h3>
-              <div class="catalog__image-block">
-                <img class="img" src="img/catalog/catalog-pro-1000-fish.png" width="84" height="100"
-                  alt="Консерва для котов с рыбой. Зелёная большая банка." />
-              </div>
               <table class="table-property catalog__table">
                 <tr class="table-property__row">
                   <td class="table-property__property">Масса</td>
@@ -164,19 +202,28 @@
                   <td class="table-property__value">1000 Р</td>
                 </tr>
               </table>
-            </a>
+            </div>
+            <div class="catalog__image-block">
+              <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy pro 1000 г">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/bigger-catalog-pro-1000-fish.png 1x, img/catalog/bigger-catalog-pro-1000-fish@2x.png 2x">
+                  <img class="catalog__img catalog__img--big" src="img/catalog/catalog-pro-1000-fish.png"
+                    srcset="img/catalog/catalog-pro-1000-fish@2x.png 2x" width="84" height="100"
+                    alt="Консерва для котов с рыбой. Зелёная Большая банка." />
+                </picture>
+              </a>
+            </div>
             <a class="button catalog__button" href="form.html">заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="link catalog__link" href="blank.html" title="Перейти в карточку товара Cat Energy slim 500 г">
-              <h3 class="subtitle  catalog__subtitle">
-                Cat Energy <br class="br br--mobile" />
-                slim <br class="br br--tablet br--desktop" /> 500 г
+            <div class="catalog__content-card">
+              <h3 class="subtitle catalog__subtitle">
+                <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy slim 500 г">
+                  Cat Energy <br class="br br--mobile" />
+                  SLIM <br class="br br--tablet br--desktop" /> 500 г
+                </a>
               </h3>
-              <div class="catalog__image-block">
-                <img class="img" src="img/catalog/catalog-slim-500-porrige.png" width="68" height="78"
-                  alt="Консерва для котов с гречкой. Голубая маленькая банка." />
-              </div>
               <table class="table-property catalog__table">
                 <tr class="table-property__row">
                   <td class="table-property__property">Масса</td>
@@ -191,19 +238,28 @@
                   <td class="table-property__value">400 Р</td>
                 </tr>
               </table>
-            </a>
+            </div>
+            <div class="catalog__image-block">
+              <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy slim 500 г">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/bigger-catalog-slim-500-porrige.png 1x, img/catalog/bigger-catalog-slim-500-porrige@2x.png 2x">
+                  <img class="catalog__img catalog__img--small" src="img/catalog/catalog-slim-500-porrige.png"
+                    srcset="img/catalog/catalog-slim-500-porrige@2x.png 2x" width="68" height="78"
+                    alt="Консерва для котов с гречкой. Голубая маленькая банка." />
+                </picture>
+              </a>
+            </div>
             <a class="button catalog__button" href="form.html">заказать</a>
           </li>
           <li class="catalog__item">
-            <a href="blank.html" class="link catalog__link">
-              <h3 class="subtitle  catalog__subtitle">
-                Cat Energy <br class="br br--mobile" />
-                slim <br class="br br--tablet br--desktop" /> 1000 г
+            <div class="catalog__content-card">
+              <h3 class="subtitle catalog__subtitle">
+                <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy slim 1000 г">
+                  Cat Energy <br class="br br--mobile" />
+                  SLIM <br class="br br--tablet br--desktop" /> 1000 г
+                </a>
               </h3>
-              <div class="catalog__image-block">
-                <img class="img" src="img/catalog/catalog-slim-1000-porrige.png" width="84" height="100"
-                  alt="Консерва для котов с гречкой. Голубая большая банка." />
-              </div>
               <table class="table-property catalog__table">
                 <tr class="table-property__row">
                   <td class="table-property__property">Масса</td>
@@ -218,19 +274,28 @@
                   <td class="table-property__value">700 Р</td>
                 </tr>
               </table>
-            </a>
-            <a class="button catalog__button" href="blank.html">заказать</a>
+            </div>
+            <div class="catalog__image-block">
+              <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy slim 1000 г">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/bigger-catalog-slim-1000-porrige.png 1x, img/catalog/bigger-catalog-slim-1000-porrige@2x.png 2x">
+                  <img class="catalog__img catalog__img--big" src="img/catalog/catalog-slim-1000-porrige.png"
+                    srcset="img/catalog/catalog-slim-1000-porrige@2x.png 2x" width="84" height="100"
+                    alt="Консерва для котов с гречкой. Голубая большая банка." />
+                </picture>
+              </a>
+            </div>
+            <a class="button catalog__button" href="form.html">заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="link catalog__link" href="blank.html" title="Перейти в карточку товара Cat Energy slim 500 г">
+            <div class="catalog__content-card">
               <h3 class="subtitle catalog__subtitle">
-                Cat Energy <br class="br br--mobile" />
-                slim <br class="br br--tablet br--desktop" /> 500 г
+                <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy slim 500 г">
+                  Cat Energy <br class="br br--mobile" />
+                  SLIM <br class="br br--tablet br--desktop" /> 500 г
+                </a>
               </h3>
-              <div class="catalog__image-block">
-                <img class="img catalog__img" src="img/catalog/catalog-slim-500-rice.png" width="72" height="84"
-                  alt="Консерва для котов с рисом. Фиолетовая маленькая банка." />
-              </div>
               <table class="table-property catalog__table">
                 <tr class="table-property__row">
                   <td class="table-property__property">Масса</td>
@@ -245,7 +310,18 @@
                   <td class="table-property__value">500 Р</td>
                 </tr>
               </table>
-            </a>
+            </div>
+            <div class="catalog__image-block">
+              <a class="link" href="blank.html" title="Перейти в карточку товара Cat Energy slim 500 г">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/bigger-catalog-slim-500-rice.png 1x, img/catalog/bigger-catalog-slim-500-rice@2x.png 2x">
+                  <img class="catalog__img catalog__img--small" src="img/catalog/catalog-slim-500-rice.png"
+                    srcset="img/catalog/catalog-slim-500-rice@2x.png 2x" width="72" height="84"
+                    alt="Консерва для котов с гречкой. Фиолетовая маленькая банка." />
+                </picture>
+              </a>
+            </div>
             <a class="button catalog__button" href="form.html">заказать</a>
           </li>
           <li class="catalog__item">
@@ -257,74 +333,75 @@
               <div class="catalog__image-block--all">
                 <img class="img" src="img/catalog/icon-plus.svg" width="30" height="30" alt="Иконка Больше товаров" />
               </div>
-              <div class="catalog__text-block catalog__text-block--all">
-                <p class="text catalog__text">На самом деле вкусов <br class="br br--tablet" /> гораздо
-                  больше!</p>
-              </div>
             </a>
+            <div class="catalog__text-block catalog__text-block--all">
+              <p class="text catalog__text">На самом деле вкусов <br class="br br--tablet" /> гораздо
+                больше!</p>
+            </div>
             <a class="button catalog__button catalog__button--all" href="blank.html">показать все</a>
           </li>
         </ul>
-      </div>
-    </section>
-    <section class="extra-products page__extra-products">
-      <div class="container extra-products__wrapper">
-        <h2 class="title extra-products__title">Дополнительные товары</h2>
-        <ul class="list extra-products__list">
-          <li class="extra-products__item">
-            <h3 class="subtitle extra-products__subtitle">Сахарозаменитель</h3>
-            <table class="table-property table-property--extra extra-products__table">
-              <tr class="extra-products__row">
-                <td class="table-property__property table-property__property--extra">1 упаковка (100 г)
-                </td>
-                <td class="table-property__value table-property__value--extra">200 Р.</td>
-              </tr>
-            </table>
-            <a class="button extra-products__button" href="form.html">заказать</a>
-          </li>
-          <li class="extra-products__item">
-            <h3 class="subtitle extra-products__subtitle">питьевая вода</h3>
-            <table class="table-property table-property--extra extra-products__table">
-              <tr class="extra-products__row">
-                <td class="table-property__property table-property__property--extra">5 литров</td>
-                <td class="table-property__value table-property__value--extra">50 Р.</td>
-              </tr>
-            </table>
-            <a class="button extra-products__button" href="form.html">заказать</a>
-          </li>
-          <li class="extra-products__item">
-            <h3 class="subtitle extra-products__subtitle">молоко</h3>
-            <table class="table-property table-property--extra extra-products__table">
-              <tr class="extra-products__row">
-                <td class="table-property__property table-property__property--extra">1 литр</td>
-                <td class="table-property__value table-property__value--extra">100 Р.</td>
-              </tr>
-            </table>
-            <a class="button extra-products__button" href="form.html">заказать</a>
-          </li>
-          <li class="extra-products__item">
-            <h3 class="subtitle extra-products__subtitle">витамины</h3>
-            <table class="table-property table-property--extra extra-products__table">
-              <tr class="extra-products__row">
-                <td class="table-property__property table-property__property--extra">1 упаковка (30 г)
-                </td>
-                <td class="table-property__value table-property__value--extra">300 Р.</td>
-              </tr>
-            </table>
-            <a class="button extra-products__button" href="form.html">заказать</a>
-          </li>
-        </ul>
-        <div class="extra-products__promo">
-          <h2 class="visually-hidden">Промоакции</h2>
-          <img class="extra-products__icon" src="img/promo/icon-gift.svg" width="78" height="80" alt="Иконка подарок">
-          <div class="extra-products__text-block">
-            <p class="text extra-products__text extra-products__text--promo">Закажите все <br class="br br--tablet" /> и
-              получите чехол для <br class="br br--tablet" /> кота в подарок!</p>
+      </section>
+      <section class="extra-products page__extra-products">
+        <div class="container extra-products__wrapper">
+          <h2 class="title extra-products__title">Дополнительные товары</h2>
+          <ul class="list extra-products__list">
+            <li class="extra-products__item">
+              <h3 class="subtitle extra-products__subtitle">Сахарозаменитель</h3>
+              <table class="table-property table-property--extra extra-products__table">
+                <tr class="extra-products__row">
+                  <td class="table-property__property table-property__property--extra">1 упаковка (100 г)
+                  </td>
+                  <td class="table-property__value table-property__value--extra">200 Р.</td>
+                </tr>
+              </table>
+              <a class="button extra-products__button" href="form.html">заказать</a>
+            </li>
+            <li class="extra-products__item">
+              <h3 class="subtitle extra-products__subtitle">питьевая вода</h3>
+              <table class="table-property table-property--extra extra-products__table">
+                <tr class="extra-products__row">
+                  <td class="table-property__property table-property__property--extra">5 литров</td>
+                  <td class="table-property__value table-property__value--extra">50 Р.</td>
+                </tr>
+              </table>
+              <a class="button extra-products__button" href="form.html">заказать</a>
+            </li>
+            <li class="extra-products__item">
+              <h3 class="subtitle extra-products__subtitle">молоко</h3>
+              <table class="table-property table-property--extra extra-products__table">
+                <tr class="extra-products__row">
+                  <td class="table-property__property table-property__property--extra">1 литр</td>
+                  <td class="table-property__value table-property__value--extra">100 Р.</td>
+                </tr>
+              </table>
+              <a class="button extra-products__button" href="form.html">заказать</a>
+            </li>
+            <li class="extra-products__item">
+              <h3 class="subtitle extra-products__subtitle">витамины</h3>
+              <table class="table-property table-property--extra extra-products__table">
+                <tr class="extra-products__row">
+                  <td class="table-property__property table-property__property--extra">1 упаковка (30 г)
+                  </td>
+                  <td class="table-property__value table-property__value--extra">300 Р.</td>
+                </tr>
+              </table>
+              <a class="button extra-products__button" href="form.html">заказать</a>
+            </li>
+          </ul>
+          <div class="extra-products__promo">
+            <h2 class="visually-hidden">Промоакции</h2>
+            <img class="extra-products__icon" src="img/promo/icon-gift.svg" width="78" height="80" alt="Иконка подарок">
+            <div class="extra-products__text-block">
+              <p class="text extra-products__text extra-products__text--promo">Закажите все <br class="br br--tablet" />
+                и
+                получите чехол для <br class="br br--tablet" /> кота в подарок!</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main> -->
+      </section>
+    </div>
+  </main>
   <footer class="footer page__footer">
     <section class="address">
       <h2 class="visually-hidden">Адрес Cat Energy</h2>

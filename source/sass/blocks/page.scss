@@ -56,6 +56,20 @@
   }
 }
 
+/* -Catalog.html- */
+
+.page__header-catalog {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
+}
+
 /* =Main= */
 
 .page__main {
@@ -75,6 +89,20 @@
 
 .page__form-title {
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
+}
+
+/* -Catalog.html- */
+
+.page__catalog-title {
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;

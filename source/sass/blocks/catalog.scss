@@ -33,20 +33,24 @@
 /* -Item- */
 
 .catalog__item {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
   min-height: 209px;
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 11px;
 
   &::before {
     content: "";
+    box-sizing: border-box;
     height: 100%;
     position: absolute;
     top: 0;
-    left: -20px;
-    right: -20px;
+    left: 0;
+    right: 0;
     z-index: -1;
     border-top: 1px solid $basic-grey-2;
 
@@ -97,68 +101,18 @@
   }
 }
 
-/* Link */
+/* -Content- */
 
-.catalog__link {
-  margin-bottom: 20px;
-  flex: 1 0 112px;
-  display: grid;
-  grid-template-rows: repeat(2, min-content);
-  grid-template-columns: repeat(2, 1fr);
-
-  &--all {
-    flex: 1 0 112px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-  }
-}
-
-/* -Image block- */
-
-.catalog__image-block {
-  width: 140px;
-  height: 112px;
-  grid-row: 1/3;
-  grid-column: 1/2;
-  justify-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &--all {
-    margin-bottom: 23px;
-    order: 1;
-
-    @media (min-width: $tablet-width) {
-      margin-top: 134px;
-      margin-bottom: 49px;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
-    width: 168px;
-    height: 200px;
-    order: 1;
-  }
+.catalog__content-card {
+  box-sizing: border-box;
+  grid-row: 1/2;
+  grid-column: 2/3;
 }
 
 /* Subtitle */
 
 .catalog__subtitle {
-  margin-bottom: 18px;
-  grid-row: 1/2;
-  grid-column: 2/3;
+  margin-bottom: 13px;
 
   @include set-font-style(var(--fz-catalog-subtitle), var(--lh-catalog-subtitle), "Oswald");
   color: $special-dark-grey-2;
@@ -178,11 +132,76 @@
 /* Table */
 
 .catalog__table {
-  grid-row: 2/3;
-  grid-column: 2/3;
-
   @media (min-width: $tablet-width) {
     order: 3;
+  }
+}
+
+/* -Image block- */
+
+.catalog__image-block {
+  width: 140px;
+  height: 112px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+
+  &--all {
+    margin-bottom: 23px;
+    order: 1;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 134px;
+      margin-bottom: 49px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+    width: 168px;
+    height: 200px;
+    order: 1;
+  }
+}
+
+/* Image */
+
+.catalog__img--small {
+  width: 68px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+  }
+}
+
+.catalog__img--big {
+  width: 84px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+}
+
+/* Link */
+
+.catalog__link {
+  &--all {
+    flex: 1 0 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
 
@@ -213,10 +232,14 @@
 /* Button */
 
 .catalog__button {
-  padding-top: 10px;
+  padding-top: 13px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   padding-left: 10px;
+  grid-row: 2/3;
+  grid-column: 1/3;
+
+  @include set-font-style(var(--fz-catalog-button), var(--fz-catalog-button), "Oswald");
 
   &--all {
     background-color: $basic-grey;
