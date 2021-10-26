@@ -6,12 +6,47 @@
   color: $special-dark-grey;
 }
 
+.question-form__decor {
+  box-sizing: border-box;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 15px;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 25px;
+    }
+  }
+
+  &::after {
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: $basic-green;
+  }
+}
+
 /* Legend */
 
 .question-form__legend {
   margin-bottom: 39px;
 
   @include set-font-style(var(--fz-form-main-legend), var(--lh-form-main-legend), "Oswald");
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
 }
 
 /* =Top= */
@@ -19,30 +54,46 @@
 .question-form__top {
   @media (min-width: $desktop-width) {
     margin-right: -40px;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
     margin-left: -40px;
     display: flex;
     justify-content: space-between;
   }
 }
 
-/* --Person data--- */
+/* ===Person data=== */
 
 .question-form__person-data {
-  margin-bottom: 26px;
+  margin-bottom: 23px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-right: 40px;
     margin-bottom: 0;
     margin-left: 40px;
-    flex: 1 1 570px;
+    flex: 0 0 570px;
   }
 }
 
-/* ---Program choice--- */
+/* ===Program choice=== */
 
 .question-form__program-choice {
-  margin-bottom: 19px;
+  padding-top: 23px;
+  padding-bottom: 16px;
+  margin-bottom: 28px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-right: 27px;
+    padding-bottom: 22px;
+    padding-left: 29px;
+    margin-bottom: 77px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-right: 40px;
@@ -52,27 +103,51 @@
   }
 }
 
-/* ---Owner contacts--- */
+/* ===Owner contacts=== */
 
 .question-form__owner-contacts {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
-/* ---Comment--- */
+/* ===Comment=== */
 
 .question-form__comment {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
 }
 
-/* ---Add info--- */
+/* ===Add info=== */
 
 .question-form__add-info {
-  margin-bottom: 34px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
+  }
 }
 
 /* -Footer- */
 
-.question-form__footer {
+.question-form__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -82,27 +157,52 @@
 /* Button */
 
 .question-form__button {
-  padding-top: 14px;
+  padding-top: 11px;
   padding-right: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 9px;
   padding-left: 14px;
   margin-bottom: 21px;
   width: 100%;
 
+  @include set-font-style(var(--fz-form-button), var(--lh-form-button), "Oswald", 400);
+
   @media (min-width: $tablet-width) {
+    padding-top: 16px;
+    padding-right: 14px;
+    padding-bottom: 15px;
+    padding-left: 14px;
     margin-bottom: 0;
-    flex: 0 0 50%;
+    flex: 0 0 282px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 0 0 568px;
   }
 }
 
 /* Note */
 
 .question-form__note {
+  display: block;
+  width: 100%;
+
   @include set-font-style(var(--fz-form-legend), var(--lh-form-legend));
   text-align: center;
   text-transform: none;
 
   @media (min-width: $tablet-width) {
-    flex: 0 0 50%;
+    padding-top: 6px;
+    padding-bottom: 9px;
+    margin-left: 62px;
+    text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 83px;
+  }
+}
+
+.question-form__req {
+  vertical-align: baseline;
+  font-size: inherit;
 }

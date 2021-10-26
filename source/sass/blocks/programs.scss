@@ -24,6 +24,7 @@
   padding-bottom: 18px;
   padding-left: 20px;
   margin-bottom: 20px;
+  box-sizing: border-box;
   width: 100%;
   display: grid;
   grid-template-rows: min-content 1fr;
@@ -99,7 +100,7 @@
 /* Icon */
 
 .programs__icon {
-  @include absolute-center
+  @include absolute-center;
 }
 
 .programs__icon--slim {
@@ -109,7 +110,7 @@
 
   @media (min-width: $tablet-width) {
     width: 140px;
-    top: calc(50% - 10px);
+    top: calc(50% - 13px);
   }
 
   @media (min-width: $desktop-width) {

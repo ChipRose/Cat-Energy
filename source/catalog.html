@@ -12,8 +12,19 @@
   <header class="header page__header">
     <div class="container header__wrapper">
       <a class="link header__logo logo" href="index.html">
-        <img class="logo__img" src="img/header/logo-simple.svg" width="33" height="38" alt="Логотип Cat Energy" />
-        <img class="logo__text" src="img/header/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy" />
+        <div class="logo__image-block">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header/logo-extended.svg">
+            <source media="(min-width: 768px)" srcset="img/header/logo.svg">
+            <img class="logo__img" src="img/header/logo-simple.svg" width="33" height="38" alt="Логотип Cat Energy" />
+          </picture>
+        </div>
+        <div class="logo__text-block">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/header/logo-text-extended.svg">
+            <img class="logo__text" src="img/header/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy" />
+          </picture>
+        </div>
       </a>
       <nav class="navigation navigation--nojs navigation--closed header__menu page__navigation">
         <button class="navigation__toggle header__burger " type="button" aria-expanded="false"
@@ -35,7 +46,8 @@
     </div>
   </header>
 
-  <main class="main">
+
+  <!-- <main class="main">
     <h1 class="visually-hidden">Продукция</h1>
     <section class="catalog page__catalog">
       <div class="container">
@@ -312,14 +324,15 @@
         </div>
       </div>
     </section>
-  </main>
+  </main> -->
   <footer class="footer page__footer">
     <section class="address">
       <h2 class="visually-hidden">Адрес Cat Energy</h2>
-      <div class="address__header address__header--catalog">
+      <div class="address__header address__header--inner">
         <div class="container address__wrapper">
           <div class="address__text-block">
-            <h3 class="subtitle address__subtitle">приглашаем к сотрудничеству дилеров!</h3>
+            <h3 class="subtitle address__subtitle">приглашаем <br class="br" /> к сотрудничеству
+              дилеров!</h3>
             <address class="address__text">ул. Большая Конюшенная, д. 19/8
               <span class="address__city">Санкт-Петербург</span>
             </address>
@@ -328,52 +341,60 @@
       </div>
       <div class="address__map-block">
         <div class="address__pin-block">
-          <img class="img" src="img/footer/map-pin.svg" width="57" height="53"
-            alt="Пин, показывающий адрес организации: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" />
+          <svg class="address__pin" width="57" height="53" role="img"
+            aria-label="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" focusable="false">
+            <use xlink:href="img/svg-sprite.svg#map-pin" />
+          </svg>
         </div>
         <iframe class="address__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858715528527!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1631463606519!5m2!1sru!2sru"
           allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
+
     <div class="container footer__wrapper ">
-      <a class="logo-text footer__logo">
-        <img class="logo-text__img" src="img/footer/footer-logo-text.svg" width="128" height="24"
-          alt="Надпись Cat Energy">
+      <a class="link logo-text footer__logo" href="index.html">
+        <svg class="logo-text__icon" width="128" height="24" role="img" aria-label="Надпись Cat Energy"
+          focusable="false">
+          <use xlink:href="img/svg-sprite.svg#logo-text"></use>
+        </svg>
       </a>
       <ul class="list footer__social-list">
         <li class="footer__social-item">
           <a href="#" class="link social-button footer__social-link">
-            <svg class="social-button__icon" width="23" height="16" aria-label="Иконка ВКонтакте">
-              <use xlink:href="img/social-sprite.svg#vk" />
+            <svg class="social-button__icon social-button__icon--vk" width="24" height="13" role="img"
+              aria-label="Иконка ВКонтакте" focusable="false">
+              <use xlink:href="img/svg-sprite.svg#vk" />
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a href="#" class="link social-button footer__social-link">
-            <svg class="social-button__icon" width="16" height="16" aria-label="Иконка Инстаграм">
-              <use xlink:href="img/social-sprite.svg#instagram" />
+            <svg class="social-button__icon social-button__icon--inst" width="17" height="17" role="img"
+              aria-label="Иконка Инстаграм" focusable="false">
+              <use xlink:href="img/svg-sprite.svg#instagram" />
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a href="#" class="link social-button footer__social-link">
-            <svg class="social-button__icon" width="10" height="18" aria-label="Иконка Фейсбук">
-              <use xlink:href="img/social-sprite.svg#facebook" />
+            <svg class="social-button__icon social-button__icon--fb" width="13" height="20" role="img"
+              aria-label="Иконка Фейсбук" focusable="false">
+              <use xlink:href="img/svg-sprite.svg#facebook" />
             </svg>
           </a>
         </li>
       </ul>
       <a class="link academy-logo footer__promo" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="academy-logo__text footer__promo-text">HTML Academy</p>
-        <svg class="academy-logo__icon footer__promo-icon" width="27" height="34" viewBox="0 0 27 34"
-          aria-label="Логотип HTMLAcademy" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
+        <svg class="academy-logo__icon footer__promo-icon" width="27" height="34" role="img"
+          aria-label="Логотип HTMLAcademy" focusable="false">
+          <use xlink:href="img/svg-sprite.svg#academy-logo" />
         </svg>
       </a>
     </div>
   </footer>
+
   <script src="js/burger.js"></script>
 
 </body>

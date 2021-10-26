@@ -6,9 +6,31 @@
   <title>HTML Academy: CAT ENERGY</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url("img/preview/MobileIndex.jpg");
+    }
+
+    @media (min-width: 768px) {
+      HTML {
+        background-image: url("img/preview/TabletIndex.jpg");
+      }
+    }
+
+    @media (min-width: 1440px) {
+      HTML {
+        background-image: url("img/preview/DesktopIndex.jpg");
+      }
+    }
+
+  </style>
 </head>
 
 <body class="page__body">
+
   <header class="header page__header">
     <div class="container header__wrapper">
       <a class="link header__logo logo">
@@ -45,9 +67,9 @@
       </nav>
     </div>
   </header>
-  <main class="main page__main">
-    <h1 class="visually-hidden">Cat Energy. Функциональное питание для котов</h1>
 
+  <main class="page__main">
+    <h1 class="visually-hidden">Cat Energy. Функциональное питание для котов</h1>
     <section class="cover page__cover">
       <div class="container cover__wrapper">
         <header class="cover__header">
@@ -69,7 +91,6 @@
         <a class="button cover__button " href="form.html">Подобрать программу</a>
       </div>
     </section>
-
     <section class="programs page__programs">
       <div class="container">
         <h2 class="visually-hidden">Программы питания для котов</h2>
@@ -119,7 +140,6 @@
         </ul>
       </div>
     </section>
-
     <section class="advantages page__advantages">
       <div class="container">
         <h2 class="title advantages__title">Как это работает</h2>
@@ -180,7 +200,6 @@
         </ul>
       </div>
     </section>
-
     <section class="example page__example">
       <div class="container example__wrapper">
         <header class="example__header">
@@ -196,7 +215,7 @@
             <dl class="list example__list">
               <div class="example__item">
                 <dt class="example__progress">5 кг</dt>
-                <dd class="example__description">снижение веса</dd>
+                <dd class="example__description">снижение <br class="br br--mobile"> веса</dd>
               </div>
               <div class="example__item">
                 <dt class="example__progress">60 дней</dt>
@@ -315,8 +334,11 @@
       </a>
     </div>
   </footer>
+
   <script src="js/burger.js"></script>
   <script src="js/slider.js"></script>
+  <script src="../node_modules/pixel-glass/script.js"></script>
+
 </body>
 
 </html>

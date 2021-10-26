@@ -26,20 +26,13 @@
     padding-bottom: 0;
     padding-left: 110px;
   }
+}
 
-  &--form {
-    @media (min-width: $tablet-width) {
-      padding-top: 0;
-      padding-right: 70px;
-      padding-bottom: 0;
-      padding-left: 70px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 0;
-      padding-right: 110px;
-      padding-bottom: 0;
-      padding-left: 110px;
-    }
+.container--form {
+  @media (min-width: $tablet-width) and (max-width: -1 + $desktop-width) {
+    padding-top: 0;
+    padding-right: 67px;
+    padding-bottom: 0;
+    padding-left: 70px;
   }
 }

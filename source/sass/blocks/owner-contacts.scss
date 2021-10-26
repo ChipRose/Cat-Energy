@@ -1,6 +1,8 @@
-/* Owner contacts */
+/* ===Owner contacts=== */
 
-.owner-contacts {
+/* =Wrapper= */
+
+.owner-contacts__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-rows: min-content min-content;
@@ -10,8 +12,13 @@
 }
 
 /* Legend */
+
 .owner-contacts__legend {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-row: 1/2;
@@ -19,7 +26,7 @@
   }
 }
 
-/* ---Item--- */
+/* -Item- */
 
 .owner-contacts__item {
   margin-bottom: 14px;
@@ -31,18 +38,46 @@
     margin-bottom: 0;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }
 
-/* =Container= */
+/* =Wrapper= */
 
-.owner-contacts__container {
-  display: inline-block;
+.owner-contacts__content {
   position: relative;
   flex: 1 1 auto;
   order: 2;
+}
+
+/* Input */
+
+.owner-contacts__value {
+  padding-top: 13px;
+  padding-right: 45px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  width: 100%;
+
+  &:focus + .owner-contacts__icon {
+    fill: $basic-green;
+  }
+
+  &:not(:placeholder-shown):not(:focus):invalid + .owner-contacts__icon {
+    fill: $status-error;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-right: 45px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
 }
 
 /* Icon */
@@ -50,39 +85,34 @@
 .owner-contacts__icon {
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 12px;
   z-index: 0;
   transform: translateY(-50%);
   fill: $special-dark-grey-2;
+
+  @media (min-width: $desktop-width) {
+    right: 19px;
+  }
 }
 
-/* Input */
+.owner-contacts__icon--email {
+  width: 18px;
+  height: auto;
+}
 
-.owner-contacts__value {
-  padding-top: 15px;
-  padding-right: 51px;
-  padding-bottom: 13px;
-  padding-left: 15px;
-  min-width: 100%;
-  position: relative;
-
-  &:focus {
-    + .owner-contacts__icon {
-      fill: $basic-green;
-    }
-  }
-
-  &:not(:placeholder-shown):not(:focus):invalid {
-    + .owner-contacts__icon {
-      fill: $status-error;
-    }
-  }
+.owner-contacts__icon--phone {
+  width: 20px;
+  height: auto;
 }
 
 /* Property */
 
 .owner-contacts__property {
-  margin-right: 11px;
+  margin-right: 12px;
   order: 1;
   flex: 0 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }

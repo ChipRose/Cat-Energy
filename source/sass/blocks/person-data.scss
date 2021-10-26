@@ -1,13 +1,17 @@
-/* =Item= */
+/* -Item- */
 
 .person-data__item {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -16,7 +20,7 @@
 .person-data__value {
   padding-top: 13px;
   padding-right: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   padding-left: 14px;
   flex: 1 1 auto;
   order: 2;
@@ -24,12 +28,23 @@
   @include set-font-style(var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-right: 17px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+  }
 }
 
 /* Property */
 
 .person-data__property {
-  margin-right: 13px;
+  margin-right: 15px;
   flex: 0 0 auto;
   order: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+  }
 }

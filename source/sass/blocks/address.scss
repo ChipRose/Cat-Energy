@@ -12,11 +12,12 @@
 
 .address__header {
   background-color: $contrast-color;
-
-  &--catalog {
-    background-color: $basic-grey;
-  }
 }
+
+.address__header--inner {
+  background-color: $basic-grey;
+}
+
 
 /* =Wrapper= */
 
@@ -37,9 +38,9 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding-top: 63px;
+    padding-top: 65px;
     padding-right: 42px;
-    padding-bottom: 58px;
+    padding-bottom: 56px;
     padding-left: 42px;
   }
 
@@ -64,6 +65,11 @@
 
   @media (min-width: $tablet-width) {
     flex: 0 0 171px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 87px;
+    flex: 0 0 163px;
   }
 }
 
@@ -127,6 +133,7 @@
 
 .address__pin-block {
   @include absolute-center;
+  top: calc(-18px + 50%);
 
   &::after {
     content: "";
@@ -141,6 +148,15 @@
     background-repeat: no-repeat;
     background-position: center bottom;
   }
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc(240px + 50%);
+    top: calc(-13px + 50%);
+  }
 }
 
 /* Pin */
@@ -150,10 +166,6 @@
   height: auto;
 
   @media (min-width: $tablet-width) {
-    width: 94px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 97px;
+    width: 110px;
   }
 }

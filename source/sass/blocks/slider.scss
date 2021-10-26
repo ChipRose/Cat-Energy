@@ -80,6 +80,7 @@
 /* Cursor */
 
 .slider__cursor {
+  box-sizing: border-box;
   width: 35px;
   height: 6px;
   position: absolute;
@@ -179,7 +180,7 @@
 
 .slider--init .slider__img--after {
   @media (min-width: $tablet-width) {
-    transform: translateX(-50%);
+    transform: translateX(-49.5%);
     transition: transform 0.3s ease-out;
   }
 }
