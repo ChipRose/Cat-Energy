@@ -32,8 +32,9 @@
 .table-property__property {
   padding-top: 2px;
   padding-bottom: 2px;
+
   @media (min-width: $tablet-width) {
-    padding-top: 5px;
+    padding-top: 8px;
     padding-bottom: 7px;
   }
 
@@ -52,6 +53,11 @@
   padding-top: 2px;
   padding-bottom: 2px;
   text-align: right;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 7px;
+  }
 
   &--extra {
     width: 94px;
