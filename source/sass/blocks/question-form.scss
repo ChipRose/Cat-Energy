@@ -6,33 +6,6 @@
   color: $special-dark-grey;
 }
 
-.question-form__decor {
-  box-sizing: border-box;
-  position: relative;
-
-  &::after {
-    content: "";
-    height: 2px;
-    position: absolute;
-    top: 15px;
-
-    @media (min-width: $tablet-width) {
-      top: 22px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 25px;
-    }
-  }
-
-  &::after {
-    right: 0;
-    left: 0;
-    z-index: -1;
-    background-color: $basic-green;
-  }
-}
-
 /* Legend */
 
 .question-form__legend {

@@ -1,3 +1,5 @@
+/* ===Table=== */
+
 .table-property {
   min-width: 140px;
   border-collapse: collapse;
@@ -9,15 +11,9 @@
   @media (min-width: $tablet-width) {
     width: 100%;
   }
-
-  &--extra {
-    width: 100%;
-
-    @include set-font-style(var(--fz-catalog-table-extra), var(--lh-catalog-table-extra));
-  }
 }
 
-/* Row */
+/* -Row- */
 
 .table-property__row {
   @media (min-width: $tablet-width) {
@@ -27,27 +23,24 @@
   }
 }
 
-/* Table elements */
+/* Table property */
 
 .table-property__property {
   padding-top: 2px;
   padding-bottom: 2px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 8px;
+    padding-top: 7px;
     padding-bottom: 7px;
   }
 
-  &--extra {
-    @media (min-width: $tablet-width) {
-      text-align: right;
-    }
-
-    @media (min-width: $desktop-width) {
-      text-align: left;
-    }
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 7px;
   }
 }
+
+/* Table value */
 
 .table-property__value {
   padding-top: 2px;
@@ -55,11 +48,39 @@
   text-align: right;
 
   @media (min-width: $tablet-width) {
-    padding-top: 5px;
+    padding-top: 7px;
     padding-bottom: 7px;
   }
+}
 
-  &--extra {
-    width: 94px;
+/* ===Table exptra products=== */
+
+.table-property--extra {
+  width: 100%;
+
+  @include set-font-style(var(--fz-catalog-table-extra), var(--lh-catalog-table-extra));
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
+/* Table property */
+
+.table-property__property--extra {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+/* Table value */
+
+.table-property__value--extra {
+  @media (min-width: $tablet-width) {
+    width: 90px;
   }
 }

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-<style>
+  <style>
     HTML {
       background-repeat: no-repeat;
       background-position: 50% 0;
@@ -325,15 +325,15 @@
             </div>
             <a class="button catalog__button" href="form.html">заказать</a>
           </li>
-          <li class="catalog__item-all">
+          <li class="catalog__item catalog__item--all">
             <h3 class="subtitle catalog__subtitle catalog__subtitle--all">
               <a class="link" href="blank.html">
                 Показать еще <br class="br br--tablet br--desktop">
                 100500 товаров
               </a>
             </h3>
-            <a class="link catalog__link-all" href="blank.html">
-              <svg class="catalog__icon-all" width="30" height="30" role="img" aria-label="Иконка Больше товаров"
+            <a class="link catalog__link--all" href="blank.html">
+              <svg class="catalog__icon--all" width="30" height="30" role="img" aria-label="Иконка Больше товаров"
                 focusable="false">
                 <use xlink:href="img/svg-sprite.svg#plus"></use>
               </svg>
@@ -349,99 +349,104 @@
         </ul>
       </div>
     </section>
-    <!-- <section class="extra-products page__extra-products">
-      <div class="container">
-        <h2 class="title extra-products__title">Дополнительные товары</h2>
-        <ul class="list extra-products__list">
-          <li class="extra-products__item">
-            <div class="extra-products__content">
-              <h3 class="subtitle extra-products__subtitle">
-                Сахарозаменитель
-              </h3>
-              <table class="table-property table-property--extra extra-products__table">
-                <tr class="extra-products__row">
-                  <td class="table-property__property table-property__property--extra">
-                    1 упаковка (100 г)
-                  </td>
-                  <td class="table-property__value table-property__value--extra">
-                    200 Р.
-                  </td>
-                </tr>
-              </table>
+    <section class="extra-products page__extra-products title-decor">
+      <div class="container ">
+        <h2 class="title extra-products__title">
+          <span class="title-decor__back title-decor__back--catalog">
+            Дополнительные товары
+          </span>
+        </h2>
+        <div class="extra-products__wrapper">
+          <ul class="list extra-products__list">
+            <li class="extra-products__item">
+              <div class="extra-products__content">
+                <h3 class="subtitle extra-products__subtitle">
+                  Сахарозаменитель
+                </h3>
+                <table class="table-property table-property--extra extra-products__table">
+                  <tr class="extra-products__row">
+                    <td class="table-property__property table-property__property--extra">
+                      1 упаковка (100 г)
+                    </td>
+                    <td class="table-property__value table-property__value--extra">
+                      200 Р.
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <a class="button extra-products__button" href="form.html">заказать</a>
+            </li>
+            <li class="extra-products__item">
+              <div class="extra-products__content">
+                <h3 class="subtitle extra-products__subtitle">
+                  питьевая вода
+                </h3>
+                <table class="table-property table-property--extra extra-products__table">
+                  <tr class="extra-products__row">
+                    <td class="table-property__property table-property__property--extra">
+                      5 литров
+                    </td>
+                    <td class="table-property__value table-property__value--extra">
+                      50 Р.
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <a class="button extra-products__button" href="form.html">заказать</a>
+            </li>
+            <li class="extra-products__item">
+              <div class="extra-products__content">
+                <h3 class="subtitle extra-products__subtitle">
+                  молоко
+                </h3>
+                <table class="table-property table-property--extra extra-products__table">
+                  <tr class="extra-products__row">
+                    <td class="table-property__property table-property__property--extra">
+                      1 литр
+                    </td>
+                    <td class="table-property__value table-property__value--extra">
+                      100 Р.
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <a class="button extra-products__button" href="form.html">заказать</a>
+            </li>
+            <li class="extra-products__item">
+              <div class="extra-products__content">
+                <h3 class="subtitle extra-products__subtitle">
+                  витамины
+                </h3>
+                <table class="table-property table-property--extra extra-products__table">
+                  <tr class="extra-products__row">
+                    <td class="table-property__property table-property__property--extra">
+                      1 упаковка (30 г)
+                    </td>
+                    <td class="table-property__value table-property__value--extra">
+                      300 Р.
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <a class="button extra-products__button" href="form.html">заказать</a>
+            </li>
+          </ul>
+          <div class="promo promo__wrapper extra-products__promo">
+            <h2 class="visually-hidden">Промоакции</h2>
+            <div class="promo__image-block">
+              <svg class="promo__icon" width="78" height="80" role="img" aria-label="Подарок" focusable="false">
+                <use xlink:href="img/svg-sprite.svg#present"></use>
+              </svg>
             </div>
-            <a class="button extra-products__button" href="form.html">заказать</a>
-          </li>
-          <li class="extra-products__item">
-            <div class="extra-products__content">
-              <h3 class="subtitle extra-products__subtitle">
-                питьевая вода
-              </h3>
-              <table class="table-property table-property--extra extra-products__table">
-                <tr class="extra-products__row">
-                  <td class="table-property__property table-property__property--extra">
-                    5 литров
-                  </td>
-                  <td class="table-property__value table-property__value--extra">
-                    50 Р.
-                  </td>
-                </tr>
-              </table>
+            <div class="promo__text-block">
+              <p class="text promo__text">Закажите все <br class="br" />
+                и получите чехол для кота в подарок!
+              </p>
             </div>
-            <a class="button extra-products__button" href="form.html">заказать</a>
-          </li>
-          <li class="extra-products__item">
-            <div class="extra-products__content">
-              <h3 class="subtitle extra-products__subtitle">
-                молоко
-              </h3>
-              <table class="table-property table-property--extra extra-products__table">
-                <tr class="extra-products__row">
-                  <td class="table-property__property table-property__property--extra">
-                    1 литр
-                  </td>
-                  <td class="table-property__value table-property__value--extra">
-                    100 Р.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <a class="button extra-products__button" href="form.html">заказать</a>
-          </li>
-          <li class="extra-products__item">
-            <div class="extra-products__content">
-              <h3 class="subtitle extra-products__subtitle">
-                витамины
-              </h3>
-              <table class="table-property table-property--extra extra-products__table">
-                <tr class="extra-products__row">
-                  <td class="table-property__property table-property__property--extra">
-                    1 упаковка (30 г)
-                  </td>
-                  <td class="table-property__value table-property__value--extra">
-                    300 Р.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <a class="button extra-products__button" href="form.html">заказать</a>
-          </li>
-        </ul>
-        <div class="promo promo__wrapper extra-products__promo">
-          <h2 class="visually-hidden">Промоакции</h2>
-          <div class="promo__image-block">
-            <svg class="promo__icon" width="78" height="80" role="img" aria-label="Подарок" focusable="false">
-              <use xlink:href="img/svg-sprite.svg#present"></use>
-            </svg>
-          </div>
-          <div class="promo__text-block">
-            <p class="text promo__text">Закажите все <br class="br" />
-              и получите чехол для кота в подарок!
-            </p>
           </div>
         </div>
       </div>
-    </section> -->
-
+    </section>
   </main>
   <footer class="footer page__footer">
     <section class="address">

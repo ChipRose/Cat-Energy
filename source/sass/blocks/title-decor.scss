@@ -1,0 +1,65 @@
+.title-decor {
+  box-sizing: border-box;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 15px;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 25px;
+    }
+  }
+
+  &::after {
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: $basic-green;
+  }
+}
+
+.title-decor__back {
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -14px;
+    left: -22px;
+    z-index: -1;
+    background-color: $contrast-color;
+
+    @media (min-width: $tablet-width) {
+      right: -42px;
+      left: -40px;
+    }
+  }
+}
+
+.title-decor__back--catalog {
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+
+    &::before {
+      left: -40px;
+    }
+  }
+}
