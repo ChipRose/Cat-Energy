@@ -1,3 +1,5 @@
+/* ===Title decor element=== */
+
 .title-decor {
   box-sizing: border-box;
   position: relative;
@@ -7,6 +9,10 @@
     height: 2px;
     position: absolute;
     top: 15px;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: $basic-green;
 
     @media (min-width: $tablet-width) {
       top: 22px;
@@ -15,13 +21,6 @@
     @media (min-width: $desktop-width) {
       top: 25px;
     }
-  }
-
-  &::after {
-    right: 0;
-    left: 0;
-    z-index: -1;
-    background-color: $basic-green;
   }
 }
 

@@ -1,7 +1,5 @@
 /* ===Header=== */
-.header {
-  background-color: $contrast-color;
-}
+
 .header--inner {
   position: relative;
 
@@ -29,7 +27,6 @@
   display: grid;
   grid-template-rows: min-content auto;
   grid-template-columns: 44px 1fr 44px;
-  background-color: $contrast-color;
   z-index: 20;
 
   @media (min-width: $tablet-width) {
