@@ -23,8 +23,7 @@
 
   @include set-font-style(var(--fz-main), var(--lh-main));
   color: $main-color;
-  //background-color: $contrast-color;
-  opacity: 0.5;
+  background-color: $contrast-color;
 }
 
 /* =Header= */
@@ -42,20 +41,6 @@
   }
 }
 
-/* -Form.html- */
-
-.page__header-form {
-  margin-bottom: 27px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 54px;
-  }
-}
-
 /* =Main= */
 
 .page__main {
@@ -63,26 +48,12 @@
   grid-column: 1/2;
 }
 
-/* -Form.html- */
 
-.page__main--form {
-  margin-bottom: 32px;
-}
+/* =Footer= */
 
-/* ===Title=== */
-
-/* -Form.html- */
-
-.page__form-title {
-  margin-bottom: 37px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 57px;
-  }
+.page__footer {
+  grid-row: 3/4;
+  grid-column: 1/2;
 }
 
 /* ===Index.html=== */
@@ -129,26 +100,100 @@
   margin-bottom: 0;
 }
 
-/* =Footer= */
+/* ===Catalog.html=== */
 
-.page__footer {
-  grid-row: 3/4;
-  grid-column: 1/2;
+/* =Header= */
+
+.page__header-catalog {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
-/* ===Catalog.html=== */
+/* ---Catalog--- */
 
 .page__catalog {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
+}
+
+/* Catalog title */
+
+.page__catalog-title {
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
+  }
 }
 
 /* ---Extra products--- */
 
-.page__extra-products {
-  margin-bottom: 35px;
+.page__extra-products{
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+  }
 }
 
 /* ===Form.html=== */
+
+/* =Header= */
+
+.page__header-form {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
+}
+
+/* =Main= */
+
+.page__main--form {
+  margin-bottom: 32px;
+}
+
+/* Title */
+
+.page__form-title {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
+}
 
 /* ---Question form--- */
 
@@ -158,4 +203,24 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
   }
+}
+
+/* ===Blank.html=== */
+
+/* =Header= */
+
+.page__header-blank {
+  margin-bottom: 30px;
+}
+
+/* Title */
+
+.page__blank-title {
+  margin-bottom: 30px;
+}
+
+/* ---Product card--- */
+
+.page__product-card {
+  margin-bottom: 30px;
 }

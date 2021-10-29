@@ -1,0 +1,104 @@
+/* ===Promo=== */
+
+.promo {
+  color: $contrast-color;
+  text-align: center;
+}
+
+/* =Wrapper= */
+
+.promo__wrapper {
+  padding-top: 58px;
+  padding-right: 58px;
+  padding-bottom: 43px;
+  padding-left: 58px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 289px;
+  background-image: url("../../img/promo/gift-photo.jpg");
+  background-color: $basic-green;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/promo/gift-photo@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-position: center 67%;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-right: 42px;
+    padding-bottom: 42px;
+    padding-left: 42px;
+    min-height: auto;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* -Image-block- */
+
+.promo__image-block {
+  margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    flex: 0 0 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
+}
+
+/* Icon */
+
+.promo__icon {
+  width: 78px;
+  height: auto;
+}
+
+/* -Text block- */
+
+.promo__text-block {
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 85px;
+    padding-left: 45px;
+    flex: 0 0 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* Text */
+
+.promo__text {
+  margin-bottom: 5px;
+
+  @include set-font-style(var(--fz-catalog-promo), var(--lh-catalog-promo));
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

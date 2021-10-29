@@ -78,6 +78,10 @@
   @media (min-width: $tablet-width) {
     flex: 1 1 auto;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
 }
 
 /* -Burger- */

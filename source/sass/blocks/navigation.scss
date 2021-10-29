@@ -10,6 +10,10 @@
     @include set-font-style(var(--fz-menu), var(--lh-menu), "Oswald", 400);
     background-color: transparent;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 610px;
+  }
 }
 
 /* -Burger- */
@@ -136,7 +140,6 @@
 
 .navigation__item {
   text-align: center;
-  transition: color 0.3s ease-out;
   position: relative;
   z-index: 1;
 
@@ -185,6 +188,7 @@
   text-align: center;
   color: inherit;
   z-index: 2;
+  transition: all 0.3s ease-out;
 
   @media (min-width: $tablet-width) {
     padding-top: 18px;
