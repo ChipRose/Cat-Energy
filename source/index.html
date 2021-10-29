@@ -6,27 +6,6 @@
   <title>HTML Academy: CAT ENERGY</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-image: url("img/preview/MobileIndex.jpg");
-    }
-
-    @media (min-width: 768px) {
-      HTML {
-        background-image: url("img/preview/TabletIndex.jpg");
-      }
-    }
-
-    @media (min-width: 1440px) {
-      HTML {
-        background-image: url("img/preview/DesktopIndex.jpg");
-      }
-    }
-
-  </style>
 </head>
 
 <body class="page__body">
@@ -53,7 +32,7 @@
           aria-controls="navigation__list">
           <span class="visually-hidden">Открыть меню </span>
         </button>
-        <ul class="list navigation__list" id="navigation__list">
+        <ul class="list navigation__list navigation__list--index" id="navigation__list">
           <li class="navigation__item">
             <a class="link navigation__link navigation__link--current navigation__link--index">Главная</a>
           </li>
@@ -337,7 +316,6 @@
 
   <script src="js/burger.js"></script>
   <script src="js/slider.js"></script>
-  <script src="../node_modules/pixel-glass/script.js"></script>
 
 </body>
 

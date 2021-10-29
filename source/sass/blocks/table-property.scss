@@ -65,14 +65,18 @@
   }
 }
 
-/* Table property */
+/* Property */
 
 .table-property__property--extra {
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 7px;
     text-align: left;
   }
 }
@@ -81,6 +85,12 @@
 
 .table-property__value--extra {
   @media (min-width: $tablet-width) {
+    width: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 7px;
     width: 90px;
   }
 }
