@@ -2,12 +2,12 @@
 
 .cover {
   @include set-font-style(var(--fz-cover), var(--lh-cover), "Oswald");
-  color: $contrast-color;
   text-align: center;
+  color: $contrast-color;
 
   @media (min-width: $tablet-width) {
-    color: $main-color;
     text-align: left;
+    color: $main-color;
   }
 
   @media (min-width: $desktop-width) {
@@ -176,17 +176,23 @@
   margin-right: auto;
   margin-bottom: 2px;
   margin-left: auto;
+  width: 280px;
+  height: 270px;
   z-index: 3;
   grid-row: 2/4;
   grid-column: 1/2;
 
   @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
     grid-row: 2/3;
     grid-column: 1/2;
     order: 1;
   }
 
   @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
     position: absolute;
     top: 0;
     left: -26.5%;
