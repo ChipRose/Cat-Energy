@@ -6,9 +6,9 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  color: $contrast-color;
   border: none;
   background: $basic-green;
-  color: $contrast-color;
   transition: all 0.3s ease-out;
 
   &:hover {

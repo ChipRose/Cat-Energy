@@ -61,6 +61,10 @@
 /* ---Cover--- */
 
 .page__cover {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
   }
@@ -86,7 +90,7 @@
   margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 9px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

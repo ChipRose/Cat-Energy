@@ -5,6 +5,28 @@
   font-weight: $font-weight;
 }
 
+@mixin border-bottom ($color, $left: 0, $right: 0) {
+  content: "";
+  box-sizing: border-box;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: $right;
+  left: $left;
+  border-bottom: 1px solid $color;
+}
+
+@mixin border-top ($color, $left: 0, $right: 0) {
+  content: "";
+  box-sizing: border-box;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: $right;
+  left: $left;
+  border-top: 1px solid $color;
+}
+
 @mixin absolute-center {
   position: absolute;
   top: 50%;

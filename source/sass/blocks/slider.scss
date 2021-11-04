@@ -32,8 +32,8 @@
 /* -Item- */
 
 .slider__item {
-  flex: 0 0 var(--slide-width);
   height: auto;
+  flex: 0 0 var(--slide-width);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -55,7 +55,6 @@
 .slider__control {
   display: flex;
   align-items: center;
-  align-self: center;
 }
 
 /* Scale */
@@ -72,8 +71,9 @@
     width: 428px;
     height: 6px;
     position: relative;
-    background-color: $basic-grey-2;
+    border: none;
     border-radius: 6px;
+    background-color: $special-middle-grey;
   }
 }
 
