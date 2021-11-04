@@ -56,7 +56,6 @@
 
   &::before {
     @include border-top($special-middle-grey);
-
     @include border-bottom($special-middle-grey);
     z-index: -1;
   }
