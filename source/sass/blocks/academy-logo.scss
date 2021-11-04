@@ -5,20 +5,18 @@
   justify-content: space-between;
   align-items: center;
 
-  &:hover {
-    > .academy-logo__icon {
-      fill: $basic-green;
-    }
+  @include set-font-style(var(--fz-footer-promo-text), var(--lh-footer-promo-text));
+
+  &:hover > .academy-logo__icon {
+    fill: $basic-green;
   }
 
-  &:active {
-    > .academy-logo__text {
-      color: $special-dark-grey03;
-    }
+  &:active > .academy-logo__text {
+    color: $special-dark-grey03;
+  }
 
-    > .academy-logo__icon {
-      fill: $basic-green03;
-    }
+  &:active > .academy-logo__icon {
+    fill: $basic-green03;
   }
 }
 
