@@ -4,14 +4,8 @@
   position: relative;
 
   &::before {
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: -20px;
-    left: -20px;
-    border-top: 1px solid $special-grey;
-    border-bottom: 1px solid $special-grey;
+    @include border-top($special-grey, -20px, -20px);
+    @include border-bottom($special-grey, -20px, -20px);
 
     @media (min-width: $tablet-width) {
       right: 0;
@@ -55,7 +49,10 @@
     content: "";
     box-sizing: border-box;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
   }
 
   &::before {
@@ -69,9 +66,7 @@
     display: none;
     width: var(--inner-box-size);
     height: var(--inner-box-size);
-    top: 50%;
-    left: calc(var(--box-size) / 2);
-    transform: translate(-50%, -50%);
+    left: calc((var(--box-size) - var(--inner-box-size)) / 2);
     background-color: $basic-green;
   }
 
@@ -81,6 +76,8 @@
     padding-left: 59px;
   }
 }
+
+/* Radio button active */
 
 .program-choice__radio-button {
   &:hover + .program-choice__property::before {

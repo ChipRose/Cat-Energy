@@ -37,7 +37,7 @@
 /* ===Person data=== */
 
 .question-form__person-data {
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -56,8 +56,8 @@
 
 .question-form__program-choice {
   padding-top: 23px;
-  padding-bottom: 16px;
-  margin-bottom: 28px;
+  padding-bottom: 19px;
+  margin-bottom: 26px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -86,7 +86,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 67px;
+    margin-bottom: 57px;
   }
 }
 

@@ -20,10 +20,11 @@
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  opacity: 0.5px;
 
   @include set-font-style(var(--fz-main), var(--lh-main));
   color: $main-color;
-  background-color: $contrast-color;
+  //background-color: $contrast-color;
 }
 
 /* =Header= */
@@ -171,7 +172,7 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -205,6 +206,10 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 50px;
   }
 }

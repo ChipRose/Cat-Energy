@@ -43,7 +43,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -66,6 +70,7 @@
 
   &:focus + .owner-contacts__icon {
     fill: $basic-green;
+    transition: all 0.3s ease-out;
   }
 
   &:not(:placeholder-shown):not(:focus):invalid + .owner-contacts__icon {

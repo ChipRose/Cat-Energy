@@ -78,12 +78,7 @@
   position: relative;
 
   &::before {
-    content: "";
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-bottom: 1px solid $basic-grey-2;
+    @include border-bottom($basic-grey-2);
   }
 
   @media (min-width: $tablet-width) {
