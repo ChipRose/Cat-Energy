@@ -1,6 +1,6 @@
 /* ===Owner contacts=== */
 
-/* =Wrapper= */
+/* ==Wrapper== */
 
 .owner-contacts__wrapper {
   @media (min-width: $desktop-width) {
@@ -17,7 +17,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 77px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,7 +51,7 @@
   }
 }
 
-/* =Wrapper= */
+/* ==Wrapper== */
 
 .owner-contacts__content {
   position: relative;
@@ -90,10 +90,14 @@
 .owner-contacts__icon {
   position: absolute;
   top: 50%;
-  right: 12px;
+  right: 13px;
   z-index: 0;
   transform: translateY(-50%);
   fill: $special-dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    right: 17px;
+  }
 
   @media (min-width: $desktop-width) {
     right: 19px;

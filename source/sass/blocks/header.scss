@@ -6,7 +6,7 @@
   }
 }
 
-/* =Wrapper= */
+/* ==Wrapper== */
 
 .header__wrapper {
   width: 100%;
@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 52px;
+    padding-top: 53px;
     padding-bottom: 15px;
     grid-template-columns: 202px 1fr;
   }

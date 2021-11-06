@@ -36,7 +36,7 @@
 /* -Item- */
 
 .add-info__item {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin-top: 16px;
@@ -70,6 +70,7 @@
 
   &::before,
   &::after {
+    content: "";
     box-sizing: border-box;
     position: absolute;
     top: 50%;
@@ -78,15 +79,15 @@
   }
 
   &::before {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' stroke-width='2' stroke='%2368B738'%3E%3Cpath d='M1 6 L 7 13 L 18 1' fill='none' /%3E%3C/svg%3E");
     display: none;
     width: var(--check-icon-width);
     height: var(--check-icon-height);
     left: calc((var(--box-size) - var(--check-icon-width)) / 2);
+    background-image: url("data:image/svg+xml, %3Csvg viewBox='0 0 19 14' xmlns='http://www.w3.org/2000/svg' stroke-width='2' stroke='%2368B738'%3E%3Cpath d='M1 6 L 7 13 L 18 1' fill='none' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
   }
 
   &::after {
-    content: "";
     width: var(--box-size);
     height: var(--box-size);
     left: 0;
@@ -103,7 +104,7 @@
 /* Checkbox active */
 
 .add-info__checkbox:hover + .add-info__property::after,
-.add-info__checkbox:focus + .add-info__property::after  {
+.add-info__checkbox:focus + .add-info__property::after {
   border-color: $special-grey-2;
 }
 

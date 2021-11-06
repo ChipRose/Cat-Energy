@@ -86,7 +86,7 @@
   transition: all 0.3s ease-out;
 
   @media (min-width: $tablet-width) {
-    padding-top: 18px;
+    padding-top: 16px;
     padding-right: 18px;
     padding-bottom: 18px;
     padding-left: 18px;
@@ -106,7 +106,7 @@
 
     &::before {
       content: "";
-      width: calc(100% - 36px);
+      width: calc(-36px + 100%);
       height: 2px;
       position: absolute;
       left: 50%;

@@ -9,12 +9,12 @@
 /* Legend */
 
 .question-form__legend {
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 
   @include set-font-style(var(--fz-form-main-legend), var(--lh-form-main-legend), "Oswald");
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,7 +37,7 @@
 /* ===Person data=== */
 
 .question-form__person-data {
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -63,9 +63,9 @@
   @media (min-width: $tablet-width) {
     padding-top: 24px;
     padding-right: 27px;
-    padding-bottom: 22px;
+    padding-bottom: 24px;
     padding-left: 29px;
-    margin-bottom: 77px;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,7 +107,7 @@
 /* ===Add info=== */
 
 .question-form__add-info {
-  margin-bottom: 23px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 53px;

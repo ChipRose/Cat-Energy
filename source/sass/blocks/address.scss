@@ -36,6 +36,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
@@ -45,9 +46,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 66px;
+    padding-top: 62px;
     padding-right: 89px;
-    padding-bottom: 56px;
+    padding-bottom: 58px;
     padding-left: 76px;
     width: 570px;
     position: relative;
