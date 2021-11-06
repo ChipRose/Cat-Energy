@@ -6,6 +6,28 @@
   <title>HTML Academy: CAT ENERGY</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url("img/preview/MobileCatalog.jpg");
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) {
+      HTML {
+        background-image: url("img/preview/TabletCatalog.jpg");
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 1440px) {
+      HTML {
+        background-image: url("img/preview/DesktopCatalog.jpg");
+      }
+    }
+
+  </style>
 </head>
 
 <body class="page__body">
@@ -431,7 +453,7 @@
   <footer class="footer page__footer">
     <section class="address">
       <h2 class="visually-hidden">Адрес Cat Energy</h2>
-      <div class="address__header address__header--inner">
+      <div class="address__header address__header--inner ">
         <div class="container address__wrapper">
           <div class="address__text-block">
             <h3 class="subtitle address__subtitle">приглашаем <br class="br" /> к сотрудничеству
@@ -489,7 +511,7 @@
         </li>
       </ul>
       <a class="link academy-logo footer__promo" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="academy-logo__text footer__promo-text">HTML Academy</p>
+        <p class="text academy-logo__text footer__promo-text">HTML Academy</p>
         <svg class="academy-logo__icon footer__promo-icon" width="27" height="34" role="img"
           aria-label="Логотип HTMLAcademy" focusable="false">
           <use xlink:href="img/svg-sprite.svg#academy-logo" />
