@@ -82,9 +82,8 @@
       width: auto;
       height: var(--fz-advantages-number);
       position: absolute;
-      top: 50%;
+      top: 0;
       left: 110px;
-      transform: translateY(-50%);
       z-index: -1;
 
       @include set-font-style(var(--fz-advantages-number), var(--lh-advantages-number), "Oswald");

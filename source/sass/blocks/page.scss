@@ -20,11 +20,11 @@
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  opacity: 0.5;
+  //opacity: 0.5;
 
   @include set-font-style(var(--fz-main), var(--lh-main));
   color: $main-color;
-  //background-color: $contrast-color;
+  background-color: $contrast-color;
 }
 
 /* =Header= */
