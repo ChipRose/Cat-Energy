@@ -68,6 +68,7 @@
   background-color: $contrast-color;
 
   @media (min-width: $tablet-width) {
+    margin-left: 8px;
     width: 428px;
     height: 6px;
     position: relative;
@@ -135,15 +136,14 @@
   @include set-font-style(var(--fz-slider-button), var(--lh-slider-button), "Oswald");
   text-transform: uppercase;
   text-align: center;
-  background: transparent;
+  background-color: transparent;
 
   &::before {
     content: "";
-    width: calc(100% - 34px);
-    height: 0;
+    width: calc(-37px + 100%);
     position: absolute;
     left: 50%;
-    bottom: 7px;
+    bottom: 6px;
     transform: translateX(-50%);
     border: none;
     border-bottom: 1px dotted $main-color04;
@@ -173,14 +173,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    transform: translate(49%, -13px);
+    transform: translate(49%, -10px);
     transition: transform 0.3s ease-out;
   }
 }
 
 .slider--init .slider__img--after {
   @media (min-width: $tablet-width) {
-    transform: translateX(-49.5%);
+    transform: translateX(-50.5%);
     transition: transform 0.3s ease-out;
   }
 }
@@ -199,7 +199,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    transform: translate(0, -15px);
+    transform: translate(0, -10px);
     transition: transform 0.3s ease-out;
   }
 }

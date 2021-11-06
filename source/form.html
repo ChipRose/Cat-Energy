@@ -4,8 +4,30 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: CAT ENERGY</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      background-image: url( "img/preview/MobileForm.jpg" );
+    }
+    /* Tablet */
+    @media ( min-width: 768px ) {
+      HTML {
+        background-image: url( "img/preview/TabletForm.jpg" );
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 1440px ) {
+      HTML {
+        background-image: url( "img/preview/DesktopForm.jpg" );
+      }
+    }
+  </style>
 </head>
 
 <body class="page__body">
@@ -147,7 +169,7 @@
               <span class="add-info__property">сахарозаменитель</span>
             </label>
             <label class="add-info__item">
-              <input class="add-info__checkbox visually-hidden" type="checkbox" value="water" />
+              <input class="add-info__checkbox visually-hidden" index="1" type="checkbox" value="water" />
               <span class="add-info__property">питьевая вода</span>
             </label>
             <label class="add-info__item">
@@ -173,7 +195,7 @@
   <footer class="footer page__footer">
     <section class="address">
       <h2 class="visually-hidden">Адрес Cat Energy</h2>
-      <div class="address__header address__header--inner">
+      <div class="address__header address__header--inner ">
         <div class="container address__wrapper">
           <div class="address__text-block">
             <h3 class="subtitle address__subtitle">приглашаем <br class="br" /> к сотрудничеству
@@ -198,7 +220,7 @@
     </section>
 
     <div class="container footer__wrapper ">
-      <a class="link logo-text footer__logo">
+      <a class="link logo-text footer__logo" href="index.html">
         <svg class="logo-text__icon" width="128" height="24" role="img" aria-label="Надпись Cat Energy"
           focusable="false">
           <use xlink:href="img/svg-sprite.svg#logo-text"></use>
@@ -231,7 +253,7 @@
         </li>
       </ul>
       <a class="link academy-logo footer__promo" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="academy-logo__text footer__promo-text">HTML Academy</p>
+        <p class="text academy-logo__text footer__promo-text">HTML Academy</p>
         <svg class="academy-logo__icon footer__promo-icon" width="27" height="34" role="img"
           aria-label="Логотип HTMLAcademy" focusable="false">
           <use xlink:href="img/svg-sprite.svg#academy-logo" />

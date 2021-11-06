@@ -20,10 +20,11 @@
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  opacity: 0.5;
 
   @include set-font-style(var(--fz-main), var(--lh-main));
   color: $main-color;
-  background-color: $contrast-color;
+  //background-color: $contrast-color;
 }
 
 /* =Header= */
@@ -33,7 +34,7 @@
   grid-column: 1/2;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,14 +74,14 @@
 /* ---Programs--- */
 
 .page__programs {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 }
 
@@ -171,7 +172,7 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -205,6 +206,10 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 50px;
   }
 }
