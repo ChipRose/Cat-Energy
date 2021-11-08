@@ -9,28 +9,6 @@
   <link rel="icon" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <!-- <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-image: url("img/preview/MobileIndex.jpg");
-    }
-
-    /* Tablet */
-    @media (min-width: 768px) {
-      HTML {
-        background-image: url("img/preview/TabletIndex.jpg");
-      }
-    }
-
-    /* Desktop */
-    @media (min-width: 1440px) {
-      HTML {
-        background-image: url("img/preview/DesktopIndex.jpg");
-      }
-    }
-
-  </style> -->
 </head>
 
 <body class="page__body">
@@ -87,6 +65,11 @@
         <div class="cover__image-block">
           <picture>
             <source media="(min-width: 1440px)"
+              srcset="img/cover/cover-can-transparent.webp 1x, img/cover/cover-can-transparent@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/cover/cover-can-white.webp 1x, img/cover/cover-can-white@2x.webp 2x">
+            <source srcset="img/cover/cover-can.webp 1x, img/cover/cover-can@2x.webp 2x">
+            <source media="(min-width: 1440px)"
               srcset="img/cover/cover-can-transparent.png 1x, img/cover/cover-can-transparent@2x.png 2x">
             <source media="(min-width: 768px)"
               srcset="img/cover/cover-can-white.png 1x, img/cover/cover-can-white@2x.png 2x">
@@ -104,10 +87,8 @@
           <li class="programs__item">
             <h3 class="subtitle programs__subtitle">Похудение</h3>
             <div class="programs__image-block">
-              <svg class="programs__icon programs__icon--slim" width="36" height="50" role="img"
-                aria-label="Иконка черный кот сидит" focusable="false">
-                <use xlink:href="img/svg-sprite.svg#cat-sit"></use>
-              </svg>
+              <img class="programs__icon programs__icon--slim" src="img/programs/cat-sit.svg" width="36" height="50"
+                alt="Иконка черный кот сидит">
             </div>
             <div class="programs__content">
               <div class="programs__text-block">
@@ -124,10 +105,8 @@
           <li class="programs__item">
             <h3 class="subtitle programs__subtitle">Набор массы</h3>
             <div class="programs__image-block">
-              <svg class="programs__icon programs__icon--gain" width="67" height="28" role="img"
-                aria-label="Иконка черный идёт" focusable="false">
-                <use xlink:href="img/svg-sprite.svg#cat-walk"></use>
-              </svg>
+              <img class="programs__icon programs__icon--gain" src="img/programs/cat-walk.svg" width="67" height="28"
+                alt="Иконка черный идёт">
             </div>
             <div class="programs__content">
               <div class="programs__text-block programs__text-block--padding">
@@ -152,10 +131,8 @@
         <ul class="list advantages__list">
           <li class="advantages__item advantages__item" data-number="1">
             <div class="advantages__image-block">
-              <svg class="advantages__icon" width="30" height="32" role="img" aria-label="Иконка с изображением листика"
-                focusable="false">
-                <use xlink:href="img/svg-sprite.svg#adv-leaf"></use>
-              </svg>
+              <img class="advantages__icon" src="img/advantages/leaf.svg" width="30" height="32"
+                alt="Иконка с изображением листика">
             </div>
             <div class="advantages__text-block">
               <p class="text advantages__text">
@@ -165,10 +142,8 @@
           </li>
           <li class="advantages__item advantages__item" data-number="2">
             <div class="advantages__image-block">
-              <svg class="advantages__icon" width="29" height="31" role="img"
-                aria-label="Иконка с изображением колбы с пузырьками" focusable="false">
-                <use xlink:href="img/svg-sprite.svg#adv-tube"></use>
-              </svg>
+              <img class="advantages__icon" src="img/advantages/tub.svg" width="29" height="31"
+                alt="Иконка с изображением колбы с пузырьками">
             </div>
             <div class="advantages__text-block">
               <p class="text advantages__text">
@@ -178,10 +153,8 @@
           </li>
           <li class="advantages__item advantages__item" data-number="3">
             <div class="advantages__image-block">
-              <svg class="advantages__icon" width="25" height="30" role="img"
-                aria-label="Иконка с изображением вилки и ножа" focusable="false">
-                <use xlink:href="img/svg-sprite.svg#adv-eat"></use>
-              </svg>
+              <img class="advantages__icon" src="img/advantages/eat.svg" width="25" height="30"
+                alt="Иконка с изображением вилки и ножа">
             </div>
             <div class="advantages__text-block">
               <p class="text advantages__text">
@@ -191,10 +164,8 @@
           </li>
           <li class="advantages__item advantages__item" data-number="4">
             <div class="advantages__image-block">
-              <svg class="advantages__icon" width="25" height="30" role="img"
-                aria-label="Иконка с изображением будильника" focusable="false">
-                <use xlink:href="img/svg-sprite.svg#adv-alarm"></use>
-              </svg>
+              <img class="advantages__icon" src="img/advantages/alarm.svg" width="25" height="30"
+                alt="Иконка с изображением будильника">
             </div>
             <div class="advantages__text-block">
               <p class="text advantages__text">
@@ -239,6 +210,11 @@
             <li class="slider__item">
               <picture>
                 <source media="(min-width: 1440px)"
+                  srcset="img/example/desktop-example-before.webp 1x, img/example/desktop-example-before@2x.webp 2x" />
+                <source media="(min-width: 768px)"
+                  srcset="img/example/tablet-example-before.webp 1x, img/example/tablet-example-before@2x.webp 2x" />
+                <source srcset="img/example/example-before.webp 1x, img/example/example-before@2x.webp 2x">
+                <source media="(min-width: 1440px)"
                   srcset="img/example/desktop-example-before.png 1x, img/example/desktop-example-before@2x.png 2x" />
                 <source media="(min-width: 768px)"
                   srcset="img/example/tablet-example-before.png 1x, img/example/tablet-example-before@2x.png 2x" />
@@ -249,6 +225,11 @@
             </li>
             <li class="slider__item">
               <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/example/desktop-example-after.webp 1x, img/example/desktop-example-after@2x.webp 2x" />
+                <source media="(min-width: 768px)"
+                  srcset="img/example/tablet-example-after.webp 1x, img/example/tablet-example-after@2x.webp 2x" />
+                <source srcset="img/example/example-after.webp 1x, img/example/example-after@2x.webp 2x">
                 <source media="(min-width: 1440px)"
                   srcset="img/example/desktop-example-after.png 1x, img/example/desktop-example-after@2x.png 2x" />
                 <source media="(min-width: 768px)"
