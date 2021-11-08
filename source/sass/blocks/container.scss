@@ -1,4 +1,4 @@
-/* ===Container=== */
+/* Container */
 
 .container {
   padding-top: 0;
@@ -14,25 +14,23 @@
   max-width: $desktop-width;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
     padding-right: 30px;
-    padding-bottom: 0;
     padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
     padding-right: 110px;
-    padding-bottom: 0;
     padding-left: 110px;
   }
 }
 
 .container--form {
-  @media (min-width: $tablet-width) and (max-width: -1 + $desktop-width) {
-    padding-top: 0;
+  @media (min-width: $tablet-width) {
     padding-right: 67px;
-    padding-bottom: 0;
     padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

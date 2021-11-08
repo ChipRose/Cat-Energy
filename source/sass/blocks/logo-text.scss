@@ -3,12 +3,12 @@
 .logo-text {
   width: 128px;
   height: auto;
-}
 
-.logo-text:hover {
-  opacity: 0.8;
-}
+  &:hover {
+    opacity: 0.8;
+  }
 
-.logo-text:active {
-  opacity: 0.6;
+  &:active {
+    opacity: 0.6;
+  }
 }

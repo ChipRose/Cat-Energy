@@ -1,9 +1,9 @@
-/* ===Cover=== */
+/* Cover */
 
 .cover {
   @include set-font-style(var(--fz-cover), var(--lh-cover), "Oswald");
-  text-align: center;
   color: $contrast-color;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -17,8 +17,8 @@
       width: 50%;
       min-height: 694px;
       position: absolute;
-      right: 0;
       top: 0;
+      right: 0;
       z-index: -1;
     }
 
@@ -39,7 +39,7 @@
   }
 }
 
-/* ==Wrapper== */
+/* Cover wrapper */
 
 .cover__wrapper {
   display: grid;
@@ -58,7 +58,7 @@
   }
 }
 
-/* =Header= */
+/* Cover header */
 
 .cover__header {
   padding-top: 27px;
@@ -122,7 +122,7 @@
   }
 }
 
-/* -Text block- */
+/* Text block */
 
 .cover__text-block {
   @media (min-width: $tablet-width) {
@@ -169,7 +169,7 @@
   z-index: 2;
 }
 
-/* -Image block- */
+/* Image block */
 
 .cover__image-block {
   margin-right: auto;

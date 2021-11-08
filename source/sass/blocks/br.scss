@@ -1,33 +1,27 @@
-.br {
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
+.br--mobile {
+  display: block;
 
   @media (min-width: $tablet-width) {
-    &--mobile {
-      display: none;
-    }
+    display: none;
+  }
+}
 
-    &--tablet {
-      display: block;
-    }
+.br--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
-    &--mobile {
-      display: none;
-    }
+    display: none;
+  }
+}
 
-    &--tablet {
-      display: none;
-    }
+.br--desktop {
+  display: none;
 
-    &--desktop {
-      display: block;
-    }
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

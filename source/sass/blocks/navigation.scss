@@ -1,4 +1,4 @@
-/* ===Navigation=== */
+/* Navigation */
 
 .navigation {
   display: grid;
@@ -7,8 +7,9 @@
   @include set-font-style(var(--fz-menu), var(--lh-menu), "Oswald", 500);
 
   @media (min-width: $tablet-width) {
-    @include set-font-style(var(--fz-menu), var(--lh-menu), "Oswald", 400);
     background-color: transparent;
+
+    @include set-font-style(var(--fz-menu), var(--lh-menu), "Oswald", 400);
   }
 
   @media (min-width: $desktop-width) {
@@ -16,7 +17,7 @@
   }
 }
 
-/* ---List--- */
+/* List */
 
 .navigation__list {
   box-sizing: border-box;
@@ -37,7 +38,7 @@
   }
 }
 
-/* -Item- */
+/* Item */
 
 .navigation__item {
   text-align: center;

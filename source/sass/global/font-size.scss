@@ -9,10 +9,6 @@
   --lh-subtitle: 37px;
   --fz-button: 14px;
   --lh-button: 18px;
-  --fz-form-button: 16px;
-  --lh-form-button: 20px;
-  --fz-catalog-button: 16px;
-  --lh-catalog-button: 20px;
   --fz-cover: 14px;
   --lh-cover: 14px;
   --fz-program-button: 16px;
@@ -31,16 +27,22 @@
   --lh-footer-subtitle: 19px;
   --fz-footer-promo-text: 16px;
   --lh-footer-promo-text: 18px;
+  --fz-legend: 24px;
+  --lh-legend: 26px;
+  --fz-form-title: 16px;
+  --lh-form-title: 20px;
+  --fz-form-button: 16px;
+  --lh-form-button: 20px;
   --fz-form-item-text: 16px;
   --lh-form-item-text: 18px;
   --fz-form-main-legend: 14px;
   --lh-form-main-legend: 18px;
   --fz-form-legend: 14px;
   --lh-form-legend: 16px;
-  --fz-form-title: 16px;
-  --lh-form-title: 20px;
-  --fz-legend: 24px;
-  --lh-legend: 26px;
+  --fz-catalog-button: 16px;
+  --lh-catalog-button: 20px;
+  --fz-catalog-title: 24px;
+  --lh-catalog-title: 24px;
   --fz-catalog-subtitle: 16px;
   --lh-catalog-subtitle: 20px;
   --fz-catalog-subtitle-extra: 16px;
@@ -49,8 +51,6 @@
   --lh-catalog-table: 12px;
   --fz-catalog-table-extra: 14px;
   --lh-catalog-table-extra: 14px;
-  --fz-catalog-title: 24px;
-  --lh-catalog-title: 24px;
   --fz-catalog-promo: 16px;
   --lh-catalog-promo: 20px;
 }
@@ -69,8 +69,6 @@
     --lh-cover: 20px;
     --fz-button: 20px;
     --lh-button: 20px;
-    --fz-form-button: 20px;
-    --lh-form-button: 20px;
     --fz-program-button: 20px;
     --lh-program-button: 30px;
     --fz-advantages-number: 280px;
@@ -83,10 +81,10 @@
     --lh-example-legend: 30px;
     --fz-slider-button: 20px;
     --lh-slider-button: 30px;
-    --fz-footer-subtitle: 20px;
-    --lh-footer-subtitle: 25px;
     --fz-address-text: 16px;
     --lh-address-text: 20px;
+    --fz-footer-subtitle: 20px;
+    --lh-footer-subtitle: 25px;
     --fz-catalog-title: 36px;
     --lh-catalog-title: 36px;
     --fz-catalog-subtitle: 20px;
@@ -101,6 +99,8 @@
     --lh-catalog-promo: 20px;
     --fz-legend: 36px;
     --lh-legend: 36px;
+    --fz-form-button: 20px;
+    --lh-form-button: 20px;
     --fz-form-item-text: 20px;
     --lh-form-item-text: 30px;
     --fz-form-main-legend: 20px;

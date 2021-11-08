@@ -1,4 +1,4 @@
-/* ===Example=== */
+/* Example */
 
 .example {
   position: relative;
@@ -26,7 +26,7 @@
   }
 }
 
-/* ==Wrapper== */
+/* Example wrapper */
 
 .example__wrapper {
   padding-bottom: 25px;
@@ -41,7 +41,7 @@
   }
 }
 
-/* =Header= */
+/* Example header */
 
 .example__header {
   padding-top: 29px;
@@ -73,7 +73,7 @@
   }
 }
 
-/* -Text block- */
+/* Text block */
 
 .example__text-block {
   margin-bottom: 25px;
@@ -99,7 +99,7 @@
   }
 }
 
-/* =Achievements= */
+/* Achievements */
 
 .example__achievements {
   @media (min-width: $tablet-width) {
@@ -111,7 +111,7 @@
   }
 }
 
-/* ---List--- */
+/* List */
 
 .example__list {
   margin-right: -15px;
@@ -133,7 +133,7 @@
   }
 }
 
-/* -Item- */
+/* Item */
 
 .example__item {
   margin-right: 15px;
@@ -192,12 +192,12 @@
   margin-top: calc(-1 * var(--fz-example-description));
   margin-right: auto;
   margin-left: auto;
-  width: calc(100% - 36px);
+  width: calc(-36px + 100%);
   position: relative;
   z-index: 1;
+  background-color: $basic-grey;
 
   @include set-font-style(var(--fz-example-description), var(--lh-example-description));
-  background-color: $basic-grey;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -214,7 +214,7 @@
   }
 }
 
-/* -Legend- */
+/* Legend */
 
 .example__legend {
   @include set-font-style(var(--fz-example-legend), var(--lh-example-legend), "Oswald");
@@ -244,7 +244,7 @@
   }
 }
 
-/* =Slider= */
+/* Slider */
 
 .example__slider {
   @media (min-width: $tablet-width) {
@@ -257,7 +257,7 @@
   }
 }
 
-/* ---Slider list--- */
+/* Slider list */
 
 .example__slider-list {
   margin-bottom: 17px;
@@ -271,16 +271,10 @@
   }
 }
 
-/* ---Control--- */
+/* Control */
 
 .example__control {
   @media (min-width: $tablet-width) {
-    margin-top: -16px;
-    //position: absolute;
-    //transform: translateY(-7px);
-  }
-
-  @media (min-width: $desktop-width) {
     margin-top: -16px;
   }
 }
