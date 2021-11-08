@@ -1,4 +1,6 @@
-/* -Item- */
+/* Person data */
+
+/* Item */
 
 .person-data__item {
   margin-bottom: 14px;
@@ -26,8 +28,8 @@
   order: 2;
 
   @include set-font-style(var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
-  text-transform: uppercase;
   color: $special-dark-grey;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
