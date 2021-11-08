@@ -1,6 +1,10 @@
-/* ===Title=== */
+/* Title clear */
+
 .title {
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 
   @include set-font-style(var(--fz-title), var(--lh-title), "Oswald");
   color: $main-color;

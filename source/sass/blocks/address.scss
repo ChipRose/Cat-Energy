@@ -1,4 +1,4 @@
-/* ===Address=== */
+/* Address */
 
 .address {
   color: $special-dark-grey;
@@ -8,7 +8,16 @@
   }
 }
 
-/* =Header= */
+/* Address wrapper */
+
+.address__wrapper {
+  @media (min-width: $desktop-width) {
+    padding-top: 95px;
+    padding-bottom: 104px;
+  }
+}
+
+/* Address header */
 
 .address__header {
   background-color: $contrast-color;
@@ -18,17 +27,7 @@
   background-color: $basic-grey;
 }
 
-
-/* =Wrapper= */
-
-.address__wrapper {
-  @media (min-width: $desktop-width) {
-    padding-top: 95px;
-    padding-bottom: 104px;
-  }
-}
-
-/* -Text block- */
+/* Text block */
 
 .address__text-block {
   padding-top: 30px;
@@ -92,7 +91,7 @@
   }
 }
 
-/* Address */
+/* Address block */
 
 .address__city {
   @media (min-width: $tablet-width) {
@@ -101,7 +100,7 @@
   }
 }
 
-/* -Map block- */
+/* Map block */
 
 .address__map-block {
   min-height: 362px;
@@ -130,7 +129,7 @@
   border: none;
 }
 
-/* -Pin block- */
+/* Pin block */
 
 .address__pin-block {
   @include absolute-center;
@@ -148,6 +147,10 @@
     background-image: url("../../img/footer/pin-shadow.png");
     background-repeat: no-repeat;
     background-position: center bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/footer/pin-shadow@2x.png");
+    }
   }
 
   @media (min-width: $tablet-width) {

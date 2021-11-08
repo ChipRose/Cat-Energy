@@ -1,6 +1,7 @@
-/* ===Legend=== */
+/* Legend */
+
 .legend {
   @include set-font-style(var(--fz-legend), var(--lh-legend), "Oswald");
-  text-transform: none;
   color: $main-color;
+  text-transform: none;
 }
