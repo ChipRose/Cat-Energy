@@ -1,6 +1,6 @@
-/* ===Owner contacts=== */
+/* Owner contacts */
 
-/* ==Wrapper== */
+/*  Owner contacts wrapper */
 
 .owner-contacts__wrapper {
   @media (min-width: $desktop-width) {
@@ -26,7 +26,7 @@
   }
 }
 
-/* -Item- */
+/* Item */
 
 .owner-contacts__item {
   margin-bottom: 14px;
@@ -51,7 +51,7 @@
   }
 }
 
-/* ==Wrapper== */
+/* Content */
 
 .owner-contacts__content {
   position: relative;
@@ -68,21 +68,21 @@
   padding-left: 14px;
   width: 100%;
 
-  &:focus + .owner-contacts__icon {
-    fill: $basic-green;
-    transition: all 0.3s ease-out;
-  }
-
-  &:not(:placeholder-shown):not(:focus):invalid + .owner-contacts__icon {
-    fill: $status-error;
-  }
-
   @media (min-width: $tablet-width) {
     padding-top: 10px;
     padding-right: 45px;
     padding-bottom: 10px;
     padding-left: 20px;
   }
+}
+
+.owner-contacts__value:focus + .owner-contacts__icon {
+  fill: $basic-green;
+  transition: all 0.3s ease-out;
+}
+
+.owner-contacts__value:not(:placeholder-shown):not(:focus):invalid + .owner-contacts__icon {
+  fill: $status-error;
 }
 
 /* Icon */
