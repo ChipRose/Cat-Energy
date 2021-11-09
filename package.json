@@ -11,6 +11,7 @@
     "gulp-postcss": "9.0.0",
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "3.0.0",
+    "gulp-webp": "^4.0.1",
     "pixel-glass": "^1.0.13",
     "postcss": "^8.3.7",
     "stylelint": "13.13.1",
@@ -21,7 +22,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
-    "start": "gulp"
+    "start": "gulp",
+    "webp": "gulp createWebp"
   },
   "browserslist": [
     "last 2 versions",
