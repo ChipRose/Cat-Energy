@@ -55,12 +55,16 @@ $x-basic-green-03: rgba(104, 183, 56, 0.3);
   --cl-txt-title-subtitle: rgb(0, 0, 0);
   --cl-txt-main: rgb(68, 68, 68);
   --cl-bg-main-button: rgb(104, 183, 56);
+  --cl-bg-main-button-hover: rgb(94, 170, 47);
   --cl-txt-main-button:  rgb(255, 255, 255);
-  --cl-bg-footer: rgb(242, 242, 242);
-  --cl-fill-social-icon: rgb(102, 102, 102);
-  --cl-fill-social-icon-hover: rgb(104, 183, 56);
+  --cl-txt-main-button-active:  rgb(255, 255, 255, 0.3);
+  --cl-brd-main-frame: (230, 230, 230);
+  --cl-bg-footer-address: rgb(242, 242, 242);
+  --cl-fill-footer-icon: rgb(102, 102, 102);
+  --cl-fill-footer-icon-hover: rgb(104, 183, 56);
 
   /* index.html */
+
   --cl-txt-cover-mobile-index: rgb(255, 255, 255);
   --cl-txt-menu-desktop-index: rgb(255, 255, 255);
   --cl-txt-cover-index: rgb(0, 0, 0);
@@ -69,6 +73,7 @@ $x-basic-green-03: rgba(104, 183, 56, 0.3);
   --cl-brd-program-card: rgb(217, 217, 217);
   --cl-bg-program-image: rgb(104, 183, 56);
   --cl-bg-advantages-image: rgb(104, 183, 56);
+  --cl-txt-advantages-number:rgb(242, 242, 242);
   --cl-bg-example-mobile: rgb(234, 234, 234);
   --cl-brd-example: rgb(205, 205, 205);
   --cl-txt-example-progress:rgb(0, 0, 0);
@@ -82,4 +87,14 @@ $x-basic-green-03: rgba(104, 183, 56, 0.3);
   --cl-brd-slider-cursor: rgb(205, 205, 205);
   --cl-brd-slider-cursor-active: rgb(104, 183, 56);
   --cl-shd-slider-cursor: rgb(0, 0, 0, 0.16);
+
+  /* catalog.html */
+
+  --cl-txt-catalog-subtitle: rgb(34, 34, 34);
+  --cl-bg-catalog-button-all: rgb(242, 242, 242);
+
+  /* form.html */
+
+  --cl-txt-form-legend: rgb(0, 0, 0);
+  --cl-fill-form-icon: rgb(34, 34, 34);
 }
