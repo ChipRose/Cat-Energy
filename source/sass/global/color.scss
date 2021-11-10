@@ -1,8 +1,8 @@
-$main-color:rgb(0, 0, 0);
-$main-color06:rgba(0, 0, 0, 0.8);
-$main-color06:rgba(0, 0, 0, 0.6);
-$main-color04:rgba(0, 0, 0, 0.4);
-$main-color03:rgba(0, 0, 0, 0.3);
+$main-color: rgb(0, 0, 0);
+$main-color06: rgba(0, 0, 0, 0.8);
+$main-color06: rgba(0, 0, 0, 0.6);
+$main-color04: rgba(0, 0, 0, 0.4);
+$main-color03: rgba(0, 0, 0, 0.3);
 $main-color016: rgba(0, 0, 0, 0.16);
 $contrast-color: rgb(255, 255, 255);
 $contrast-color06: rgba(255, 255, 255, 0.6);
@@ -46,18 +46,17 @@ $x-basic-green: rgb(104, 183, 56);
 $x-basic-green-085: rgba(104, 183, 56, 0.85);
 $x-basic-green-03: rgba(104, 183, 56, 0.3);
 
-
 // Compare colors
 
 // global
-:root{
+:root {
   --cl-txt-menu: rgb(0, 0, 0);
   --cl-txt-title-subtitle: rgb(0, 0, 0);
   --cl-txt-main: rgb(68, 68, 68);
   --cl-bg-main-button: rgb(104, 183, 56);
   --cl-bg-main-button-hover: rgb(94, 170, 47);
-  --cl-txt-main-button:  rgb(255, 255, 255);
-  --cl-txt-main-button-active:  rgb(255, 255, 255, 0.3);
+  --cl-txt-main-button: rgb(255, 255, 255);
+  --cl-txt-main-button-active: rgba(255, 255, 255, 0.3);
   --cl-brd-main-frame: (230, 230, 230);
   --cl-bg-footer-address: rgb(242, 242, 242);
   --cl-fill-footer-icon: rgb(102, 102, 102);
@@ -73,10 +72,10 @@ $x-basic-green-03: rgba(104, 183, 56, 0.3);
   --cl-brd-program-card: rgb(217, 217, 217);
   --cl-bg-program-image: rgb(104, 183, 56);
   --cl-bg-advantages-image: rgb(104, 183, 56);
-  --cl-txt-advantages-number:rgb(242, 242, 242);
+  --cl-txt-advantages-number: rgb(242, 242, 242);
   --cl-bg-example-mobile: rgb(234, 234, 234);
   --cl-brd-example: rgb(205, 205, 205);
-  --cl-txt-example-progress:rgb(0, 0, 0);
+  --cl-txt-example-progress: rgb(0, 0, 0);
   --cl-txt-example-button: rgb(0, 0, 0);
   --cl-brd-example-button: rgb(0, 0, 0, 0.4);
   --cl-bg-slider-scale-mobile: rgb(255, 255, 255);
