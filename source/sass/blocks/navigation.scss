@@ -1,4 +1,4 @@
-/* Navigation */
+// Navigation 
 
 .navigation {
   display: grid;
@@ -17,7 +17,7 @@
   }
 }
 
-/* List */
+// List
 
 .navigation__list {
   box-sizing: border-box;
@@ -38,7 +38,7 @@
   }
 }
 
-/* Item */
+// Item
 
 .navigation__item {
   text-align: center;
@@ -73,7 +73,7 @@
   }
 }
 
-/* Link */
+// Link
 
 .navigation__link {
   padding-top: 22px;
@@ -99,7 +99,7 @@
   }
 }
 
-/* Current link */
+// Current link
 
 .navigation__link--current {
   @media (min-width: $tablet-width) {
@@ -124,7 +124,7 @@
   }
 }
 
-/* Index link */
+// Index link
 
 .navigation__link--index {
   @media (min-width: $desktop-width) {
@@ -146,7 +146,7 @@
   }
 }
 
-/* -Burger- */
+// -Burger-
 
 .navigation__toggle {
   width: 24px;
@@ -163,7 +163,7 @@
   }
 }
 
-/* Burger closed */
+// Burger closed
 
 .navigation--closed .navigation__toggle {
   &::before {
@@ -185,7 +185,7 @@
   }
 }
 
-/* Burger opened */
+// Burger opened
 
 .navigation--opened .navigation__toggle {
   &::before,
@@ -232,7 +232,7 @@
   }
 }
 
-/* Burger no JS */
+// Burger no JS
 
 .navigation--nojs .navigation__toggle {
   display: none;

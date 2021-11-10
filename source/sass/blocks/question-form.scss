@@ -1,4 +1,4 @@
-/* Question form */
+// Question form
 
 .question-form {
   @include set-font-style(var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
@@ -6,7 +6,7 @@
   text-transform: uppercase;
 }
 
-/* Legend */
+// Legend
 
 .question-form__legend {
   margin-bottom: 38px;
@@ -22,7 +22,7 @@
   }
 }
 
-/* Question form top */
+// Question form top
 
 .question-form__top {
   @media (min-width: $desktop-width) {
@@ -34,7 +34,7 @@
   }
 }
 
-/* ---Person data--- */
+// ---Person data---
 
 .question-form__person-data {
   margin-bottom: 23px;
@@ -52,7 +52,7 @@
   }
 }
 
-/* ---Program choice--- */
+// ---Program choice---
 
 .question-form__program-choice {
   padding-top: 23px;
@@ -76,7 +76,7 @@
   }
 }
 
-/* ---Owner contacts--- */
+// ---Owner contacts---
 
 .question-form__owner-contacts {
   margin-bottom: 24px;
@@ -90,7 +90,7 @@
   }
 }
 
-/* ---Comment--- */
+// ---Comment---
 
 .question-form__comment {
   margin-bottom: 20px;
@@ -104,7 +104,7 @@
   }
 }
 
-/* ---Add info--- */
+// ---Add info---
 
 .question-form__add-info {
   margin-bottom: 19px;
@@ -118,7 +118,7 @@
   }
 }
 
-/* Question form wrapper */
+// Question form wrapper
 
 .question-form__wrapper {
   @media (min-width: $tablet-width) {
@@ -127,7 +127,7 @@
   }
 }
 
-/* Button */
+// Button
 
 .question-form__button {
   padding-top: 11px;
@@ -153,7 +153,7 @@
   }
 }
 
-/* Note */
+// Note
 
 .question-form__note {
   display: block;

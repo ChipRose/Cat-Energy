@@ -1,4 +1,4 @@
-/* Table */
+// Table
 
 .table-property {
   min-width: 140px;
@@ -13,7 +13,7 @@
   }
 }
 
-/* Row */
+// Row
 
 .table-property__row {
   @media (min-width: $tablet-width) {
@@ -23,7 +23,7 @@
   }
 }
 
-/* Table property */
+// Table property
 
 .table-property__property {
   padding-top: 2px;
@@ -40,7 +40,7 @@
   }
 }
 
-/* Table value */
+// Table value
 
 .table-property__value {
   padding-top: 2px;
@@ -53,7 +53,7 @@
   }
 }
 
-/* Table exptra products */
+// Table exptra products
 
 .table-property--extra {
   width: 100%;
@@ -65,7 +65,7 @@
   }
 }
 
-/* Property */
+// Property
 
 .table-property__property--extra {
   box-sizing: border-box;
@@ -81,7 +81,7 @@
   }
 }
 
-/* Table value */
+// Table value
 
 .table-property__value--extra {
   @media (min-width: $tablet-width) {

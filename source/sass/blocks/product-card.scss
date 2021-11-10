@@ -1,10 +1,10 @@
-/* Wrapper */
+// Wrapper 
 
 .product-card__wrapper {
   display: flex;
 }
 
-/* -Text block- */
+// -Text block-
 
 .product-card__text-block {
   order: 2;
@@ -12,19 +12,19 @@
   flex-direction: column;
 }
 
-/* Subtitle */
+// Subtitle
 
 .product-card__subtitle {
   margin-bottom: 10px;
 }
 
-/* Text */
+// Text
 
 .product-card__text {
   margin-top: auto;
 }
 
-/* -Image block- */
+// -Image block-
 
 .product-card__image-block {
   margin-right: 20px;
@@ -34,7 +34,7 @@
   align-items: center;
 }
 
-/* Image */
+// Image
 
 .product-card__img {
   width: 200px;

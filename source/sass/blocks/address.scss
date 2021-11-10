@@ -1,4 +1,4 @@
-/* Address */
+// Address
 
 .address {
   color: $special-dark-grey;
@@ -8,7 +8,7 @@
   }
 }
 
-/* Address wrapper */
+// Address wrapper
 
 .address__wrapper {
   @media (min-width: $desktop-width) {
@@ -17,7 +17,7 @@
   }
 }
 
-/* Address header */
+// Address header
 
 .address__header {
   background-color: $contrast-color;
@@ -27,7 +27,7 @@
   background-color: $basic-grey;
 }
 
-/* Text block */
+// Text block
 
 .address__text-block {
   padding-top: 30px;
@@ -56,7 +56,7 @@
   }
 }
 
-/* Subtitle */
+// Subtitle
 
 .address__subtitle {
   margin-right: 10px;
@@ -73,7 +73,7 @@
   }
 }
 
-/* Text */
+// Text
 
 .address__text {
   flex: 0 0 140px;
@@ -91,7 +91,7 @@
   }
 }
 
-/* Address block */
+// Address block
 
 .address__city {
   @media (min-width: $tablet-width) {
@@ -100,7 +100,7 @@
   }
 }
 
-/* Map block */
+// Map block
 
 .address__map-block {
   min-height: 362px;
@@ -121,7 +121,7 @@
   }
 }
 
-/* Map */
+// Map
 
 .address__map {
   width: 100%;
@@ -129,7 +129,7 @@
   border: none;
 }
 
-/* Pin block */
+// Pin block
 
 .address__pin-block {
   @include absolute-center;
@@ -163,7 +163,7 @@
   }
 }
 
-/* Pin */
+// Pin
 
 .address__pin {
   width: 57px;

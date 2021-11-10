@@ -1,4 +1,4 @@
-/* Legend */
+// Legend
 
 .add-info__legend {
   margin-bottom: 35px;
@@ -12,7 +12,7 @@
   }
 }
 
-/* Container */
+// Container
 
 .add-info__container {
   display: flex;
@@ -33,7 +33,7 @@
   }
 }
 
-/* Item */
+// Item
 
 .add-info__item {
   margin-bottom: 15px;
@@ -53,7 +53,7 @@
   }
 }
 
-/* Property */
+// Property
 
 .add-info__property {
   --box-size: 30px;
@@ -101,7 +101,7 @@
   }
 }
 
-/* Checkbox active */
+// Checkbox active
 
 .add-info__checkbox:hover + .add-info__property::after,
 .add-info__checkbox:focus + .add-info__property::after {

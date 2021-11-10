@@ -1,4 +1,4 @@
-/* Cover */
+// Cover
 
 .cover {
   @include set-font-style(var(--fz-cover), var(--lh-cover), "Oswald");
@@ -39,7 +39,7 @@
   }
 }
 
-/* Cover wrapper */
+// Cover wrapper 
 
 .cover__wrapper {
   display: grid;
@@ -58,7 +58,7 @@
   }
 }
 
-/* Cover header */
+// Cover header
 
 .cover__header {
   padding-top: 27px;
@@ -122,7 +122,7 @@
   }
 }
 
-/* Text block */
+// Text block
 
 .cover__text-block {
   @media (min-width: $tablet-width) {
@@ -137,7 +137,7 @@
   }
 }
 
-/* Title */
+// Title
 
 .cover__title {
   margin-bottom: 25px;
@@ -152,7 +152,7 @@
   }
 }
 
-/* Tagline */
+// Tagline
 
 .cover__tagline {
   margin-bottom: 5px;
@@ -169,7 +169,7 @@
   z-index: 2;
 }
 
-/* Image block */
+// Image block
 
 .cover__image-block {
   margin-right: auto;
@@ -200,7 +200,7 @@
   }
 }
 
-/* Image */
+// Image
 
 .cover__img {
   width: 280px;
@@ -215,7 +215,7 @@
   }
 }
 
-/* Button */
+// Button
 
 .cover__button {
   padding-top: 11px;

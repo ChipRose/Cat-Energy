@@ -22,7 +22,7 @@ $special-dark-grey: rgb(68, 68, 68);
 $special-dark-grey03: rgba(68, 68, 68, 0.3);
 $special-dark-grey-2: rgb(34, 34, 34);
 $status-error: rgb(255, 130, 130);
-/* Black */
+// Black
 
 $x-black: rgb(0, 0, 0);
 $x-black-08: rgba(0, 0, 0, 0.8);
@@ -31,15 +31,15 @@ $x-black-04: rgba(0, 0, 0, 0.4);
 $x-black-03: rgba(0, 0, 0, 0.3);
 $x-black-016: rgba(0, 0, 0, 0.16);
 
-/* Grey */
+// Grey
 
-/* White */
+// White
 
 $x-white: rgb(255, 255, 255);
 $x-white-06: rgba(255, 255, 255, 0.6);
 $x-white-03: rgba(255, 255, 255, 0.3);
 
-/* Green */
+// Green
 
 $x-green: rgb(94, 170, 47);
 $x-basic-green: rgb(104, 183, 56);
@@ -47,9 +47,9 @@ $x-basic-green-085: rgba(104, 183, 56, 0.85);
 $x-basic-green-03: rgba(104, 183, 56, 0.3);
 
 
-/* Compare colors */
+// Compare colors
 
-/* global */
+// global
 :root{
   --cl-txt-menu: rgb(0, 0, 0);
   --cl-txt-title-subtitle: rgb(0, 0, 0);
@@ -63,7 +63,7 @@ $x-basic-green-03: rgba(104, 183, 56, 0.3);
   --cl-fill-footer-icon: rgb(102, 102, 102);
   --cl-fill-footer-icon-hover: rgb(104, 183, 56);
 
-  /* index.html */
+  // index.html
 
   --cl-txt-cover-mobile-index: rgb(255, 255, 255);
   --cl-txt-menu-desktop-index: rgb(255, 255, 255);
@@ -88,12 +88,12 @@ $x-basic-green-03: rgba(104, 183, 56, 0.3);
   --cl-brd-slider-cursor-active: rgb(104, 183, 56);
   --cl-shd-slider-cursor: rgb(0, 0, 0, 0.16);
 
-  /* catalog.html */
+  // catalog.html
 
   --cl-txt-catalog-subtitle: rgb(34, 34, 34);
   --cl-bg-catalog-button-all: rgb(242, 242, 242);
 
-  /* form.html */
+  // form.html
 
   --cl-txt-form-legend: rgb(0, 0, 0);
   --cl-fill-form-icon: rgb(34, 34, 34);

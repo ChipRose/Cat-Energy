@@ -1,4 +1,4 @@
-/* Advantages */
+// Advantages 
 
 .advantages {
   color: $special-dark-grey;
@@ -19,7 +19,7 @@
   }
 }
 
-/* Title */
+// Title
 
 .advantages__title {
   margin-bottom: 41px;
@@ -33,7 +33,7 @@
   }
 }
 
-/* List */
+// List
 
 .advantages__list {
   box-sizing: border-box;
@@ -54,7 +54,7 @@
   }
 }
 
-/* Item */
+// Item
 
 .advantages__item {
   margin-bottom: 20px;
@@ -101,7 +101,7 @@
   }
 }
 
-/* Image block */
+// Image block
 
 .advantages__image-block {
   margin-right: 20px;
@@ -120,13 +120,13 @@
   }
 }
 
-/* Icon */
+// Icon
 
 .advantages__icon {
   @include absolute-center;
 }
 
-/* Text block */
+// Text block
 
 .advantages__text-block {
   padding-top: 2px;
@@ -140,7 +140,7 @@
   }
 }
 
-/* Text */
+// Text
 
 .advantages__text {
   margin-bottom: 5px;
