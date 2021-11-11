@@ -57,12 +57,12 @@
   z-index: 0;
 
   &::before {
-    @include border-top ($special-grey);
+    @include border-top (var(--cl-brd-catalog));
     z-index: -1;
   }
 
   &:last-child::before {
-    @include border-bottom ($special-grey);
+    @include border-bottom (var(--cl-brd-catalog));
   }
 
   @media (min-width: $tablet-width) {
@@ -103,7 +103,6 @@
   margin-bottom: 10px;
 
   @include set-font-style(var(--fz-catalog-subtitle-extra), var(--fz-catalog-subtitle-extra), "Oswald");
-  color: $special-dark-grey-2;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;

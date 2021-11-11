@@ -2,20 +2,23 @@
 
 .example {
   position: relative;
-  background-color: $basic-grey;
+
+  &::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--cl-bg-example);
+  }
 
   @media (min-width: $tablet-width) {
-    background-color: $contrast-color;
+    background-color: transparent;
 
     &::before {
-      content: "";
-      width: 100%;
-      position: absolute;
       top: 619px;
-      bottom: 0;
-      left: 0;
-      z-index: 0;
-      background-color: $basic-grey;
     }
   }
 
@@ -173,7 +176,7 @@
     top: 0;
     left: 0;
     z-index: 0;
-    border: 1px solid $special-grey;
+    border: 1px solid var(--cl-brd-example);
     border-radius: 3px;
 
     @media (min-width: $tablet-width) {
@@ -195,7 +198,7 @@
   width: calc(-36px + 100%);
   position: relative;
   z-index: 1;
-  background-color: $basic-grey;
+  background-color: var(--cl-bg-example);
 
   @include set-font-style(var(--fz-example-description), var(--lh-example-description));
   text-align: center;
@@ -206,11 +209,11 @@
     padding-bottom: 3px;
     padding-left: 3px;
     width: calc(-20px + 100%);
-    background-color: $contrast-color;
+    background-color: var(--cl-bg-example-description);
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey;
+    background-color: var(--cl-bg-example);
   }
 }
 

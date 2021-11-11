@@ -5,7 +5,7 @@
   height: 100%;
 }
 
-// ===Body===
+// ---Body---
 
 .page__body {
   padding-top: 0;
@@ -20,13 +20,13 @@
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  background-color: $contrast-color;
+  background-color: var(--cl-bg-page);
 
   @include set-font-style(var(--fz-main), var(--lh-main));
-  color: $main-color;
+  color: var(--cl-txt-main);
 }
 
-// ===Header===
+// ---Header---
 
 .page__header {
   grid-row: 1/2;
@@ -41,15 +41,14 @@
   }
 }
 
-// ===Main===
+// ---Main---
 
 .page__main {
   grid-row: 2/3;
   grid-column: 1/2;
 }
 
-
-// ===Footer===
+// ---Footer---
 
 .page__footer {
   grid-row: 3/4;

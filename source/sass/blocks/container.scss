@@ -25,12 +25,8 @@
 }
 
 .container--form {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     padding-right: 67px;
     padding-left: 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
   }
 }

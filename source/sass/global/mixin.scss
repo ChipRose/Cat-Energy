@@ -16,7 +16,7 @@
   border-bottom: 1px solid $color;
 }
 
-@mixin border-top ($color, $left: 0, $right: 0) {
+@mixin border-top ($color: var(--cl-brd-main-frame), $left: 0, $right: 0) {
   content: "";
   box-sizing: border-box;
   height: 100%;

@@ -22,7 +22,7 @@
 .navigation__list {
   box-sizing: border-box;
   flex-direction: column;
-  background-color: $contrast-color;
+  background-color: var(--cl-bg-menu);
 
   @media (min-width: $tablet-width) {
     margin-right: -18px;
@@ -46,20 +46,20 @@
   z-index: 1;
 
   &::before {
-    @include border-top($basic-grey-2, -20px, -20px);
+    @include border-top(var(--cl-brd-main-frame), -20px, -20px);
     z-index: -1;
   }
 
   &:last-child::before {
-    @include border-bottom($basic-grey-2, -20px, -20px);
+    @include border-bottom(var(--cl-brd-main-frame), -20px, -20px);
   }
 
   &:hover {
-    color: $main-color06;
+    color: var(--cl-txt-menu-hover);
   }
 
   &:active {
-    color: $main-color03;
+    color: var(--cl-txt-menu-active);
   }
 
   @media (min-width: $tablet-width) {
@@ -113,7 +113,7 @@
       left: 50%;
       bottom: 7px;
       transform: translateX(-50%);
-      background-color: $basic-green;
+      background-color: var(--cl-brd-menu-link);
     }
   }
 

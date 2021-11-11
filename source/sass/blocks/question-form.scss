@@ -34,7 +34,7 @@
   }
 }
 
-// ---Person data---
+// Person data
 
 .question-form__person-data {
   margin-bottom: 23px;
@@ -52,7 +52,7 @@
   }
 }
 
-// ---Program choice---
+// Program choice
 
 .question-form__program-choice {
   padding-top: 23px;
@@ -76,7 +76,7 @@
   }
 }
 
-// ---Owner contacts---
+// Owner contacts
 
 .question-form__owner-contacts {
   margin-bottom: 24px;
@@ -90,7 +90,7 @@
   }
 }
 
-// ---Comment---
+// Comment
 
 .question-form__comment {
   margin-bottom: 20px;
@@ -98,13 +98,9 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;
   }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 58px;
-  }
 }
 
-// ---Add info---
+// Add info
 
 .question-form__add-info {
   margin-bottom: 19px;

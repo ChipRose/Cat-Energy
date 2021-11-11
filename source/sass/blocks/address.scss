@@ -1,8 +1,6 @@
 // Address
 
 .address {
-  color: $special-dark-grey;
-
   @media (min-width: $desktop-width) {
     position: relative;
   }
@@ -20,11 +18,11 @@
 // Address header
 
 .address__header {
-  background-color: $contrast-color;
+  background-color: var(--cl-bg-footer-address);
 }
 
 .address__header--inner {
-  background-color: $basic-grey;
+  background-color: var(--cl-bg-footer-address-inner);
 }
 
 // Text block
@@ -52,7 +50,7 @@
     width: 570px;
     position: relative;
     z-index: 1;
-    background-color: $contrast-color;
+    background-color: var(--cl-bg-footer-address);
   }
 }
 

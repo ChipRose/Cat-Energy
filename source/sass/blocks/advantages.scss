@@ -1,8 +1,6 @@
 // Advantages
 
 .advantages {
-  color: $special-dark-grey;
-
   @media (min-width: $tablet-width) {
     position: relative;
 
@@ -87,7 +85,7 @@
       z-index: -1;
 
       @include set-font-style(var(--fz-advantages-number), var(--lh-advantages-number), "Oswald");
-      color: $basic-grey;
+      color: var(--cl-txt-advantages-number);
     }
   }
 
@@ -108,7 +106,7 @@
   width: 60px;
   height: 60px;
   flex: 0 0 60px;
-  background-color: $basic-green;
+  background-color: var(--cl-bg-advantages-image);
   position: relative;
 
   @media (min-width: $tablet-width) {

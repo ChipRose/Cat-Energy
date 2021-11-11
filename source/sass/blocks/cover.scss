@@ -2,12 +2,12 @@
 
 .cover {
   @include set-font-style(var(--fz-cover), var(--lh-cover), "Oswald");
-  color: $contrast-color;
+  color: var(--cl-txt-cover-mobile-index);
   text-align: center;
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    color: $main-color;
+    color: var(--cl-txt-cover-index);
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +24,7 @@
 
     &::before {
       background-image: url("../../img/cover/cover-background-big.jpg");
+      background-color: var(--cl-bg-cover-index);
       background-repeat: no-repeat;
       background-position: left center;
       background-size: 100% auto;
@@ -34,7 +35,7 @@
     }
 
     &::after {
-      background-color: $basic-green085;
+      background-color: var(--cl-bg-cover-index);
     }
   }
 }
@@ -81,12 +82,13 @@
 
   &::before {
     z-index: 2;
-    background-color: $basic-green085;
+    background-color: var(--cl-bg-cover-index);
   }
 
   &::after {
     z-index: 1;
     background-image: url("../../img/cover/cover-background.jpg");
+    background-color: var(--cl-bg-cover-index);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -110,6 +112,7 @@
 
     &::after {
       background-image: none;
+      background-color: transparent;
     }
   }
 

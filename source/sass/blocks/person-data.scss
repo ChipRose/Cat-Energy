@@ -28,7 +28,6 @@
   order: 2;
 
   @include set-font-style(var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
-  color: $special-dark-grey;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {

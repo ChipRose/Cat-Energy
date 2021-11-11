@@ -4,13 +4,13 @@
   position: relative;
 
   &::before {
-    @include border-top($special-grey, -20px, -20px);
-    @include border-bottom($special-grey, -20px, -20px);
+    @include border-top(var(--cl-brd-form), -20px, -20px);
+    @include border-bottom(var(--cl-brd-form), -20px, -20px);
 
     @media (min-width: $tablet-width) {
       right: 0;
       left: 0;
-      border: 1px solid $special-grey;
+      border: 1px solid var(--cl-brd-form);
     }
   }
 }
@@ -59,7 +59,7 @@
     width: var(--box-size);
     height: var(--box-size);
     left: 0;
-    border: 1px solid $special-grey;
+    border: 1px solid var(--cl-brd-form-box);
   }
 
   &::after {
@@ -67,7 +67,7 @@
     width: var(--inner-box-size);
     height: var(--inner-box-size);
     left: calc((var(--box-size) - var(--inner-box-size)) / 2);
-    background-color: $basic-green;
+    background-color: var(--cl-brd-form-box-inner);
   }
 
   @media (min-width: $tablet-width) {
@@ -81,7 +81,7 @@
 
 .program-choice__radio-button {
   &:hover + .program-choice__property::before {
-    border-color: $special-grey-2;
+    border-color: var(--cl-brd-form-box-hover);
   }
 
   &:disabled + .program-choice__property {
@@ -93,7 +93,7 @@
   }
 
   &:checked:hover + .program-choice__property::before {
-    border-color: $special-grey-2;
+    border-color: var(--cl-brd-form-box-hover);
   }
 
   &:checked:disabled + .program-choice__property {

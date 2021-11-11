@@ -2,27 +2,33 @@
 
 .input {
   box-sizing: border-box;
-  border: 1px solid $special-grey;
   transition: all 0.3s ease-out;
 
   @include set-font-style(var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
   text-transform: uppercase;
 
   &::placeholder {
+    color: inherit;
     opacity: 1;
-    color: $special-dark-grey;
+  }
+
+  &:valid {
+    border: 1px solid var(--cl-brd-main-frame);
   }
 
   &:hover {
-    border-color: $special-grey-2;
+    border-color: var(--cl-brd-form-input-hover);
+    box-shadow: 0 0 0 1px var(--cl-brd-form-input-hover) inset;
   }
 
   &:focus {
     outline: none;
-    border-color: $special-dark-grey;
+    border-color: var(--cl-brd-form-input-active);
+    box-shadow: 0 0 0 1px var(--cl-brd-form-input-active);
   }
+}
 
-  &:not(:placeholder-shown):not(:focus):invalid {
-    border-color: $status-error;
-  }
+.input:invalid {
+  border-color: var(--cl-brd-form-error);
+  box-shadow: 0 0 0 1px var(--cl-brd-form-error);
 }
