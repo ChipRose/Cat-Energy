@@ -24,13 +24,13 @@
 
 // Subtitle
 
-.question-form__subtitle{
+.question-form__subtitle {
   @include set-font-style(var(--fz-legend), var(--lh-legend), "Oswald");
   color: var(--cl-txt-form-legend);
   text-transform: none;
 }
 
-.question-form__subtitle--contacts{
+.question-form__subtitle--contacts {
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -38,7 +38,7 @@
   }
 }
 
-.question-form__subtitle--comment{
+.question-form__subtitle--comment {
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -46,7 +46,7 @@
   }
 }
 
-.question-form__subtitle--add{
+.question-form__subtitle--add {
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
