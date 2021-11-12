@@ -2,7 +2,6 @@
 
 .question-form {
   @include set-font-style(var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
-  color: $special-dark-grey;
   text-transform: uppercase;
 }
 
@@ -12,6 +11,7 @@
   margin-bottom: 38px;
 
   @include set-font-style(var(--fz-form-main-legend), var(--lh-form-main-legend), "Oswald");
+  color: var(--cl-txt-catalog-legend);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;

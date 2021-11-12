@@ -54,14 +54,6 @@
     @include border-bottom(var(--cl-brd-main-frame), -20px, -20px);
   }
 
-  &:hover {
-    color: var(--cl-txt-menu-hover);
-  }
-
-  &:active {
-    color: var(--cl-txt-menu-active);
-  }
-
   @media (min-width: $tablet-width) {
     &::before {
       display: none;
@@ -85,6 +77,14 @@
   text-align: center;
   color: inherit;
   transition: all 0.3s ease-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 16px;
@@ -128,25 +128,17 @@
 
 .navigation__link--index {
   @media (min-width: $desktop-width) {
-    color: $contrast-color;
-
-    &:hover {
-      color: $contrast-color06;
-    }
-
-    &:active {
-      color: $contrast-color03;
-    }
+    color: var(--cl-txt-menu-desktop-index);
 
     &.navigation__link--current {
       &::before {
-        background-color: $contrast-color;
+        background-color: var(--cl-brd-menu-desktop-index);
       }
     }
   }
 }
 
-// -Burger-
+// Burger
 
 .navigation__toggle {
   width: 24px;
@@ -173,8 +165,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: $main-color;
-    box-shadow: 0 8px 0 $main-color, 0 16px 0 $main-color;
+    background-color: var(--cl-bg-burger);
+    box-shadow: 0 8px 0 var(--cl-bg-burger), 0 16px 0 var(--cl-bg-burger);
     transition: all 0.3s ease-out;
   }
 }
@@ -196,7 +188,7 @@
     position: absolute;
     top: 50%;
     left: 0;
-    background-color: $main-color;
+    background-color: var(--cl-bg-burger);
     transition: all 0.3s ease-out;
   }
 
@@ -218,7 +210,6 @@
     top: 66px;
     left: -20px;
     z-index: 20;
-    background-color: $contrast-color;
   }
 }
 

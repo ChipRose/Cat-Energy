@@ -12,7 +12,7 @@
     right: 0;
     left: 0;
     z-index: -1;
-    background-color: $basic-green;
+    background-color: var(--cl-bg-title-decor);
 
     @media (min-width: $tablet-width) {
       top: 22px;
@@ -32,7 +32,7 @@
     right: -14px;
     left: -22px;
     z-index: -1;
-    background-color: $contrast-color;
+    background-color: var(--cl-bg-page);
 
     @media (min-width: $tablet-width) {
       right: -42px;

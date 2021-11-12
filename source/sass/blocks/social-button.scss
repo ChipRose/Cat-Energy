@@ -3,7 +3,7 @@
 // Icon
 
 .social-button__icon {
-  fill: $special-grey-3;
+  fill: var(--cl-fill-footer-icon);
   transition: all 0.3s ease-out;
 }
 
@@ -14,11 +14,11 @@
   align-items: center;
 
   &:hover .social-button__icon {
-    fill: $basic-green;
+    fill: var(--cl-fill-footer-icon-hover);
   }
 
   &:active .social-button__icon {
-    fill: $basic-green03;
+    opacity: 0.3;
   }
 }
 

@@ -6,7 +6,6 @@
   border-spacing: 0;
 
   @include set-font-style(var(--fz-catalog-table), var(--lh-catalog-table));
-  color: $special-dark-grey-2;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -19,7 +18,7 @@
   @media (min-width: $tablet-width) {
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: $special-grey;
+    border-bottom-color: var(--cl-brd-catalog);
   }
 }
 

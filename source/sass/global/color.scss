@@ -1,38 +1,13 @@
-$main-color: rgb(0, 0, 0);
-$main-color06: rgba(0, 0, 0, 0.8);
-$main-color06: rgba(0, 0, 0, 0.6);
-$main-color04: rgba(0, 0, 0, 0.4);
-$main-color03: rgba(0, 0, 0, 0.3);
-$main-color016: rgba(0, 0, 0, 0.16);
-$contrast-color: rgb(255, 255, 255);
-$contrast-color06: rgba(255, 255, 255, 0.6);
-$contrast-color03: rgba(255, 255, 255, 0.3);
-$basic-green: rgb(104, 183, 56);
-$basic-green03: rgba(104, 183, 56, 0.3);
-$basic-green-2: rgb(94, 170, 47);
-$basic-green085: rgba(104, 183, 56, 0.85);
-$basic-grey: rgb(242, 242, 242);
-$basic-grey-2: rgb(235, 235, 235);
-$special-grey: rgb(205, 205, 205);
-$special-grey-2: rgb(186, 186, 186);
-$special-grey-2-03: rgba(186, 186, 186, 0.3);
-$special-grey-3: rgb(102, 102, 102);
-$special-middle-grey: rgb(217, 217, 217);
-$special-dark-grey: rgb(68, 68, 68);
-$special-dark-grey03: rgba(68, 68, 68, 0.3);
-$special-dark-grey-2: rgb(34, 34, 34);
-$status-error: rgb(255, 130, 130);
-
 // global
+
 :root {
   --cl-bg-page: rgb(255, 255, 255);
-  --cl-bg-menu: rgb(255, 255, 255);
-  --cl-txt-menu: rgb(0, 0, 0);
-  --cl-txt-menu-hover: rgba(0, 0, 0, 0.6);
-  --cl-txt-menu-active: rgba(0, 0, 0, 0.3);
   --cl-txt-title: rgb(0, 0, 0);
   --cl-txt-subtitle: rgb(34, 34, 34);
   --cl-txt-main: rgb(68, 68, 68);
+  --cl-bg-burger: rgb(0, 0, 0);
+  --cl-bg-menu: rgb(255, 255, 255);
+  --cl-txt-menu: rgb(0, 0, 0);
   --cl-brd-menu-link: rgb(104, 183, 56);
   --cl-bg-main-button: rgb(104, 183, 56);
   --cl-bg-main-button-hover: rgb(94, 170, 47);
@@ -45,11 +20,13 @@ $status-error: rgb(255, 130, 130);
   --cl-brd-footer: rgb(217, 217, 217);
   --cl-fill-footer-icon: rgb(102, 102, 102);
   --cl-fill-footer-icon-hover: rgb(104, 183, 56);
+  --cl-bg-title-decor: rgb(104, 183, 56);
 
   // index.html
 
-  --cl-txt-cover-mobile-index: rgb(255, 255, 255);
   --cl-txt-menu-desktop-index: rgb(255, 255, 255);
+  --cl-brd-menu-desktop-index: rgb(255, 255, 255);
+  --cl-txt-cover-mobile-index: rgb(255, 255, 255);
   --cl-txt-cover-index: rgb(0, 0, 0);
   --cl-bg-cover-index: rgba(104, 183, 56, 0.85);
   --cl-bg-program-card: rgb(242, 242, 242);
@@ -76,8 +53,11 @@ $status-error: rgb(255, 130, 130);
 
   // catalog.html
 
+  --cl-txt-catalog-legend: rgb(0, 0, 0);
   --cl-bg-catalog-card: rgb(242, 242, 242);
   --cl-brd-catalog: rgb(205, 205, 205);
+  --cl-txt-catalog-promo: rgb(255, 255, 255);
+  --cl-bg-catalog-promo: rgb(104, 183, 56);
   --cl-txt-catalog-button-all: rgb(68, 68, 68);
   --cl-txt-catalog-button-all-active: rgba(68, 68, 68, 0.3);
   --cl-bg-catalog-button-all: rgb(242, 242, 242);

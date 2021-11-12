@@ -1,9 +1,5 @@
 // Programs
 
-.programs {
-  color: $special-dark-grey;
-}
-
 // List
 
 .programs__list {
@@ -30,7 +26,7 @@
   display: grid;
   grid-template-rows: min-content 1fr;
   grid-template-columns: auto 1fr;
-  background-color: $basic-grey;
+  background-color: var(--cl-bg-program-card);
 
   &:last-child {
     margin-bottom: 0;
@@ -78,7 +74,7 @@
   grid-column: 1/2;
   align-self: center;
   border-radius: 50%;
-  background-color: $basic-green;
+  background-color: var(--cl-bg-program-image);
 
   @media (min-width: $tablet-width) {
     margin-top: 15px;
@@ -184,7 +180,7 @@
   flex: 1 1 auto;
 
   &::before {
-    @include border-bottom ($special-middle-grey);
+    @include border-bottom (var(--cl-brd-program-card));
   }
 
   @media (min-width: $tablet-width) {

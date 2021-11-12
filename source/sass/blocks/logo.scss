@@ -6,7 +6,7 @@
   grid-template-columns: min-content 1fr;
   column-gap: 11px;
   align-items: center;
-  background-color: $contrast-color;
+  background-color: var(--cl-bg-page);
 
   @media (min-width: $desktop-width) {
     column-gap: 14px;

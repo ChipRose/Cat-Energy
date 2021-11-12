@@ -1,7 +1,7 @@
 // Promo
 
 .promo {
-  color: $contrast-color;
+  color: var( --cl-txt-catalog-promo);
   text-align: center;
 }
 
@@ -16,7 +16,7 @@
   width: 100%;
   min-height: 289px;
   background-image: url("../../img/promo/gift-photo.jpg");
-  background-color: $basic-green;
+  background-color: var(--cl-bg-catalog-promo);
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: cover;

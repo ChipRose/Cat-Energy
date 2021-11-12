@@ -5,7 +5,7 @@
     position: relative;
 
     &::before {
-      @include border-bottom($basic-grey-2, 0, 0);
+      @include border-bottom(--cl-brd-main-frame);
       z-index: 1;
     }
   }
