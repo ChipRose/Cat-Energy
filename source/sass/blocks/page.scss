@@ -1,11 +1,11 @@
-/* ===Global page=== */
+// ===Global page===
 
 .page {
   width: 100%;
   height: 100%;
 }
 
-/* ===Body=== */
+// ---Body---
 
 .page__body {
   padding-top: 0;
@@ -20,13 +20,13 @@
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  background-color: $contrast-color;
+  background-color: var(--cl-bg-page);
 
   @include set-font-style(var(--fz-main), var(--lh-main));
-  color: $main-color;
+  color: var(--cl-txt-main);
 }
 
-/* ===Header=== */
+// ---Header---
 
 .page__header {
   grid-row: 1/2;
@@ -41,24 +41,23 @@
   }
 }
 
-/* ===Main=== */
+// ---Main---
 
 .page__main {
   grid-row: 2/3;
   grid-column: 1/2;
 }
 
-
-/* ===Footer=== */
+// ---Footer---
 
 .page__footer {
   grid-row: 3/4;
   grid-column: 1/2;
 }
 
-/* ===Index.html=== */
+// ===Index.html===
 
-/* ---Index cover--- */
+// ---Index cover---
 
 .page__cover {
   @media (min-width: $tablet-width) {
@@ -70,7 +69,7 @@
   }
 }
 
-/* ---Index programs--- */
+// ---Index programs---
 
 .page__programs {
   margin-bottom: 30px;
@@ -84,7 +83,7 @@
   }
 }
 
-/* ---Index advantages--- */
+// ---Index advantages---
 
 .page__advantages {
   margin-bottom: 42px;
@@ -98,15 +97,15 @@
   }
 }
 
-/* ---Index example--- */
+// ---Index example---
 
 .page__example {
   margin-bottom: 0;
 }
 
-/* ===Catalog.html=== */
+// ===Catalog.html===
 
-/* ---Catalog header--- */
+// ---Catalog header---
 
 .page__header-catalog {
   margin-bottom: 27px;
@@ -120,7 +119,7 @@
   }
 }
 
-/* ---Catalog--- */
+// ---Catalog---
 
 .page__catalog {
   margin-bottom: 25px;
@@ -134,7 +133,7 @@
   }
 }
 
-/* Catalog title */
+// Catalog title
 
 .page__catalog-title {
   margin-bottom: 39px;
@@ -148,7 +147,7 @@
   }
 }
 
-/* ---Catalog extra products--- */
+// ---Catalog extra products---
 
 .page__extra-products {
   margin-bottom: 33px;
@@ -162,9 +161,9 @@
   }
 }
 
-/* ===Form.html=== */
+// ===Form.html===
 
-/* ---Form header= */
+// ---Form header=
 
 .page__header-form {
   margin-bottom: 27px;
@@ -178,13 +177,13 @@
   }
 }
 
-/* ---Form main--- */
+// ---Form main---
 
 .page__main--form {
   margin-bottom: 32px;
 }
 
-/* Form title */
+// Form title
 
 .page__form-title {
   margin-bottom: 37px;
@@ -198,7 +197,7 @@
   }
 }
 
-/* ---Question form--- */
+// ---Question form---
 
 .page__question-form {
   margin-bottom: 0;
@@ -212,21 +211,21 @@
   }
 }
 
-/* ===Blank.html=== */
+// ===Blank.html===
 
-/* ---Blank header--- */
+// ---Blank header---
 
 .page__header-blank {
   margin-bottom: 30px;
 }
 
-/* Blank Title */
+// Blank Title
 
 .page__blank-title {
   margin-bottom: 30px;
 }
 
-/* ---Blank product card--- */
+// ---Blank product card---
 
 .page__product-card {
   margin-bottom: 30px;

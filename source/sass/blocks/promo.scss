@@ -1,11 +1,11 @@
-/* Promo */
+// Promo
 
 .promo {
-  color: $contrast-color;
+  color: var(--cl-txt-catalog-promo);
   text-align: center;
 }
 
-/* Promo wrapper */
+// Promo wrapper
 
 .promo__wrapper {
   padding-top: 58px;
@@ -16,7 +16,7 @@
   width: 100%;
   min-height: 289px;
   background-image: url("../../img/promo/gift-photo.jpg");
-  background-color: $basic-green;
+  background-color: var(--cl-bg-catalog-promo);
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: cover;
@@ -49,7 +49,7 @@
   }
 }
 
-/* Image-block */
+// Image-block
 
 .promo__image-block {
   margin-bottom: 46px;
@@ -67,14 +67,14 @@
   }
 }
 
-/* Icon */
+// Icon
 
 .promo__icon {
   width: 78px;
   height: auto;
 }
 
-/* Text block */
+// Text block
 
 .promo__text-block {
   box-sizing: border-box;
@@ -91,7 +91,7 @@
   }
 }
 
-/* Text */
+// Text
 
 .promo__text {
   margin-bottom: 5px;

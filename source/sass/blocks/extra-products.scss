@@ -1,6 +1,6 @@
-/* Extra products */
+// Extra products
 
-/* Extra products wrapper */
+// Extra products wrapper
 
 .extra-products__wrapper {
   @media (min-width: $desktop-width) {
@@ -11,7 +11,7 @@
   }
 }
 
-/* Title */
+// Title
 
 .extra-products__title {
   margin-bottom: 36px;
@@ -28,7 +28,7 @@
   }
 }
 
-/* List */
+// List
 
 .extra-products__list {
   margin-bottom: 39px;
@@ -44,7 +44,7 @@
   }
 }
 
-/* Item */
+// Item
 
 .extra-products__item {
   padding-top: 14px;
@@ -57,12 +57,12 @@
   z-index: 0;
 
   &::before {
-    @include border-top ($special-grey);
+    @include border-top (var(--cl-brd-catalog));
     z-index: -1;
   }
 
   &:last-child::before {
-    @include border-bottom ($special-grey);
+    @include border-bottom (var(--cl-brd-catalog));
   }
 
   @media (min-width: $tablet-width) {
@@ -83,7 +83,7 @@
   }
 }
 
-/* Content */
+// Content
 
 .extra-products__content {
   @media (min-width: $tablet-width) {
@@ -97,13 +97,12 @@
   }
 }
 
-/* Subitle */
+// Subitle
 
 .extra-products__subtitle {
   margin-bottom: 10px;
 
   @include set-font-style(var(--fz-catalog-subtitle-extra), var(--fz-catalog-subtitle-extra), "Oswald");
-  color: $special-dark-grey-2;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
@@ -111,7 +110,7 @@
   }
 }
 
-/* Table */
+// Table
 
 .extra-products__table {
   margin-bottom: 5px;
@@ -128,7 +127,7 @@
   }
 }
 
-/* Button */
+// Button
 
 .extra-products__button {
   margin-top: auto;
@@ -144,7 +143,7 @@
   }
 }
 
-/* Promo */
+// Promo
 
 .extra-products__promo {
   @media (min-width: $desktop-width) {

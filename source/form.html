@@ -8,7 +8,7 @@
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="page__body">
@@ -51,13 +51,15 @@
 
   <main class="page__main page__main--form">
     <div class="container container--form">
-      <h1 class="title page__form-title">Подбор программы</h1>
+      <h1 class="title page__form-title">
+        Подбор программы
+      </h1>
     </div>
     <form class="question-form page__question-form" action="#" method="post">
       <div class="container container--form">
-        <p class="text question-form__legend">
+        <h2 class="title question-form__title">
           Заполните анкету, и мы подберем <br class="br"> программу питания для вашего кота
-        </p>
+        </h2>
         <div class="question-form__top">
           <fieldset class="fieldset person-data question-form__person-data">
             <label class="person-data__item">
@@ -70,7 +72,7 @@
               <span class="person-data__property">Вес (кг):<sup class="question-form__req">*</sup></span>
             </label>
             <label class="person-data__item">
-              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" required placeholder="7" />
+              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" placeholder="7" />
               <span class="person-data__property">Возраст (лет):</span>
             </label>
           </fieldset>
@@ -87,7 +89,7 @@
               <span class="program-choice__property">Набор массы</span>
             </label>
             <label class="program-choice__item">
-              <input class="program-choice__radio-button visually-hidden" type="radio" name="program" di
+              <input class="program-choice__radio-button visually-hidden" type="radio" name="program"
                 value="need-advice" />
               <span class="program-choice__property">Не знаю (Нужен ваш совет)</span>
             </label>
@@ -95,43 +97,48 @@
         </div>
       </div>
       <fieldset class="fieldset owner-contacts question-form__owner-contacts title-decor">
-        <div class="container container--form owner-contacts__wrapper">
-          <legend class="legend owner-contacts__legend">
+        <div class="container container--form">
+          <h3 class="subtitle question-form__subtitle question-form__subtitle--contacts">
             <span class="title-decor__back">
-              Контактные данные <br class="br br--mobile">
+              Контактные данные <br class="br br--mobile"/>
               (владельца кота)
             </span>
-          </legend>
-          <label class="owner-contacts__item">
-            <span class="owner-contacts__content">
-              <input class="input owner-contacts__value" type="email" required placeholder="kuklachev@gmail.com">
-              <svg class="owner-contacts__icon owner-contacts__icon--email" width="19" height="14" role="img"
-                aria-label="Почта" focusable="false">
-                <use xlink:href="img/svg-sprite.svg#email"></use>
-              </svg>
-            </span>
-            <span class="owner-contacts__property">E-mail:<sup class="question-form__req">*</sup></span>
-          </label>
-          <label class="owner-contacts__item">
-            <span class="owner-contacts__content">
-              <input class="input owner-contacts__value" type="tel" required placeholder="8 (960) 900-60-90"
-                pattern="[0-9]{11}">
-              <svg class="owner-contacts__icon owner-contacts__icon--phone" width="20" height="21" role="img"
-                aria-label="Телефон" focusable="false">
-                <use xlink:href="img/svg-sprite.svg#phone"></use>
-              </svg>
-            </span>
-            <span class="owner-contacts__property">Телефон:<sup class="question-form__req">*</sup></span>
-          </label>
+          </h3>
+          <div class="owner-contacts__wrapper">
+            <label class="owner-contacts__item">
+              <span class="owner-contacts__content">
+                <input class="input owner-contacts__value" type="email" required placeholder="kuklachev@gmail.com"/>
+                <svg class="owner-contacts__icon owner-contacts__icon--email" width="19" height="14" role="img"
+                  aria-label="Почта" focusable="false">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+              </span>
+              <span class="owner-contacts__property">
+                E-mail:<sup class="question-form__req">*</sup>
+              </span>
+            </label>
+            <label class="owner-contacts__item">
+              <span class="owner-contacts__content">
+                <input class="input owner-contacts__value" type="tel" required placeholder="8 (960) 900-60-90" pattern="[0-9,+]{11,12}"/>
+                <svg class="owner-contacts__icon owner-contacts__icon--phone" width="20" height="21" role="img"
+                  aria-label="Телефон" focusable="false">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+              </span>
+              <span class="owner-contacts__property">
+                Телефон:<sup class="question-form__req">*</sup>
+              </span>
+            </label>
+          </div>
         </div>
       </fieldset>
       <fieldset class="fieldset comment question-form__comment title-decor">
         <div class="container container--form">
-          <legend class="legend comment__legend">
+          <h3 class="subtitle question-form__subtitle question-form__subtitle--comment">
             <span class="title-decor__back">
               Комментарий
             </span>
-          </legend>
+          </h3>
           <label class="comment__item">
             <textarea class="input comment__value" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
@@ -139,18 +146,18 @@
       </fieldset>
       <fieldset class="fieldset add-info question-form__add-info title-decor">
         <div class="container container--form">
-          <legend class="legend add-info__legend">
+          <h3 class="subtitle question-form__subtitle question-form__subtitle--add">
             <span class="title-decor__back">
               Дополнительно
             </span>
-          </legend>
+          </h3>
           <div class="add-info__container">
             <label class="add-info__item">
               <input class="add-info__checkbox visually-hidden" type="checkbox" value="sweetener" checked />
               <span class="add-info__property">сахарозаменитель</span>
             </label>
             <label class="add-info__item">
-              <input class="add-info__checkbox visually-hidden" index="1" type="checkbox" value="water" />
+              <input class="add-info__checkbox visually-hidden" type="checkbox" value="water" />
               <span class="add-info__property">питьевая вода</span>
             </label>
             <label class="add-info__item">
@@ -180,7 +187,8 @@
         <div class="container address__wrapper">
           <div class="address__text-block">
             <h3 class="subtitle address__subtitle">приглашаем <br class="br" /> к сотрудничеству
-              дилеров!</h3>
+              дилеров!
+            </h3>
             <address class="address__text">ул. Большая Конюшенная, д. 19/8
               <span class="address__city">Санкт-Петербург</span>
             </address>
@@ -191,7 +199,7 @@
         <div class="address__pin-block">
           <svg class="address__pin" width="57" height="53" role="img"
             aria-label="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" focusable="false">
-            <use xlink:href="img/svg-sprite.svg#map-pin" />
+            <use xlink:href="img/sprite.svg#map-pin" />
           </svg>
         </div>
         <iframe class="address__map"
@@ -204,7 +212,7 @@
       <a class="link logo-text footer__logo" href="index.html">
         <svg class="logo-text__icon" width="128" height="24" role="img" aria-label="Надпись Cat Energy"
           focusable="false">
-          <use xlink:href="img/svg-sprite.svg#logo-text"></use>
+          <use xlink:href="img/sprite.svg#footer-logo"></use>
         </svg>
       </a>
       <ul class="list footer__social-list">
@@ -212,7 +220,7 @@
           <a href="#" class="link social-button footer__social-link">
             <svg class="social-button__icon social-button__icon--vk" width="24" height="13" role="img"
               aria-label="Иконка ВКонтакте" focusable="false">
-              <use xlink:href="img/svg-sprite.svg#vk" />
+              <use xlink:href="img/sprite.svg#vk" />
             </svg>
           </a>
         </li>
@@ -220,7 +228,7 @@
           <a href="#" class="link social-button footer__social-link">
             <svg class="social-button__icon social-button__icon--inst" width="17" height="17" role="img"
               aria-label="Иконка Инстаграм" focusable="false">
-              <use xlink:href="img/svg-sprite.svg#instagram" />
+              <use xlink:href="img/sprite.svg#inst" />
             </svg>
           </a>
         </li>
@@ -228,7 +236,7 @@
           <a href="#" class="link social-button footer__social-link">
             <svg class="social-button__icon social-button__icon--fb" width="13" height="20" role="img"
               aria-label="Иконка Фейсбук" focusable="false">
-              <use xlink:href="img/svg-sprite.svg#facebook" />
+              <use xlink:href="img/sprite.svg#fb" />
             </svg>
           </a>
         </li>
@@ -237,13 +245,13 @@
         <p class="text academy-logo__text footer__promo-text">HTML Academy</p>
         <svg class="academy-logo__icon footer__promo-icon" width="27" height="34" role="img"
           aria-label="Логотип HTMLAcademy" focusable="false">
-          <use xlink:href="img/svg-sprite.svg#academy-logo" />
+          <use xlink:href="img/sprite.svg#logo-html" />
         </svg>
       </a>
     </div>
   </footer>
 
-  <script src="js/burger.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

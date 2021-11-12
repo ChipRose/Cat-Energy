@@ -1,4 +1,4 @@
-/* Academy logo */
+// Academy logo
 
 .academy-logo {
   display: flex;
@@ -8,21 +8,18 @@
   @include set-font-style(var(--fz-footer-promo-text), var(--lh-footer-promo-text));
 
   &:hover > .academy-logo__icon {
-    fill: $basic-green;
+    fill: var(--cl-fill-footer-icon-hover);
   }
 
-  &:active > .academy-logo__text {
-    color: $special-dark-grey03;
-  }
-
+  &:active > .academy-logo__text,
   &:active > .academy-logo__icon {
-    fill: $basic-green03;
+    opacity: 0.3;
   }
 }
 
-/* Icon */
+// Icon
 
 .academy-logo__icon {
-  fill: $special-grey-3;
+  fill: var(--cl-fill-footer-icon);
   transition: all 0.3s ease-out;
 }

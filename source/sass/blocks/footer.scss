@@ -1,10 +1,10 @@
-/* Footer */
+// Footer
 
 .footer {
-  background-color: $basic-grey;
+  background-color: var(--cl-bg-footer-address-inner);
 }
 
-/* Footer wrapper */
+// Footer wrapper
 
 .footer__wrapper {
   padding-top: 33px;
@@ -25,7 +25,7 @@
   }
 }
 
-/* Logo */
+// Logo
 
 .footer__logo {
   margin-bottom: 27px;
@@ -40,7 +40,7 @@
   }
 }
 
-/* List */
+// List
 
 .footer__social-list {
   padding-top: 18px;
@@ -55,8 +55,8 @@
   align-items: center;
 
   &::before {
-    @include border-top($special-middle-grey);
-    @include border-bottom($special-middle-grey);
+    @include border-top(var(--cl-brd-footer));
+    @include border-bottom(var(--cl-brd-footer));
     z-index: -1;
   }
 
@@ -75,7 +75,7 @@
   }
 }
 
-/* Item */
+// Item
 
 .footer__social-item {
   margin-right: 14px;
@@ -103,7 +103,7 @@
   }
 }
 
-/* Link */
+// Link
 
 .footer__social-link {
   padding-top: 5px;
@@ -117,7 +117,7 @@
   }
 }
 
-/* Promo */
+// Promo
 
 .footer__promo {
   padding-top: 15px;
@@ -134,7 +134,7 @@
   }
 }
 
-/* Text */
+// Text
 
 .footer__promo-text {
   margin-right: 24px;

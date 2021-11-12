@@ -1,10 +1,6 @@
-/* Programs */
+// Programs
 
-.programs {
-  color: $special-dark-grey;
-}
-
-/* List */
+// List
 
 .programs__list {
   box-sizing: border-box;
@@ -17,7 +13,7 @@
   }
 }
 
-/* Item */
+// Item
 
 .programs__item {
   padding-top: 24px;
@@ -30,7 +26,7 @@
   display: grid;
   grid-template-rows: min-content 1fr;
   grid-template-columns: auto 1fr;
-  background-color: $basic-grey;
+  background-color: var(--cl-bg-program-card);
 
   &:last-child {
     margin-bottom: 0;
@@ -66,7 +62,7 @@
   }
 }
 
-/* Image block */
+// Image block
 
 .programs__image-block {
   margin-right: 19px;
@@ -78,7 +74,7 @@
   grid-column: 1/2;
   align-self: center;
   border-radius: 50%;
-  background-color: $basic-green;
+  background-color: var(--cl-bg-program-image);
 
   @media (min-width: $tablet-width) {
     margin-top: 15px;
@@ -98,7 +94,7 @@
   }
 }
 
-/* Icon */
+// Icon
 
 .programs__icon {
   @include absolute-center;
@@ -133,7 +129,7 @@
   }
 }
 
-/* Content */
+// Content
 
 .programs__content {
   margin-top: 6px;
@@ -153,7 +149,7 @@
   }
 }
 
-/* Subtitle */
+// Subtitle
 
 .programs__subtitle {
   grid-row: 1/2;
@@ -174,7 +170,7 @@
   }
 }
 
-/* Text block */
+// Text block
 
 .programs__text-block {
   padding-bottom: 20px;
@@ -184,7 +180,7 @@
   flex: 1 1 auto;
 
   &::before {
-    @include border-bottom ($special-middle-grey);
+    @include border-bottom (var(--cl-brd-program-card));
   }
 
   @media (min-width: $tablet-width) {
@@ -208,7 +204,7 @@
   }
 }
 
-/* Text */
+// Text
 
 .programs__text {
   margin-bottom: 5px;
@@ -218,7 +214,7 @@
   }
 }
 
-/* Button */
+// Button
 
 .programs__button {
   padding-top: 5px;

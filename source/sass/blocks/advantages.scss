@@ -1,13 +1,11 @@
-/* Advantages */
+// Advantages
 
 .advantages {
-  color: $special-dark-grey;
-
   @media (min-width: $tablet-width) {
     position: relative;
 
     &::before {
-      @include border-bottom($basic-grey-2, 0, 0);
+      @include border-bottom(--cl-brd-main-frame);
       z-index: 1;
     }
   }
@@ -19,7 +17,7 @@
   }
 }
 
-/* Title */
+// Title
 
 .advantages__title {
   margin-bottom: 41px;
@@ -33,7 +31,7 @@
   }
 }
 
-/* List */
+// List
 
 .advantages__list {
   box-sizing: border-box;
@@ -54,7 +52,7 @@
   }
 }
 
-/* Item */
+// Item
 
 .advantages__item {
   margin-bottom: 20px;
@@ -87,7 +85,7 @@
       z-index: -1;
 
       @include set-font-style(var(--fz-advantages-number), var(--lh-advantages-number), "Oswald");
-      color: $basic-grey;
+      color: var(--cl-txt-advantages-number);
     }
   }
 
@@ -101,14 +99,14 @@
   }
 }
 
-/* Image block */
+// Image block
 
 .advantages__image-block {
   margin-right: 20px;
   width: 60px;
   height: 60px;
   flex: 0 0 60px;
-  background-color: $basic-green;
+  background-color: var(--cl-bg-advantages-image);
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -120,13 +118,13 @@
   }
 }
 
-/* Icon */
+// Icon
 
 .advantages__icon {
   @include absolute-center;
 }
 
-/* Text block */
+// Text block
 
 .advantages__text-block {
   padding-top: 2px;
@@ -140,7 +138,7 @@
   }
 }
 
-/* Text */
+// Text
 
 .advantages__text {
   margin-bottom: 5px;

@@ -1,4 +1,4 @@
-/* Table */
+// Table
 
 .table-property {
   min-width: 140px;
@@ -6,24 +6,23 @@
   border-spacing: 0;
 
   @include set-font-style(var(--fz-catalog-table), var(--lh-catalog-table));
-  color: $special-dark-grey-2;
 
   @media (min-width: $tablet-width) {
     width: 100%;
   }
 }
 
-/* Row */
+// Row
 
 .table-property__row {
   @media (min-width: $tablet-width) {
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: $special-grey;
+    border-bottom-color: var(--cl-brd-catalog);
   }
 }
 
-/* Table property */
+// Table property
 
 .table-property__property {
   padding-top: 2px;
@@ -40,7 +39,7 @@
   }
 }
 
-/* Table value */
+// Table value
 
 .table-property__value {
   padding-top: 2px;
@@ -53,7 +52,7 @@
   }
 }
 
-/* Table exptra products */
+// Table exptra products
 
 .table-property--extra {
   width: 100%;
@@ -65,7 +64,7 @@
   }
 }
 
-/* Property */
+// Property
 
 .table-property__property--extra {
   box-sizing: border-box;
@@ -81,7 +80,7 @@
   }
 }
 
-/* Table value */
+// Table value
 
 .table-property__value--extra {
   @media (min-width: $tablet-width) {

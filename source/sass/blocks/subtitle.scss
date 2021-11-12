@@ -1,4 +1,4 @@
-/* Subtitle */
+// Subtitle
 
 .subtitle {
   margin-top: 0;
@@ -7,6 +7,6 @@
   margin-left: 0;
 
   @include set-font-style (var(--fz-subtitle), var(--lh-subtitle), "Oswald");
-  color: $main-color;
+  color: var(--cl-txt-subtitle);
   text-transform: uppercase;
 }

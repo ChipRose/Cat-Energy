@@ -1,82 +1,44 @@
-$main-color:rgb(0, 0, 0);
-$main-color06:rgba(0, 0, 0, 0.8);
-$main-color06:rgba(0, 0, 0, 0.6);
-$main-color04:rgba(0, 0, 0, 0.4);
-$main-color03:rgba(0, 0, 0, 0.3);
-$main-color016: rgba(0, 0, 0, 0.16);
-$contrast-color: rgb(255, 255, 255);
-$contrast-color06: rgba(255, 255, 255, 0.6);
-$contrast-color03: rgba(255, 255, 255, 0.3);
-$basic-green: rgb(104, 183, 56);
-$basic-green03: rgba(104, 183, 56, 0.3);
-$basic-green-2: rgb(94, 170, 47);
-$basic-green085: rgba(104, 183, 56, 0.85);
-$basic-grey: rgb(242, 242, 242);
-$basic-grey-2: rgb(235, 235, 235);
-$special-grey: rgb(205, 205, 205);
-$special-grey-2: rgb(186, 186, 186);
-$special-grey-2-03: rgba(186, 186, 186, 0.3);
-$special-grey-3: rgb(102, 102, 102);
-$special-middle-grey: rgb(217, 217, 217);
-$special-dark-grey: rgb(68, 68, 68);
-$special-dark-grey03: rgba(68, 68, 68, 0.3);
-$special-dark-grey-2: rgb(34, 34, 34);
-$status-error: rgb(255, 130, 130);
-/* Black */
+// global
 
-$x-black: rgb(0, 0, 0);
-$x-black-08: rgba(0, 0, 0, 0.8);
-$x-black-06: rgba(0, 0, 0, 0.6);
-$x-black-04: rgba(0, 0, 0, 0.4);
-$x-black-03: rgba(0, 0, 0, 0.3);
-$x-black-016: rgba(0, 0, 0, 0.16);
-
-/* Grey */
-
-/* White */
-
-$x-white: rgb(255, 255, 255);
-$x-white-06: rgba(255, 255, 255, 0.6);
-$x-white-03: rgba(255, 255, 255, 0.3);
-
-/* Green */
-
-$x-green: rgb(94, 170, 47);
-$x-basic-green: rgb(104, 183, 56);
-$x-basic-green-085: rgba(104, 183, 56, 0.85);
-$x-basic-green-03: rgba(104, 183, 56, 0.3);
-
-
-/* Compare colors */
-
-/* global */
-:root{
-  --cl-txt-menu: rgb(0, 0, 0);
-  --cl-txt-title-subtitle: rgb(0, 0, 0);
+:root {
+  --cl-bg-page: rgb(255, 255, 255);
+  --cl-txt-title: rgb(0, 0, 0);
+  --cl-txt-subtitle: rgb(34, 34, 34);
   --cl-txt-main: rgb(68, 68, 68);
+  --cl-bg-burger: rgb(0, 0, 0);
+  --cl-bg-menu: rgb(255, 255, 255);
+  --cl-txt-menu: rgb(0, 0, 0);
+  --cl-brd-menu-link: rgb(104, 183, 56);
   --cl-bg-main-button: rgb(104, 183, 56);
   --cl-bg-main-button-hover: rgb(94, 170, 47);
-  --cl-txt-main-button:  rgb(255, 255, 255);
-  --cl-txt-main-button-active:  rgb(255, 255, 255, 0.3);
-  --cl-brd-main-frame: (230, 230, 230);
-  --cl-bg-footer-address: rgb(242, 242, 242);
+  --cl-txt-main-button: rgb(255, 255, 255);
+  --cl-txt-main-button-active: rgba(255, 255, 255, 0.3);
+  --cl-brd-main-frame: rgb(230, 230, 230);
+  --cl-brd-header-inner: rgb(217, 217, 217);
+  --cl-bg-footer-address: rgb(255, 255, 255);
+  --cl-bg-footer-address-inner: rgb(242, 242, 242);
+  --cl-brd-footer: rgb(217, 217, 217);
   --cl-fill-footer-icon: rgb(102, 102, 102);
   --cl-fill-footer-icon-hover: rgb(104, 183, 56);
+  --cl-bg-title-decor: rgb(104, 183, 56);
 
-  /* index.html */
+  // index.html
 
-  --cl-txt-cover-mobile-index: rgb(255, 255, 255);
   --cl-txt-menu-desktop-index: rgb(255, 255, 255);
+  --cl-brd-menu-desktop-index: rgb(255, 255, 255);
+  --cl-txt-cover-mobile-index: rgb(255, 255, 255);
   --cl-txt-cover-index: rgb(0, 0, 0);
   --cl-bg-cover-index: rgba(104, 183, 56, 0.85);
   --cl-bg-program-card: rgb(242, 242, 242);
   --cl-brd-program-card: rgb(217, 217, 217);
   --cl-bg-program-image: rgb(104, 183, 56);
+  --cl-txt-program-button: rgb(0, 0, 0);
   --cl-bg-advantages-image: rgb(104, 183, 56);
-  --cl-txt-advantages-number:rgb(242, 242, 242);
-  --cl-bg-example-mobile: rgb(234, 234, 234);
+  --cl-txt-advantages-number: rgb(242, 242, 242);
+  --cl-bg-example: rgb(234, 234, 234);
   --cl-brd-example: rgb(205, 205, 205);
-  --cl-txt-example-progress:rgb(0, 0, 0);
+  --cl-txt-example-progress: rgb(0, 0, 0);
+  --cl-bg-example-description: rgb(255, 255, 255);
   --cl-txt-example-button: rgb(0, 0, 0);
   --cl-brd-example-button: rgb(0, 0, 0, 0.4);
   --cl-bg-slider-scale-mobile: rgb(255, 255, 255);
@@ -86,15 +48,31 @@ $x-basic-green-03: rgba(104, 183, 56, 0.3);
   --cl-bg-slider-inner-cursor: rgb(104, 183, 56);
   --cl-brd-slider-cursor: rgb(205, 205, 205);
   --cl-brd-slider-cursor-active: rgb(104, 183, 56);
+  --cl-brd-slider-button: rgba(0, 0, 0, 0.3);
   --cl-shd-slider-cursor: rgb(0, 0, 0, 0.16);
 
-  /* catalog.html */
+  // catalog.html
 
-  --cl-txt-catalog-subtitle: rgb(34, 34, 34);
+  --cl-txt-catalog-legend: rgb(0, 0, 0);
+  --cl-bg-catalog-card: rgb(242, 242, 242);
+  --cl-brd-catalog: rgb(205, 205, 205);
+  --cl-txt-catalog-promo: rgb(255, 255, 255);
+  --cl-bg-catalog-promo: rgb(104, 183, 56);
+  --cl-txt-catalog-button-all: rgb(68, 68, 68);
+  --cl-txt-catalog-button-all-active: rgba(68, 68, 68, 0.3);
   --cl-bg-catalog-button-all: rgb(242, 242, 242);
+  --cl-bg-catalog-button-all-hover-active: rgb(235, 235, 235);
 
-  /* form.html */
+  // form.html
 
   --cl-txt-form-legend: rgb(0, 0, 0);
+  --cl-brd-form: rgb(217, 217, 217);
+  --cl-brd-form-box: rgb(205, 205, 205);
+  --cl-brd-form-box-inner: rgb(104, 183, 56);
+  --cl-brd-form-box-hover: rgb(186, 186, 186);
+  --cl-brd-form-input-hover: rgb(186, 186, 186);
+  --cl-brd-form-input-active: rgb(68, 68, 68);
   --cl-fill-form-icon: rgb(34, 34, 34);
+  --cl-fill-form-icon-focus: rgb(104, 183, 56);
+  --cl-brd-form-error: rgb(255, 130, 130);
 }

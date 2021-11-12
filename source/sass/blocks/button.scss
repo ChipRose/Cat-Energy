@@ -1,23 +1,23 @@
-/* Main button */
+// Main button
 
 .button {
   display: block;
   box-sizing: border-box;
   border: none;
-  background-color: $basic-green;
+  background-color: var(--cl-bg-main-button);
   transition: all 0.3s ease-out;
 
   @include set-font-style (var(--fz-button), var(--lh-button), "Oswald");
-  color: $contrast-color;
+  color: var(--cl-txt-main-button);
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 
   &:hover {
-    background-color: $basic-green-2;
+    background-color: var(--cl-bg-main-button-hover);
   }
 
   &:active {
-    color: $contrast-color03;
+    color: var(--cl-txt-main-button-active);
   }
 }

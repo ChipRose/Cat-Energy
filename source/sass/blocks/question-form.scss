@@ -1,17 +1,17 @@
-/* Question form */
+// Question form
 
 .question-form {
   @include set-font-style(var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
-  color: $special-dark-grey;
   text-transform: uppercase;
 }
 
-/* Legend */
+// Title
 
-.question-form__legend {
+.question-form__title {
   margin-bottom: 38px;
 
   @include set-font-style(var(--fz-form-main-legend), var(--lh-form-main-legend), "Oswald");
+  color: var(--cl-txt-catalog-legend);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
@@ -22,7 +22,39 @@
   }
 }
 
-/* Question form top */
+// Subtitle
+
+.question-form__subtitle {
+  @include set-font-style(var(--fz-legend), var(--lh-legend), "Oswald");
+  color: var(--cl-txt-form-legend);
+  text-transform: none;
+}
+
+.question-form__subtitle--contacts {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.question-form__subtitle--comment {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.question-form__subtitle--add {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+}
+
+// Question form top
 
 .question-form__top {
   @media (min-width: $desktop-width) {
@@ -34,7 +66,7 @@
   }
 }
 
-/* ---Person data--- */
+// Person data
 
 .question-form__person-data {
   margin-bottom: 23px;
@@ -52,7 +84,7 @@
   }
 }
 
-/* ---Program choice--- */
+// Program choice
 
 .question-form__program-choice {
   padding-top: 23px;
@@ -76,7 +108,7 @@
   }
 }
 
-/* ---Owner contacts--- */
+// Owner contacts
 
 .question-form__owner-contacts {
   margin-bottom: 24px;
@@ -90,7 +122,7 @@
   }
 }
 
-/* ---Comment--- */
+// Comment
 
 .question-form__comment {
   margin-bottom: 20px;
@@ -98,13 +130,9 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;
   }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 58px;
-  }
 }
 
-/* ---Add info--- */
+// Add info
 
 .question-form__add-info {
   margin-bottom: 19px;
@@ -118,7 +146,7 @@
   }
 }
 
-/* Question form wrapper */
+// Question form wrapper
 
 .question-form__wrapper {
   @media (min-width: $tablet-width) {
@@ -127,7 +155,7 @@
   }
 }
 
-/* Button */
+// Button
 
 .question-form__button {
   padding-top: 11px;
@@ -153,7 +181,7 @@
   }
 }
 
-/* Note */
+// Note
 
 .question-form__note {
   display: block;

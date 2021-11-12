@@ -1,21 +1,24 @@
-/* Example */
+// Example
 
 .example {
   position: relative;
-  background-color: $basic-grey;
+
+  &::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--cl-bg-example);
+  }
 
   @media (min-width: $tablet-width) {
-    background-color: $contrast-color;
+    background-color: transparent;
 
     &::before {
-      content: "";
-      width: 100%;
-      position: absolute;
       top: 619px;
-      bottom: 0;
-      left: 0;
-      z-index: 0;
-      background-color: $basic-grey;
     }
   }
 
@@ -26,7 +29,7 @@
   }
 }
 
-/* Example wrapper */
+// Example wrapper
 
 .example__wrapper {
   padding-bottom: 25px;
@@ -41,7 +44,7 @@
   }
 }
 
-/* Example header */
+// Example header
 
 .example__header {
   padding-top: 29px;
@@ -59,7 +62,7 @@
   }
 }
 
-/* Title */
+// Title
 
 .example__title {
   margin-bottom: 35px;
@@ -73,7 +76,7 @@
   }
 }
 
-/* Text block */
+// Text block
 
 .example__text-block {
   margin-bottom: 25px;
@@ -89,7 +92,7 @@
   }
 }
 
-/* Text */
+// Text
 
 .example__text {
   margin-bottom: 5px;
@@ -99,7 +102,7 @@
   }
 }
 
-/* Achievements */
+// Achievements
 
 .example__achievements {
   @media (min-width: $tablet-width) {
@@ -111,7 +114,7 @@
   }
 }
 
-/* List */
+// List
 
 .example__list {
   margin-right: -15px;
@@ -133,7 +136,7 @@
   }
 }
 
-/* Item */
+// Item
 
 .example__item {
   margin-right: 15px;
@@ -153,7 +156,7 @@
   }
 }
 
-/* Progress */
+// Progress
 
 .example__progress {
   padding-top: 14px;
@@ -163,6 +166,7 @@
   position: relative;
 
   @include set-font-style(var(--fz-example-progress), var(--lh-example-progress), "Oswald");
+  color: var(--cl-txt-example-progress);
   text-transform: uppercase;
 
   &::before {
@@ -173,7 +177,7 @@
     top: 0;
     left: 0;
     z-index: 0;
-    border: 1px solid $special-grey;
+    border: 1px solid var(--cl-brd-example);
     border-radius: 3px;
 
     @media (min-width: $tablet-width) {
@@ -182,7 +186,7 @@
   }
 }
 
-/* Description */
+// Description
 
 .example__description {
   padding-top: 3px;
@@ -195,7 +199,7 @@
   width: calc(-36px + 100%);
   position: relative;
   z-index: 1;
-  background-color: $basic-grey;
+  background-color: var(--cl-bg-example);
 
   @include set-font-style(var(--fz-example-description), var(--lh-example-description));
   text-align: center;
@@ -206,15 +210,15 @@
     padding-bottom: 3px;
     padding-left: 3px;
     width: calc(-20px + 100%);
-    background-color: $contrast-color;
+    background-color: var(--cl-bg-example-description);
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey;
+    background-color: var(--cl-bg-example);
   }
 }
 
-/* Legend */
+// Legend
 
 .example__legend {
   @include set-font-style(var(--fz-example-legend), var(--lh-example-legend), "Oswald");
@@ -236,7 +240,7 @@
   }
 }
 
-/* Rezult */
+// Rezult
 
 .example__rezult {
   @media (min-width: $desktop-width) {
@@ -244,7 +248,7 @@
   }
 }
 
-/* Slider */
+// Slider
 
 .example__slider {
   @media (min-width: $tablet-width) {
@@ -257,7 +261,7 @@
   }
 }
 
-/* Slider list */
+// Slider list
 
 .example__slider-list {
   margin-bottom: 17px;
@@ -271,7 +275,7 @@
   }
 }
 
-/* Control */
+// Control
 
 .example__control {
   @media (min-width: $tablet-width) {
