@@ -51,13 +51,15 @@
 
   <main class="page__main page__main--form">
     <div class="container container--form">
-      <h1 class="title page__form-title">Подбор программы</h1>
+      <h1 class="title page__form-title">
+        Подбор программы
+      </h1>
     </div>
     <form class="question-form page__question-form" action="#" method="post">
       <div class="container container--form">
-        <p class="text question-form__legend">
+        <h2 class="title question-form__title">
           Заполните анкету, и мы подберем <br class="br"> программу питания для вашего кота
-        </p>
+        </h2>
         <div class="question-form__top">
           <fieldset class="fieldset person-data question-form__person-data">
             <label class="person-data__item">
@@ -87,7 +89,7 @@
               <span class="program-choice__property">Набор массы</span>
             </label>
             <label class="program-choice__item">
-              <input class="program-choice__radio-button visually-hidden" type="radio" name="program" di
+              <input class="program-choice__radio-button visually-hidden" type="radio" name="program"
                 value="need-advice" />
               <span class="program-choice__property">Не знаю (Нужен ваш совет)</span>
             </label>
@@ -96,43 +98,47 @@
       </div>
       <fieldset class="fieldset owner-contacts question-form__owner-contacts title-decor">
         <div class="container container--form">
-          <legend class="legend owner-contacts__legend">
+          <h3 class="subtitle question-form__subtitle question-form__subtitle--contacts">
             <span class="title-decor__back">
-              Контактные данные <br class="br br--mobile">
+              Контактные данные <br class="br br--mobile"/>
               (владельца кота)
             </span>
-          </legend>
+          </h3>
           <div class="owner-contacts__wrapper">
-          <label class="owner-contacts__item">
-            <span class="owner-contacts__content">
-              <input class="input owner-contacts__value" type="email" required placeholder="kuklachev@gmail.com">
-              <svg class="owner-contacts__icon owner-contacts__icon--email" width="19" height="14" role="img"
-                aria-label="Почта" focusable="false">
-                <use xlink:href="img/sprite.svg#email"></use>
-              </svg>
-            </span>
-            <span class="owner-contacts__property">E-mail:<sup class="question-form__req">*</sup></span>
-          </label>
-          <label class="owner-contacts__item">
-            <span class="owner-contacts__content">
-              <input class="input owner-contacts__value" type="tel" required placeholder="8 (960) 900-60-90"
-                pattern="[0-9]{11}">
-              <svg class="owner-contacts__icon owner-contacts__icon--phone" width="20" height="21" role="img"
-                aria-label="Телефон" focusable="false">
-                <use xlink:href="img/sprite.svg#phone"></use>
-              </svg>
-            </span>
-            <span class="owner-contacts__property">Телефон:<sup class="question-form__req">*</sup></span>
-          </label>
+            <label class="owner-contacts__item">
+              <span class="owner-contacts__content">
+                <input class="input owner-contacts__value" type="email" required placeholder="kuklachev@gmail.com"/>
+                <svg class="owner-contacts__icon owner-contacts__icon--email" width="19" height="14" role="img"
+                  aria-label="Почта" focusable="false">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+              </span>
+              <span class="owner-contacts__property">
+                E-mail:<sup class="question-form__req">*</sup>
+              </span>
+            </label>
+            <label class="owner-contacts__item">
+              <span class="owner-contacts__content">
+                <input class="input owner-contacts__value" type="tel" required placeholder="8 (960) 900-60-90" pattern="[0-9,+]{11,12}"/>
+                <svg class="owner-contacts__icon owner-contacts__icon--phone" width="20" height="21" role="img"
+                  aria-label="Телефон" focusable="false">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+              </span>
+              <span class="owner-contacts__property">
+                Телефон:<sup class="question-form__req">*</sup>
+              </span>
+            </label>
+          </div>
         </div>
       </fieldset>
       <fieldset class="fieldset comment question-form__comment title-decor">
         <div class="container container--form">
-          <legend class="legend comment__legend">
+          <h3 class="subtitle question-form__subtitle question-form__subtitle--comment">
             <span class="title-decor__back">
               Комментарий
             </span>
-          </legend>
+          </h3>
           <label class="comment__item">
             <textarea class="input comment__value" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
@@ -140,18 +146,18 @@
       </fieldset>
       <fieldset class="fieldset add-info question-form__add-info title-decor">
         <div class="container container--form">
-          <legend class="legend add-info__legend">
+          <h3 class="subtitle question-form__subtitle question-form__subtitle--add">
             <span class="title-decor__back">
               Дополнительно
             </span>
-          </legend>
+          </h3>
           <div class="add-info__container">
             <label class="add-info__item">
               <input class="add-info__checkbox visually-hidden" type="checkbox" value="sweetener" checked />
               <span class="add-info__property">сахарозаменитель</span>
             </label>
             <label class="add-info__item">
-              <input class="add-info__checkbox visually-hidden" index="1" type="checkbox" value="water" />
+              <input class="add-info__checkbox visually-hidden" type="checkbox" value="water" />
               <span class="add-info__property">питьевая вода</span>
             </label>
             <label class="add-info__item">
@@ -181,7 +187,8 @@
         <div class="container address__wrapper">
           <div class="address__text-block">
             <h3 class="subtitle address__subtitle">приглашаем <br class="br" /> к сотрудничеству
-              дилеров!</h3>
+              дилеров!
+            </h3>
             <address class="address__text">ул. Большая Конюшенная, д. 19/8
               <span class="address__city">Санкт-Петербург</span>
             </address>

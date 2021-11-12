@@ -1,7 +1,9 @@
-// Input clear
+// Input
 
 .input {
   box-sizing: border-box;
+  color: inherit;
+  border: 1px solid var(--cl-brd-main-frame);
   transition: all 0.3s ease-out;
 
   @include set-font-style(var(--fz-form-item-text), var(--lh-form-item-text), "Oswald");
@@ -10,10 +12,6 @@
   &::placeholder {
     color: inherit;
     opacity: 1;
-  }
-
-  &:valid {
-    border: 1px solid var(--cl-brd-main-frame);
   }
 
   &:hover {
@@ -26,9 +24,19 @@
     border-color: var(--cl-brd-form-input-active);
     box-shadow: 0 0 0 1px var(--cl-brd-form-input-active);
   }
-}
 
-.input:invalid {
-  border-color: var(--cl-brd-form-error);
-  box-shadow: 0 0 0 1px var(--cl-brd-form-error);
+  &:invalid {
+    border-color: var(--cl-brd-form-error);
+    box-shadow: 0 0 0 1px var(--cl-brd-form-error);
+  }
+
+  &:invalid:focus {
+    border-color: var(--cl-brd-form-input-active);
+    box-shadow: 0 0 0 1px var(--cl-brd-form-input-active);
+  }
+
+  &:required:placeholder-shown {
+    border-color: var(--cl-brd-main-frame);
+    box-shadow: none;
+  }
 }

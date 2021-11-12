@@ -1,7 +1,0 @@
-// Legend
-
-.legend {
-  @include set-font-style(var(--fz-legend), var(--lh-legend), "Oswald");
-  color: var(--cl-txt-form-legend);
-  text-transform: none;
-}

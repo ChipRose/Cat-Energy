@@ -5,9 +5,9 @@
   text-transform: uppercase;
 }
 
-// Legend
+// Title
 
-.question-form__legend {
+.question-form__title {
   margin-bottom: 38px;
 
   @include set-font-style(var(--fz-form-main-legend), var(--lh-form-main-legend), "Oswald");
@@ -19,6 +19,38 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 65px;
+  }
+}
+
+// Subtitle
+
+.question-form__subtitle{
+  @include set-font-style(var(--fz-legend), var(--lh-legend), "Oswald");
+  color: var(--cl-txt-form-legend);
+  text-transform: none;
+}
+
+.question-form__subtitle--contacts{
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.question-form__subtitle--comment{
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.question-form__subtitle--add{
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
   }
 }
 

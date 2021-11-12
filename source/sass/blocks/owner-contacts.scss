@@ -74,15 +74,6 @@
   }
 }
 
-.owner-contacts__value:focus + .owner-contacts__icon {
-  fill: var(--cl-fill-form-icon-focus);
-  transition: all 0.3s ease-out;
-}
-
-.owner-contacts__value:not(:placeholder-shown):not(:focus):invalid + .owner-contacts__icon {
-  fill: var(--cl-brd-form-error);
-}
-
 // Icon
 
 .owner-contacts__icon {
@@ -110,6 +101,23 @@
 .owner-contacts__icon--phone {
   width: 20px;
   height: auto;
+}
+
+.owner-contacts__value:focus + .owner-contacts__icon {
+  fill: var(--cl-fill-form-icon-focus);
+  transition: all 0.3s ease-out;
+}
+
+.owner-contacts__value:invalid + .owner-contacts__icon {
+  fill: var(--cl-brd-form-error);
+}
+
+.owner-contacts__value:focus:invalid + .owner-contacts__icon {
+  fill: var(--cl-fill-form-icon-focus);
+}
+
+.owner-contacts__value:required:placeholder-shown + .owner-contacts__icon {
+  fill: var(--cl-fill-form-icon);
 }
 
 // Property
