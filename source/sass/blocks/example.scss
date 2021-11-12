@@ -166,6 +166,7 @@
   position: relative;
 
   @include set-font-style(var(--fz-example-progress), var(--lh-example-progress), "Oswald");
+  color: var(--cl-txt-example-progress);
   text-transform: uppercase;
 
   &::before {
