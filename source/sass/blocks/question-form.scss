@@ -87,7 +87,7 @@
 // Program choice
 
 .question-form__program-choice {
-  padding-top: 23px;
+  padding-top: 25px;
   padding-bottom: 19px;
   margin-bottom: 26px;
   box-sizing: border-box;
@@ -128,10 +128,10 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 58px;
+    margin-bottom: 60px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 61px;
   }
 }
