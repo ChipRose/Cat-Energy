@@ -1,4 +1,4 @@
-.br{
+.br {
   display: block;
 }
 
@@ -6,6 +6,18 @@
   display: block;
 
   @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.br--tablet-only {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

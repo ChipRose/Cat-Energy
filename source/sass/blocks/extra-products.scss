@@ -57,6 +57,7 @@
   z-index: 0;
 
   &::before {
+    box-sizing: border-box;
     @include border-top (var(--cl-brd-catalog));
     z-index: -1;
   }
@@ -139,6 +140,8 @@
   @include set-font-style(var(--fz-catalog-button), var(--lh-catalog-button), "Oswald");
 
   @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    padding-bottom: 10px;
     flex: 0 0 244px;
   }
 }

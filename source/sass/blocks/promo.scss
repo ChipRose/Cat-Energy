@@ -8,7 +8,7 @@
 // Promo wrapper
 
 .promo__wrapper {
-  padding-top: 58px;
+  padding-top: 65px;
   padding-right: 58px;
   padding-bottom: 43px;
   padding-left: 58px;
@@ -26,36 +26,55 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
+    padding-top: 15px;
     padding-right: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-left: 32px;
+    box-sizing: border-box;
     min-height: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url("../../img/promo/gift-photo-tablet.jpg");
     background-position: center 67%;
     text-align: left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/promo/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
-    padding-right: 42px;
-    padding-bottom: 42px;
-    padding-left: 42px;
-    min-height: auto;
+    padding-top: 65px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    min-height: 100%;
     display: block;
+    background-image: url("../../img/promo/gift-photo-desktop.jpg");
+    object-fit: contain;
     text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/promo/gift-photo-desktop@2x.png");
+    }
   }
 }
 
 // Image-block
 
 .promo__image-block {
-  margin-bottom: 46px;
+  margin-right: auto;
+  margin-bottom: 62px;
+  margin-left: auto;
+  width: 57px;
+  height: 61px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    width: 58px;
+    height: 63px;
     flex: 0 0 170px;
     display: flex;
     justify-content: center;
@@ -63,15 +82,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 52px;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
   }
 }
 
 // Icon
 
 .promo__icon {
-  width: 78px;
+  width: 57px;
   height: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    width: 58px;
+  }
 }
 
 // Text block
