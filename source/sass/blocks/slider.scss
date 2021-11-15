@@ -50,7 +50,7 @@
   height: auto;
 }
 
-// =Control=
+// Control
 
 .slider__control {
   display: flex;
@@ -147,6 +147,10 @@
     transform: translateX(-50%);
     border: none;
     border-bottom: 1px dotted var(--cl-brd-slider-button);
+
+    @media (min-width: $tablet-width) {
+      bottom: 10px;
+    }
   }
 
   &:hover::before {
@@ -180,7 +184,11 @@
 
 .slider--init .slider__img--after {
   @media (min-width: $tablet-width) {
-    transform: translateX(-50.5%);
+    transform: translateX(-49.5%);
+    transition: transform 0.3s ease-out;
+  }
+  @media (min-width: $desktop-width) {
+    transform: translateX(-50.2%);
     transition: transform 0.3s ease-out;
   }
 }

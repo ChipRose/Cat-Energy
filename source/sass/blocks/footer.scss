@@ -7,12 +7,12 @@
 // Footer wrapper
 
 .footer__wrapper {
-  padding-top: 33px;
+  padding-top: 35px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
-    padding-bottom: 43px;
+    padding-top: 42px;
+    padding-bottom: 52px;
     display: grid;
     grid-template-rows: min-content;
     grid-template-columns: 164px 1fr 182px;
@@ -124,7 +124,7 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-top: 0px;
     padding-bottom: 0;
     margin-top: 5px;
     margin-bottom: 5px;

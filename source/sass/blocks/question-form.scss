@@ -130,6 +130,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+  }
 }
 
 // Add info
@@ -199,6 +203,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 9px;
     margin-left: 83px;
   }
 }

@@ -18,7 +18,7 @@
 .programs__item {
   padding-top: 24px;
   padding-right: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   padding-left: 20px;
   margin-bottom: 19px;
   box-sizing: border-box;
@@ -126,6 +126,7 @@
 
   @media (min-width: $desktop-width) {
     width: 134px;
+    left: calc(-3px + 50%);
   }
 }
 
