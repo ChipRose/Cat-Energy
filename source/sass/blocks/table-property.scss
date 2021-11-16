@@ -29,13 +29,13 @@
   padding-bottom: 2px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 7px;
+    padding-top: 8px;
     padding-bottom: 7px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 8px;
-    padding-bottom: 7px;
+  @media (min-width: $desktop-width) {
+    padding-top: 7px;
+    padding-bottom: 8px;
   }
 }
 
@@ -50,9 +50,13 @@
     padding-top: 7px;
     padding-bottom: 7px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 8px;
+  }
 }
 
-// Table exptra products
+// Table extra products
 
 .table-property--extra {
   width: 100%;
