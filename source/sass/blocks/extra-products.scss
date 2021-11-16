@@ -58,6 +58,7 @@
 
   &::before {
     box-sizing: border-box;
+
     @include border-top (var(--cl-brd-catalog));
     z-index: -1;
   }
