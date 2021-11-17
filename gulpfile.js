@@ -81,7 +81,7 @@ exports.copyImages = copyImages;
 // WebP
 
 const createWebp = () => {
-  return gulp.src(["source/img/**/*.{jpg,png}", "!source/img/favicon/*.png"])
+  return gulp.src(["source/img/**/*.{jpg,png}", "!source/img/favicon/*.png", "!source/img/background/*.{jpg,png}"])
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"))
 }
@@ -174,6 +174,9 @@ const build = gulp.series(
     scripts,
     sprite,
     createWebp
+  ),
+  gulp.series(
+    server, watcher
   )
 );
 
