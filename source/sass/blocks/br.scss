@@ -1,4 +1,8 @@
-.br--mobile {
+.br {
+  display: block;
+}
+
+.br--mobile-only {
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -6,7 +10,7 @@
   }
 }
 
-.br--tablet {
+.br--tablet-only {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -18,10 +22,18 @@
   }
 }
 
-.br--desktop {
+.br--desktop-only {
   display: none;
 
   @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.br--tablet-desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

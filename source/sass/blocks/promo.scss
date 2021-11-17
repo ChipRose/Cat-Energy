@@ -8,53 +8,71 @@
 // Promo wrapper
 
 .promo__wrapper {
-  padding-top: 58px;
+  padding-top: 65px;
   padding-right: 58px;
   padding-bottom: 43px;
   padding-left: 58px;
   box-sizing: border-box;
   width: 100%;
   min-height: 289px;
-  background-image: url("../../img/promo/gift-photo.jpg");
+  background-image: url("../../img/background/gift-photo.jpg");
   background-color: var(--cl-bg-catalog-promo);
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/promo/gift-photo@2x.jpg");
+    background-image: url("../../img/background/gift-photo@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
+    padding-top: 17px;
     padding-right: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    box-sizing: border-box;
     min-height: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url("../../img/background/gift-photo-tablet.jpg");
     background-position: center 67%;
     text-align: left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
-    padding-right: 42px;
-    padding-bottom: 42px;
-    padding-left: 42px;
-    min-height: auto;
+    padding-top: 65px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    min-height: 100%;
     display: block;
+    background-image: url("../../img/background/gift-photo-desktop.jpg");
+    object-fit: contain;
     text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background/gift-photo-desktop@2x.png");
+    }
   }
 }
 
 // Image-block
 
 .promo__image-block {
-  margin-bottom: 46px;
+  margin-right: auto;
+  margin-bottom: 62px;
+  margin-left: auto;
+  width: 57px;
+  height: 61px;
 
   @media (min-width: $tablet-width) {
+    margin-right: 175px;
     margin-bottom: 0;
     flex: 0 0 170px;
     display: flex;
@@ -63,15 +81,29 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 52px;
+    margin-right: auto;
+    margin-bottom: 57px;
+    margin-left: auto;
+    width: 60px;
+    height: 64px;
   }
 }
 
 // Icon
 
 .promo__icon {
-  width: 78px;
+  width: 57px;
   height: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    width: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+    width: 60px;
+  }
 }
 
 // Text block
@@ -82,7 +114,7 @@
   @media (min-width: $tablet-width) {
     padding-right: 85px;
     padding-left: 45px;
-    flex: 0 0 300px;
+    flex: 1 1 auto;
   }
 
   @media (min-width: $desktop-width) {

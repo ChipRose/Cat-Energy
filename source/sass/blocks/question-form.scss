@@ -87,7 +87,7 @@
 // Program choice
 
 .question-form__program-choice {
-  padding-top: 23px;
+  padding-top: 25px;
   padding-bottom: 19px;
   margin-bottom: 26px;
   box-sizing: border-box;
@@ -128,14 +128,18 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 58px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
   }
 }
 
 // Add info
 
 .question-form__add-info {
-  margin-bottom: 19px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 53px;
@@ -199,6 +203,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 9px;
     margin-left: 83px;
   }
 }

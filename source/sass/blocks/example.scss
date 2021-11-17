@@ -35,7 +35,7 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 56px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,7 +52,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
-    margin-bottom: 58px;
+    margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,7 +118,7 @@
 
 .example__list {
   margin-right: -15px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   margin-left: -15px;
   flex: 1 1 auto;
   display: flex;
@@ -132,7 +132,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 }
 
@@ -142,6 +142,7 @@
   margin-right: 15px;
   margin-bottom: 10px;
   margin-left: 15px;
+  box-sizing: border-box;
   flex: 0 0 124px;
   text-align: center;
 
@@ -161,8 +162,9 @@
 .example__progress {
   padding-top: 14px;
   padding-right: 14px;
-  padding-bottom: 17px;
+  padding-bottom: 6px;
   padding-left: 14px;
+  box-sizing: border-box;
   position: relative;
 
   @include set-font-style(var(--fz-example-progress), var(--lh-example-progress), "Oswald");
@@ -171,8 +173,9 @@
 
   &::before {
     content: "";
+    box-sizing: border-box;
     min-width: 124px;
-    height: 100%;
+    height: calc(var(--lh-example-description) + 100%);
     position: absolute;
     top: 0;
     left: 0;
@@ -181,8 +184,18 @@
     border-radius: 3px;
 
     @media (min-width: $tablet-width) {
+      height: calc(var(--lh-example-description) + 100%);
       min-width: 160px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
   }
 }
 
@@ -193,10 +206,11 @@
   padding-right: 8px;
   padding-bottom: 3px;
   padding-left: 8px;
-  margin-top: calc(-1 * var(--fz-example-description));
   margin-right: auto;
   margin-left: auto;
-  width: calc(-36px + 100%);
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 75%;
   position: relative;
   z-index: 1;
   background-color: var(--cl-bg-example);
@@ -205,11 +219,11 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 8px;
-    padding-right: 3px;
+    padding-top: 0;
+    padding-right: 5px;
     padding-bottom: 3px;
-    padding-left: 3px;
-    width: calc(-20px + 100%);
+    padding-left: 5px;
+    max-width: 90%;
     background-color: var(--cl-bg-example-description);
   }
 
@@ -279,6 +293,10 @@
 
 .example__control {
   @media (min-width: $tablet-width) {
+    margin-top: -18px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-top: -16px;
   }
 }

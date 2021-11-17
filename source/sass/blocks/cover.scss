@@ -23,14 +23,14 @@
     }
 
     &::before {
-      background-image: url("../../img/cover/cover-background-big.jpg");
+      background-image: url("../../img/background/cover-background-big.jpg");
       background-color: var(--cl-bg-cover-index);
       background-repeat: no-repeat;
       background-position: left center;
       background-size: 100% auto;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/cover/cover-background-big@2x.jpg");
+        background-image: url("../../img/background/cover-background-big@2x.jpg");
       }
     }
 
@@ -87,14 +87,14 @@
 
   &::after {
     z-index: 1;
-    background-image: url("../../img/cover/cover-background.jpg");
+    background-image: url("../../img/background/cover-background.jpg");
     background-color: var(--cl-bg-cover-index);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/cover/cover-background@2x.jpg");
+      background-image: url("../../img/background/cover-background@2x.jpg");
     }
   }
 
