@@ -60,7 +60,7 @@
         Подбор программы
       </h1>
     </div>
-    <form class="question-form page__question-form" action="https://echo.htmlacademy.ru" method="get">
+    <form class="question-form page__question-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="container container--form">
         <h2 class="title question-form__title">
           Заполните анкету, и мы подберем <br class="br"> программу питания для вашего кота
@@ -159,19 +159,19 @@
           </h3>
           <div class="add-info__container">
             <label class="add-info__item">
-              <input class="add-info__checkbox visually-hidden" type="checkbox" value="sweetener" checked />
+              <input class="add-info__checkbox visually-hidden" type="checkbox" name="sweetener" checked />
               <span class="add-info__property">сахарозаменитель</span>
             </label>
             <label class="add-info__item">
-              <input class="add-info__checkbox visually-hidden" type="checkbox" value="water" />
+              <input class="add-info__checkbox visually-hidden" type="checkbox" name="water" />
               <span class="add-info__property">питьевая вода</span>
             </label>
             <label class="add-info__item">
-              <input class="add-info__checkbox visually-hidden" type="checkbox" value="milk" disabled checked />
+              <input class="add-info__checkbox visually-hidden" type="checkbox" name="milk" disabled checked />
               <span class="add-info__property">молоко</span>
             </label>
             <label class="add-info__item">
-              <input class="add-info__checkbox visually-hidden" type="checkbox" value="vitamins" disabled />
+              <input class="add-info__checkbox visually-hidden" type="checkbox" name="vitamins" disabled />
               <span class="add-info__property">витамины</span>
             </label>
           </div>
