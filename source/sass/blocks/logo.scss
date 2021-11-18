@@ -1,16 +1,9 @@
 // Logo
 
 .logo {
-  display: grid;
-  grid-template-rows: min-content;
-  grid-template-columns: min-content 1fr;
-  column-gap: 11px;
+  display: flex;
   align-items: center;
   background-color: var(--cl-bg-page);
-
-  @media (min-width: $desktop-width) {
-    column-gap: 14px;
-  }
 }
 
 .logo:hover > .logo__image-block,
@@ -26,19 +19,19 @@
 // Image block
 
 .logo__image-block {
+  margin-right: 11px;
   width: 33px;
   height: 38px;
-  grid-row: 1/2;
-  grid-column: 1/2;
-  align-self: center;
   transition: all 0.5s ease-out;
 
   @media (min-width: $tablet-width) {
+    margin-right: 12px;
     width: 60px;
     height: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-right: 14px;
     width: 70px;
     height: 59px;
   }
@@ -64,9 +57,9 @@
 .logo__text-block {
   width: 101px;
   height: 18px;
-  grid-row: 1/2;
-  grid-column: 2/3;
-  justify-self: center;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
   transition: all 0.5s ease-out;
 
   @media (min-width: $desktop-width) {
