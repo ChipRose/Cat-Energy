@@ -135,8 +135,8 @@
 
   &::after {
     content: "";
-    width: 52px;
-    height: 12px;
+    width: 29px;
+    height: 13px;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -144,11 +144,19 @@
     transform: translateX(-50%);
     background-image: url("../img/background/pin-shadow.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain auto;
     background-position: center bottom;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/pin-shadow@2x.png");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/background/pin-shadow-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/pin-shadow-tablet@2x.png");
+      }
     }
   }
 
