@@ -152,6 +152,8 @@
     }
 
     @media (min-width: $tablet-width) {
+      width: 87px;
+      height: 41px;
       background-image: url("../img/background/pin-shadow-tablet.png");
 
       @media (min-resolution: 2dppx) {
