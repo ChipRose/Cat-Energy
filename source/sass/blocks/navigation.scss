@@ -209,7 +209,7 @@
     box-sizing: border-box;
     width: calc(40px + 100%);
     position: absolute;
-    top: 67px;
+    top: 66px;
     left: -20px;
     z-index: 20;
   }
@@ -233,7 +233,7 @@
 
 .navigation--nojs .navigation__list {
   @media (max-width: $mobile-width-only) {
-    margin-top: 67px;
+    margin-top: 66px;
     display: block;
     position: static;
     min-height: 0;

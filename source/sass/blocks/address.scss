@@ -135,8 +135,8 @@
 
   &::after {
     content: "";
-    width: 71px;
-    height: 100%;
+    width: 52px;
+    height: 12px;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -144,7 +144,7 @@
     transform: translateX(-50%);
     background-image: url("../img/background/pin-shadow.png");
     background-repeat: no-repeat;
-    background-image: 100% auto;
+    background-image: contain;
     background-position: center bottom;
 
     @media (min-resolution: 2dppx) {
