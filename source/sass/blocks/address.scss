@@ -142,12 +142,12 @@
     bottom: 0;
     z-index: -1;
     transform: translateX(-50%);
-    background-image: url("../img/footer/pin-shadow.png");
+    background-image: url("../img/background/pin-shadow.png");
     background-repeat: no-repeat;
     background-position: center bottom;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/footer/pin-shadow@2x.png");
+      background-image: url("../img/background/pin-shadow@2x.png");
     }
   }
 
