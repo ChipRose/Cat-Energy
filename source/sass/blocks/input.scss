@@ -14,12 +14,14 @@
     opacity: 1;
   }
 
-  &:hover {
+  &:hover,
+  &:required:placeholder-shown:hover {
     border-color: var(--cl-brd-form-input-hover);
     box-shadow: 0 0 0 1px var(--cl-brd-form-input-hover) inset;
   }
 
-  &:focus {
+  &:focus,
+  &:required:placeholder-shown:focus {
     outline: none;
     border-color: var(--cl-brd-form-input-active);
     box-shadow: 0 0 0 1px var(--cl-brd-form-input-active);

@@ -83,6 +83,7 @@
   z-index: 0;
   transform: translateY(-50%);
   fill: var(--cl-fill-form-icon);
+  transition: all 0.3s ease-out;
 
   @media (min-width: $tablet-width) {
     right: 17px;
@@ -103,9 +104,9 @@
   height: auto;
 }
 
-.owner-contacts__value:focus + .owner-contacts__icon {
+.owner-contacts__value:focus + .owner-contacts__icon,
+.owner-contacts__value:required:placeholder-shown:focus + .owner-contacts__icon {
   fill: var(--cl-fill-form-icon-focus);
-  transition: all 0.3s ease-out;
 }
 
 .owner-contacts__value:invalid + .owner-contacts__icon {
