@@ -25,13 +25,33 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename("style.min.css"))
+    .pipe(rename({
+      suffix: ".min"
+    }))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+// Normalize
+
+const normalize = () => {
+  return gulp.src("source/sass/normalize.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      csso()
+    ]))
+    .pipe(rename({
+      suffix: ".min"
+    }))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
 
 // HTML
 
@@ -169,6 +189,7 @@ const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(
+    normalize,
     styles,
     html,
     scripts,
@@ -186,6 +207,7 @@ exports.default = gulp.series(
   copy,
   copyImages,
   gulp.parallel(
+    normalize,
     styles,
     html,
     scripts,
