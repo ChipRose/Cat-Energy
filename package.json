@@ -5,6 +5,7 @@
   },
   "author": "Yana Rozova",
   "license": "MIT",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/ChipRose/Cat-energy/issues"
   },
