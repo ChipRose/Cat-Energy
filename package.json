@@ -1,4 +1,13 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChipRose/Cat-energy.git"
+  },
+  "author": "Yana Rozova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChipRose/Cat-energy/issues"
+  },
   "name": "package",
   "version": "1.0.0",
   "description": "catenergy",
@@ -29,14 +38,20 @@
     "build": "gulp build",
     "start": "gulp"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ChipRose/Cat-energy.git"
-  },
-  "author": "Yana Rozova",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ChipRose/Cat-energy/issues"
-  },
-  "homepage": "https://github.com/ChipRose/Cat-energy#readme"
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
+  ],
+  "engines": {
+    "node": "^12 || ^16"
+  }
 }
