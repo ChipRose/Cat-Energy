@@ -12,6 +12,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const ghPages = require('gulp-gh-pages');
 const sync = require("browser-sync").create();
 
 // Styles
@@ -151,6 +152,13 @@ const reload = (done) => {
   sync.reload();
   done();
 }
+
+//Deploy
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
 
 // Watcher
 
