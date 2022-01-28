@@ -35,7 +35,6 @@
     "sass": "^1.49.0",
     "stylelint": "^13.12.0",
     "stylelint-config-htmlacademy": "0.1.4",
-    "webp-converter": "^2.3.3"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
