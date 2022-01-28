@@ -1,4 +1,4 @@
-const terser = require("gulp-terser");
+import terser from "gulp-terser";
 
 export const js = () => {
   return app.gulp.src(app.path.src.js, { sourcemaps: true })
