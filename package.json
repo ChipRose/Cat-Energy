@@ -29,6 +29,7 @@
     "gulp-terser": "^2.1.0",
     "gulp-webp": "^4.0.1",
     "postcss-csso": "^6.0.0",
+    "stylelint": "^14.3.0",
     "stylelint-config-htmlacademy": "^0.1.12"
   },
   "scripts": {
