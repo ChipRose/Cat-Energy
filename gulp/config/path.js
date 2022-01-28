@@ -12,7 +12,7 @@ export const path = {
     copy: `${buildFolder}/`,
   },
   src: {
-    js: `${sourceFolder}/js/main.js`,
+    js: `${sourceFolder}/js/**/*.js`,
     images: `${sourceFolder}/img/**/*.{jpg,png,svg}`,
     favicon: `${sourceFolder}/*.ico`,
     webp: `${sourceFolder}/img/**/*.{jpg,jpeg,png}`,

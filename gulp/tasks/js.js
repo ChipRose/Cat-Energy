@@ -1,7 +1,7 @@
 import terser from "gulp-terser";
 
 export const js = () => {
-  return app.gulp.src(app.path.src.js, { sourcemaps: true })
+  return app.gulp.src(app.path.src.js)
     .pipe(app.plugins.plumber(
       app.plugins.notify.onError({
         title: "JS",
