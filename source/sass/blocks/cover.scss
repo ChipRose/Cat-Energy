@@ -93,7 +93,7 @@
     background-position: center center;
     background-size: cover;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 2dppx) and (max-width: $mobile-width-only){
       background-image: url("../img/background/cover-background@2x.jpg");
     }
   }
@@ -113,10 +113,6 @@
     &::after {
       background-image: none;
       background-color: transparent;
-
-      @media (min-resolution: 2dppx) {
-        background-image: none;
-      }
     }
   }
 
@@ -128,6 +124,8 @@
     justify-self: start;
   }
 }
+
+
 
 // Text block
 
