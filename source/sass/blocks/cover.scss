@@ -93,7 +93,7 @@
     background-position: center center;
     background-size: cover;
 
-    @media (min-resolution: 2dppx) and (max-width: $mobile-width-only){
+    @media (min-resolution: 2dppx) and (max-width: $mobile-width-only) {
       background-image: url("../img/background/cover-background@2x.jpg");
     }
   }
@@ -124,8 +124,6 @@
     justify-self: start;
   }
 }
-
-
 
 // Text block
 
