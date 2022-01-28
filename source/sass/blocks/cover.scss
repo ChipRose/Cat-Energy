@@ -113,6 +113,10 @@
     &::after {
       background-image: none;
       background-color: transparent;
+
+      @media (min-resolution: 2dppx) {
+        background-image: none;
+      }
     }
   }
 
