@@ -30,6 +30,8 @@ jobs:
         run: chmod 600 "$HOME/.ssh/BUILD"
       - name: Install
         run: npm ci
+      - name: Test
+        run: npm run test
       - name: Build
         run: npm run build
      # - name: Deploy
