@@ -32,5 +32,10 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Deploy
-        run: cd build && rsync -e "ssh -i $HOME/.ssh/BUILD -o StrictHostKeyChecking=no" --archive --compress --delete .ChipRose@Cat-energy:/var/www/Cat-energy/html/
+     # - name: Deploy
+     #   run: cd build && rsync -e "ssh -i $HOME/.ssh/BUILD -o StrictHostKeyChecking=no" --archive --compress --delete .ChipRose@Cat-energy:/var/www/Cat-energy/html/
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
