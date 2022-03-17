@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 12px;
+    padding-bottom: 0;
     display: flex;
   }
 }
@@ -132,7 +132,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 29px;
+    margin-bottom: 0;
   }
 }
 
@@ -265,14 +265,26 @@
 // Slider
 
 .example__slider {
+  --slide-width: 280px;
+  --width-control: 0%;
+  --min-height: 240px;
+
   @media (min-width: $tablet-width) {
+    --slide-width: 680px;
+    --min-height: 542px;
+    --width-control: 50%;
+
+    height: var(--min-height);
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
+    --slide-width: 650px;
+    --min-height: 654px;
     margin-right: -40px;
     flex: 0 0 650px;
   }
+
 }
 
 // Slider list
@@ -281,11 +293,11 @@
   margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    height: var(--min-height);
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
+   height: 100%;
   }
 }
 
