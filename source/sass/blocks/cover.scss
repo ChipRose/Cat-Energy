@@ -2,8 +2,8 @@
 
 .cover {
   @include set-font-style(var(--fz-cover), var(--lh-cover), "Oswald");
-  color: var(--cl-txt-cover-mobile-index);
   text-align: center;
+  color: var(--cl-txt-cover-mobile-index);
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -175,9 +175,7 @@
 // Image block
 
 .cover__image-block {
-  margin-right: auto;
-  margin-bottom: 2px;
-  margin-left: auto;
+  margin: 0 auto 2px;
   width: 280px;
   height: 270px;
   z-index: 3;
@@ -221,20 +219,14 @@
 // Button
 
 .cover__button {
-  padding-top: 11px;
-  padding-right: 10px;
-  padding-bottom: 11px;
-  padding-left: 10px;
+  padding: 11px 10px;
   margin-bottom: 22px;
   width: 100%;
   grid-row: 4/5;
   grid-column: 1/2;
 
   @media (min-width: $tablet-width) {
-    padding-top: 17px;
-    padding-right: 14px;
-    padding-bottom: 16px;
-    padding-left: 14px;
+    padding: 17px 14px 16px 14px;
     margin-top: 30px;
     margin-left: 83px;
     max-width: 244px;
