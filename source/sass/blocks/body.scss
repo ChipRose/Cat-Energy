@@ -13,16 +13,6 @@
 .body__header {
   grid-row: 1/2;
   grid-column: 1/2;
-
-  @media (min-width: $tablet-width) {
-    padding: 20px 0;
-    margin-bottom: 38px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 28px;
-    margin-bottom: 5px;
-  }
 }
 
 //Main
