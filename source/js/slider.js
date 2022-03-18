@@ -19,3 +19,14 @@ buttonAfter.addEventListener("click", function () {
   slideAfter.style.width = "100%";
 });
 
+//Slider
+slideScale.innerHTML = "";
+noUiSlider.create(slideScale, {
+    start: [20, 80],
+    connect: true,
+    range: {
+        'min': 0,
+        'max': 100
+    }
+});
+
