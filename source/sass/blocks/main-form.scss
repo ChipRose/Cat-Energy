@@ -1,0 +1,39 @@
+//Form
+
+.main-form__container {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.main-form__main--form {
+  margin-bottom: 32px;
+}
+
+//Title
+
+.main-form__form-title {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
+}
+
+//Question form
+
+.main-form__question-form {
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+}

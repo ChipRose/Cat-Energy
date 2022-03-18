@@ -1,4 +1,4 @@
-// ===Global page===
+// ---Global page---
 
 .page {
   width: 100%;
@@ -14,113 +14,7 @@
   height: 100%;
 }
 
-// ===Catalog.html===
 
-// ---Catalog header---
-
-.page__header-catalog {
-  margin-bottom: 27px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 54px;
-  }
-}
-
-// ---Catalog---
-
-.page__catalog {
-  margin-bottom: 25px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 75px;
-  }
-}
-
-// Catalog title
-
-.page__catalog-title {
-  margin-bottom: 39px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 82px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 87px;
-  }
-}
-
-// ---Catalog extra products---
-
-.page__extra-products {
-  margin-bottom: 33px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 86px;
-  }
-}
-
-// ===Form.html===
-
-// ---Form header=
-
-.page__header-form {
-  margin-bottom: 27px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 31px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 54px;
-  }
-}
-
-// ---Form main---
-
-.page__main--form {
-  margin-bottom: 32px;
-}
-
-// Form title
-
-.page__form-title {
-  margin-bottom: 37px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 57px;
-  }
-}
-
-// ---Question form---
-
-.page__question-form {
-  margin-bottom: 0;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
-  }
-}
 
 // ===Blank.html===
 

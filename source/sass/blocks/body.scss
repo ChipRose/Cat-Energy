@@ -1,4 +1,4 @@
-// ---Body---
+//Body
 .body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -8,6 +8,7 @@
   color: var(--cl-txt-main);
 }
 
+//Common
 //Header
 
 .body__header {
@@ -27,4 +28,34 @@
 .body__footer {
   grid-row: 3/4;
   grid-column: 1/2;
+}
+
+//Catalog.html
+//Header
+
+.body__header--catalog {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+  }
+}
+
+//Form.html
+//Header
+
+.body__header--form {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
 }
