@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 27px 0;
+    margin: 2px 0;
   }
 }
 
@@ -39,15 +39,15 @@
   margin: 16px 0 2px;
   box-sizing: border-box;
   position: relative;
-  z-index: 0;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
   &::before {
-    @include border-top(var(--cl-brd-contacts));
-    @include border-bottom(var(--cl-brd-contacts));
+    @include border-top(var(--cl-brd-footer));
+    @include border-bottom(var(--cl-brd-footer));
     z-index: -1;
   }
 

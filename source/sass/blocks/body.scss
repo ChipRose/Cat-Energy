@@ -52,10 +52,26 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 31px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 54px;
   }
 }
+
+.body__main--form {
+  margin-bottom: 32px;
+}
+
+//Blank.html
+//Header
+
+.body__main--blank{
+  margin-bottom: 50px;
+}
+
+.body__header--blank {
+  margin-bottom: 30px;
+}
+
