@@ -101,11 +101,11 @@
 // Map block
 
 .address__map-block {
-  min-height: 362px;
+  height: 362px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    min-height: 401px;
+    height: 400px;
   }
 
   @media (min-width: $desktop-width) {
