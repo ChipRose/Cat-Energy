@@ -64,6 +64,7 @@
 .slider__item--before {
   width: var(--width-control);
   justify-self: start;
+  transition: all 0.5s ease-in;
 
   &::before {
     width: var(--slide-width);
@@ -97,6 +98,7 @@
 .slider__item--after {
   width: calc(100% - var(--width-control));
   justify-self: end;
+  transition: all 0.5s ease-in;
 
   &::before {
     width: var(--slide-width);
