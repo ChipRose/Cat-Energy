@@ -1,5 +1,27 @@
 const WINDOW_LIMIT = 768;
 
+const MobilePinSize = {
+  PIN: {
+    X: 47,
+    Y: 53,
+  },
+  SHADOW: {
+    X: 47,
+    Y: 8,
+  },
+};
+
+const TabletPinSize = {
+  PIN: {
+    X: 113,
+    Y: 106,
+  },
+  SHADOW: {
+    X: 90,
+    Y: 18,
+  },
+};
+
 const Coordinates = {
   LAT: 59.938635,
   LNG: 30.323118,
@@ -10,38 +32,12 @@ const mapCanvas = document.querySelector('.address__map-block');
 
 const changePinSize = () => {
   return window.innerWidth >= WINDOW_LIMIT ? true : false;
-}
+};
 
-window.addEventListener('resize', () => {
-  let PinSize = {
-    PIN: {
-      X: 47,
-      Y: 53,
-    },
-    SHADOW: {
-      X: 47,
-      Y: 8,
-    },
-  };
+changePinSize()? setMap(TabletPinSize): setMap(MobilePinSize);
 
-  if (changePinSize()) {
-    PinSize = {
-      PIN: {
-        X: 113,
-        Y: 106,
-      },
-      SHADOW: {
-        X: 90,
-        Y: 18,
-      },
-    };
-  }
-  setMap(PinSize);
-});
-
-
-const setMap = (iconsSizes) => {
-  let {PIN, SHADOW} = iconsSizes;
+function setMap(iconsSizes) {
+  let { PIN, SHADOW } = iconsSizes;
   mapCanvas.innerHTML = '';
   mapCanvas.innerHTML = '<div id="map-inner" style="width: 100%; height: 100%;"></div>';
 
@@ -71,8 +67,17 @@ const setMap = (iconsSizes) => {
     {
       draggable: false,
       icon: mapIcon,
-    },
+    }
   );
 
   marker.addTo(map);
 };
+
+window.addEventListener('resize', () => {
+  let PinSize = MobilePinSize;
+  if (changePinSize()) {
+    PinSize = TabletPinSize;
+  }
+
+  setMap(PinSize);
+});
