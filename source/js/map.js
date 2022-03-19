@@ -38,7 +38,10 @@ const mapCanvas = document.querySelector('.address__map-block');
 mapCanvas.innerHTML = '';
 mapCanvas.innerHTML = '<div id="map-inner" style="width: 100%; height: 100%;"></div>';
 
-const map = L.map('map-inner').setView([Coordinates.LAT, Coordinates.LNG], Coordinates.ZOOM);
+const map = L.map('map-inner', {
+  scrollWheelZoom: false,
+})
+  .setView([Coordinates.LAT, Coordinates.LNG], Coordinates.ZOOM);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 })
