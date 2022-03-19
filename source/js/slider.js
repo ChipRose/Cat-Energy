@@ -7,7 +7,6 @@ const buttonBefore = document.querySelector(".slider__button--before");
 const buttonAfter = document.querySelector(".slider__button--after");
 const slideScale = document.querySelector(".slider__scale");
 
-
 //Slider
 slideScale.innerHTML = "";
 noUiSlider.create(slideScale, {
@@ -40,5 +39,3 @@ buttonAfter.addEventListener("click", () => {
   slideAfter.style.width = "0";
   slideScale.noUiSlider.set([100]);
 });
-
-

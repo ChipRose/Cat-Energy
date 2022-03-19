@@ -44,7 +44,7 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/*.js")
+  return gulp.src("source/js/**/*.js")
     .pipe(terser())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest("build/js"))
@@ -105,7 +105,7 @@ const copy = (done) => {
     "source/*.ico",
     "source/manifest.webmanifest",
     "source/img/**/*.svg",
-    "source/libraries/**/*.*",
+    "source/libraries-css/*.*",
     "!source/img/icons/*.svg",
   ], {
     base: "source"
