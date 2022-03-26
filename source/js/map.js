@@ -51,9 +51,8 @@ function setMap(iconsSizes) {
     .addTo(map);
 
   const mapIcon = L.icon({
-    iconUrl: 'img/icons/map-pin.svg',
-    shadowUrl: 'img/background/pin-shadow-tablet.png',
-
+    iconUrl: '../img/footer/map-pin.svg',
+    shadowUrl: '../img/background/pin-shadow-tablet.png',
     iconSize: [PIN.X, PIN.Y],
     shadowSize: [SHADOW.X, SHADOW.Y],
     iconAnchor: [PIN.X / 2, PIN.Y],
