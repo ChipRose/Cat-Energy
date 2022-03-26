@@ -30,11 +30,11 @@ const Coordinates = {
 
 const mapCanvas = document.querySelector('.address__map-block');
 
-const changePinSize = () => {
+const isChangePinSize = () => {
   return window.innerWidth >= WINDOW_LIMIT ? true : false;
 };
 
-changePinSize()? setMap(TabletPinSize): setMap(MobilePinSize);
+isChangePinSize()? setMap(TabletPinSize): setMap(MobilePinSize);
 
 function setMap(iconsSizes) {
   let { PIN, SHADOW } = iconsSizes;
@@ -75,7 +75,7 @@ function setMap(iconsSizes) {
 
 window.addEventListener('resize', () => {
   let PinSize = MobilePinSize;
-  if (changePinSize()) {
+  if (isChangePinSize()) {
     PinSize = TabletPinSize;
   }
 

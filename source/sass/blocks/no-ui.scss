@@ -1,11 +1,13 @@
 //Slider
-.slider__scale{
+
+.slider__scale {
   @media (min-width: $tablet-width) {
     margin-right: 8px;
   }
 }
 
 //Cursor
+
 .slider__scale.noUi-horizontal .noUi-handle {
   width: 36px;
   height: 6px;

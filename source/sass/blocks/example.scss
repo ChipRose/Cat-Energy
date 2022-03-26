@@ -48,7 +48,7 @@
 
 .example__header {
   padding-top: 29px;
-  margin-bottom: 38px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
@@ -252,12 +252,6 @@
     width: 100%;
     text-align: left;
   }
-}
-
-//Header
-
-.example__header {
-  margin-bottom: 0px;
 }
 
 // Rezult
