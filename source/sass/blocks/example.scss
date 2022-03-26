@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 12px;
+    padding-bottom: 0;
     display: flex;
   }
 }
@@ -48,7 +48,7 @@
 
 .example__header {
   padding-top: 29px;
-  margin-bottom: 38px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
@@ -132,7 +132,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 29px;
+    margin-bottom: 27px;
   }
 }
 
@@ -259,44 +259,5 @@
 .example__rezult {
   @media (min-width: $desktop-width) {
     margin-right: 60px;
-  }
-}
-
-// Slider
-
-.example__slider {
-  @media (min-width: $tablet-width) {
-    position: relative;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: -40px;
-    flex: 0 0 650px;
-  }
-}
-
-// Slider list
-
-.example__slider-list {
-  margin-bottom: 17px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
-  }
-}
-
-// Control
-
-.example__control {
-  @media (min-width: $tablet-width) {
-    margin-top: -18px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -16px;
   }
 }

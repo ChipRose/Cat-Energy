@@ -9,7 +9,14 @@
   <link rel="icon" href="favicon.ico" />
   <meta name="description" content="Сайт фитнес-продуктов для котов">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- libraries -->
+  <link rel="stylesheet" href="libraries-css/leaflet.css" />
+  <script src="js/libraries/leaflet.min.js"></script>
+  <link rel="stylesheet" href="libraries-css/nouislider.min.css" />
+  <script src="js/libraries/nouislider.min.js"></script>
+  <!-- Styles -->
   <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+  <!-- Fonts -->
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -18,9 +25,9 @@
 
 </head>
 
-<body class="page__body">
+<body class="body page__body">
 
-  <header class="header page__header">
+  <header class="header body__header">
     <div class="container header__wrapper">
       <a class="link logo header__logo" href="#">
         <div class="logo__image-block">
@@ -39,7 +46,7 @@
           </picture>
         </div>
       </a>
-      <nav class="navigation navigation--nojs navigation--closed header__menu page__navigation">
+      <nav class="navigation navigation--nojs navigation--closed header__menu">
         <button class="navigation__toggle header__burger" type="button" aria-expanded="false"
           aria-controls="navigation__list">
           <span class="visually-hidden">Открыть меню </span>
@@ -59,9 +66,9 @@
     </div>
   </header>
 
-  <main class="page__main">
+  <main class="main-index body__main">
     <h1 class="visually-hidden">Cat Energy. Функциональное питание для котов</h1>
-    <section class="cover page__cover">
+    <section class="cover main-index__cover">
       <div class="container cover__wrapper">
         <header class="cover__header">
           <div class="cover__text-block">
@@ -84,10 +91,10 @@
               height="270" alt="Банка кошачих консервов Cat Energy с курицей" />
           </picture>
         </div>
-        <a class="button cover__button " href="form.html">Подобрать программу</a>
+        <a class="button cover__button" href="form.html">Подобрать программу</a>
       </div>
     </section>
-    <section class="programs page__programs">
+    <section class="programs main-index__programs">
       <div class="container">
         <h2 class="visually-hidden">Программы питания для котов</h2>
         <ul class="list programs__list">
@@ -132,7 +139,7 @@
         </ul>
       </div>
     </section>
-    <section class="advantages page__advantages">
+    <section class="advantages main-index__advantages">
       <div class="container">
         <h2 class="title advantages__title">Как это работает</h2>
         <ul class="list advantages__list">
@@ -176,7 +183,7 @@
             </div>
             <div class="advantages__text-block">
               <p class="text advantages__text">
-                Уже через месяц наслаждайтесь изменениями к лучшему&#32;<br class="br br--tablet-desktop"/>вашего
+                Уже через месяц наслаждайтесь изменениями к лучшему&#32;<br class="br br--tablet-desktop" />вашего
                 питомца!
               </p>
             </div>
@@ -184,7 +191,7 @@
         </ul>
       </div>
     </section>
-    <section class="example page__example">
+    <section class="example main-index__example">
       <div class="container example__wrapper">
         <header class="example__header">
           <h2 class="title example__title">Живой пример</h2>
@@ -214,37 +221,11 @@
         </header>
         <div class="slider slider--init example__slider">
           <ul class="list slider__list  example__slider-list">
-            <li class="slider__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/example/desktop-example-before.webp 1x, img/example/desktop-example-before@2x.webp 2x" />
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/example/tablet-example-before.webp 1x, img/example/tablet-example-before@2x.webp 2x" />
-                <source type="image/webp" srcset="img/example/example-before.webp 1x, img/example/example-before@2x.webp 2x">
-                <source media="(min-width: 1440px)"
-                  srcset="img/example/desktop-example-before.png 1x, img/example/desktop-example-before@2x.png 2x" />
-                <source media="(min-width: 768px)"
-                  srcset="img/example/tablet-example-before.png 1x, img/example/tablet-example-before@2x.png 2x" />
-                <img class="img slider__img slider__img--before" src="img/example/example-before.png"
-                  srcset="img/example/example-before@2x.png 2x" width="280" height="235"
-                  alt="Изображение толстого кота, до использования кошачьих консервов" />
-              </picture>
+            <li class="slider__item slider__item--before">
+              <span class="visually-hidden">Изображение толстого кота</span>
             </li>
-            <li class="slider__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/example/desktop-example-after.webp 1x, img/example/desktop-example-after@2x.webp 2x" />
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/example/tablet-example-after.webp 1x, img/example/tablet-example-after@2x.webp 2x" />
-                <source type="image/webp" srcset="img/example/example-after.webp 1x, img/example/example-after@2x.webp 2x">
-                <source media="(min-width: 1440px)"
-                  srcset="img/example/desktop-example-after.png 1x, img/example/desktop-example-after@2x.png 2x" />
-                <source media="(min-width: 768px)"
-                  srcset="img/example/tablet-example-after.png 1x, img/example/tablet-example-after@2x.png 2x" />
-                <img class="img slider__img slider__img--after" src="img/example/example-after.png"
-                  srcset="img/example/example-after@2x.png 2x" width="280" height="235"
-                  alt="Изображение худого кота, после использования кошачьих консервов" />
-              </picture>
+            <li class="slider__item slider__item--after">
+              <span class="visually-hidden">Изображение худого кота</span>
             </li>
           </ul>
           <div class="slider__control example__control">
@@ -259,14 +240,15 @@
     </section>
   </main>
 
-  <footer class="footer page__footer">
-    <section class="address">
+
+  <footer class="footer body__footer">
+    <section class="address footer__address">
       <h2 class="visually-hidden">Адрес Cat Energy</h2>
       <div class="address__header ">
         <div class="container address__wrapper">
           <div class="address__text-block">
             <h3 class="subtitle address__subtitle">
-              приглашаем<br class="br"/>к сотрудничеству дилеров!
+              приглашаем<br class="br" />к сотрудничеству дилеров!
             </h3>
             <address class="address__text">ул. Большая Конюшенная, д. 19/8
               <span class="address__city">Санкт-Петербург</span>
@@ -287,51 +269,55 @@
       </div>
     </section>
 
-    <div class="container footer__wrapper ">
-      <a class="link logo-text footer__logo" href="#">
-        <svg class="logo-text__icon" width="128" height="24" role="img" aria-label="Надпись Cat Energy"
-          focusable="false">
-          <use xlink:href="img/sprite.svg#footer-logo"></use>
-        </svg>
-      </a>
-      <ul class="list footer__social-list">
-        <li class="footer__social-item">
-          <a href="#" class="link social-button footer__social-link">
-            <svg class="social-button__icon social-button__icon--vk" width="24" height="13" role="img"
-              aria-label="Иконка ВКонтакте" focusable="false">
-              <use xlink:href="img/sprite.svg#vk" />
-            </svg>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a href="#" class="link social-button footer__social-link">
-            <svg class="social-button__icon social-button__icon--inst" width="17" height="17" role="img"
-              aria-label="Иконка Инстаграм" focusable="false">
-              <use xlink:href="img/sprite.svg#inst" />
-            </svg>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a href="#" class="link social-button footer__social-link">
-            <svg class="social-button__icon social-button__icon--fb" width="13" height="20" role="img"
-              aria-label="Иконка Фейсбук" focusable="false">
-              <use xlink:href="img/sprite.svg#fb" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <a class="link academy-logo footer__promo" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="text academy-logo__text footer__promo-text">HTML Academy</p>
-        <svg class="academy-logo__icon footer__promo-icon" width="27" height="34" role="img"
-          aria-label="Логотип HTMLAcademy" focusable="false">
-          <use xlink:href="img/sprite.svg#logo-html" />
-        </svg>
-      </a>
-    </div>
+    <section class="contacts footer__contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <div class="container contacts__container">
+        <a class="link logo-text contacts__logo" href="#">
+          <svg class="logo-text__icon" width="128" height="24" role="img" aria-label="Надпись Cat Energy"
+            focusable="false">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
+        <ul class="list contacts__social-list">
+          <li class="contacts__social-item">
+            <a href="#" class="link social-button contacts__social-link">
+              <svg class="social-button__icon social-button__icon--vk" width="24" height="13" role="img"
+                aria-label="Иконка ВКонтакте" focusable="false">
+                <use xlink:href="img/sprite.svg#vk" />
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__social-item">
+            <a href="#" class="link social-button contacts__social-link">
+              <svg class="social-button__icon social-button__icon--inst" width="17" height="17" role="img"
+                aria-label="Иконка Инстаграм" focusable="false">
+                <use xlink:href="img/sprite.svg#inst" />
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__social-item">
+            <a href="#" class="link social-button contacts__social-link">
+              <svg class="social-button__icon social-button__icon--fb" width="13" height="20" role="img"
+                aria-label="Иконка Фейсбук" focusable="false">
+                <use xlink:href="img/sprite.svg#fb" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="link academy-logo contacts__promo" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="text academy-logo__text contacts__promo-text">HTML Academy</p>
+          <svg class="academy-logo__icon contacts__promo-icon" width="27" height="34" role="img"
+            aria-label="Логотип HTMLAcademy" focusable="false">
+            <use xlink:href="img/sprite.svg#logo-html" />
+          </svg>
+        </a>
+      </div>
+    </section>
   </footer>
 
   <script src="js/burger.min.js"></script>
   <script src="js/slider.min.js"></script>
+  <script src="js/map.min.js"></script>
 
 </body>
 

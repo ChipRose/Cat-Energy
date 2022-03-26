@@ -10,14 +10,18 @@
   <meta name="description" content="Каталог фитнес-продуктов для котов">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+  <!-- libraries -->
+  <link rel="stylesheet" href="libraries-css/leaflet.css" />
+  <script src="js/libraries/leaflet.min.js"></script>
+  <!-- Fonts -->
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin="anonymous">
 </head>
 
-<body class="page__body">
-  <header class="header header--inner page__header-catalog">
+<body class="body page__body">
+  <header class="header body__header header--inner body__header--catalog">
     <div class="container header__wrapper">
       <a class="link header__logo logo" href="index.html">
         <div class="logo__image-block">
@@ -54,11 +58,11 @@
     </div>
   </header>
 
-  <main class="page__main page__main--catalog">
+  <main class="main-catalog body__main page__main page__main--catalog">
     <div class="container">
-      <h2 class="title page__catalog-title">Каталог продукции</h2>
+      <h2 class="title main-catalog__catalog-title">Каталог продукции</h2>
     </div>
-    <section class="catalog page__catalog">
+    <section class="catalog main-catalog__catalog">
       <div class="container">
         <ul class="list catalog__list">
           <li class="catalog__item">
@@ -377,7 +381,7 @@
         </ul>
       </div>
     </section>
-    <section class="extra-products page__extra-products title-decor">
+    <section class="extra-products main-catalog__extra-products title-decor">
       <div class="container ">
         <h2 class="title extra-products__title">
           <span class="title-decor__back title-decor__back--catalog">
@@ -476,14 +480,15 @@
     </section>
   </main>
 
-  <footer class="footer page__footer">
-    <section class="address">
+  <footer class="footer body__footer">
+    <section class="address footer__address">
       <h2 class="visually-hidden">Адрес Cat Energy</h2>
-      <div class="address__header address__header--inner ">
+      <div class="address__header address__header--inner">
         <div class="container address__wrapper">
           <div class="address__text-block">
-            <h3 class="subtitle address__subtitle">приглашаем <br class="br" /> к сотрудничеству
-              дилеров!</h3>
+            <h3 class="subtitle address__subtitle">
+              приглашаем<br class="br" />к сотрудничеству дилеров!
+            </h3>
             <address class="address__text">ул. Большая Конюшенная, д. 19/8
               <span class="address__city">Санкт-Петербург</span>
             </address>
@@ -503,50 +508,54 @@
       </div>
     </section>
 
-    <div class="container footer__wrapper ">
-      <a class="link logo-text footer__logo" href="index.html">
-        <svg class="logo-text__icon" width="128" height="24" role="img" aria-label="Надпись Cat Energy"
-          focusable="false">
-          <use xlink:href="img/sprite.svg#footer-logo"></use>
-        </svg>
-      </a>
-      <ul class="list footer__social-list">
-        <li class="footer__social-item">
-          <a href="#" class="link social-button footer__social-link">
-            <svg class="social-button__icon social-button__icon--vk" width="24" height="13" role="img"
-              aria-label="Иконка ВКонтакте" focusable="false">
-              <use xlink:href="img/sprite.svg#vk" />
-            </svg>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a href="#" class="link social-button footer__social-link">
-            <svg class="social-button__icon social-button__icon--inst" width="17" height="17" role="img"
-              aria-label="Иконка Инстаграм" focusable="false">
-              <use xlink:href="img/sprite.svg#inst" />
-            </svg>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a href="#" class="link social-button footer__social-link">
-            <svg class="social-button__icon social-button__icon--fb" width="13" height="20" role="img"
-              aria-label="Иконка Фейсбук" focusable="false">
-              <use xlink:href="img/sprite.svg#fb" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <a class="link academy-logo footer__promo" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="text academy-logo__text footer__promo-text">HTML Academy</p>
-        <svg class="academy-logo__icon footer__promo-icon" width="27" height="34" role="img"
-          aria-label="Логотип HTMLAcademy" focusable="false">
-          <use xlink:href="img/sprite.svg#logo-html" />
-        </svg>
-      </a>
-    </div>
+    <section class="contacts footer__contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <div class="container contacts__container">
+        <a class="link logo-text contacts__logo" href="index.html">
+          <svg class="logo-text__icon" width="128" height="24" role="img" aria-label="Надпись Cat Energy"
+            focusable="false">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
+        <ul class="list contacts__social-list">
+          <li class="contacts__social-item">
+            <a href="#" class="link social-button contacts__social-link">
+              <svg class="social-button__icon social-button__icon--vk" width="24" height="13" role="img"
+                aria-label="Иконка ВКонтакте" focusable="false">
+                <use xlink:href="img/sprite.svg#vk" />
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__social-item">
+            <a href="#" class="link social-button contacts__social-link">
+              <svg class="social-button__icon social-button__icon--inst" width="17" height="17" role="img"
+                aria-label="Иконка Инстаграм" focusable="false">
+                <use xlink:href="img/sprite.svg#inst" />
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__social-item">
+            <a href="#" class="link social-button contacts__social-link">
+              <svg class="social-button__icon social-button__icon--fb" width="13" height="20" role="img"
+                aria-label="Иконка Фейсбук" focusable="false">
+                <use xlink:href="img/sprite.svg#fb" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="link academy-logo contacts__promo" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="text academy-logo__text contacts__promo-text">HTML Academy</p>
+          <svg class="academy-logo__icon contacts__promo-icon" width="27" height="34" role="img"
+            aria-label="Логотип HTMLAcademy" focusable="false">
+            <use xlink:href="img/sprite.svg#logo-html" />
+          </svg>
+        </a>
+      </div>
+    </section>
   </footer>
 
   <script src="js/burger.min.js"></script>
+  <script src="js/map.min.js"></script>
 
 </body>
 

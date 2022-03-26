@@ -19,22 +19,28 @@
 @import "blocks/program-button.scss";
 @import "blocks/social-button.scss";
 //Blocks
-//index.html
-@import "blocks/container.scss";
+//Common
 @import "blocks/page.scss";
+@import "blocks/body.scss";
+@import "blocks/container.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
 @import "blocks/navigation.scss";
+@import "blocks/footer.scss";
+@import "blocks/address.scss";
+@import "blocks/logo-text.scss";
+@import "blocks/contacts.scss";
+@import "blocks/academy-logo.scss";
+//index.html
+@import "blocks/main-index.scss";
 @import "blocks/cover.scss";
 @import "blocks/programs.scss";
 @import "blocks/advantages.scss";
 @import "blocks/example.scss";
 @import "blocks/slider.scss";
-@import "blocks/footer.scss";
-@import "blocks/address.scss";
-@import "blocks/logo-text.scss";
-@import "blocks/academy-logo.scss";
+@import "blocks/no-ui.scss";
 //form.html
+@import "blocks/main-form.scss";
 @import "blocks/input.scss";
 @import "blocks/question-form.scss";
 @import "blocks/person-data.scss";
@@ -43,11 +49,13 @@
 @import "blocks/comment.scss";
 @import "blocks/add-info.scss";
 //catalog.html
+@import "blocks/main-catalog.scss";
 @import "blocks/catalog.scss";
 @import "blocks/table-property.scss";
 @import "blocks/extra-products.scss";
 @import "blocks/promo.scss";
 //blank.html
+@import "blocks/main-blank.scss";
 @import "blocks/product-card.scss";
 //Add block
 @import "global/visually-hidden.scss";
